@@ -1,0 +1,49 @@
+{
+  "figure": "ed10_analysis_freeze",
+  "generated_by": "figures/make_anchor_figures.R",
+  "panels": {
+    "manifest": {
+      "scripts__py": [
+        "cds_extract.py",
+        "clinical_only.py",
+        "imvigor_gene_recovery.py",
+        "phase1a_availability.py",
+        "phase1a_deep_verify.py",
+        "phase1a_panel_check.py",
+        "phase1a_sort_hypotheses.py",
+        "phase1a_sortkey_check.py",
+        "positive_control.py",
+        "rerun_ablation.py",
+        "rerun_benchmark.py",
+        "rerun_positive_control.py",
+        "rerun_sensitivity_manifest.py",
+        "threshold_zero_sensitivity.py",
+        "transport_summary_joint.py"
+      ],
+      "verification_gates.overall": "PASS",
+      "removed_configs": [
+        "gene_measured_only",
+        "gene_top100_measured",
+        "gene_top50_measured",
+        "norm_log2raw_measured",
+        "norm_within_z_measured"
+      ],
+      "n_repeats_recal": 100,
+      "n_boot_auc_ci": 2000,
+      "seed": 20260911,
+      "n_boot_efron632": 600,
+      "data__json": [
+        "phase1a_results.json",
+        "clinical_only.json",
+        "imvigor_gene_recovery.json",
+        "positive_control.json",
+        "provenance_ledger.json",
+        "rerun_ablation.json",
+        "rerun_benchmark.json",
+        "rerun_positive_control.json",
+        "threshold_zero_sensitivity.json",
+        "transport_summary_joint.json"
+      ]
+    }
+  }
+}

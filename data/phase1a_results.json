@@ -1,0 +1,1631 @@
+{
+  "position_fData": {
+    "hypothesis": "position_fData",
+    "anchors": {
+      "DDX3Y": {
+        "found": true,
+        "exmat_row_1based": 29441,
+        "female_mean": 1113.7894736842106,
+        "male_mean": 1142.4411764705883,
+        "rowsum": 395392.0
+      },
+      "UTY": {
+        "found": true,
+        "exmat_row_1based": 26905,
+        "female_mean": 1727.25,
+        "male_mean": 1864.6433823529412,
+        "rowsum": 638454.0
+      },
+      "RPS4Y1": {
+        "found": false
+      },
+      "XIST": {
+        "found": true,
+        "exmat_row_1based": 26977,
+        "female_mean": 2.776315789473684,
+        "male_mean": 2.8308823529411766,
+        "rowsum": 981.0
+      },
+      "GAPDH": {
+        "found": true,
+        "exmat_row_1based": 15052,
+        "female_mean": 0.0,
+        "male_mean": 0.0,
+        "rowsum": 0.0
+      },
+      "ACTB": {
+        "found": true,
+        "exmat_row_1based": 24087,
+        "female_mean": 0.09210526315789473,
+        "male_mean": 0.10661764705882353,
+        "rowsum": 36.0
+      }
+    },
+    "pass": false,
+    "male_specific_rows": 1,
+    "male_specific_y_hits": [],
+    "y_hit_rate": 0.0,
+    "top_fem_bias_symbols": [
+      {
+        "symbol": "TRAF1",
+        "row": 26379,
+        "f_over_m": 843.3766233766233
+      },
+      {
+        "symbol": "LONRF1",
+        "row": 30113,
+        "f_over_m": 672.8287479868897
+      },
+      {
+        "symbol": "LOC102725328",
+        "row": 8648,
+        "f_over_m": 457.3953892996956
+      },
+      {
+        "symbol": "LOC102725327",
+        "row": 8647,
+        "f_over_m": 444.6354066985646
+      },
+      {
+        "symbol": "LOC100130207",
+        "row": 422,
+        "f_over_m": 432.9184210526316
+      },
+      {
+        "symbol": "GPR143",
+        "row": 20494,
+        "f_over_m": 296.39282563951775
+      },
+      {
+        "symbol": "LOC102725492",
+        "row": 8794,
+        "f_over_m": 148.52631578947367
+      },
+      {
+        "symbol": "FSD1",
+        "row": 27404,
+        "f_over_m": 145.94152046783623
+      },
+      {
+        "symbol": "LOC102725470",
+        "row": 8773,
+        "f_over_m": 104.8455565142364
+      },
+      {
+        "symbol": "LOC102725459",
+        "row": 8767,
+        "f_over_m": 102.53200568990044
+      }
+    ],
+    "top_rowsum_symbols": [
+      {
+        "symbol": "KIAA1211L",
+        "rowsum": 550686339.0
+      },
+      {
+        "symbol": "DEPDC1-AS1",
+        "rowsum": 147607792.0
+      },
+      {
+        "symbol": "HCG9",
+        "rowsum": 136986836.0
+      },
+      {
+        "symbol": "HNF4A-AS1",
+        "rowsum": 121224152.0
+      },
+      {
+        "symbol": "SMIM6",
+        "rowsum": 118844502.0
+      },
+      {
+        "symbol": "SNAR-A1",
+        "rowsum": 118077389.0
+      },
+      {
+        "symbol": "LOC101927234",
+        "rowsum": 104160660.0
+      },
+      {
+        "symbol": "PDLIM2",
+        "rowsum": 55659148.0
+      },
+      {
+        "symbol": "KIAA1024L",
+        "rowsum": 53804816.0
+      },
+      {
+        "symbol": "NRDE2",
+        "rowsum": 52757944.0
+      },
+      {
+        "symbol": "NUP98",
+        "rowsum": 48980370.0
+      },
+      {
+        "symbol": "PARGP1",
+        "rowsum": 47103273.0
+      },
+      {
+        "symbol": "LHPP",
+        "rowsum": 46826087.0
+      },
+      {
+        "symbol": "LOC101929050",
+        "rowsum": 41776854.0
+      },
+      {
+        "symbol": "OMG",
+        "rowsum": 40329586.0
+      },
+      {
+        "symbol": "AKR7A2",
+        "rowsum": 40287523.0
+      },
+      {
+        "symbol": "ZFAT",
+        "rowsum": 35060329.0
+      },
+      {
+        "symbol": "MIR3685",
+        "rowsum": 34428556.0
+      },
+      {
+        "symbol": "LOC101928927",
+        "rowsum": 33756087.0
+      },
+      {
+        "symbol": "CCNF",
+        "rowsum": 33441363.0
+      }
+    ]
+  },
+  "symbol_asc": {
+    "hypothesis": "symbol_asc",
+    "anchors": {
+      "DDX3Y": {
+        "found": true,
+        "exmat_row_1based": 4747,
+        "female_mean": 11.276315789473685,
+        "male_mean": 8082.643382352941,
+        "rowsum": 2199336.0
+      },
+      "UTY": {
+        "found": true,
+        "exmat_row_1based": 29723,
+        "female_mean": 7.118421052631579,
+        "male_mean": 9125.58455882353,
+        "rowsum": 2482700.0
+      },
+      "RPS4Y1": {
+        "found": false
+      },
+      "XIST": {
+        "found": true,
+        "exmat_row_1based": 30113,
+        "female_mean": 430147.8289473684,
+        "male_mean": 639.3125,
+        "rowsum": 32865128.0
+      },
+      "GAPDH": {
+        "found": true,
+        "exmat_row_1based": 7165,
+        "female_mean": 51698.38157894737,
+        "male_mean": 46338.367647058825,
+        "rowsum": 16533113.0
+      },
+      "ACTB": {
+        "found": true,
+        "exmat_row_1based": 220,
+        "female_mean": 342909.34210526315,
+        "male_mean": 338295.14338235295,
+        "rowsum": 118077389.0
+      }
+    },
+    "pass": false,
+    "male_specific_rows": 1,
+    "male_specific_y_hits": [],
+    "y_hit_rate": 0.0,
+    "top_fem_bias_symbols": [
+      {
+        "symbol": "SMR3B",
+        "row": 26379,
+        "f_over_m": 843.3766233766233
+      },
+      {
+        "symbol": "XIST",
+        "row": 30113,
+        "f_over_m": 672.8287479868897
+      },
+      {
+        "symbol": "HTN3",
+        "row": 8648,
+        "f_over_m": 457.3953892996956
+      },
+      {
+        "symbol": "HTN1",
+        "row": 8647,
+        "f_over_m": 444.6354066985646
+      },
+      {
+        "symbol": "AFP",
+        "row": 422,
+        "f_over_m": 432.9184210526316
+      },
+      {
+        "symbol": "MUC7",
+        "row": 20494,
+        "f_over_m": 296.39282563951775
+      },
+      {
+        "symbol": "IFNW1",
+        "row": 8794,
+        "f_over_m": 148.52631578947367
+      },
+      {
+        "symbol": "STATH",
+        "row": 27404,
+        "f_over_m": 145.94152046783623
+      },
+      {
+        "symbol": "IFNA21",
+        "row": 8773,
+        "f_over_m": 104.8455565142364
+      },
+      {
+        "symbol": "IFNA10",
+        "row": 8767,
+        "f_over_m": 102.53200568990044
+      }
+    ],
+    "top_rowsum_symbols": [
+      {
+        "symbol": "MALAT1",
+        "rowsum": 550686339.0
+      },
+      {
+        "symbol": "COL1A2",
+        "rowsum": 147607792.0
+      },
+      {
+        "symbol": "FN1",
+        "rowsum": 136986836.0
+      },
+      {
+        "symbol": "COL1A1",
+        "rowsum": 121224152.0
+      },
+      {
+        "symbol": "AHNAK",
+        "rowsum": 118844502.0
+      },
+      {
+        "symbol": "ACTB",
+        "rowsum": 118077389.0
+      },
+      {
+        "symbol": "COL3A1",
+        "rowsum": 104160660.0
+      },
+      {
+        "symbol": "RNF213",
+        "rowsum": 55659148.0
+      },
+      {
+        "symbol": "ACTG1",
+        "rowsum": 53804816.0
+      },
+      {
+        "symbol": "PABPC1",
+        "rowsum": 52757944.0
+      },
+      {
+        "symbol": "MUC4",
+        "rowsum": 48980370.0
+      },
+      {
+        "symbol": "SNORA73A",
+        "rowsum": 47103273.0
+      },
+      {
+        "symbol": "RMRP",
+        "rowsum": 46826087.0
+      },
+      {
+        "symbol": "DYNC1H1",
+        "rowsum": 41776854.0
+      },
+      {
+        "symbol": "MYH9",
+        "rowsum": 40329586.0
+      },
+      {
+        "symbol": "UBC",
+        "rowsum": 40287523.0
+      },
+      {
+        "symbol": "PSAP",
+        "rowsum": 35060329.0
+      },
+      {
+        "symbol": "B2M",
+        "rowsum": 34428556.0
+      },
+      {
+        "symbol": "DSP",
+        "rowsum": 33756087.0
+      },
+      {
+        "symbol": "VCAN",
+        "rowsum": 33441363.0
+      }
+    ]
+  },
+  "entrez_numeric_desc": {
+    "hypothesis": "entrez_numeric_desc",
+    "anchors": {
+      "DDX3Y": {
+        "found": true,
+        "exmat_row_1based": 25272,
+        "female_mean": 3140.7105263157896,
+        "male_mean": 2896.7426470588234,
+        "rowsum": 1026608.0
+      },
+      "UTY": {
+        "found": true,
+        "exmat_row_1based": 25914,
+        "female_mean": 5.407894736842105,
+        "male_mean": 12.544117647058824,
+        "rowsum": 3823.0
+      },
+      "RPS4Y1": {
+        "found": false
+      },
+      "XIST": {
+        "found": true,
+        "exmat_row_1based": 25848,
+        "female_mean": 20.06578947368421,
+        "male_mean": 14.290441176470589,
+        "rowsum": 5412.0
+      },
+      "GAPDH": {
+        "found": true,
+        "exmat_row_1based": 29329,
+        "female_mean": 673.3026315789474,
+        "male_mean": 724.0441176470588,
+        "rowsum": 248111.0
+      },
+      "ACTB": {
+        "found": true,
+        "exmat_row_1based": 31038,
+        "female_mean": 4174.328947368421,
+        "male_mean": 4456.867647058823,
+        "rowsum": 1529517.0
+      }
+    },
+    "pass": false,
+    "male_specific_rows": 1,
+    "male_specific_y_hits": [],
+    "y_hit_rate": 0.0,
+    "top_fem_bias_symbols": [
+      {
+        "symbol": "SSR1",
+        "row": 26379,
+        "f_over_m": 843.3766233766233
+      },
+      {
+        "symbol": "CPOX",
+        "row": 30113,
+        "f_over_m": 672.8287479868897
+      },
+      {
+        "symbol": "LOC100129520",
+        "row": 8648,
+        "f_over_m": 457.3953892996956
+      },
+      {
+        "symbol": "MUC8",
+        "row": 8647,
+        "f_over_m": 444.6354066985646
+      },
+      {
+        "symbol": "LOC103091866",
+        "row": 422,
+        "f_over_m": 432.9184210526316
+      },
+      {
+        "symbol": "PGPEP1",
+        "row": 20494,
+        "f_over_m": 296.39282563951775
+      },
+      {
+        "symbol": "KRT73-AS1",
+        "row": 8794,
+        "f_over_m": 148.52631578947367
+      },
+      {
+        "symbol": "PMS2P4",
+        "row": 27404,
+        "f_over_m": 145.94152046783623
+      },
+      {
+        "symbol": "TMPO-AS1",
+        "row": 8773,
+        "f_over_m": 104.8455565142364
+      },
+      {
+        "symbol": "DNM1P35",
+        "row": 8767,
+        "f_over_m": 102.53200568990044
+      }
+    ],
+    "top_rowsum_symbols": [
+      {
+        "symbol": "SLCO5A1",
+        "rowsum": 550686339.0
+      },
+      {
+        "symbol": "LOC101928898",
+        "rowsum": 147607792.0
+      },
+      {
+        "symbol": "FPGT-TNNI3K",
+        "rowsum": 136986836.0
+      },
+      {
+        "symbol": "LOC101928899",
+        "rowsum": 121224152.0
+      },
+      {
+        "symbol": "LOC102725480",
+        "rowsum": 118844502.0
+      },
+      {
+        "symbol": "LINC00390",
+        "rowsum": 118077389.0
+      },
+      {
+        "symbol": "LOC101928884",
+        "rowsum": 104160660.0
+      },
+      {
+        "symbol": "GGPS1",
+        "rowsum": 55659148.0
+      },
+      {
+        "symbol": "LOC105370068",
+        "rowsum": 53804816.0
+      },
+      {
+        "symbol": "DGCR10",
+        "rowsum": 52757944.0
+      },
+      {
+        "symbol": "CC2D1A",
+        "rowsum": 48980370.0
+      },
+      {
+        "symbol": "SLC6A9",
+        "rowsum": 47103273.0
+      },
+      {
+        "symbol": "CYTIP",
+        "rowsum": 46826087.0
+      },
+      {
+        "symbol": "LOC101927086",
+        "rowsum": 41776854.0
+      },
+      {
+        "symbol": "ROPN1",
+        "rowsum": 40329586.0
+      },
+      {
+        "symbol": "IFI6",
+        "rowsum": 40287523.0
+      },
+      {
+        "symbol": "SPINT2",
+        "rowsum": 35060329.0
+      },
+      {
+        "symbol": "LOC102724330",
+        "rowsum": 34428556.0
+      },
+      {
+        "symbol": "LOC101927196",
+        "rowsum": 33756087.0
+      },
+      {
+        "symbol": "TOR1A",
+        "rowsum": 33441363.0
+      }
+    ]
+  },
+  "entrez_numeric_asc": {
+    "hypothesis": "entrez_numeric_asc",
+    "anchors": {
+      "DDX3Y": {
+        "found": true,
+        "exmat_row_1based": 5814,
+        "female_mean": 101.96052631578948,
+        "male_mean": 165.70220588235293,
+        "rowsum": 52820.0
+      },
+      "UTY": {
+        "found": true,
+        "exmat_row_1based": 5172,
+        "female_mean": 4106.8421052631575,
+        "male_mean": 4296.9375,
+        "rowsum": 1480887.0
+      },
+      "RPS4Y1": {
+        "found": false
+      },
+      "XIST": {
+        "found": true,
+        "exmat_row_1based": 5238,
+        "female_mean": 27.394736842105264,
+        "male_mean": 32.158088235294116,
+        "rowsum": 10829.0
+      },
+      "GAPDH": {
+        "found": true,
+        "exmat_row_1based": 1757,
+        "female_mean": 208.31578947368422,
+        "male_mean": 204.20955882352942,
+        "rowsum": 71377.0
+      },
+      "ACTB": {
+        "found": true,
+        "exmat_row_1based": 48,
+        "female_mean": 1310.6184210526317,
+        "male_mean": 1543.1838235294117,
+        "rowsum": 519353.0
+      }
+    },
+    "pass": false,
+    "male_specific_rows": 1,
+    "male_specific_y_hits": [],
+    "y_hit_rate": 0.0,
+    "top_fem_bias_symbols": [
+      {
+        "symbol": "LOC101927897",
+        "row": 26379,
+        "f_over_m": 843.3766233766233
+      },
+      {
+        "symbol": "LOC102724897",
+        "row": 30113,
+        "f_over_m": 672.8287479868897
+      },
+      {
+        "symbol": "PRPF6",
+        "row": 8648,
+        "f_over_m": 457.3953892996956
+      },
+      {
+        "symbol": "FJX1",
+        "row": 8647,
+        "f_over_m": 444.6354066985646
+      },
+      {
+        "symbol": "BCL6",
+        "row": 422,
+        "f_over_m": 432.9184210526316
+      },
+      {
+        "symbol": "BPY2B",
+        "row": 20494,
+        "f_over_m": 296.39282563951775
+      },
+      {
+        "symbol": "SEC31B",
+        "row": 8794,
+        "f_over_m": 148.52631578947367
+      },
+      {
+        "symbol": "MKX-AS1",
+        "row": 27404,
+        "f_over_m": 145.94152046783623
+      },
+      {
+        "symbol": "NOL11",
+        "row": 8773,
+        "f_over_m": 104.8455565142364
+      },
+      {
+        "symbol": "THUMPD3",
+        "row": 8767,
+        "f_over_m": 102.53200568990044
+      }
+    ],
+    "top_rowsum_symbols": [
+      {
+        "symbol": "CCDC108",
+        "rowsum": 550686339.0
+      },
+      {
+        "symbol": "PSMA6",
+        "rowsum": 147607792.0
+      },
+      {
+        "symbol": "WDR1",
+        "rowsum": 136986836.0
+      },
+      {
+        "symbol": "PSMA5",
+        "rowsum": 121224152.0
+      },
+      {
+        "symbol": "BSG",
+        "rowsum": 118844502.0
+      },
+      {
+        "symbol": "ANXA13",
+        "rowsum": 118077389.0
+      },
+      {
+        "symbol": "PSMB9",
+        "rowsum": 104160660.0
+      },
+      {
+        "symbol": "MIR4745",
+        "rowsum": 55659148.0
+      },
+      {
+        "symbol": "AOX1",
+        "rowsum": 53804816.0
+      },
+      {
+        "symbol": "SNORD115-22",
+        "rowsum": 52757944.0
+      },
+      {
+        "symbol": "SPDYE5",
+        "rowsum": 48980370.0
+      },
+      {
+        "symbol": "LOC101928125",
+        "rowsum": 47103273.0
+      },
+      {
+        "symbol": "MIR548AE2",
+        "rowsum": 46826087.0
+      },
+      {
+        "symbol": "SLC30A4",
+        "rowsum": 41776854.0
+      },
+      {
+        "symbol": "HCG11",
+        "rowsum": 40329586.0
+      },
+      {
+        "symbol": "LOC102724086",
+        "rowsum": 40287523.0
+      },
+      {
+        "symbol": "LOC100505650",
+        "rowsum": 35060329.0
+      },
+      {
+        "symbol": "ESR2",
+        "rowsum": 34428556.0
+      },
+      {
+        "symbol": "ZNF37A",
+        "rowsum": 33756087.0
+      },
+      {
+        "symbol": "LOC102724495",
+        "rowsum": 33441363.0
+      }
+    ]
+  },
+  "symbol_desc": {
+    "hypothesis": "symbol_desc",
+    "anchors": {
+      "DDX3Y": {
+        "found": true,
+        "exmat_row_1based": 26339,
+        "female_mean": 369.7105263157895,
+        "male_mean": 379.12132352941177,
+        "rowsum": 131219.0
+      },
+      "UTY": {
+        "found": true,
+        "exmat_row_1based": 1363,
+        "female_mean": 15.657894736842104,
+        "male_mean": 25.033088235294116,
+        "rowsum": 7999.0
+      },
+      "RPS4Y1": {
+        "found": false
+      },
+      "XIST": {
+        "found": true,
+        "exmat_row_1based": 973,
+        "female_mean": 1144.2631578947369,
+        "male_mean": 1314.735294117647,
+        "rowsum": 444572.0
+      },
+      "GAPDH": {
+        "found": true,
+        "exmat_row_1based": 23921,
+        "female_mean": 0.0,
+        "male_mean": 0.007352941176470588,
+        "rowsum": 2.0
+      },
+      "ACTB": {
+        "found": true,
+        "exmat_row_1based": 30866,
+        "female_mean": 75.96052631578948,
+        "male_mean": 75.36764705882354,
+        "rowsum": 26273.0
+      }
+    },
+    "pass": false,
+    "male_specific_rows": 1,
+    "male_specific_y_hits": [],
+    "y_hit_rate": 0.0,
+    "top_fem_bias_symbols": [
+      {
+        "symbol": "DDIT3",
+        "row": 26379,
+        "f_over_m": 843.3766233766233
+      },
+      {
+        "symbol": "AQP1",
+        "row": 30113,
+        "f_over_m": 672.8287479868897
+      },
+      {
+        "symbol": "PCSK6-AS1",
+        "row": 8648,
+        "f_over_m": 457.3953892996956
+      },
+      {
+        "symbol": "PCSK7",
+        "row": 8647,
+        "f_over_m": 444.6354066985646
+      },
+      {
+        "symbol": "ZNF433",
+        "row": 422,
+        "f_over_m": 432.9184210526316
+      },
+      {
+        "symbol": "LINC00861",
+        "row": 20494,
+        "f_over_m": 296.39282563951775
+      },
+      {
+        "symbol": "PAXIP1OS",
+        "row": 8794,
+        "f_over_m": 148.52631578947367
+      },
+      {
+        "symbol": "CLDN6",
+        "row": 27404,
+        "f_over_m": 145.94152046783623
+      },
+      {
+        "symbol": "PCAT7",
+        "row": 8773,
+        "f_over_m": 104.8455565142364
+      },
+      {
+        "symbol": "PCBP2-OT1",
+        "row": 8767,
+        "f_over_m": 102.53200568990044
+      }
+    ],
+    "top_rowsum_symbols": [
+      {
+        "symbol": "LOC101928911",
+        "rowsum": 550686339.0
+      },
+      {
+        "symbol": "SPRTN",
+        "rowsum": 147607792.0
+      },
+      {
+        "symbol": "RBM41",
+        "rowsum": 136986836.0
+      },
+      {
+        "symbol": "SPRY1",
+        "rowsum": 121224152.0
+      },
+      {
+        "symbol": "ZNF334",
+        "rowsum": 118844502.0
+      },
+      {
+        "symbol": "ZNF688",
+        "rowsum": 118077389.0
+      },
+      {
+        "symbol": "SPRR1A",
+        "rowsum": 104160660.0
+      },
+      {
+        "symbol": "FAM98A",
+        "rowsum": 55659148.0
+      },
+      {
+        "symbol": "ZNF683",
+        "rowsum": 53804816.0
+      },
+      {
+        "symbol": "IL4I1",
+        "rowsum": 52757944.0
+      },
+      {
+        "symbol": "LINC00866",
+        "rowsum": 48980370.0
+      },
+      {
+        "symbol": "CYP3A5",
+        "rowsum": 47103273.0
+      },
+      {
+        "symbol": "FBXO44",
+        "rowsum": 46826087.0
+      },
+      {
+        "symbol": "SHANK2",
+        "rowsum": 41776854.0
+      },
+      {
+        "symbol": "LINC00645",
+        "rowsum": 40329586.0
+      },
+      {
+        "symbol": "BLACAT1",
+        "rowsum": 40287523.0
+      },
+      {
+        "symbol": "GLIDR",
+        "rowsum": 35060329.0
+      },
+      {
+        "symbol": "URM1",
+        "rowsum": 34428556.0
+      },
+      {
+        "symbol": "SIRT7",
+        "rowsum": 33756087.0
+      },
+      {
+        "symbol": "ATOH1",
+        "rowsum": 33441363.0
+      }
+    ]
+  },
+  "length_asc": {
+    "hypothesis": "length_asc",
+    "anchors": {
+      "DDX3Y": {
+        "found": true,
+        "exmat_row_1based": 22135,
+        "female_mean": 726.578947368421,
+        "male_mean": 646.0772058823529,
+        "rowsum": 230953.0
+      },
+      "UTY": {
+        "found": true,
+        "exmat_row_1based": 30949,
+        "female_mean": 367.9868421052632,
+        "male_mean": 378.89338235294116,
+        "rowsum": 131026.0
+      },
+      "RPS4Y1": {
+        "found": false
+      },
+      "XIST": {
+        "found": true,
+        "exmat_row_1based": 30338,
+        "female_mean": 43.526315789473685,
+        "male_mean": 43.669117647058826,
+        "rowsum": 15186.0
+      },
+      "GAPDH": {
+        "found": true,
+        "exmat_row_1based": 20805,
+        "female_mean": 16043.276315789473,
+        "male_mean": 16188.988970588236,
+        "rowsum": 5622694.0
+      },
+      "ACTB": {
+        "found": true,
+        "exmat_row_1based": 15066,
+        "female_mean": 0.0,
+        "male_mean": 0.0,
+        "rowsum": 0.0
+      }
+    },
+    "pass": false,
+    "male_specific_rows": 1,
+    "male_specific_y_hits": [],
+    "y_hit_rate": 0.0,
+    "top_fem_bias_symbols": [
+      {
+        "symbol": "GHDC",
+        "row": 26379,
+        "f_over_m": 843.3766233766233
+      },
+      {
+        "symbol": "ANKS1B",
+        "row": 30113,
+        "f_over_m": 672.8287479868897
+      },
+      {
+        "symbol": "SYS1-DBNDD2",
+        "row": 8648,
+        "f_over_m": 457.3953892996956
+      },
+      {
+        "symbol": "LOC643802",
+        "row": 8647,
+        "f_over_m": 444.6354066985646
+      },
+      {
+        "symbol": "MIR7112",
+        "row": 422,
+        "f_over_m": 432.9184210526316
+      },
+      {
+        "symbol": "KPNB1",
+        "row": 20494,
+        "f_over_m": 296.39282563951775
+      },
+      {
+        "symbol": "LOC101928019",
+        "row": 8794,
+        "f_over_m": 148.52631578947367
+      },
+      {
+        "symbol": "LRRC8B",
+        "row": 27404,
+        "f_over_m": 145.94152046783623
+      },
+      {
+        "symbol": "FLJ22447",
+        "row": 8773,
+        "f_over_m": 104.8455565142364
+      },
+      {
+        "symbol": "XCL1",
+        "row": 8767,
+        "f_over_m": 102.53200568990044
+      }
+    ],
+    "top_rowsum_symbols": [
+      {
+        "symbol": "LOC102724555",
+        "rowsum": 550686339.0
+      },
+      {
+        "symbol": "LOC105378123",
+        "rowsum": 147607792.0
+      },
+      {
+        "symbol": "DLGAP1-AS1",
+        "rowsum": 136986836.0
+      },
+      {
+        "symbol": "LOC102725038",
+        "rowsum": 121224152.0
+      },
+      {
+        "symbol": "SNORD58B",
+        "rowsum": 118844502.0
+      },
+      {
+        "symbol": "MIR5585",
+        "rowsum": 118077389.0
+      },
+      {
+        "symbol": "LOC102723647",
+        "rowsum": 104160660.0
+      },
+      {
+        "symbol": "ESPL1",
+        "rowsum": 55659148.0
+      },
+      {
+        "symbol": "MIR5586",
+        "rowsum": 53804816.0
+      },
+      {
+        "symbol": "LOC100130691",
+        "rowsum": 52757944.0
+      },
+      {
+        "symbol": "NPIPB11",
+        "rowsum": 48980370.0
+      },
+      {
+        "symbol": "IL4R",
+        "rowsum": 47103273.0
+      },
+      {
+        "symbol": "GALK2",
+        "rowsum": 46826087.0
+      },
+      {
+        "symbol": "INGX",
+        "rowsum": 41776854.0
+      },
+      {
+        "symbol": "POLR2M",
+        "rowsum": 40329586.0
+      },
+      {
+        "symbol": "MARVELD2",
+        "rowsum": 40287523.0
+      },
+      {
+        "symbol": "DAZAP1",
+        "rowsum": 35060329.0
+      },
+      {
+        "symbol": "MIR3646",
+        "rowsum": 34428556.0
+      },
+      {
+        "symbol": "C1ORF146",
+        "rowsum": 33756087.0
+      },
+      {
+        "symbol": "DNAH2",
+        "rowsum": 33441363.0
+      }
+    ]
+  },
+  "length_desc": {
+    "hypothesis": "length_desc",
+    "anchors": {
+      "DDX3Y": {
+        "found": true,
+        "exmat_row_1based": 8954,
+        "female_mean": 167.1184210526316,
+        "male_mean": 273.4889705882353,
+        "rowsum": 87090.0
+      },
+      "UTY": {
+        "found": true,
+        "exmat_row_1based": 137,
+        "female_mean": 903.8421052631579,
+        "male_mean": 914.1470588235294,
+        "rowsum": 317340.0
+      },
+      "RPS4Y1": {
+        "found": false
+      },
+      "XIST": {
+        "found": true,
+        "exmat_row_1based": 748,
+        "female_mean": 1.6710526315789473,
+        "male_mean": 11.889705882352942,
+        "rowsum": 3361.0
+      },
+      "GAPDH": {
+        "found": true,
+        "exmat_row_1based": 10282,
+        "female_mean": 672.7105263157895,
+        "male_mean": 678.1066176470588,
+        "rowsum": 235571.0
+      },
+      "ACTB": {
+        "found": true,
+        "exmat_row_1based": 16021,
+        "female_mean": 0.0,
+        "male_mean": 0.0,
+        "rowsum": 0.0
+      }
+    },
+    "pass": false,
+    "male_specific_rows": 1,
+    "male_specific_y_hits": [],
+    "y_hit_rate": 0.0,
+    "top_fem_bias_symbols": [
+      {
+        "symbol": "LINC01399",
+        "row": 26379,
+        "f_over_m": 843.3766233766233
+      },
+      {
+        "symbol": "MIR4679-1",
+        "row": 30113,
+        "f_over_m": 672.8287479868897
+      },
+      {
+        "symbol": "CROCCP3",
+        "row": 8648,
+        "f_over_m": 457.3953892996956
+      },
+      {
+        "symbol": "ACSM1",
+        "row": 8647,
+        "f_over_m": 444.6354066985646
+      },
+      {
+        "symbol": "LPP",
+        "row": 422,
+        "f_over_m": 432.9184210526316
+      },
+      {
+        "symbol": "LINC01093",
+        "row": 20494,
+        "f_over_m": 296.39282563951775
+      },
+      {
+        "symbol": "ARHGAP39",
+        "row": 8794,
+        "f_over_m": 148.52631578947367
+      },
+      {
+        "symbol": "LOC105377590",
+        "row": 27404,
+        "f_over_m": 145.94152046783623
+      },
+      {
+        "symbol": "ABHD13",
+        "row": 8773,
+        "f_over_m": 104.8455565142364
+      },
+      {
+        "symbol": "KCNJ10",
+        "row": 8767,
+        "f_over_m": 102.53200568990044
+      }
+    ],
+    "top_rowsum_symbols": [
+      {
+        "symbol": "LOC284412",
+        "rowsum": 550686339.0
+      },
+      {
+        "symbol": "KDM7A",
+        "rowsum": 147607792.0
+      },
+      {
+        "symbol": "GTF3C3",
+        "rowsum": 136986836.0
+      },
+      {
+        "symbol": "TRMT5",
+        "rowsum": 121224152.0
+      },
+      {
+        "symbol": "CYLD",
+        "rowsum": 118844502.0
+      },
+      {
+        "symbol": "JUP",
+        "rowsum": 118077389.0
+      },
+      {
+        "symbol": "TYSND1",
+        "rowsum": 104160660.0
+      },
+      {
+        "symbol": "OR4L1",
+        "rowsum": 55659148.0
+      },
+      {
+        "symbol": "LOC101927841",
+        "rowsum": 53804816.0
+      },
+      {
+        "symbol": "C7ORF72",
+        "rowsum": 52757944.0
+      },
+      {
+        "symbol": "LOC101930595",
+        "rowsum": 48980370.0
+      },
+      {
+        "symbol": "PRRT3-AS1",
+        "rowsum": 47103273.0
+      },
+      {
+        "symbol": "OR2T11",
+        "rowsum": 46826087.0
+      },
+      {
+        "symbol": "SIGLEC6",
+        "rowsum": 41776854.0
+      },
+      {
+        "symbol": "FAM66D",
+        "rowsum": 40329586.0
+      },
+      {
+        "symbol": "VTRNA1-2",
+        "rowsum": 40287523.0
+      },
+      {
+        "symbol": "TAS2R3",
+        "rowsum": 35060329.0
+      },
+      {
+        "symbol": "SEC16A",
+        "rowsum": 34428556.0
+      },
+      {
+        "symbol": "DCUN1D2",
+        "rowsum": 33756087.0
+      },
+      {
+        "symbol": "MIR495",
+        "rowsum": 33441363.0
+      }
+    ]
+  },
+  "n_exons_asc": {
+    "hypothesis": "n_exons_asc",
+    "anchors": {
+      "DDX3Y": {
+        "found": true,
+        "exmat_row_1based": 25881,
+        "female_mean": 16.11842105263158,
+        "male_mean": 37.205882352941174,
+        "rowsum": 11345.0
+      },
+      "UTY": {
+        "found": true,
+        "exmat_row_1based": 30999,
+        "female_mean": 640.8815789473684,
+        "male_mean": 726.5992647058823,
+        "rowsum": 246342.0
+      },
+      "RPS4Y1": {
+        "found": false
+      },
+      "XIST": {
+        "found": true,
+        "exmat_row_1based": 13724,
+        "female_mean": 0.05263157894736842,
+        "male_mean": 0.04044117647058824,
+        "rowsum": 15.0
+      },
+      "GAPDH": {
+        "found": true,
+        "exmat_row_1based": 27199,
+        "female_mean": 5850.6973684210525,
+        "male_mean": 5388.886029411765,
+        "rowsum": 1910430.0
+      },
+      "ACTB": {
+        "found": true,
+        "exmat_row_1based": 15797,
+        "female_mean": 0.0,
+        "male_mean": 0.0,
+        "rowsum": 0.0
+      }
+    },
+    "pass": false,
+    "male_specific_rows": 1,
+    "male_specific_y_hits": [],
+    "y_hit_rate": 0.0,
+    "top_fem_bias_symbols": [
+      {
+        "symbol": "LPO",
+        "row": 26379,
+        "f_over_m": 843.3766233766233
+      },
+      {
+        "symbol": "ANKFY1",
+        "row": 30113,
+        "f_over_m": 672.8287479868897
+      },
+      {
+        "symbol": "GPC6-AS1",
+        "row": 8648,
+        "f_over_m": 457.3953892996956
+      },
+      {
+        "symbol": "LINC00278",
+        "row": 8647,
+        "f_over_m": 444.6354066985646
+      },
+      {
+        "symbol": "MIR1302-1",
+        "row": 422,
+        "f_over_m": 432.9184210526316
+      },
+      {
+        "symbol": "ADSS",
+        "row": 20494,
+        "f_over_m": 296.39282563951775
+      },
+      {
+        "symbol": "LOC101927748",
+        "row": 8794,
+        "f_over_m": 148.52631578947367
+      },
+      {
+        "symbol": "ATP10B",
+        "row": 27404,
+        "f_over_m": 145.94152046783623
+      },
+      {
+        "symbol": "MANEA-AS1",
+        "row": 8773,
+        "f_over_m": 104.8455565142364
+      },
+      {
+        "symbol": "LINC01266",
+        "row": 8767,
+        "f_over_m": 102.53200568990044
+      }
+    ],
+    "top_rowsum_symbols": [
+      {
+        "symbol": "OCEL1",
+        "rowsum": 550686339.0
+      },
+      {
+        "symbol": "MIR558",
+        "rowsum": 147607792.0
+      },
+      {
+        "symbol": "LOC102467655",
+        "rowsum": 136986836.0
+      },
+      {
+        "symbol": "MIR557",
+        "rowsum": 121224152.0
+      },
+      {
+        "symbol": "MIR548M",
+        "rowsum": 118844502.0
+      },
+      {
+        "symbol": "FAM231B",
+        "rowsum": 118077389.0
+      },
+      {
+        "symbol": "MIR571",
+        "rowsum": 104160660.0
+      },
+      {
+        "symbol": "POLE2",
+        "rowsum": 55659148.0
+      },
+      {
+        "symbol": "LOC100134237",
+        "rowsum": 53804816.0
+      },
+      {
+        "symbol": "TM9SF3",
+        "rowsum": 52757944.0
+      },
+      {
+        "symbol": "ADSL",
+        "rowsum": 48980370.0
+      },
+      {
+        "symbol": "AP1M2",
+        "rowsum": 47103273.0
+      },
+      {
+        "symbol": "VSTM4",
+        "rowsum": 46826087.0
+      },
+      {
+        "symbol": "PYY2",
+        "rowsum": 41776854.0
+      },
+      {
+        "symbol": "PRR14L",
+        "rowsum": 40329586.0
+      },
+      {
+        "symbol": "DCAF4",
+        "rowsum": 40287523.0
+      },
+      {
+        "symbol": "RFTN1",
+        "rowsum": 35060329.0
+      },
+      {
+        "symbol": "LOC101929775",
+        "rowsum": 34428556.0
+      },
+      {
+        "symbol": "LINC01105",
+        "rowsum": 33756087.0
+      },
+      {
+        "symbol": "AASS",
+        "rowsum": 33441363.0
+      }
+    ]
+  },
+  "Symbol_col_asc": {
+    "hypothesis": "Symbol_col_asc",
+    "anchors": {
+      "DDX3Y": {
+        "found": true,
+        "exmat_row_1based": 4747,
+        "female_mean": 11.276315789473685,
+        "male_mean": 8082.643382352941,
+        "rowsum": 2199336.0
+      },
+      "UTY": {
+        "found": true,
+        "exmat_row_1based": 29723,
+        "female_mean": 7.118421052631579,
+        "male_mean": 9125.58455882353,
+        "rowsum": 2482700.0
+      },
+      "RPS4Y1": {
+        "found": false
+      },
+      "XIST": {
+        "found": true,
+        "exmat_row_1based": 30113,
+        "female_mean": 430147.8289473684,
+        "male_mean": 639.3125,
+        "rowsum": 32865128.0
+      },
+      "GAPDH": {
+        "found": true,
+        "exmat_row_1based": 7165,
+        "female_mean": 51698.38157894737,
+        "male_mean": 46338.367647058825,
+        "rowsum": 16533113.0
+      },
+      "ACTB": {
+        "found": true,
+        "exmat_row_1based": 220,
+        "female_mean": 342909.34210526315,
+        "male_mean": 338295.14338235295,
+        "rowsum": 118077389.0
+      }
+    },
+    "pass": false,
+    "male_specific_rows": 1,
+    "male_specific_y_hits": [],
+    "y_hit_rate": 0.0,
+    "top_fem_bias_symbols": [
+      {
+        "symbol": "SMR3B",
+        "row": 26379,
+        "f_over_m": 843.3766233766233
+      },
+      {
+        "symbol": "XIST",
+        "row": 30113,
+        "f_over_m": 672.8287479868897
+      },
+      {
+        "symbol": "HTN3",
+        "row": 8648,
+        "f_over_m": 457.3953892996956
+      },
+      {
+        "symbol": "HTN1",
+        "row": 8647,
+        "f_over_m": 444.6354066985646
+      },
+      {
+        "symbol": "AFP",
+        "row": 422,
+        "f_over_m": 432.9184210526316
+      },
+      {
+        "symbol": "MUC7",
+        "row": 20494,
+        "f_over_m": 296.39282563951775
+      },
+      {
+        "symbol": "IFNW1",
+        "row": 8794,
+        "f_over_m": 148.52631578947367
+      },
+      {
+        "symbol": "STATH",
+        "row": 27404,
+        "f_over_m": 145.94152046783623
+      },
+      {
+        "symbol": "IFNA21",
+        "row": 8773,
+        "f_over_m": 104.8455565142364
+      },
+      {
+        "symbol": "IFNA10",
+        "row": 8767,
+        "f_over_m": 102.53200568990044
+      }
+    ],
+    "top_rowsum_symbols": [
+      {
+        "symbol": "MALAT1",
+        "rowsum": 550686339.0
+      },
+      {
+        "symbol": "COL1A2",
+        "rowsum": 147607792.0
+      },
+      {
+        "symbol": "FN1",
+        "rowsum": 136986836.0
+      },
+      {
+        "symbol": "COL1A1",
+        "rowsum": 121224152.0
+      },
+      {
+        "symbol": "AHNAK",
+        "rowsum": 118844502.0
+      },
+      {
+        "symbol": "ACTB",
+        "rowsum": 118077389.0
+      },
+      {
+        "symbol": "COL3A1",
+        "rowsum": 104160660.0
+      },
+      {
+        "symbol": "RNF213",
+        "rowsum": 55659148.0
+      },
+      {
+        "symbol": "ACTG1",
+        "rowsum": 53804816.0
+      },
+      {
+        "symbol": "PABPC1",
+        "rowsum": 52757944.0
+      },
+      {
+        "symbol": "MUC4",
+        "rowsum": 48980370.0
+      },
+      {
+        "symbol": "SNORA73A",
+        "rowsum": 47103273.0
+      },
+      {
+        "symbol": "RMRP",
+        "rowsum": 46826087.0
+      },
+      {
+        "symbol": "DYNC1H1",
+        "rowsum": 41776854.0
+      },
+      {
+        "symbol": "MYH9",
+        "rowsum": 40329586.0
+      },
+      {
+        "symbol": "UBC",
+        "rowsum": 40287523.0
+      },
+      {
+        "symbol": "PSAP",
+        "rowsum": 35060329.0
+      },
+      {
+        "symbol": "B2M",
+        "rowsum": 34428556.0
+      },
+      {
+        "symbol": "DSP",
+        "rowsum": 33756087.0
+      },
+      {
+        "symbol": "VCAN",
+        "rowsum": 33441363.0
+      }
+    ]
+  }
+}

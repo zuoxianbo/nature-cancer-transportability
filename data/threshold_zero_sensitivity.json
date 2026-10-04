@@ -1,0 +1,1755 @@
+{
+  "analysis": "_threshold_zero_sensitivity",
+  "purpose": "P0-3 threshold sensitivity (calibration-slope tolerance) and P0-6 zero-handling/CLR sensitivity (70-unmeasured-gene artifact) for the Nature Cancer revision package; all numbers computed, none hardcoded",
+  "seed": 20260911,
+  "n_boot": 2000,
+  "n_repeat_recal": 100,
+  "python": "/Users/zuoxianbo/.workbuddy/binaries/python/envs/default/bin/python",
+  "p0_3": {
+    "point_values_source": "data/competitor_benchmark.json (frozen, seed 20260911, logit-scale Cox/Steyerberg calibration)",
+    "recomputation": {
+      "description": "all M0-M6 LOCO predictions recomputed verbatim from the frozen S0 (_eff_*_s0.npy) with the _competitor_benchmark algebra imported by _competitor_benchmark_; lambda = 1/n_train",
+      "cross_check_vs_": {
+        "max_abs_slope_diff": 0.0,
+        "max_abs_auc_diff": 0.0,
+        "per_cell": {
+          "M0|IMvigor210": {
+            "slope_": null,
+            "slope_recomputed": null,
+            "abs_diff": null,
+            "auc_": 0.5,
+            "auc_recomputed": 0.5,
+            "abs_diff_auc": 0.0
+          },
+          "M0|GSE165252": {
+            "slope_": null,
+            "slope_recomputed": null,
+            "abs_diff": null,
+            "auc_": 0.5,
+            "auc_recomputed": 0.5,
+            "abs_diff_auc": 0.0
+          },
+          "M0|GSE78220": {
+            "slope_": null,
+            "slope_recomputed": null,
+            "abs_diff": null,
+            "auc_": 0.5,
+            "auc_recomputed": 0.5,
+            "abs_diff_auc": 0.0
+          },
+          "M1|IMvigor210": {
+            "slope_": 22.561068270449873,
+            "slope_recomputed": 22.561068270449873,
+            "abs_diff": 0.0,
+            "auc_": 0.5695012787723785,
+            "auc_recomputed": 0.5695012787723785,
+            "abs_diff_auc": 0.0
+          },
+          "M1|GSE165252": {
+            "slope_": 0.2112290621413539,
+            "slope_recomputed": 0.2112290621413539,
+            "abs_diff": 0.0,
+            "auc_": 0.5153985507246377,
+            "auc_recomputed": 0.5153985507246377,
+            "abs_diff_auc": 0.0
+          },
+          "M1|GSE78220": {
+            "slope_": -0.5513208529608264,
+            "slope_recomputed": -0.5513208529608264,
+            "abs_diff": 0.0,
+            "auc_": 0.4423076923076923,
+            "auc_recomputed": 0.4423076923076923,
+            "abs_diff_auc": 0.0
+          },
+          "M2|IMvigor210": {
+            "slope_": 10.703942107954518,
+            "slope_recomputed": 10.703942107954518,
+            "abs_diff": 0.0,
+            "auc_": 0.524616368286445,
+            "auc_recomputed": 0.524616368286445,
+            "abs_diff_auc": 0.0
+          },
+          "M2|GSE165252": {
+            "slope_": 0.29093661133631304,
+            "slope_recomputed": 0.29093661133631304,
+            "abs_diff": 0.0,
+            "auc_": 0.5163043478260869,
+            "auc_recomputed": 0.5163043478260869,
+            "abs_diff_auc": 0.0
+          },
+          "M2|GSE78220": {
+            "slope_": -0.8590379821800429,
+            "slope_recomputed": -0.8590379821800429,
+            "abs_diff": 0.0,
+            "auc_": 0.4487179487179487,
+            "auc_recomputed": 0.4487179487179487,
+            "abs_diff_auc": 0.0
+          },
+          "M3|IMvigor210": {
+            "slope_": 2.9652227340653847,
+            "slope_recomputed": 2.9652227340653847,
+            "abs_diff": 0.0,
+            "auc_": 0.4981815856777494,
+            "auc_recomputed": 0.4981815856777494,
+            "abs_diff_auc": 0.0
+          },
+          "M3|GSE165252": {
+            "slope_": -3.73898640298071,
+            "slope_recomputed": -3.73898640298071,
+            "abs_diff": 0.0,
+            "auc_": 0.4494097222222222,
+            "auc_recomputed": 0.4494097222222222,
+            "abs_diff_auc": 0.0
+          },
+          "M3|GSE78220": {
+            "slope_": -1.64790904865707,
+            "slope_recomputed": -1.64790904865707,
+            "abs_diff": 0.0,
+            "auc_": 0.4509920634920634,
+            "auc_recomputed": 0.4509920634920634,
+            "abs_diff_auc": 0.0
+          },
+          "M4|IMvigor210": {
+            "slope_": 6.5804570876476856,
+            "slope_recomputed": 6.5804570876476856,
+            "abs_diff": 0.0,
+            "auc_": 0.5030051150895141,
+            "auc_recomputed": 0.5030051150895141,
+            "abs_diff_auc": 0.0
+          },
+          "M4|GSE165252": {
+            "slope_": 0.29223217828089315,
+            "slope_recomputed": 0.29223217828089315,
+            "abs_diff": 0.0,
+            "auc_": 0.5163043478260869,
+            "auc_recomputed": 0.5163043478260869,
+            "abs_diff_auc": 0.0
+          },
+          "M4|GSE78220": {
+            "slope_": -0.8635181593256853,
+            "slope_recomputed": -0.8635181593256853,
+            "abs_diff": 0.0,
+            "auc_": 0.4487179487179487,
+            "auc_recomputed": 0.4487179487179487,
+            "abs_diff_auc": 0.0
+          },
+          "M5a|IMvigor210": {
+            "slope_": 0.15090915235511004,
+            "slope_recomputed": 0.15090915235511004,
+            "abs_diff": 0.0,
+            "auc_": 0.4817135549872123,
+            "auc_recomputed": 0.4817135549872123,
+            "abs_diff_auc": 0.0
+          },
+          "M5a|GSE165252": {
+            "slope_": 0.2904076097917214,
+            "slope_recomputed": 0.2904076097917214,
+            "abs_diff": 0.0,
+            "auc_": 0.5244565217391304,
+            "auc_recomputed": 0.5244565217391304,
+            "abs_diff_auc": 0.0
+          },
+          "M5a|GSE78220": {
+            "slope_": -0.8931825192936852,
+            "slope_recomputed": -0.8931825192936852,
+            "abs_diff": 0.0,
+            "auc_": 0.44871794871794873,
+            "auc_recomputed": 0.44871794871794873,
+            "abs_diff_auc": 0.0
+          },
+          "M5b|IMvigor210": {
+            "slope_": -0.13832331790106622,
+            "slope_recomputed": -0.13832331790106622,
+            "abs_diff": 0.0,
+            "auc_": 0.4804347826086957,
+            "auc_recomputed": 0.4804347826086957,
+            "abs_diff_auc": 0.0
+          },
+          "M5b|GSE165252": {
+            "slope_": 0.2919689180683726,
+            "slope_recomputed": 0.2919689180683726,
+            "abs_diff": 0.0,
+            "auc_": 0.5226449275362319,
+            "auc_recomputed": 0.5226449275362319,
+            "abs_diff_auc": 0.0
+          },
+          "M5b|GSE78220": {
+            "slope_": -0.8938446657475426,
+            "slope_recomputed": -0.8938446657475426,
+            "abs_diff": 0.0,
+            "auc_": 0.44871794871794873,
+            "auc_recomputed": 0.44871794871794873,
+            "abs_diff_auc": 0.0
+          },
+          "M6|IMvigor210": {
+            "slope_": -0.8344462367050887,
+            "slope_recomputed": -0.8344462367050887,
+            "abs_diff": 0.0,
+            "auc_": 0.4695268542199488,
+            "auc_recomputed": 0.4695268542199488,
+            "abs_diff_auc": 0.0
+          },
+          "M6|GSE165252": {
+            "slope_": 0.46377096936287304,
+            "slope_recomputed": 0.46377096936287304,
+            "abs_diff": 0.0,
+            "auc_": 0.4542960858585857,
+            "auc_recomputed": 0.4542960858585857,
+            "abs_diff_auc": 0.0
+          },
+          "M6|GSE78220": {
+            "slope_": -0.19598562349562726,
+            "slope_recomputed": -0.19598562349562726,
+            "abs_diff": 0.0,
+            "auc_": 0.44492063492063494,
+            "auc_recomputed": 0.44492063492063494,
+            "abs_diff_auc": 0.0
+          }
+        }
+      }
+    },
+    "bootstrap_slope_ci": {
+      "M0": {
+        "IMvigor210": {
+          "slope_point": null,
+          "boot_ci95": null,
+          "n_valid": 0,
+          "method": "not estimable (constant predictions)"
+        },
+        "GSE165252": {
+          "slope_point": null,
+          "boot_ci95": null,
+          "n_valid": 0,
+          "method": "not estimable (constant predictions)"
+        },
+        "GSE78220": {
+          "slope_point": null,
+          "boot_ci95": null,
+          "n_valid": 0,
+          "method": "not estimable (constant predictions)"
+        }
+      },
+      "M1": {
+        "IMvigor210": {
+          "slope_point": 22.561068270449873,
+          "boot_ci95": [
+            -1.517639305141788,
+            46.15754280729465
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261011
+        },
+        "GSE165252": {
+          "slope_point": 0.2112290621413539,
+          "boot_ci95": [
+            -1.9993159546907326,
+            2.401981284479228
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261012
+        },
+        "GSE78220": {
+          "slope_point": -0.5513208529608264,
+          "boot_ci95": [
+            -6.627287509019356,
+            4.2652954200606965
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261013
+        }
+      },
+      "M2": {
+        "IMvigor210": {
+          "slope_point": 10.703942107954518,
+          "boot_ci95": [
+            -10.353476968538052,
+            31.605672358411443
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261111
+        },
+        "GSE165252": {
+          "slope_point": 0.29093661133631304,
+          "boot_ci95": [
+            -1.7289369489674526,
+            2.2115025746528896
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261112
+        },
+        "GSE78220": {
+          "slope_point": -0.8590379821800429,
+          "boot_ci95": [
+            -4.6668515725355695,
+            2.147024146012188
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261113
+        }
+      },
+      "M3": {
+        "IMvigor210": {
+          "slope_point": 2.9652227340653847,
+          "boot_ci95": [
+            -3.6285143280452665,
+            4.8094739112726765
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+          "seed": 20261211
+        },
+        "GSE165252": {
+          "slope_point": -3.73898640298071,
+          "boot_ci95": [
+            -4.473513645753565,
+            5.241930309676113
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+          "seed": 20261212
+        },
+        "GSE78220": {
+          "slope_point": -1.64790904865707,
+          "boot_ci95": [
+            -5.923855670548663,
+            7.962069245931975
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+          "seed": 20261213
+        }
+      },
+      "M4": {
+        "IMvigor210": {
+          "slope_point": 6.5804570876476856,
+          "boot_ci95": [
+            -16.975536555645263,
+            29.32650280263528
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261311
+        },
+        "GSE165252": {
+          "slope_point": 0.29223217828089315,
+          "boot_ci95": [
+            -1.6276774329137593,
+            2.185366704715682
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261312
+        },
+        "GSE78220": {
+          "slope_point": -0.8635181593256853,
+          "boot_ci95": [
+            -5.075527625370417,
+            1.9957336852842391
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261313
+        }
+      },
+      "M5a": {
+        "IMvigor210": {
+          "slope_point": 0.15090915235511004,
+          "boot_ci95": [
+            -13.084475839706952,
+            12.162197292367834
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261411
+        },
+        "GSE165252": {
+          "slope_point": 0.2904076097917214,
+          "boot_ci95": [
+            -1.9837763038404679,
+            2.474029035051305
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261412
+        },
+        "GSE78220": {
+          "slope_point": -0.8931825192936852,
+          "boot_ci95": [
+            -6.362771620495013,
+            2.86754038709763
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261413
+        }
+      },
+      "M5b": {
+        "IMvigor210": {
+          "slope_point": -0.13832331790106622,
+          "boot_ci95": [
+            -13.2009533904664,
+            12.250542864772466
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261511
+        },
+        "GSE165252": {
+          "slope_point": 0.2919689180683726,
+          "boot_ci95": [
+            -1.943142092932148,
+            2.5378992809643366
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261512
+        },
+        "GSE78220": {
+          "slope_point": -0.8938446657475426,
+          "boot_ci95": [
+            -6.12099491198642,
+            2.8978692679410987
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+          "seed": 20261513
+        }
+      },
+      "M6": {
+        "IMvigor210": {
+          "slope_point": -0.8344462367050887,
+          "boot_ci95": [
+            -4.027860919324137,
+            4.570837767814148
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+          "seed": 20261611
+        },
+        "GSE165252": {
+          "slope_point": 0.46377096936287304,
+          "boot_ci95": [
+            -4.001844746677658,
+            5.706584517533432
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+          "seed": 20261612
+        },
+        "GSE78220": {
+          "slope_point": -0.19598562349562726,
+          "boot_ci95": [
+            -6.196514095142578,
+            7.834680908193807
+          ],
+          "n_valid": 2000,
+          "method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+          "seed": 20261613
+        }
+      }
+    },
+    "decision_matrix": {
+      "tolerances": [
+        0.05,
+        0.1,
+        0.2
+      ],
+      "criteria": {
+        "c1": "external AUC bootstrap 95% CI excludes 0.5 in the beneficial direction (frozen , tolerance-independent)",
+        "c2": "|calibration slope - 1| <= tol (logit scale; frozen  point slope)"
+      },
+      "n_cells": 24,
+      "cells": {
+        "M0": {
+          "IMvigor210": {
+            "slope_point": null,
+            "recomputed_slope": null,
+            "auc": 0.5,
+            "auc_ci95": [
+              0.5,
+              0.5
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": null,
+            "boot_n_valid": 0,
+            "boot_method": "not estimable (constant predictions)",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "not_estimable",
+              "0.1": "not_estimable",
+              "0.2": "not_estimable"
+            }
+          },
+          "GSE165252": {
+            "slope_point": null,
+            "recomputed_slope": null,
+            "auc": 0.5,
+            "auc_ci95": [
+              0.5,
+              0.5
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": null,
+            "boot_n_valid": 0,
+            "boot_method": "not estimable (constant predictions)",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "not_estimable",
+              "0.1": "not_estimable",
+              "0.2": "not_estimable"
+            }
+          },
+          "GSE78220": {
+            "slope_point": null,
+            "recomputed_slope": null,
+            "auc": 0.5,
+            "auc_ci95": [
+              0.5,
+              0.5
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": null,
+            "boot_n_valid": 0,
+            "boot_method": "not estimable (constant predictions)",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "not_estimable",
+              "0.1": "not_estimable",
+              "0.2": "not_estimable"
+            }
+          }
+        },
+        "M1": {
+          "IMvigor210": {
+            "slope_point": 22.561068270449873,
+            "recomputed_slope": 22.561068270449873,
+            "auc": 0.5695012787723785,
+            "auc_ci95": [
+              0.4886779842087246,
+              0.6485710470085471
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -1.517639305141788,
+              46.15754280729465
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE165252": {
+            "slope_point": 0.2112290621413539,
+            "recomputed_slope": 0.2112290621413539,
+            "auc": 0.5153985507246377,
+            "auc_ci95": [
+              0.35754864210472775,
+              0.6535425505422703
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -1.9993159546907326,
+              2.401981284479228
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE78220": {
+            "slope_point": -0.5513208529608264,
+            "recomputed_slope": -0.5513208529608264,
+            "auc": 0.4423076923076923,
+            "auc_ci95": [
+              0.2051282051282051,
+              0.6845852282559219
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -6.627287509019356,
+              4.2652954200606965
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          }
+        },
+        "M2": {
+          "IMvigor210": {
+            "slope_point": 10.703942107954518,
+            "recomputed_slope": 10.703942107954518,
+            "auc": 0.524616368286445,
+            "auc_ci95": [
+              0.4429567498732552,
+              0.5981067554615989
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -10.353476968538052,
+              31.605672358411443
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE165252": {
+            "slope_point": 0.29093661133631304,
+            "recomputed_slope": 0.29093661133631304,
+            "auc": 0.5163043478260869,
+            "auc_ci95": [
+              0.36700787148829367,
+              0.6591234609275951
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -1.7289369489674526,
+              2.2115025746528896
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE78220": {
+            "slope_point": -0.8590379821800429,
+            "recomputed_slope": -0.8590379821800429,
+            "auc": 0.4487179487179487,
+            "auc_ci95": [
+              0.22000000000000003,
+              0.6945043935151063
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -4.6668515725355695,
+              2.147024146012188
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          }
+        },
+        "M3": {
+          "IMvigor210": {
+            "slope_point": 2.9652227340653847,
+            "recomputed_slope": 2.9652227340653847,
+            "auc": 0.4981815856777494,
+            "auc_ci95": [
+              0.3927237851662404,
+              0.5629283887468031
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -3.6285143280452665,
+              4.8094739112726765
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE165252": {
+            "slope_point": -3.73898640298071,
+            "recomputed_slope": -3.73898640298071,
+            "auc": 0.4494097222222222,
+            "auc_ci95": [
+              0.34919507575757575,
+              0.5363794191919191
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -4.473513645753565,
+              5.241930309676113
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE78220": {
+            "slope_point": -1.64790904865707,
+            "recomputed_slope": -1.64790904865707,
+            "auc": 0.4509920634920634,
+            "auc_ci95": [
+              0.2151785714285714,
+              0.6388888888888888
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -5.923855670548663,
+              7.962069245931975
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          }
+        },
+        "M4": {
+          "IMvigor210": {
+            "slope_point": 6.5804570876476856,
+            "recomputed_slope": 6.5804570876476856,
+            "auc": 0.5030051150895141,
+            "auc_ci95": [
+              0.42335068429741096,
+              0.5755668178429486
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -16.975536555645263,
+              29.32650280263528
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE165252": {
+            "slope_point": 0.29223217828089315,
+            "recomputed_slope": 0.29223217828089315,
+            "auc": 0.5163043478260869,
+            "auc_ci95": [
+              0.3676172260309396,
+              0.6602264923932422
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -1.6276774329137593,
+              2.185366704715682
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE78220": {
+            "slope_point": -0.8635181593256853,
+            "recomputed_slope": -0.8635181593256853,
+            "auc": 0.4487179487179487,
+            "auc_ci95": [
+              0.22000000000000003,
+              0.6945043935151063
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -5.075527625370417,
+              1.9957336852842391
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          }
+        },
+        "M5a": {
+          "IMvigor210": {
+            "slope_point": 0.15090915235511004,
+            "recomputed_slope": 0.15090915235511004,
+            "auc": 0.4817135549872123,
+            "auc_ci95": [
+              0.40485657927420055,
+              0.5564917708124452
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -13.084475839706952,
+              12.162197292367834
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE165252": {
+            "slope_point": 0.2904076097917214,
+            "recomputed_slope": 0.2904076097917214,
+            "auc": 0.5244565217391304,
+            "auc_ci95": [
+              0.3692973145245644,
+              0.6655749583531544
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -1.9837763038404679,
+              2.474029035051305
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE78220": {
+            "slope_point": -0.8931825192936852,
+            "recomputed_slope": -0.8931825192936852,
+            "auc": 0.44871794871794873,
+            "auc_ci95": [
+              0.21794871794871795,
+              0.6875
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -6.362771620495013,
+              2.86754038709763
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          }
+        },
+        "M5b": {
+          "IMvigor210": {
+            "slope_point": -0.13832331790106622,
+            "recomputed_slope": -0.13832331790106622,
+            "auc": 0.4804347826086957,
+            "auc_ci95": [
+              0.4049759416214788,
+              0.5561690019191704
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -13.2009533904664,
+              12.250542864772466
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE165252": {
+            "slope_point": 0.2919689180683726,
+            "recomputed_slope": 0.2919689180683726,
+            "auc": 0.5226449275362319,
+            "auc_ci95": [
+              0.36991254781456373,
+              0.6639676113360324
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -1.943142092932148,
+              2.5378992809643366
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE78220": {
+            "slope_point": -0.8938446657475426,
+            "recomputed_slope": -0.8938446657475426,
+            "auc": 0.44871794871794873,
+            "auc_ci95": [
+              0.21794871794871795,
+              0.6875
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -6.12099491198642,
+              2.8978692679410987
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap of (y,p) with fixed predictions; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          }
+        },
+        "M6": {
+          "IMvigor210": {
+            "slope_point": -0.8344462367050887,
+            "recomputed_slope": -0.8344462367050887,
+            "auc": 0.4695268542199488,
+            "auc_ci95": [
+              0.40562659846547316,
+              0.5284143222506394
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -4.027860919324137,
+              4.570837767814148
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE165252": {
+            "slope_point": 0.46377096936287304,
+            "recomputed_slope": 0.46377096936287304,
+            "auc": 0.4542960858585857,
+            "auc_ci95": [
+              0.3419270833333333,
+              0.5380445075757575
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -4.001844746677658,
+              5.706584517533432
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          },
+          "GSE78220": {
+            "slope_point": -0.19598562349562726,
+            "recomputed_slope": -0.19598562349562726,
+            "auc": 0.44492063492063494,
+            "auc_ci95": [
+              0.2038690476190476,
+              0.6256944444444443
+            ],
+            "c1_auc_ci_beneficial_exclusion": false,
+            "c2_slope_within_tolerance_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "overall_transport_permitted_by_tol": {
+              "0.05": false,
+              "0.1": false,
+              "0.2": false
+            },
+            "boot_slope_ci95": [
+              -6.196514095142578,
+              7.834680908193807
+            ],
+            "boot_n_valid": 2000,
+            "boot_method": "patient-level bootstrap, full 100-repeat stratified 50/50 recalibration re-run per draw; percentile 95% CI",
+            "boot_ci_robustness_by_tol": {
+              "0.05": "inconclusive",
+              "0.1": "inconclusive",
+              "0.2": "inconclusive"
+            }
+          }
+        }
+      },
+      "c2_flip_count": 0,
+      "c2_flip_cells": [],
+      "overall_flip_count": 0,
+      "overall_flip_cells": [],
+      "any_transport_permitted_at_any_tolerance": false,
+      "main_conclusion_depends_on_0p10_tolerance": false
+    }
+  },
+  "p0_6": {
+    "design": {
+      "anchor": "PCA(k=2, seed 20260911) fit on IMvigor210 labeled (n=298), transform-only transport of train stats + rotation ( verbatim)",
+      "external": "ridge logistic on anchor PC scores (lambda=1/N_total=1/394), AUC + percentile bootstrap 95% CI (2000, seed 20260911)",
+      "gene_set": "-verbatim common intersection, 228 genes"
+    },
+    "unmeasured_block": {
+      "n_common_genes": 228,
+      "n_unmeasured_in_imvigor210_labeled": 70,
+      "n_unmeasured_in_imvigor210_full348": 67,
+      "n_measured": 158,
+      "unmeasured_gene_symbols": [
+        "ALK",
+        "ARID2",
+        "ATG5",
+        "ATM",
+        "ATP1A1",
+        "AXL",
+        "BANK1",
+        "BARD1",
+        "BCR",
+        "BTK",
+        "CACNA1D",
+        "CALR",
+        "CAMTA1",
+        "CCDC6",
+        "ELANE",
+        "FLI1",
+        "FLT3",
+        "FOXE1",
+        "HDAC7",
+        "IFNAR1",
+        "IL13",
+        "IL2RG",
+        "JAK2",
+        "JUN",
+        "KCNQ5",
+        "KDR",
+        "KEAP1",
+        "KLF2",
+        "MALT1",
+        "MUC1",
+        "NOS1",
+        "NR5A2",
+        "PARP2",
+        "PBRM1",
+        "PDCD1LG2",
+        "PDGFRB",
+        "PIK3CB",
+        "PNPLA3",
+        "POLD2",
+        "PPAT",
+        "PPIA",
+        "PRKCD",
+        "PSMA6",
+        "PTPN11",
+        "PTPRC",
+        "PTPRK",
+        "PTPRT",
+        "RET",
+        "RFX7",
+        "SH2B3",
+        "SNAP25",
+        "SP140",
+        "SP3",
+        "SRC",
+        "STAT3",
+        "SYK",
+        "TAL1",
+        "TCF3",
+        "TCF7L2",
+        "TERT",
+        "TGFB2",
+        "TGFBR2",
+        "TNC",
+        "TNFAIP3",
+        "TNFRSF8",
+        "TOP2A",
+        "TP53",
+        "TUBB2A",
+        "VDR",
+        "ZBTB38"
+      ],
+      "frozen__pc1_mass": 0.8866108766192753
+    },
+    "schemes": {
+      "original_log1p": {
+        "n_genes": 228,
+        "n_unmeasured_in_subset": 70,
+        "pc1_loading_squared_mass_on_unmeasured": 0.8866108766192752,
+        "mean_abs_pc1_loading_unmeasured": 0.11254274595010395,
+        "pc1_explained_variance_ratio": [
+          0.34576456990868215,
+          0.029310835051576008
+        ],
+        "external": {
+          "GSE165252": {
+            "auc": 0.5135869565217392,
+            "ci95": [
+              0.36274509803921573,
+              0.6643913043478258
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          },
+          "GSE78220": {
+            "auc": 0.4551282051282051,
+            "ci95": [
+              0.21525297619047618,
+              0.6944534632034631
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          }
+        },
+        "zero_handling": "original pipeline: zero counts kept; CPM -> log1p (log1p(0)=0) -> per-sample centring (CLR)",
+        "zero_stats": {
+          "IMvigor210": {
+            "n_zero_cells": 46575,
+            "n_all_zero_genes": 70,
+            "n_genes_with_any_zero": 191
+          },
+          "GSE165252": {
+            "n_zero_cells": 417,
+            "n_all_zero_genes": 0,
+            "n_genes_with_any_zero": 59
+          },
+          "GSE78220": {
+            "n_zero_cells": 195,
+            "n_all_zero_genes": 0,
+            "n_genes_with_any_zero": 26
+          }
+        },
+        "cross_check_": {
+          "mass70_frozen": 0.8866108766192753,
+          "mass70_recomputed": 0.8866108766192752,
+          "mass70_abs_diff": 1.1102230246251565e-16,
+          "ext_auc_abs_diff": {
+            "GSE165252": 0.0,
+            "GSE78220": 0.0
+          }
+        },
+        "artifact_verdict": "present",
+        "transport_verdict": {
+          "per_cohort": {
+            "GSE165252": false,
+            "GSE78220": false
+          },
+          "restored_in_both": false
+        }
+      },
+      "multiplicative_replacement_0p65": {
+        "n_genes": 228,
+        "n_unmeasured_in_subset": 70,
+        "pc1_loading_squared_mass_on_unmeasured": 0.5311662273928046,
+        "mean_abs_pc1_loading_unmeasured": 0.08710963759971883,
+        "pc1_explained_variance_ratio": [
+          0.5426717805136719,
+          0.05843384242388383
+        ],
+        "external": {
+          "GSE165252": {
+            "auc": 0.5353260869565217,
+            "ci95": [
+              0.38386385511651466,
+              0.6817488048066156
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          },
+          "GSE78220": {
+            "auc": 0.48076923076923084,
+            "ci95": [
+              0.2532467532467532,
+              0.730833333333333
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          }
+        },
+        "zero_handling": "multiplicative replacement: zero raw value -> 0.65 x gene-wise nonzero minimum (pre-CPM, cohort-native units); genes with no nonzero value kept at zero and recorded; then CLR",
+        "replacement_stats": {
+          "IMvigor210": {
+            "n_zero_cells_replaced": 25715,
+            "n_genes_with_sporadic_zeros_replaced": 121,
+            "n_all_zero_genes_kept_zero": 70,
+            "all_zero_gene_indices": [
+              7,
+              10,
+              12,
+              13,
+              14,
+              18,
+              20,
+              21,
+              25,
+              30,
+              31,
+              32,
+              33,
+              34,
+              52,
+              75,
+              77,
+              80,
+              88,
+              90,
+              95,
+              98,
+              107,
+              110,
+              111,
+              112,
+              113,
+              116,
+              124,
+              130,
+              136,
+              138,
+              139,
+              140,
+              142,
+              144,
+              145,
+              149,
+              150,
+              154,
+              155,
+              160,
+              164,
+              166,
+              167,
+              168,
+              169,
+              172,
+              173,
+              179,
+              181,
+              183,
+              184,
+              185,
+              186,
+              187,
+              188,
+              189,
+              190,
+              191,
+              194,
+              195,
+              198,
+              199,
+              202,
+              205,
+              206,
+              211,
+              220,
+              225
+            ],
+            "n_zero_cells_before": 46575,
+            "n_zero_cells_after": 20860,
+            "all_zero_genes_kept_zero": [
+              "ALK",
+              "ARID2",
+              "ATG5",
+              "ATM",
+              "ATP1A1",
+              "AXL",
+              "BANK1",
+              "BARD1",
+              "BCR",
+              "BTK",
+              "CACNA1D",
+              "CALR",
+              "CAMTA1",
+              "CCDC6",
+              "ELANE",
+              "FLI1",
+              "FLT3",
+              "FOXE1",
+              "HDAC7",
+              "IFNAR1",
+              "IL13",
+              "IL2RG",
+              "JAK2",
+              "JUN",
+              "KCNQ5",
+              "KDR",
+              "KEAP1",
+              "KLF2",
+              "MALT1",
+              "MUC1",
+              "NOS1",
+              "NR5A2",
+              "PARP2",
+              "PBRM1",
+              "PDCD1LG2",
+              "PDGFRB",
+              "PIK3CB",
+              "PNPLA3",
+              "POLD2",
+              "PPAT",
+              "PPIA",
+              "PRKCD",
+              "PSMA6",
+              "PTPN11",
+              "PTPRC",
+              "PTPRK",
+              "PTPRT",
+              "RET",
+              "RFX7",
+              "SH2B3",
+              "SNAP25",
+              "SP140",
+              "SP3",
+              "SRC",
+              "STAT3",
+              "SYK",
+              "TAL1",
+              "TCF3",
+              "TCF7L2",
+              "TERT",
+              "TGFB2",
+              "TGFBR2",
+              "TNC",
+              "TNFAIP3",
+              "TNFRSF8",
+              "TOP2A",
+              "TP53",
+              "TUBB2A",
+              "VDR",
+              "ZBTB38"
+            ]
+          },
+          "GSE165252": {
+            "n_zero_cells_replaced": 417,
+            "n_genes_with_sporadic_zeros_replaced": 59,
+            "n_all_zero_genes_kept_zero": 0,
+            "all_zero_gene_indices": [],
+            "n_zero_cells_before": 417,
+            "n_zero_cells_after": 0,
+            "all_zero_genes_kept_zero": []
+          },
+          "GSE78220": {
+            "n_zero_cells_replaced": 195,
+            "n_genes_with_sporadic_zeros_replaced": 26,
+            "n_all_zero_genes_kept_zero": 0,
+            "all_zero_gene_indices": [],
+            "n_zero_cells_before": 195,
+            "n_zero_cells_after": 0,
+            "all_zero_genes_kept_zero": []
+          }
+        },
+        "artifact_verdict": "present",
+        "transport_verdict": {
+          "per_cohort": {
+            "GSE165252": false,
+            "GSE78220": false
+          },
+          "restored_in_both": false
+        }
+      },
+      "measured_only_158": {
+        "n_genes": 158,
+        "n_unmeasured_in_subset": 0,
+        "pc1_loading_squared_mass_on_unmeasured": 0.0,
+        "mean_abs_pc1_loading_unmeasured": null,
+        "pc1_explained_variance_ratio": [
+          0.09538085611428297,
+          0.041686794922284026
+        ],
+        "external": {
+          "GSE165252": {
+            "auc": 0.47282608695652173,
+            "ci95": [
+              0.32433742103307317,
+              0.6341747529200359
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          },
+          "GSE78220": {
+            "auc": 0.641025641025641,
+            "ci95": [
+              0.40661904761904766,
+              0.8653846153846153
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          }
+        },
+        "zero_handling": "measured-only restriction: the 70 structurally unmeasured (all-zero in IMvigor210) genes excluded; CLR unchanged ( gene_measured_only verbatim)",
+        "cross_check_": {
+          "ext_auc_abs_diff": {
+            "GSE165252": 0.0,
+            "GSE78220": 0.0
+          }
+        },
+        "artifact_verdict": "removed_by_construction",
+        "transport_verdict": {
+          "per_cohort": {
+            "GSE165252": false,
+            "GSE78220": false
+          },
+          "restored_in_both": false
+        }
+      }
+    },
+    "robustness": {
+      "artifact_presence": {
+        "question": "Is 'the 70 unmeasured genes become CLR library-size proxies and dominate the anchored PC1 loading (88.7%)' robust to zero handling?",
+        "artifact_mass": {
+          "original_log1p": 0.8866108766192752,
+          "multiplicative_replacement_0p65": 0.5311662273928046,
+          "measured_only_158": 0.0
+        },
+        "present_in_original": true,
+        "present_in_mult_repl": true,
+        "removed_in_measured_only": true,
+        "robust": true,
+        "mechanism_note": "multiplicative replacement CANNOT substitute values for the 70 genes (no nonzero minimum exists in IMvigor210), so they remain all-zero and remain CLR library-size proxies: the artifact is driven by STRUCTURAL non-measurement, not by the sporadic-zero treatment choice"
+      },
+      "artifact_removal_restores_transport": {
+        "question": "Does removing the artifact (or altering zero handling) restore external transport (AUC CI excludes 0.5 beneficially in both external cohorts)?",
+        "restored": {
+          "original_log1p": false,
+          "multiplicative_replacement_0p65": false,
+          "measured_only_158": false
+        },
+        "robust": true
+      }
+    },
+    "artifact_mass_threshold": 0.5,
+    "mult_repl_factor": 0.65
+  },
+  "ed5_numbers": {
+    "description": "all values needed for ED5 (zero-handling sensitivity)",
+    "per_scheme": {
+      "original_log1p": {
+        "n_genes": 228,
+        "zero_handling": "original pipeline: zero counts kept; CPM -> log1p (log1p(0)=0) -> per-sample centring (CLR)",
+        "pc1_mass_on_unmeasured": 0.8866108766192752,
+        "external": {
+          "GSE165252": {
+            "auc": 0.5135869565217392,
+            "ci95": [
+              0.36274509803921573,
+              0.6643913043478258
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          },
+          "GSE78220": {
+            "auc": 0.4551282051282051,
+            "ci95": [
+              0.21525297619047618,
+              0.6944534632034631
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          }
+        }
+      },
+      "multiplicative_replacement_0p65": {
+        "n_genes": 228,
+        "zero_handling": "multiplicative replacement: zero raw value -> 0.65 x gene-wise nonzero minimum (pre-CPM, cohort-native units); genes with no nonzero value kept at zero and recorded; then CLR",
+        "pc1_mass_on_unmeasured": 0.5311662273928046,
+        "external": {
+          "GSE165252": {
+            "auc": 0.5353260869565217,
+            "ci95": [
+              0.38386385511651466,
+              0.6817488048066156
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          },
+          "GSE78220": {
+            "auc": 0.48076923076923084,
+            "ci95": [
+              0.2532467532467532,
+              0.730833333333333
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          }
+        }
+      },
+      "measured_only_158": {
+        "n_genes": 158,
+        "zero_handling": "measured-only restriction: the 70 structurally unmeasured (all-zero in IMvigor210) genes excluded; CLR unchanged ( gene_measured_only verbatim)",
+        "pc1_mass_on_unmeasured": 0.0,
+        "external": {
+          "GSE165252": {
+            "auc": 0.47282608695652173,
+            "ci95": [
+              0.32433742103307317,
+              0.6341747529200359
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          },
+          "GSE78220": {
+            "auc": 0.641025641025641,
+            "ci95": [
+              0.40661904761904766,
+              0.8653846153846153
+            ],
+            "boot_valid": 2000,
+            "ci_excludes_0p5_beneficial": false,
+            "ci_excludes_0p5_adverse": false
+          }
+        }
+      }
+    }
+  }
+}

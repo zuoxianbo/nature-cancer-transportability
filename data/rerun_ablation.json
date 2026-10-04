@@ -1,0 +1,2226 @@
+{
+  "analysis": "_rerun_ablation",
+  "date": "2026-09-24",
+  "seed": 20260911,
+  "purpose": "Honest re-specified controlled ablation under the recovered IMvigor210 gene identity (): re-run of the  ablation grid with the recovered 320-gene panel; the 5 'measured-only' artefact configurations are retracted with removal_reason because the 70-unmeasured-gene artefact no longer exists (zero-gene count = 0).",
+  "design": {
+    "task": "binary ICI efficacy discrimination (responder vs non-responder)",
+    "anchor_scheme": "PCA rotation fit on IMvigor210 labelled samples (n=298) under the RECOVERED gene key (exmat row j == j-th fData row in upper-cased symbol alphabetical order), transform-only to GSE165252 (n=71) and GSE78220 (n=25)",
+    "gene_panel": {
+      "authoritative_panel": 322,
+      "availability": {
+        "panel": 322,
+        "imvigor210": 320,
+        "imvigor210_missing": [
+          "IGHG1",
+          "PRKN"
+        ],
+        "gse165252": 322,
+        "gse78220": 320
+      },
+      "common_intersection": 320,
+      "imvigor_missing": [
+        "IGHG1",
+        "PRKN"
+      ]
+    },
+    "external_auc": "ridge logistic fit on IMvigor210 anchor PC scores, predict external cohort; AUC + percentile bootstrap 95% CI (n_boot=2000, resampling the external cohort with fixed predictions, seed=20260911) [ verbatim]; BCa CI ( recovery auc_bca verbatim) reported alongside for anchor continuity",
+    "within_632_control": "/ verbatim Efron 0.632 optimism-corrected within-cohort AUC (n_boot=600, seed=20260911) for all three cohorts",
+    "lambda_rule": "RE-SPECIFIED vs  to bitwise reproduce the frozen  recovery anchor: external transport lambda = 1/n_train = 1/298 = 0.0033557047; within 0.632 lambda = 1/N_total = 1/394 = 0.0025380711.  used a single 1/N_total for both. Ridge-layer perturbations set BOTH lambdas to the same value.",
+    "top_loading_rule": "genes ranked by |PC1 loading| of the baseline CLR PCA (all 320 common genes) fit on IMvigor210 labelled samples",
+    "random_subset_rule": "uniform without replacement, seeds 20260911+0..4, sorted indices",
+    "removed_config_policy": "5  'measured-only' artefact configurations removed; removal_reason recorded per config"
+  },
+  "cohorts": {
+    "IMvigor210": {
+      "n_labeled": 298,
+      "n_event": 68
+    },
+    "GSE165252": {
+      "n_labeled": 71,
+      "n_event": 23
+    },
+    "GSE78220": {
+      "n_labeled": 25,
+      "n_event": 13
+    }
+  },
+  "N_total_labeled": 394,
+  "artifact_retraction": {
+    "old_": {
+      "n_common_genes": 228,
+      "n_unmeasured": 70,
+      "pc1_loading_squared_mass_on_unmeasured": 0.8866108766192753
+    },
+    "new_": {
+      "n_common_genes": 320,
+      "n_allzero_across_348": 0,
+      "n_allzero_across_298_labelled": 0,
+      "pc1_loading_squared_mass_on_zero_genes": 0.0
+    },
+    "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity"
+  },
+  "gene_ranking": {
+    "top100_symbols": [
+      "ABI1",
+      "ACVR2A",
+      "AKT1",
+      "ARHGAP35",
+      "ARID2",
+      "ATG5",
+      "BCR",
+      "BRAF",
+      "BRD7",
+      "BTK",
+      "CD19",
+      "CD22",
+      "CD33",
+      "CD38",
+      "CD3D",
+      "CD3E",
+      "CD3G",
+      "CD52",
+      "CD79A",
+      "CD86",
+      "CDK12",
+      "CIITA",
+      "CLTC",
+      "CRBN",
+      "CSF2RB",
+      "CTLA4",
+      "CUL4A",
+      "CXCR4",
+      "DDB1",
+      "DNMT3A",
+      "EOMES",
+      "ERBB3",
+      "FBXO11",
+      "FGFR3",
+      "FKBP1A",
+      "FLI1",
+      "FLT3",
+      "HAVCR2",
+      "HMGCR",
+      "IFNGR2",
+      "IKZF1",
+      "IL2RA",
+      "IL2RB",
+      "IL2RG",
+      "IL6",
+      "IL7R",
+      "IMPDH2",
+      "IRF4",
+      "IRF8",
+      "JAK3",
+      "KCNQ5",
+      "KEAP1",
+      "KIF16B",
+      "KMT2C",
+      "MGAT5",
+      "MS4A1",
+      "MSH2",
+      "MTOR",
+      "NDUFA13",
+      "PARP1",
+      "PARP2",
+      "PBRM1",
+      "PDCD1",
+      "PDCD1LG2",
+      "PIK3CD",
+      "POLD2",
+      "POU2AF1",
+      "PPAT",
+      "PPIA",
+      "PRIM2",
+      "PRKCD",
+      "PSMA2",
+      "PSMA6",
+      "PSMD7",
+      "PTPN11",
+      "PTPRC",
+      "RAD51B",
+      "RBX1",
+      "RFX7",
+      "RHOH",
+      "RSPO3",
+      "SF3B1",
+      "SMAD2",
+      "SMAD3",
+      "SMARCA4",
+      "SP140",
+      "SRC",
+      "TET2",
+      "THADA",
+      "THRB",
+      "TNC",
+      "TNFAIP3",
+      "TNFRSF13B",
+      "TNFRSF8",
+      "TSHR",
+      "TUBA1C",
+      "USP8",
+      "VEGFA",
+      "XPO1",
+      "ZNF217"
+    ],
+    "top50_symbols": [
+      "ACVR2A",
+      "AKT1",
+      "ARID2",
+      "BRAF",
+      "BRD7",
+      "BTK",
+      "CD33",
+      "CD38",
+      "CD3E",
+      "CD52",
+      "CD79A",
+      "CLTC",
+      "CSF2RB",
+      "CTLA4",
+      "CUL4A",
+      "CXCR4",
+      "DDB1",
+      "ERBB3",
+      "FLI1",
+      "FLT3",
+      "HAVCR2",
+      "HMGCR",
+      "IKZF1",
+      "IL2RA",
+      "IL2RB",
+      "IL2RG",
+      "IL7R",
+      "IMPDH2",
+      "IRF4",
+      "IRF8",
+      "JAK3",
+      "KEAP1",
+      "KIF16B",
+      "KMT2C",
+      "MTOR",
+      "NDUFA13",
+      "PBRM1",
+      "PDCD1",
+      "PSMD7",
+      "PTPRC",
+      "RBX1",
+      "RHOH",
+      "RSPO3",
+      "SF3B1",
+      "SMARCA4",
+      "SP140",
+      "SRC",
+      "TET2",
+      "USP8",
+      "XPO1"
+    ],
+    "pc1_explained_variance_ratio_baseline": [
+      0.2653272948044119,
+      0.07331522174880199
+    ]
+  },
+  "anchor_self_check": {
+    "ext_GSE165252_auc": {
+      "expected": 0.5036231884057971,
+      "computed": 0.5036231884057971,
+      "abs_diff": 0.0,
+      "tol": 1e-12,
+      "pass": true
+    },
+    "ext_GSE165252_ci_bca_lo": {
+      "expected": 0.3540206604291994,
+      "computed": 0.3540206604291994,
+      "abs_diff": 0.0,
+      "tol": 1e-12,
+      "pass": true
+    },
+    "ext_GSE165252_ci_bca_hi": {
+      "expected": 0.6584721535961872,
+      "computed": 0.6584721535961872,
+      "abs_diff": 0.0,
+      "tol": 1e-12,
+      "pass": true
+    },
+    "ext_GSE78220_auc": {
+      "expected": 0.6602564102564102,
+      "computed": 0.6602564102564102,
+      "abs_diff": 0.0,
+      "tol": 1e-12,
+      "pass": true
+    },
+    "ext_GSE78220_ci_bca_lo": {
+      "expected": 0.4038454964351145,
+      "computed": 0.4038454964351145,
+      "abs_diff": 0.0,
+      "tol": 1e-12,
+      "pass": true
+    },
+    "ext_GSE78220_ci_bca_hi": {
+      "expected": 0.8616583228383701,
+      "computed": 0.8616583228383701,
+      "abs_diff": 0.0,
+      "tol": 1e-12,
+      "pass": true
+    },
+    "within_imvigor210_auc632": {
+      "expected": 0.6570746710270073,
+      "computed": 0.6570746710270073,
+      "abs_diff": 0.0,
+      "tol": 1e-12,
+      "pass": true
+    },
+    "lam_ext": {
+      "expected": 0.003355704697986577,
+      "computed": 0.003355704697986577,
+      "abs_diff": 0.0,
+      "tol": 1e-12,
+      "pass": true
+    },
+    "lam_within": {
+      "expected": 0.0025380710659898475,
+      "computed": 0.0025380710659898475,
+      "abs_diff": 0.0,
+      "tol": 1e-12,
+      "pass": true
+    },
+    "overall_pass": true
+  },
+  "baseline": {
+    "config_id": "baseline",
+    "description": "recovered-identity baseline: 320-gene intersection, CLR, PC k=2, external lambda=1/n_train, within lambda=1/N_total",
+    "external": {
+      "GSE165252": {
+        "auc": 0.5036231884057971,
+        "ci95_percentile": [
+          0.3519401737967915,
+          0.654875730994152
+        ],
+        "ci95_bca": [
+          0.3540206604291994,
+          0.6584721535961872
+        ]
+      },
+      "GSE78220": {
+        "auc": 0.6602564102564102,
+        "ci95_percentile": [
+          0.4206190476190476,
+          0.8717948717948718
+        ],
+        "ci95_bca": [
+          0.4038454964351145,
+          0.8616583228383701
+        ]
+      }
+    },
+    "within_632": {
+      "IMvigor210": 0.6570746710270073,
+      "GSE165252": 0.427924326830898,
+      "GSE78220": 0.6219701640593669
+    }
+  },
+  "grid": {
+    "gene_set": [
+      "baseline",
+      "gene_top100",
+      "gene_top50",
+      "gene_rand100_s0",
+      "gene_rand100_s1",
+      "gene_rand100_s2",
+      "gene_rand100_s3",
+      "gene_rand100_s4",
+      "gene_rand50_s0",
+      "gene_rand50_s1",
+      "gene_rand50_s2",
+      "gene_rand50_s3",
+      "gene_rand50_s4"
+    ],
+    "normalization": [
+      "baseline(clr)",
+      "norm_log2raw",
+      "norm_within_z"
+    ],
+    "pc_k": [
+      "baseline(k=2)",
+      "pc_k1",
+      "pc_k3",
+      "pc_k5"
+    ],
+    "ridge_lambda": [
+      "baseline(1/n)",
+      "ridge_lam0.01",
+      "ridge_lam0.1",
+      "ridge_lam1"
+    ]
+  },
+  "removed_configs": {
+    "gene_measured_only": {
+      "layer": "artifact_removal",
+      "old__description": "all measured genes only (drop the 70 'unmeasured' genes)",
+      "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity",
+      "retracted_because": "Under the recovered gene identity the 320-gene anchor panel has 0 all-zero genes in IMvigor210 (old : 70/228), so every 'measured-only' subset coincides with the full panel and the configuration is void."
+    },
+    "gene_top100_measured": {
+      "layer": "artifact_removal",
+      "old__description": "top-100 |PC1 loading| genes among measured genes",
+      "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity",
+      "retracted_because": "Under the recovered gene identity the 320-gene anchor panel has 0 all-zero genes in IMvigor210 (old : 70/228), so every 'measured-only' subset coincides with the full panel and the configuration is void."
+    },
+    "gene_top50_measured": {
+      "layer": "artifact_removal",
+      "old__description": "top-50 |PC1 loading| genes among measured genes",
+      "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity",
+      "retracted_because": "Under the recovered gene identity the 320-gene anchor panel has 0 all-zero genes in IMvigor210 (old : 70/228), so every 'measured-only' subset coincides with the full panel and the configuration is void."
+    },
+    "norm_log2raw_measured": {
+      "layer": "artifact_removal",
+      "old__description": "log2raw normalization on measured genes only",
+      "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity",
+      "retracted_because": "Under the recovered gene identity the 320-gene anchor panel has 0 all-zero genes in IMvigor210 (old : 70/228), so every 'measured-only' subset coincides with the full panel and the configuration is void."
+    },
+    "norm_within_z_measured": {
+      "layer": "artifact_removal",
+      "old__description": "within-cohort z-score on measured genes only",
+      "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity",
+      "retracted_because": "Under the recovered gene identity the 320-gene anchor panel has 0 all-zero genes in IMvigor210 (old : 70/228), so every 'measured-only' subset coincides with the full panel and the configuration is void."
+    }
+  },
+  "per_config": {
+    "baseline": {
+      "n_genes": 320,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5036231884057971,
+          "ci95_percentile": [
+            0.3519401737967915,
+            0.654875730994152
+          ],
+          "ci95_bca": [
+            0.3540206604291994,
+            0.6584721535961872
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6602564102564102,
+          "ci95_percentile": [
+            0.4206190476190476,
+            0.8717948717948718
+          ],
+          "ci95_bca": [
+            0.4038454964351145,
+            0.8616583228383701
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6658567774936061,
+          "auc_632_corrected": 0.6570746710270073,
+          "se": 0.036415395340170784,
+          "ci95": [
+            0.5857004961602726,
+            0.728448845893742
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5181159420289855,
+          "auc_632_corrected": 0.427924326830898,
+          "se": 0.05210601033213357,
+          "ci95": [
+            0.3257965465799162,
+            0.5300521070818798
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6987179487179488,
+          "auc_632_corrected": 0.6219701640593669,
+          "se": 0.103332901734239,
+          "ci95": [
+            0.41943767666025844,
+            0.8245026514584753
+          ]
+        }
+      },
+      "layer": "baseline"
+    },
+    "gene_top100": {
+      "n_genes": 100,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5353260869565217,
+          "ci95_percentile": [
+            0.3897231058415269,
+            0.6794169435215945
+          ],
+          "ci95_bca": [
+            0.3867758487745206,
+            0.6772344456378349
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.5128205128205129,
+          "ci95_percentile": [
+            0.26,
+            0.7598439754689749
+          ],
+          "ci95_bca": [
+            0.2598456554397585,
+            0.7583141932098063
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.5020460358056266,
+          "auc_632_corrected": 0.45601319505642285,
+          "se": 0.029622060346283383,
+          "ci95": [
+            0.3979539567777074,
+            0.5140724333351383
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.618659420289855,
+          "auc_632_corrected": 0.552435886896525,
+          "se": 0.059457427526550054,
+          "ci95": [
+            0.4358993289444869,
+            0.6689724448485631
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6666666666666666,
+          "auc_632_corrected": 0.5599187475063636,
+          "se": 0.09989427222852708,
+          "ci95": [
+            0.36412597393845053,
+            0.7557115210742766
+          ]
+        }
+      },
+      "layer": "gene_set"
+    },
+    "gene_top50": {
+      "n_genes": 50,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.4655797101449275,
+          "ci95_percentile": [
+            0.32877069553117694,
+            0.6103367254342752
+          ],
+          "ci95_bca": [
+            0.3296814220178702,
+            0.6110733523941669
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.5961538461538461,
+          "ci95_percentile": [
+            0.34415584415584416,
+            0.8161764705882353
+          ],
+          "ci95_bca": [
+            0.32692307692307687,
+            0.8
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.5740409207161126,
+          "auc_632_corrected": 0.554717900628206,
+          "se": 0.03604139964069571,
+          "ci95": [
+            0.48407675733244243,
+            0.6253590439239696
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5298913043478262,
+          "auc_632_corrected": 0.44252280476459777,
+          "se": 0.05119092644016009,
+          "ci95": [
+            0.342188588941884,
+            0.5428570205873116
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.608974358974359,
+          "auc_632_corrected": 0.5048181958707502,
+          "se": 0.10258847313180174,
+          "ci95": [
+            0.30374478853241876,
+            0.7058916032090816
+          ]
+        }
+      },
+      "layer": "gene_set"
+    },
+    "gene_rand100_s0": {
+      "n_genes": 100,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5380434782608696,
+          "ci95_percentile": [
+            0.3860822779704768,
+            0.688027093596059
+          ],
+          "ci95_bca": [
+            0.38744874640295396,
+            0.6892252267000244
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.5256410256410257,
+          "ci95_percentile": [
+            0.2866666666666667,
+            0.756423611111111
+          ],
+          "ci95_bca": [
+            0.27564102564102566,
+            0.75
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.623145780051151,
+          "auc_632_corrected": 0.6085476122722506,
+          "se": 0.036263028634083226,
+          "ci95": [
+            0.5374720761494475,
+            0.6796231483950538
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5389492753623188,
+          "auc_632_corrected": 0.4520723575864855,
+          "se": 0.05126320098408295,
+          "ci95": [
+            0.3515964836576829,
+            0.5525482315152881
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.5641025641025641,
+          "auc_632_corrected": 0.41645470033206106,
+          "se": 0.08660998754092657,
+          "ci95": [
+            0.246699124751845,
+            0.5862102759122771
+          ]
+        }
+      },
+      "layer": "gene_set",
+      "rand_seed": 20260911
+    },
+    "gene_rand100_s1": {
+      "n_genes": 100,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5733695652173912,
+          "ci95_percentile": [
+            0.4191158330609132,
+            0.7269699155827374
+          ],
+          "ci95_bca": [
+            0.4130920765377082,
+            0.7252805111448131
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.5705128205128206,
+          "ci95_percentile": [
+            0.32692307692307687,
+            0.788486842105263
+          ],
+          "ci95_bca": [
+            0.33116883116883117,
+            0.7922077922077922
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6356777493606137,
+          "auc_632_corrected": 0.6234526111808378,
+          "se": 0.03575529980086057,
+          "ci95": [
+            0.5533722235711511,
+            0.6935329987905245
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5996376811594203,
+          "auc_632_corrected": 0.5305979846874976,
+          "se": 0.06109985107673705,
+          "ci95": [
+            0.41084227657709305,
+            0.6503536927979022
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6025641025641025,
+          "auc_632_corrected": 0.4828158411892545,
+          "se": 0.09698365151230255,
+          "ci95": [
+            0.2927278842251415,
+            0.6729037981533675
+          ]
+        }
+      },
+      "layer": "gene_set",
+      "rand_seed": 20260912
+    },
+    "gene_rand100_s2": {
+      "n_genes": 100,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.48641304347826086,
+          "ci95_percentile": [
+            0.335224250483559,
+            0.6400710042237397
+          ],
+          "ci95_bca": [
+            0.3387412467794539,
+            0.6420954943811548
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6153846153846154,
+          "ci95_percentile": [
+            0.3765827922077922,
+            0.840052631578947
+          ],
+          "ci95_bca": [
+            0.36363636363636354,
+            0.826923076923077
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6507672634271099,
+          "auc_632_corrected": 0.640712553457376,
+          "se": 0.03638985948474061,
+          "ci95": [
+            0.5693884288672844,
+            0.7120366780474676
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5452898550724639,
+          "auc_632_corrected": 0.4601871079663416,
+          "se": 0.056436947834947376,
+          "ci95": [
+            0.34957069020984477,
+            0.5708035257228384
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6987179487179487,
+          "auc_632_corrected": 0.6313956110495971,
+          "se": 0.1006736491329734,
+          "ci95": [
+            0.43407525874896924,
+            0.8287159633502249
+          ]
+        }
+      },
+      "layer": "gene_set",
+      "rand_seed": 20260913
+    },
+    "gene_rand100_s3": {
+      "n_genes": 100,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5489130434782609,
+          "ci95_percentile": [
+            0.4014553274139845,
+            0.6973924191750279
+          ],
+          "ci95_bca": [
+            0.4015005447402286,
+            0.6973974626916462
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.5897435897435898,
+          "ci95_percentile": [
+            0.34415584415584416,
+            0.8142045454545449
+          ],
+          "ci95_bca": [
+            0.3398270546862568,
+            0.8060393710642206
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.5985294117647058,
+          "auc_632_corrected": 0.580205879698913,
+          "se": 0.036584118852007144,
+          "ci95": [
+            0.508501006748979,
+            0.651910752648847
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5271739130434783,
+          "auc_632_corrected": 0.43938550108199176,
+          "se": 0.055519114388184826,
+          "ci95": [
+            0.3305680368811495,
+            0.548202965282834
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.608974358974359,
+          "auc_632_corrected": 0.5079667061782388,
+          "se": 0.10154207601181864,
+          "ci95": [
+            0.30894423719507424,
+            0.7069891751614034
+          ]
+        }
+      },
+      "layer": "gene_set",
+      "rand_seed": 20260914
+    },
+    "gene_rand100_s4": {
+      "n_genes": 100,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.48097826086956524,
+          "ci95_percentile": [
+            0.3320936582214778,
+            0.6365430746766791
+          ],
+          "ci95_bca": [
+            0.3321725850314749,
+            0.6367068519749292
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6153846153846154,
+          "ci95_percentile": [
+            0.37333333333333335,
+            0.8333333333333334
+          ],
+          "ci95_bca": [
+            0.3642627032816179,
+            0.8266404417124221
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6778772378516623,
+          "auc_632_corrected": 0.6685194395741677,
+          "se": 0.03590062521566948,
+          "ci95": [
+            0.5981542141514555,
+            0.7388846649968799
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5606884057971013,
+          "auc_632_corrected": 0.47768116057181487,
+          "se": 0.05771523787813668,
+          "ci95": [
+            0.36455929433066697,
+            0.5908030268129627
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6282051282051282,
+          "auc_632_corrected": 0.5260850724596466,
+          "se": 0.10211790957947128,
+          "ci95": [
+            0.32593396968388294,
+            0.7262361752354103
+          ]
+        }
+      },
+      "layer": "gene_set",
+      "rand_seed": 20260915
+    },
+    "gene_rand50_s0": {
+      "n_genes": 50,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.46739130434782605,
+          "ci95_percentile": [
+            0.32598598616118835,
+            0.605870329263781
+          ],
+          "ci95_bca": [
+            0.32609366167705583,
+            0.606008687157162
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6474358974358975,
+          "ci95_percentile": [
+            0.4117136437908497,
+            0.858974358974359
+          ],
+          "ci95_bca": [
+            0.39021823753298523,
+            0.8441558441558441
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6605498721227621,
+          "auc_632_corrected": 0.653347248867308,
+          "se": 0.03564371350631284,
+          "ci95": [
+            0.5834855703949349,
+            0.7232089273396811
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5443840579710145,
+          "auc_632_corrected": 0.45935731974343735,
+          "se": 0.05509448820327458,
+          "ci95": [
+            0.3513721228650192,
+            0.5673425166218555
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.7051282051282051,
+          "auc_632_corrected": 0.629592466086545,
+          "se": 0.09955845634235032,
+          "ci95": [
+            0.43445789165553833,
+            0.8247270405175515
+          ]
+        }
+      },
+      "layer": "gene_set",
+      "rand_seed": 20260911
+    },
+    "gene_rand50_s1": {
+      "n_genes": 50,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.49547101449275366,
+          "ci95_percentile": [
+            0.348807582815735,
+            0.6447356215213357
+          ],
+          "ci95_bca": [
+            0.3513749881089643,
+            0.6484676180808447
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6217948717948718,
+          "ci95_percentile": [
+            0.36028676470588233,
+            0.8461538461538461
+          ],
+          "ci95_bca": [
+            0.33246760011333065,
+            0.8333333333333334
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.5992966751918157,
+          "auc_632_corrected": 0.5842432231873035,
+          "se": 0.03784566304301161,
+          "ci95": [
+            0.5100657236230007,
+            0.6584207227516062
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5307971014492754,
+          "auc_632_corrected": 0.4505916554415569,
+          "se": 0.057965740368481046,
+          "ci95": [
+            0.336978804319334,
+            0.5642045065637797
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6794871794871795,
+          "auc_632_corrected": 0.6062827369354072,
+          "se": 0.10542492214814289,
+          "ci95": [
+            0.3996498895250472,
+            0.8129155843457673
+          ]
+        }
+      },
+      "layer": "gene_set",
+      "rand_seed": 20260912
+    },
+    "gene_rand50_s2": {
+      "n_genes": 50,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.41757246376811596,
+          "ci95_percentile": [
+            0.27347334682860996,
+            0.5707369189076507
+          ],
+          "ci95_bca": [
+            0.27300325882365006,
+            0.5700654320238883
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.653846153846154,
+          "ci95_percentile": [
+            0.4122300944669366,
+            0.8676470588235294
+          ],
+          "ci95_bca": [
+            0.38802956140436773,
+            0.8507805291344529
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6256393861892583,
+          "auc_632_corrected": 0.6166558575658161,
+          "se": 0.03658122573432727,
+          "ci95": [
+            0.5449566551265347,
+            0.6883550600050975
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.6431159420289855,
+          "auc_632_corrected": 0.5872026717398832,
+          "se": 0.06709210189676423,
+          "ci95": [
+            0.4557021520222253,
+            0.718703191457541
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.7243589743589743,
+          "auc_632_corrected": 0.662495860706774,
+          "se": 0.09865001303050554,
+          "ci95": [
+            0.46914183516698316,
+            0.8558498862465649
+          ]
+        }
+      },
+      "layer": "gene_set",
+      "rand_seed": 20260913
+    },
+    "gene_rand50_s3": {
+      "n_genes": 50,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.6023550724637681,
+          "ci95_percentile": [
+            0.45651937103343754,
+            0.7334076452475488
+          ],
+          "ci95_bca": [
+            0.45586049273459295,
+            0.7322452430777029
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.5128205128205129,
+          "ci95_percentile": [
+            0.2599935064935065,
+            0.75
+          ],
+          "ci95_bca": [
+            0.2539582111631305,
+            0.7467532467532467
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.5858695652173913,
+          "auc_632_corrected": 0.5614281918977575,
+          "se": 0.03537865648526094,
+          "ci95": [
+            0.49208602518664607,
+            0.6307703586088689
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.625,
+          "auc_632_corrected": 0.5656198230694485,
+          "se": 0.0602815973772333,
+          "ci95": [
+            0.4474678922100712,
+            0.6837717539288257
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.5833333333333334,
+          "auc_632_corrected": 0.4532081604583927,
+          "se": 0.0919221403409807,
+          "ci95": [
+            0.2730407653900705,
+            0.6333755555267149
+          ]
+        }
+      },
+      "layer": "gene_set",
+      "rand_seed": 20260914
+    },
+    "gene_rand50_s4": {
+      "n_genes": 50,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5652173913043478,
+          "ci95_percentile": [
+            0.4225716845878136,
+            0.7114363581910751
+          ],
+          "ci95_bca": [
+            0.4158384282020651,
+            0.699568568832258
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.5384615384615385,
+          "ci95_percentile": [
+            0.29410597572362274,
+            0.7884615384615384
+          ],
+          "ci95_bca": [
+            0.30072942785358947,
+            0.7924402456419863
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.5404092071611253,
+          "auc_632_corrected": 0.5045040384576858,
+          "se": 0.03303779219274278,
+          "ci95": [
+            0.4397499657599099,
+            0.5692581111554617
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5951086956521738,
+          "auc_632_corrected": 0.521925691720619,
+          "se": 0.06032669413565921,
+          "ci95": [
+            0.4036853712147269,
+            0.640166012226511
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6025641025641025,
+          "auc_632_corrected": 0.46462821852353586,
+          "se": 0.09470631728779354,
+          "ci95": [
+            0.27900383663946055,
+            0.6502526004076112
+          ]
+        }
+      },
+      "layer": "gene_set",
+      "rand_seed": 20260915
+    },
+    "norm_log2raw": {
+      "n_genes": 320,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "log2raw",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.47554347826086957,
+          "ci95_percentile": [
+            0.33300052078247566,
+            0.6303220397779834
+          ],
+          "ci95_bca": [
+            0.3277209527740779,
+            0.6263226612618962
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6538461538461539,
+          "ci95_percentile": [
+            0.41666666666666663,
+            0.868107413419913
+          ],
+          "ci95_bca": [
+            0.4066666666666667,
+            0.8533333333333333
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.5406649616368286,
+          "auc_632_corrected": 0.5028503667361719,
+          "se": 0.03378466109028221,
+          "ci95": [
+            0.4366324309992188,
+            0.569068302473125
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5244565217391305,
+          "auc_632_corrected": 0.4363495312742604,
+          "se": 0.05596443817317006,
+          "ci95": [
+            0.32665923245484707,
+            0.5460398300936737
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6538461538461539,
+          "auc_632_corrected": 0.5284420025436667,
+          "se": 0.09619041801059296,
+          "ci95": [
+            0.3399087832429045,
+            0.7169752218444289
+          ]
+        }
+      },
+      "layer": "normalization"
+    },
+    "norm_within_z": {
+      "n_genes": 320,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "within_z",
+      "k": 2,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5090579710144927,
+          "ci95_percentile": [
+            0.3539166145181477,
+            0.6617779652844743
+          ],
+          "ci95_bca": [
+            0.3534083907575927,
+            0.6614338405550506
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6538461538461537,
+          "ci95_percentile": [
+            0.4132272727272727,
+            0.8636800699300697
+          ],
+          "ci95_bca": [
+            0.3897665477732002,
+            0.8533987061853017
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6658567774936061,
+          "auc_632_corrected": 0.6570746710270073,
+          "se": 0.036415395340170784,
+          "ci95": [
+            0.5857004961602726,
+            0.728448845893742
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5117753623188406,
+          "auc_632_corrected": 0.4207890026829702,
+          "se": 0.0514892664648069,
+          "ci95": [
+            0.31987004041194866,
+            0.5217079649539917
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6666666666666666,
+          "auc_632_corrected": 0.5817263184585166,
+          "se": 0.10530050483821195,
+          "ci95": [
+            0.3753373289756212,
+            0.788115307941412
+          ]
+        }
+      },
+      "layer": "normalization"
+    },
+    "pc_k1": {
+      "n_genes": 320,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 1,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5,
+          "ci95_percentile": [
+            0.3603077249575552,
+            0.6488595523972882
+          ],
+          "ci95_bca": [
+            0.35576410921045154,
+            0.6443384828259704
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6217948717948718,
+          "ci95_percentile": [
+            0.3781655844155844,
+            0.8666666666666666
+          ],
+          "ci95_bca": [
+            0.35954509905825743,
+            0.8457680567101372
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.5369565217391304,
+          "auc_632_corrected": 0.5183433843303501,
+          "se": 0.03527823369376928,
+          "ci95": [
+            0.4491980462905623,
+            0.5874887223701379
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5,
+          "auc_632_corrected": 0.4393658357671217,
+          "se": 0.047359404848236655,
+          "ci95": [
+            0.34654140226457786,
+            0.5321902692696655
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6217948717948718,
+          "auc_632_corrected": 0.5479100003281892,
+          "se": 0.10773275399372506,
+          "ci95": [
+            0.33675380250048803,
+            0.7590661981558903
+          ]
+        }
+      },
+      "layer": "pc_k"
+    },
+    "pc_k3": {
+      "n_genes": 320,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 3,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.4846014492753623,
+          "ci95_percentile": [
+            0.3358695652173913,
+            0.6320942414431081
+          ],
+          "ci95_bca": [
+            0.33691420166023206,
+            0.6345071577999385
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6794871794871795,
+          "ci95_percentile": [
+            0.4415584415584416,
+            0.8846153846153846
+          ],
+          "ci95_bca": [
+            0.41666666666666663,
+            0.8717948717948718
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6664322250639386,
+          "auc_632_corrected": 0.6509295545918954,
+          "se": 0.037158584231117876,
+          "ci95": [
+            0.5780987294989044,
+            0.7237603796848864
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.6467391304347826,
+          "auc_632_corrected": 0.5748331893504864,
+          "se": 0.05905736277654456,
+          "ci95": [
+            0.4590807583084591,
+            0.6905856203925138
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.7435897435897437,
+          "auc_632_corrected": 0.6423526409707139,
+          "se": 0.09631908236565069,
+          "ci95": [
+            0.45356723953403855,
+            0.8311380424073892
+          ]
+        }
+      },
+      "layer": "pc_k"
+    },
+    "pc_k5": {
+      "n_genes": 320,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 5,
+      "lam_ext": 0.003355704697986577,
+      "lam_within": 0.0025380710659898475,
+      "external": {
+        "GSE165252": {
+          "auc": 0.46376811594202894,
+          "ci95_percentile": [
+            0.3276148459383753,
+            0.6121326135105204
+          ],
+          "ci95_bca": [
+            0.3275432834082353,
+            0.6110436426114334
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.5833333333333334,
+          "ci95_percentile": [
+            0.3420595760233918,
+            0.8014735060690943
+          ],
+          "ci95_bca": [
+            0.33013787100360154,
+            0.7981673674093138
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.7052429667519181,
+          "auc_632_corrected": 0.680570426319005,
+          "se": 0.03558933574654009,
+          "ci95": [
+            0.6108153282557864,
+            0.7503255243822236
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.6431159420289855,
+          "auc_632_corrected": 0.5326125865856579,
+          "se": 0.05905347558359637,
+          "ci95": [
+            0.416867774441809,
+            0.6483573987295068
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.8076923076923077,
+          "auc_632_corrected": 0.6510244490703082,
+          "se": 0.09017507804043087,
+          "ci95": [
+            0.47428129611106373,
+            0.8277676020295527
+          ]
+        }
+      },
+      "layer": "pc_k"
+    },
+    "ridge_lam0.01": {
+      "n_genes": 320,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.01,
+      "lam_within": 0.01,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5036231884057971,
+          "ci95_percentile": [
+            0.3519401737967915,
+            0.654875730994152
+          ],
+          "ci95_bca": [
+            0.3540206604291994,
+            0.6584721535961872
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6602564102564102,
+          "ci95_percentile": [
+            0.4206190476190476,
+            0.8717948717948718
+          ],
+          "ci95_bca": [
+            0.4038454964351145,
+            0.8616583228383701
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6658567774936061,
+          "auc_632_corrected": 0.6570746710270073,
+          "se": 0.036415395340170784,
+          "ci95": [
+            0.5857004961602726,
+            0.728448845893742
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5181159420289855,
+          "auc_632_corrected": 0.4279243872173714,
+          "se": 0.05210596292179125,
+          "ci95": [
+            0.32579669989066057,
+            0.5300520745440822
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6987179487179488,
+          "auc_632_corrected": 0.6218855486747515,
+          "se": 0.10348608914853173,
+          "ci95": [
+            0.41905281394362937,
+            0.8247182834058737
+          ]
+        }
+      },
+      "layer": "ridge_lambda"
+    },
+    "ridge_lam0.1": {
+      "n_genes": 320,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 0.1,
+      "lam_within": 0.1,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5036231884057971,
+          "ci95_percentile": [
+            0.3519401737967915,
+            0.654875730994152
+          ],
+          "ci95_bca": [
+            0.3540206604291994,
+            0.6584721535961872
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6602564102564102,
+          "ci95_percentile": [
+            0.4206190476190476,
+            0.8717948717948718
+          ],
+          "ci95_bca": [
+            0.4038454964351145,
+            0.8616583228383701
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6658567774936061,
+          "auc_632_corrected": 0.6570747562369157,
+          "se": 0.03641607440638274,
+          "ci95": [
+            0.5856992504004055,
+            0.7284502620734259
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5181159420289855,
+          "auc_632_corrected": 0.4279149688847533,
+          "se": 0.052109513358858814,
+          "ci95": [
+            0.32578032270139,
+            0.5300496150681165
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6987179487179488,
+          "auc_632_corrected": 0.6219074711966741,
+          "se": 0.10338801098086503,
+          "ci95": [
+            0.41926696967417865,
+            0.8245479727191696
+          ]
+        }
+      },
+      "layer": "ridge_lambda"
+    },
+    "ridge_lam1": {
+      "n_genes": 320,
+      "n_unmeasured_in_subset": 0,
+      "degenerate": false,
+      "degenerate_reason": null,
+      "norm": "clr",
+      "k": 2,
+      "lam_ext": 1.0,
+      "lam_within": 1.0,
+      "external": {
+        "GSE165252": {
+          "auc": 0.5036231884057971,
+          "ci95_percentile": [
+            0.3519401737967915,
+            0.654875730994152
+          ],
+          "ci95_bca": [
+            0.3540206604291994,
+            0.6584721535961872
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        },
+        "GSE78220": {
+          "auc": 0.6602564102564102,
+          "ci95_percentile": [
+            0.4206190476190476,
+            0.8717948717948718
+          ],
+          "ci95_bca": [
+            0.4038454964351145,
+            0.8616583228383701
+          ],
+          "boot_valid": 2000,
+          "ci_excludes_0p5": false,
+          "ci_excludes_0p5_below": false,
+          "ci_excludes_0p5_bca": false,
+          "ci_excludes_0p5_below_bca": false
+        }
+      },
+      "within_632": {
+        "IMvigor210": {
+          "auc_apparent": 0.6658567774936061,
+          "auc_632_corrected": 0.6570740972100135,
+          "se": 0.03641912034363433,
+          "ci95": [
+            0.5856926213364902,
+            0.7284555730835368
+          ]
+        },
+        "GSE165252": {
+          "auc_apparent": 0.5181159420289855,
+          "auc_632_corrected": 0.4278714667072432,
+          "se": 0.05219969265742241,
+          "ci95": [
+            0.3255600690986953,
+            0.5301828643157911
+          ]
+        },
+        "GSE78220": {
+          "auc_apparent": 0.6987179487179488,
+          "auc_632_corrected": 0.6218859012089276,
+          "se": 0.10357925484753333,
+          "ci95": [
+            0.41887056170776227,
+            0.824901240710093
+          ]
+        }
+      },
+      "layer": "ridge_lambda"
+    }
+  },
+  "verdict": {
+    "any_config_recovers_transport": {
+      "any": false,
+      "per_cohort": {
+        "GSE165252": {
+          "any": false,
+          "configs": [],
+          "any_bca": false,
+          "configs_bca": [],
+          "any_below": false,
+          "configs_below": [],
+          "any_below_bca": false,
+          "configs_below_bca": []
+        },
+        "GSE78220": {
+          "any": false,
+          "configs": [],
+          "any_bca": false,
+          "configs_bca": [],
+          "any_below": false,
+          "configs_below": [],
+          "any_below_bca": false,
+          "configs_below_bca": []
+        }
+      },
+      "definition": "external AUC bootstrap 95% CI lower bound > 0.5 in at least one non-degenerate configuration (percentile engine CI primary; BCa reported alongside)",
+      "degenerate_configs_excluded": []
+    },
+    "external_auc_range_by_layer": {
+      "gene_set": {
+        "GSE165252": {
+          "all_configs": {
+            "n_configs": 13,
+            "min": 0.41757246376811596,
+            "max": 0.6023550724637681,
+            "range": 0.1847826086956521,
+            "q1": 0.48097826086956524,
+            "q3": 0.5489130434782609,
+            "iqr": 0.06793478260869562,
+            "variance": 0.002693650315194501
+          },
+          "non_degenerate": {
+            "n_configs": 13,
+            "min": 0.41757246376811596,
+            "max": 0.6023550724637681,
+            "range": 0.1847826086956521,
+            "q1": 0.48097826086956524,
+            "q3": 0.5489130434782609,
+            "iqr": 0.06793478260869562,
+            "variance": 0.002693650315194501
+          }
+        },
+        "GSE78220": {
+          "all_configs": {
+            "n_configs": 13,
+            "min": 0.5128205128205129,
+            "max": 0.6602564102564102,
+            "range": 0.14743589743589736,
+            "q1": 0.5384615384615385,
+            "q3": 0.6217948717948718,
+            "iqr": 0.08333333333333326,
+            "variance": 0.0028110723376995553
+          },
+          "non_degenerate": {
+            "n_configs": 13,
+            "min": 0.5128205128205129,
+            "max": 0.6602564102564102,
+            "range": 0.14743589743589736,
+            "q1": 0.5384615384615385,
+            "q3": 0.6217948717948718,
+            "iqr": 0.08333333333333326,
+            "variance": 0.0028110723376995553
+          }
+        },
+        "mean_variance_across_external": 0.0027523613264470283
+      },
+      "normalization": {
+        "GSE165252": {
+          "all_configs": {
+            "n_configs": 3,
+            "min": 0.47554347826086957,
+            "max": 0.5090579710144927,
+            "range": 0.033514492753623115,
+            "q1": 0.48958333333333337,
+            "q3": 0.5063405797101449,
+            "iqr": 0.01675724637681153,
+            "variance": 0.0003235380347265972
+          },
+          "non_degenerate": {
+            "n_configs": 3,
+            "min": 0.47554347826086957,
+            "max": 0.5090579710144927,
+            "range": 0.033514492753623115,
+            "q1": 0.48958333333333337,
+            "q3": 0.5063405797101449,
+            "iqr": 0.01675724637681153,
+            "variance": 0.0003235380347265972
+          }
+        },
+        "GSE78220": {
+          "all_configs": {
+            "n_configs": 3,
+            "min": 0.6538461538461537,
+            "max": 0.6602564102564102,
+            "range": 0.0064102564102564985,
+            "q1": 0.6538461538461537,
+            "q3": 0.657051282051282,
+            "iqr": 0.0032051282051283048,
+            "variance": 1.3697129081744606e-05
+          },
+          "non_degenerate": {
+            "n_configs": 3,
+            "min": 0.6538461538461537,
+            "max": 0.6602564102564102,
+            "range": 0.0064102564102564985,
+            "q1": 0.6538461538461537,
+            "q3": 0.657051282051282,
+            "iqr": 0.0032051282051283048,
+            "variance": 1.3697129081744606e-05
+          }
+        },
+        "mean_variance_across_external": 0.0001686175819041709
+      },
+      "pc_k": {
+        "GSE165252": {
+          "all_configs": {
+            "n_configs": 4,
+            "min": 0.46376811594202894,
+            "max": 0.5036231884057971,
+            "range": 0.03985507246376818,
+            "q1": 0.47939311594202894,
+            "q3": 0.5009057971014492,
+            "iqr": 0.021512681159420288,
+            "variance": 0.00032893945162080894
+          },
+          "non_degenerate": {
+            "n_configs": 4,
+            "min": 0.46376811594202894,
+            "max": 0.5036231884057971,
+            "range": 0.03985507246376818,
+            "q1": 0.47939311594202894,
+            "q3": 0.5009057971014492,
+            "iqr": 0.021512681159420288,
+            "variance": 0.00032893945162080894
+          }
+        },
+        "GSE78220": {
+          "all_configs": {
+            "n_configs": 4,
+            "min": 0.5833333333333334,
+            "max": 0.6794871794871795,
+            "range": 0.09615384615384615,
+            "q1": 0.6121794871794872,
+            "q3": 0.6650641025641025,
+            "iqr": 0.05288461538461531,
+            "variance": 0.001818293885601577
+          },
+          "non_degenerate": {
+            "n_configs": 4,
+            "min": 0.5833333333333334,
+            "max": 0.6794871794871795,
+            "range": 0.09615384615384615,
+            "q1": 0.6121794871794872,
+            "q3": 0.6650641025641025,
+            "iqr": 0.05288461538461531,
+            "variance": 0.001818293885601577
+          }
+        },
+        "mean_variance_across_external": 0.001073616668611193
+      },
+      "ridge_lambda": {
+        "GSE165252": {
+          "all_configs": {
+            "n_configs": 4,
+            "min": 0.5036231884057971,
+            "max": 0.5036231884057971,
+            "range": 0.0,
+            "q1": 0.5036231884057971,
+            "q3": 0.5036231884057971,
+            "iqr": 0.0,
+            "variance": 0.0
+          },
+          "non_degenerate": {
+            "n_configs": 4,
+            "min": 0.5036231884057971,
+            "max": 0.5036231884057971,
+            "range": 0.0,
+            "q1": 0.5036231884057971,
+            "q3": 0.5036231884057971,
+            "iqr": 0.0,
+            "variance": 0.0
+          }
+        },
+        "GSE78220": {
+          "all_configs": {
+            "n_configs": 4,
+            "min": 0.6602564102564102,
+            "max": 0.6602564102564102,
+            "range": 0.0,
+            "q1": 0.6602564102564102,
+            "q3": 0.6602564102564102,
+            "iqr": 0.0,
+            "variance": 0.0
+          },
+          "non_degenerate": {
+            "n_configs": 4,
+            "min": 0.6602564102564102,
+            "max": 0.6602564102564102,
+            "range": 0.0,
+            "q1": 0.6602564102564102,
+            "q3": 0.6602564102564102,
+            "iqr": 0.0,
+            "variance": 0.0
+          }
+        },
+        "mean_variance_across_external": 0.0
+      }
+    },
+    "layer_variance_ranking": [
+      "gene_set",
+      "pc_k",
+      "normalization",
+      "ridge_lambda"
+    ],
+    "largest_variance_layer": "gene_set",
+    "largest_variance_layer_scope": "computed over the four primary layers (gene_set, normalization, pc_k, ridge_lambda), non-degenerate configs, mean variance across the two external cohorts",
+    "key_finding": "Across 21 non-degenerate ablation configurations spanning gene set, normalization, PC dimension and ridge lambda under the recovered gene identity (320-gene panel, 0 all-zero genes), external AUC ranged 0.418-0.602 (GSE165252) and 0.513-0.679 (GSE78220). NO non-degenerate configuration yielded an external AUC whose bootstrap 95% CI excluded 0.5 under either the percentile or the BCa method -- the transport failure remains SYSTEMATIC under the recovered identity, not an artefact of any specific preprocessing choice tested. The largest cross-configuration external-AUC variance was attributable to the 'gene_set' layer (ranking: gene_set > pc_k > normalization > ridge_lambda). The  '70 unmeasured genes carrying 88.7% of PC1 loading mass' structural artefact is RETRACTED: under the recovered identity the anchor panel has 0 all-zero genes and the PC1 loading mass on (nonexistent) zero-genes is exactly 0; the 5 measured-only artefact configurations were removed (removal_reason recorded)."
+  },
+  "old__comparison": {
+    "old__json": "/Users/zuoxianbo/Desktop/SCI论文/Sandy_Nature/outputs/analysis_base/data/alignment_ablation.json",
+    "old_n_common": 228,
+    "old_n_unmeasured": 70,
+    "old_pc1_mass_unmeasured": 0.8866108766192753,
+    "old_baseline_external": {
+      "GSE165252": {
+        "auc": 0.5135869565217392,
+        "ci95": [
+          0.36274509803921573,
+          0.6643913043478258
+        ]
+      },
+      "GSE78220": {
+        "auc": 0.4551282051282051,
+        "ci95": [
+          0.21525297619047618,
+          0.6944534632034631
+        ]
+      }
+    },
+    "old_baseline_within_imvigor": 0.566878674914732,
+    "old_degenerate_configs": [
+      "gene_top50"
+    ],
+    "old_recovery_any": false,
+    "old_largest_variance_layer": "gene_set",
+    "old_layer_mean_variance": {
+      "gene_set": 0.008382983039290408,
+      "normalization": 0.007543608882026345,
+      "pc_k": 0.0031251649028182235,
+      "ridge_lambda": 0.0
+    },
+    "new_recovery_any": false,
+    "new_recovery_any_bca": false,
+    "new_largest_variance_layer": "gene_set",
+    "new_layer_mean_variance": {
+      "gene_set": 0.0027523613264470283,
+      "normalization": 0.0001686175819041709,
+      "pc_k": 0.001073616668611193,
+      "ridge_lambda": 0.0
+    },
+    "new_degenerate_configs": []
+  }
+}

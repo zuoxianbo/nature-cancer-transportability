@@ -1,0 +1,18 @@
+Data availability
+
+All datasets analysed in this study are publicly available from NCBI GEO:
+
+- IMvigor210 (urothelial carcinoma, atezolizumab; source anchor): GEO accession GSE139551 (Mariathasan et al., Nature 2019). The corrected gene-row identity key for the anonymised expression-matrix deposit (exmat_row_key.csv, 31,085 rows; SHA-256 recorded in the provenance ledger) is released with this package under data/.
+- GSE165252 (oesophageal adenocarcinoma, atezolizumab; external target): GEO accession GSE165252 (Hellstrom et al.).
+- GSE78220 (metastatic melanoma, pembrolizumab; external target): GEO accession GSE78220 (Le et al., JCI 2016).
+- GSE186143 (melanoma, anti-PD-1; joint efficacy x toxicity): GEO accession GSE186143, part of super-series GSE186144 (Lozano et al., Nature Medicine 2022). Clinical labels (response, immune-related adverse-event severity) are public; raw counts are deposited by the submitter under controlled access.
+- GSE189125 (melanoma, anti-PD-1 + anti-CTLA-4; severe irAE): GEO accession GSE189125 (Lozano et al., Nature Medicine 2022).
+- GSE216329 (NSCLC, anti-PD-1; any-grade irAE): GEO accession GSE216329 (Bukhari et al., Cell Reports Medicine 2022).
+- GSE253720 (CPI-colitis, case-control): GEO accession GSE253720.
+- GSE287541 (ChILI, longitudinal irAE): GEO accession GSE287541. This cohort is withheld from every estimate in this study and is used only as a provenance reference.
+
+All GEO accessions were re-verified field-by-field against GEO SOFT records and the linked primary publications during the provenance audit (data/provenance_ledger.json).
+
+Processed and frozen outputs: all result records referenced by the manuscript and the Supplementary Information are provided as machine-readable JSON archives under data/ and data/ (SHA-256 checksums in data/analysis_manifest.json). Patient-level S0 representation matrices and outcome vectors used by the rerun series are provided under data/_workspace/ (six .npy files). One per-figure source-data JSON with immutable key-to-value definitions accompanies every main and Extended Data figure under figures/source_data/.
+
+No new sequencing data were generated in this study. No datasets are restricted; the only controlled-access component is the submitter-deposited raw counts of GSE186143 noted above, and no estimate in this study depends on it.

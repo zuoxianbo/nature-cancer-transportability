@@ -1,0 +1,883 @@
+{
+  "analysis": "_imvigor_gene_recovery",
+  "date": "2026-09-24",
+  "seed": 20260911,
+  "phase1a": {
+    "hypotheses": {
+      "position_fData (=entrez string sort, the falsified old assumption)": {
+        "hypothesis": "position_fData (=entrez string sort, the falsified old assumption)",
+        "anchors": {
+          "DDX3Y": {
+            "found": true,
+            "exmat_row_1based": 29441,
+            "female_mean": 1113.7894736842106,
+            "male_mean": 1142.4411764705883,
+            "rowsum": 395392.0
+          },
+          "UTY": {
+            "found": true,
+            "exmat_row_1based": 26905,
+            "female_mean": 1727.25,
+            "male_mean": 1864.6433823529412,
+            "rowsum": 638454.0
+          },
+          "RPS4Y1": {
+            "found": true,
+            "exmat_row_1based": 24285,
+            "female_mean": 0.0,
+            "male_mean": 0.003676470588235294,
+            "rowsum": 1.0
+          },
+          "XIST": {
+            "found": true,
+            "exmat_row_1based": 26977,
+            "female_mean": 2.776315789473684,
+            "male_mean": 2.8308823529411766,
+            "rowsum": 981.0
+          },
+          "GAPDH": {
+            "found": true,
+            "exmat_row_1based": 15052,
+            "female_mean": 0.0,
+            "male_mean": 0.0,
+            "rowsum": 0.0
+          },
+          "ACTB": {
+            "found": true,
+            "exmat_row_1based": 24087,
+            "female_mean": 0.09210526315789473,
+            "male_mean": 0.10661764705882353,
+            "rowsum": 36.0
+          }
+        },
+        "pass": false
+      },
+      "symbol_alphabetical_upper": {
+        "hypothesis": "symbol_alphabetical_upper",
+        "anchors": {
+          "DDX3Y": {
+            "found": true,
+            "exmat_row_1based": 4747,
+            "female_mean": 11.276315789473685,
+            "male_mean": 8082.643382352941,
+            "rowsum": 2199336.0
+          },
+          "UTY": {
+            "found": true,
+            "exmat_row_1based": 29723,
+            "female_mean": 7.118421052631579,
+            "male_mean": 9125.58455882353,
+            "rowsum": 2482700.0
+          },
+          "RPS4Y1": {
+            "found": true,
+            "exmat_row_1based": 24985,
+            "female_mean": 19.894736842105264,
+            "male_mean": 13830.286764705883,
+            "rowsum": 3763350.0
+          },
+          "XIST": {
+            "found": true,
+            "exmat_row_1based": 30113,
+            "female_mean": 430147.8289473684,
+            "male_mean": 639.3125,
+            "rowsum": 32865128.0
+          },
+          "GAPDH": {
+            "found": true,
+            "exmat_row_1based": 7165,
+            "female_mean": 51698.38157894737,
+            "male_mean": 46338.367647058825,
+            "rowsum": 16533113.0
+          },
+          "ACTB": {
+            "found": true,
+            "exmat_row_1based": 220,
+            "female_mean": 342909.34210526315,
+            "male_mean": 338295.14338235295,
+            "rowsum": 118077389.0
+          }
+        },
+        "pass": true
+      },
+      "symbol_alphabetical_rawcase": {
+        "hypothesis": "symbol_alphabetical_rawcase",
+        "anchors": {
+          "DDX3Y": {
+            "found": true,
+            "exmat_row_1based": 4747,
+            "female_mean": 11.276315789473685,
+            "male_mean": 8082.643382352941,
+            "rowsum": 2199336.0
+          },
+          "UTY": {
+            "found": true,
+            "exmat_row_1based": 29723,
+            "female_mean": 7.118421052631579,
+            "male_mean": 9125.58455882353,
+            "rowsum": 2482700.0
+          },
+          "RPS4Y1": {
+            "found": true,
+            "exmat_row_1based": 24985,
+            "female_mean": 19.894736842105264,
+            "male_mean": 13830.286764705883,
+            "rowsum": 3763350.0
+          },
+          "XIST": {
+            "found": true,
+            "exmat_row_1based": 30113,
+            "female_mean": 430147.8289473684,
+            "male_mean": 639.3125,
+            "rowsum": 32865128.0
+          },
+          "GAPDH": {
+            "found": true,
+            "exmat_row_1based": 7165,
+            "female_mean": 51698.38157894737,
+            "male_mean": 46338.367647058825,
+            "rowsum": 16533113.0
+          },
+          "ACTB": {
+            "found": true,
+            "exmat_row_1based": 220,
+            "female_mean": 342909.34210526315,
+            "male_mean": 338295.14338235295,
+            "rowsum": 118077389.0
+          }
+        },
+        "pass": true
+      },
+      "entrez_numeric_desc": {
+        "hypothesis": "entrez_numeric_desc",
+        "anchors": {
+          "DDX3Y": {
+            "found": true,
+            "exmat_row_1based": 25272,
+            "female_mean": 3140.7105263157896,
+            "male_mean": 2896.7426470588234,
+            "rowsum": 1026608.0
+          },
+          "UTY": {
+            "found": true,
+            "exmat_row_1based": 25914,
+            "female_mean": 5.407894736842105,
+            "male_mean": 12.544117647058824,
+            "rowsum": 3823.0
+          },
+          "RPS4Y1": {
+            "found": true,
+            "exmat_row_1based": 26825,
+            "female_mean": 0.25,
+            "male_mean": 0.34558823529411764,
+            "rowsum": 113.0
+          },
+          "XIST": {
+            "found": true,
+            "exmat_row_1based": 25848,
+            "female_mean": 20.06578947368421,
+            "male_mean": 14.290441176470589,
+            "rowsum": 5412.0
+          },
+          "GAPDH": {
+            "found": true,
+            "exmat_row_1based": 29329,
+            "female_mean": 673.3026315789474,
+            "male_mean": 724.0441176470588,
+            "rowsum": 248111.0
+          },
+          "ACTB": {
+            "found": true,
+            "exmat_row_1based": 31038,
+            "female_mean": 4174.328947368421,
+            "male_mean": 4456.867647058823,
+            "rowsum": 1529517.0
+          }
+        },
+        "pass": false
+      },
+      "entrez_numeric_asc": {
+        "hypothesis": "entrez_numeric_asc",
+        "anchors": {
+          "DDX3Y": {
+            "found": true,
+            "exmat_row_1based": 5814,
+            "female_mean": 101.96052631578948,
+            "male_mean": 165.70220588235293,
+            "rowsum": 52820.0
+          },
+          "UTY": {
+            "found": true,
+            "exmat_row_1based": 5172,
+            "female_mean": 4106.8421052631575,
+            "male_mean": 4296.9375,
+            "rowsum": 1480887.0
+          },
+          "RPS4Y1": {
+            "found": true,
+            "exmat_row_1based": 4261,
+            "female_mean": 1355.7236842105262,
+            "male_mean": 1346.797794117647,
+            "rowsum": 469364.0
+          },
+          "XIST": {
+            "found": true,
+            "exmat_row_1based": 5238,
+            "female_mean": 27.394736842105264,
+            "male_mean": 32.158088235294116,
+            "rowsum": 10829.0
+          },
+          "GAPDH": {
+            "found": true,
+            "exmat_row_1based": 1757,
+            "female_mean": 208.31578947368422,
+            "male_mean": 204.20955882352942,
+            "rowsum": 71377.0
+          },
+          "ACTB": {
+            "found": true,
+            "exmat_row_1based": 48,
+            "female_mean": 1310.6184210526317,
+            "male_mean": 1543.1838235294117,
+            "rowsum": 519353.0
+          }
+        },
+        "pass": false
+      },
+      "symbol_desc": {
+        "hypothesis": "symbol_desc",
+        "anchors": {
+          "DDX3Y": {
+            "found": true,
+            "exmat_row_1based": 26339,
+            "female_mean": 369.7105263157895,
+            "male_mean": 379.12132352941177,
+            "rowsum": 131219.0
+          },
+          "UTY": {
+            "found": true,
+            "exmat_row_1based": 1363,
+            "female_mean": 15.657894736842104,
+            "male_mean": 25.033088235294116,
+            "rowsum": 7999.0
+          },
+          "RPS4Y1": {
+            "found": true,
+            "exmat_row_1based": 6101,
+            "female_mean": 0.0,
+            "male_mean": 0.0,
+            "rowsum": 0.0
+          },
+          "XIST": {
+            "found": true,
+            "exmat_row_1based": 973,
+            "female_mean": 1144.2631578947369,
+            "male_mean": 1314.735294117647,
+            "rowsum": 444572.0
+          },
+          "GAPDH": {
+            "found": true,
+            "exmat_row_1based": 23921,
+            "female_mean": 0.0,
+            "male_mean": 0.007352941176470588,
+            "rowsum": 2.0
+          },
+          "ACTB": {
+            "found": true,
+            "exmat_row_1based": 30866,
+            "female_mean": 75.96052631578948,
+            "male_mean": 75.36764705882354,
+            "rowsum": 26273.0
+          }
+        },
+        "pass": false
+      },
+      "length_asc": {
+        "hypothesis": "length_asc",
+        "anchors": {
+          "DDX3Y": {
+            "found": true,
+            "exmat_row_1based": 22135,
+            "female_mean": 726.578947368421,
+            "male_mean": 646.0772058823529,
+            "rowsum": 230953.0
+          },
+          "UTY": {
+            "found": true,
+            "exmat_row_1based": 30949,
+            "female_mean": 367.9868421052632,
+            "male_mean": 378.89338235294116,
+            "rowsum": 131026.0
+          },
+          "RPS4Y1": {
+            "found": true,
+            "exmat_row_1based": 6083,
+            "female_mean": 124.80263157894737,
+            "male_mean": 101.28676470588235,
+            "rowsum": 37035.0
+          },
+          "XIST": {
+            "found": true,
+            "exmat_row_1based": 30338,
+            "female_mean": 43.526315789473685,
+            "male_mean": 43.669117647058826,
+            "rowsum": 15186.0
+          },
+          "GAPDH": {
+            "found": true,
+            "exmat_row_1based": 20805,
+            "female_mean": 16043.276315789473,
+            "male_mean": 16188.988970588236,
+            "rowsum": 5622694.0
+          },
+          "ACTB": {
+            "found": true,
+            "exmat_row_1based": 15066,
+            "female_mean": 0.0,
+            "male_mean": 0.0,
+            "rowsum": 0.0
+          }
+        },
+        "pass": false
+      },
+      "length_desc": {
+        "hypothesis": "length_desc",
+        "anchors": {
+          "DDX3Y": {
+            "found": true,
+            "exmat_row_1based": 8954,
+            "female_mean": 167.1184210526316,
+            "male_mean": 273.4889705882353,
+            "rowsum": 87090.0
+          },
+          "UTY": {
+            "found": true,
+            "exmat_row_1based": 137,
+            "female_mean": 903.8421052631579,
+            "male_mean": 914.1470588235294,
+            "rowsum": 317340.0
+          },
+          "RPS4Y1": {
+            "found": true,
+            "exmat_row_1based": 25008,
+            "female_mean": 33.276315789473685,
+            "male_mean": 35.82720588235294,
+            "rowsum": 12274.0
+          },
+          "XIST": {
+            "found": true,
+            "exmat_row_1based": 748,
+            "female_mean": 1.6710526315789473,
+            "male_mean": 11.889705882352942,
+            "rowsum": 3361.0
+          },
+          "GAPDH": {
+            "found": true,
+            "exmat_row_1based": 10282,
+            "female_mean": 672.7105263157895,
+            "male_mean": 678.1066176470588,
+            "rowsum": 235571.0
+          },
+          "ACTB": {
+            "found": true,
+            "exmat_row_1based": 16021,
+            "female_mean": 0.0,
+            "male_mean": 0.0,
+            "rowsum": 0.0
+          }
+        },
+        "pass": false
+      },
+      "n_exons_asc": {
+        "hypothesis": "n_exons_asc",
+        "anchors": {
+          "DDX3Y": {
+            "found": true,
+            "exmat_row_1based": 25881,
+            "female_mean": 16.11842105263158,
+            "male_mean": 37.205882352941174,
+            "rowsum": 11345.0
+          },
+          "UTY": {
+            "found": true,
+            "exmat_row_1based": 30999,
+            "female_mean": 640.8815789473684,
+            "male_mean": 726.5992647058823,
+            "rowsum": 246342.0
+          },
+          "RPS4Y1": {
+            "found": true,
+            "exmat_row_1based": 14748,
+            "female_mean": 0.0,
+            "male_mean": 0.0,
+            "rowsum": 0.0
+          },
+          "XIST": {
+            "found": true,
+            "exmat_row_1based": 13724,
+            "female_mean": 0.05263157894736842,
+            "male_mean": 0.04044117647058824,
+            "rowsum": 15.0
+          },
+          "GAPDH": {
+            "found": true,
+            "exmat_row_1based": 27199,
+            "female_mean": 5850.6973684210525,
+            "male_mean": 5388.886029411765,
+            "rowsum": 1910430.0
+          },
+          "ACTB": {
+            "found": true,
+            "exmat_row_1based": 15797,
+            "female_mean": 0.0,
+            "male_mean": 0.0,
+            "rowsum": 0.0
+          }
+        },
+        "pass": false
+      }
+    },
+    "winner": "symbol_alphabetical_upper",
+    "winners": [
+      "symbol_alphabetical_upper",
+      "symbol_alphabetical_rawcase"
+    ],
+    "deep_verification": {
+      "y_gene_battery": {
+        "DDX3Y": {
+          "row": 4747,
+          "f_mean": 11.276315789473685,
+          "m_mean": 8082.643382352941,
+          "f_over_m": 0.001395127219653607
+        },
+        "UTY": {
+          "row": 29723,
+          "f_mean": 7.118421052631579,
+          "m_mean": 9125.58455882353,
+          "f_over_m": 0.0007800509662418037
+        },
+        "RPS4Y1": {
+          "row": 24985,
+          "f_mean": 19.894736842105264,
+          "m_mean": 13830.286764705883,
+          "f_over_m": 0.0014384905519729003
+        },
+        "KDM5D": {
+          "row": 9474,
+          "f_mean": 3.1052631578947367,
+          "m_mean": 6654.683823529412,
+          "f_over_m": 0.0004666282035692289
+        },
+        "ZFY": {
+          "row": 30397,
+          "f_mean": 8.342105263157896,
+          "m_mean": 3682.886029411765,
+          "f_over_m": 0.0022651000320230673
+        },
+        "EIF1AY": {
+          "row": 5565,
+          "f_mean": 1.5657894736842106,
+          "m_mean": 1129.8529411764705,
+          "f_over_m": 0.0013858347547901384
+        },
+        "TMSB4Y": {
+          "row": 28607,
+          "f_mean": 0.05263157894736842,
+          "m_mean": 38.158088235294116,
+          "f_over_m": 0.0013793033503886898
+        },
+        "USP9Y": {
+          "row": 29706,
+          "f_mean": 34.578947368421055,
+          "m_mean": 18840.555147058825,
+          "f_over_m": 0.0018353465223565416
+        }
+      },
+      "male_biased_top25_symbols": [
+        "USP9Y",
+        "RPS4Y1",
+        "UTY",
+        "DDX3Y",
+        "KDM5D",
+        "NLGN4Y",
+        "MYH1",
+        "ZFY",
+        "TXLNGY",
+        "EIF1AY",
+        "PRKY",
+        "MYH2",
+        "SEMG1",
+        "SEMG2",
+        "TBL1Y",
+        "NRAP",
+        "KLK2",
+        "GP2",
+        "MYL2",
+        "CSRP3",
+        "PCDH11Y",
+        "NPY",
+        "REG3A",
+        "MORC1",
+        "CHRND"
+      ],
+      "male_biased_top25_y_hits": [
+        "DDX3Y",
+        "EIF1AY",
+        "KDM5D",
+        "NLGN4Y",
+        "PCDH11Y",
+        "PRKY",
+        "RPS4Y1",
+        "SEMG1",
+        "SEMG2",
+        "TBL1Y",
+        "TXLNGY",
+        "USP9Y",
+        "UTY",
+        "ZFY"
+      ],
+      "xist": {
+        "row": 30113,
+        "f_over_m": 672.8287479868897,
+        "f_mean": 430147.8289473684,
+        "m_mean": 639.3125
+      },
+      "top30_rowsum_symbols": [
+        "MALAT1",
+        "COL1A2",
+        "FN1",
+        "COL1A1",
+        "AHNAK",
+        "ACTB",
+        "COL3A1",
+        "RNF213",
+        "ACTG1",
+        "PABPC1",
+        "MUC4",
+        "SNORA73A",
+        "RMRP",
+        "DYNC1H1",
+        "MYH9",
+        "UBC",
+        "PSAP",
+        "B2M",
+        "DSP",
+        "VCAN",
+        "HSP90AA1",
+        "CALR",
+        "XIST",
+        "RPS17",
+        "HSP90AB1",
+        "COL6A3",
+        "KRT6A",
+        "PLEC",
+        "SYNE2",
+        "RPS24"
+      ],
+      "immune_spearman": {
+        "CD8A": {
+          "spearman_TC": 0.29855857962199217,
+          "p_TC": 1.4169497721619772e-08,
+          "spearman_IC": 0.5538464288547065,
+          "p_IC": 2.75735620591519e-29
+        },
+        "CD3D": {
+          "spearman_TC": 0.2729328793727091,
+          "p_TC": 2.414623876118508e-07,
+          "spearman_IC": 0.4869388109132868,
+          "p_IC": 4.634930832636493e-22
+        },
+        "GZMB": {
+          "spearman_TC": 0.32633799046457873,
+          "p_TC": 4.712158856180408e-10,
+          "spearman_IC": 0.5416487666778497,
+          "p_IC": 7.590091514546594e-28
+        },
+        "PRF1": {
+          "spearman_TC": 0.340748703327515,
+          "p_TC": 6.99753199691683e-11,
+          "spearman_IC": 0.5398152793217761,
+          "p_IC": 1.23486591738464e-27
+        },
+        "CD274": {
+          "spearman_TC": 0.5228708842325704,
+          "p_TC": 9.663490078758941e-26,
+          "spearman_IC": 0.5200002929814671,
+          "p_IC": 1.9746909879081714e-25
+        },
+        "PDCD1": {
+          "spearman_TC": 0.264250626433732,
+          "p_TC": 5.922581938263938e-07,
+          "spearman_IC": 0.5393530915737833,
+          "p_IC": 1.3954004572260402e-27
+        },
+        "CTLA4": {
+          "spearman_TC": 0.24455246555085716,
+          "p_TC": 4.041353938282755e-06,
+          "spearman_IC": 0.5520356806859914,
+          "p_IC": 4.549592283280465e-29
+        },
+        "CXCL9": {
+          "spearman_TC": 0.31888890547787085,
+          "p_TC": 1.215232501025422e-09,
+          "spearman_IC": 0.6080353939858404,
+          "p_IC": 1.852474852142771e-36
+        },
+        "CXCL10": {
+          "spearman_TC": 0.38900337998889756,
+          "p_TC": 5.546498732595518e-14,
+          "spearman_IC": 0.5694221064199487,
+          "p_IC": 3.263951276071357e-31
+        }
+      },
+      "pearson_spot_checks": {
+        "CD8A~GZMB": 0.6104223035149801,
+        "COL1A1~COL1A2": 0.9824794211649097,
+        "ACTB~GAPDH": 0.4489725949799647,
+        "XIST~DDX3Y": -0.3688212661210261
+      },
+      "raw_vs_upper_ambiguous_rows": 145
+    }
+  },
+  "phase1c": {
+    "performed": true,
+    "n_exmat_rows": 31085,
+    "n_matched": 31085,
+    "n_ambiguous_rows": 5627,
+    "n_unmatched": 0,
+    "agreement_with_symbol_upper_key": 31081,
+    "agreement_with_symbol_rawcase_key": 30936,
+    "n_unique_value_matches": 25458,
+    "n_unique_value_matches_agreeing_key": 25454,
+    "conflict_examples": [
+      {
+        "exmat_row": 2333,
+        "identity_entrez": "100293534",
+        "key_entrez": 722,
+        "key_symbol": "C4BPA",
+        "note": "value-identical row whose entrez label differs between the upstream 1.0.0 extraction and the 2.0.0 mirror (C4BP-family annotation swap / CSNK1E dedup retention); not a 322-panel gene"
+      },
+      {
+        "exmat_row": 2334,
+        "identity_entrez": "722",
+        "key_entrez": 725,
+        "key_symbol": "C4BPB",
+        "note": "value-identical row whose entrez label differs between the upstream 1.0.0 extraction and the 2.0.0 mirror (C4BP-family annotation swap / CSNK1E dedup retention); not a 322-panel gene"
+      },
+      {
+        "exmat_row": 2335,
+        "identity_entrez": "725",
+        "key_entrez": 100293534,
+        "key_symbol": "C4B_2",
+        "note": "value-identical row whose entrez label differs between the upstream 1.0.0 extraction and the 2.0.0 mirror (C4BP-family annotation swap / CSNK1E dedup retention); not a 322-panel gene"
+      },
+      {
+        "exmat_row": 4226,
+        "identity_entrez": "1454",
+        "key_entrez": 102800317,
+        "key_symbol": "CSNK1E",
+        "note": "value-identical row whose entrez label differs between the upstream 1.0.0 extraction and the 2.0.0 mirror (C4BP-family annotation swap / CSNK1E dedup retention); not a 322-panel gene"
+      }
+    ],
+    "sort_key_resolved": "upper"
+  },
+  "phase2": {
+    "new": {
+      "gene_set": {
+        "panel": 322,
+        "imv_available": 320,
+        "imv_missing": [
+          "IGHG1",
+          "PRKN"
+        ],
+        "gse165252_available": 322,
+        "gse78220_available": 320,
+        "common": 320
+      },
+      "zero_genes": {
+        "n_allzero_across_348": 0,
+        "n_allzero_across_298_labelled": 0,
+        "symbols": []
+      },
+      "pc1_loading_squared_mass_on_zero_genes": 0.0,
+      "pc_explained_variance_ratio": [
+        0.2653272948044119,
+        0.07331522174880199
+      ],
+      "within_imvigor": {
+        "auc_apparent": 0.6658567774936061,
+        "auc_632": 0.6570746710270073,
+        "se": 0.036415395340170784,
+        "ci95": [
+          0.5857004961602726,
+          0.728448845893742
+        ],
+        "lambda_ridge": 0.0025380710659898475,
+        "n": 298,
+        "n_event": 68
+      },
+      "transport": {
+        "lambda_ridge": 0.003355704697986577,
+        "external": {
+          "GSE165252": {
+            "auc": 0.5036231884057971,
+            "ci95": [
+              0.3540206604291994,
+              0.6584721535961872
+            ],
+            "calib_slope": -0.526789606103434,
+            "spiegelhalter_p": 0.26210528168152303,
+            "brier": 0.262702511059918,
+            "log_loss": 0.8141936892958811,
+            "n_test": 71,
+            "n_event": 23
+          },
+          "GSE78220": {
+            "auc": 0.6602564102564102,
+            "ci95": [
+              0.4038454964351145,
+              0.8616583228383701
+            ],
+            "calib_slope": 5.678169924426832,
+            "spiegelhalter_p": 0.965836506899431,
+            "brier": 0.22802786705931374,
+            "log_loss": 0.6480391960560606,
+            "n_test": 25,
+            "n_event": 13
+          }
+        }
+      },
+      "cross_cohort_mean_expr_spearman": {
+        "recovered_key": {
+          "GSE165252": {
+            "spearman": 0.812755617730642,
+            "p": 1.3448426244174974e-76,
+            "n_genes": 320
+          },
+          "GSE78220": {
+            "spearman": 0.6190006738347054,
+            "p": 3.1171838826936647e-35,
+            "n_genes": 320
+          }
+        },
+        "old_positional_alignment": {
+          "GSE165252": {
+            "spearman": -0.16998852053461155,
+            "p": 0.010128699135472223,
+            "n_genes": 228
+          },
+          "GSE78220": {
+            "spearman": -0.06616469779970251,
+            "p": 0.31989960232834275,
+            "n_genes": 228
+          }
+        }
+      }
+    },
+    "old": {
+      "within_imvigor": {
+        "auc_apparent": 0.5836317135549872,
+        "ci95": [
+          0.5059638571001531,
+          0.6636938855959659
+        ],
+        "calib_slope": 5.563197465040285,
+        "brier": 0.17283843258426188,
+        "log_loss": 0.5280624399381414,
+        "n": 298,
+        "n_event": 68
+      },
+      "transport": {
+        "lambda_ridge": 0.003355704697986577,
+        "external": {
+          "GSE165252": {
+            "auc": 0.5009057971014492,
+            "ci95": [
+              0.3456323797744153,
+              0.6481126943396351
+            ],
+            "calib_slope": 0.9799612793433171,
+            "spiegelhalter_p": 0.7617627823661546,
+            "brier": 0.23195327230909357,
+            "log_loss": 0.6717046561229455,
+            "n_test": 71,
+            "n_event": 23
+          },
+          "GSE78220": {
+            "auc": 0.41025641025641024,
+            "ci95": [
+              0.19480519480519476,
+              0.6602564102564104
+            ],
+            "calib_slope": -2.480602577167652,
+            "spiegelhalter_p": 0.25016772895790584,
+            "brier": 0.3470987844226785,
+            "log_loss": 0.9563934118489067,
+            "n_test": 25,
+            "n_event": 13
+          }
+        }
+      },
+      "parity_with_frozen_": {
+        "GSE165252": {
+          "recomputed": 0.5009057971014492,
+          "frozen": 0.5009057971014492,
+          "match": true
+        },
+        "GSE78220": {
+          "recomputed": 0.41025641025641024,
+          "frozen": 0.41025641025641024,
+          "match": true
+        }
+      },
+      "zero_genes_frozen_": {
+        "n_common_genes": 228,
+        "n_unmeasured": 70,
+        "pc1_loading_squared_mass": 0.8866108766192753,
+        "pc1_evr": 0.345764569908682,
+        "source": "data/alignment_ablation.json:unmeasured_gene_artifact"
+      },
+      "within_632_frozen__pca_stability": 0.566878674914732,
+      "gene_selection_bug": "Supplementary_Table_1_322_genes.csv column 1 is a sequential row number (1..322), not Entrez IDs;  common_genes() treated it as entrez, yielding a pseudo-random 229-gene 'intersection' and row indices of unrelated genes (on top of the position alignment error)."
+    }
+  },
+  "verification_gates": {
+    "sex_anchor": "PASS",
+    "n_samples_348": true,
+    "sample_ids_match_pdata": true,
+    "sample_id_order_match_pdata": true,
+    "binaryResponse_counts": {
+      "CR/PR": 68,
+      "SD/PD": 230,
+      "NA": 50
+    },
+    "identity_match": true,
+    "panel_measurable": {
+      "old_fake_entrez_selection": 229,
+      "new_by_symbol": 320,
+      "of_322": 322,
+      "new_common_cross_cohort": 320
+    },
+    "overall": "PASS"
+  },
+  "provenance": {
+    "exmat_sha256": "fc51849b9e923b6a0ac8341c443d83d35d9fb2643d19b15554b3e444f74b5445",
+    "fData_sha256": "d0f781b5209748ed8475918c3db055db72d83f2838a9ce6636cbfe674b0f196b",
+    "pData_sha256": "33aafccabc6ea95fa95aa8049ace5261c7e5089ecde28811e877f0f5c010f0de",
+    "upstream": {
+      "repo": "https://github.com/mimifp/tfm_mUC",
+      "exmat_censored_url": "https://github.com/mimifp/tfm_mUC/blob/main/2_data/1_IMvigor210/exmat_censored_IMvigor210.csv",
+      "fData_upstream_sha256": "d0f781b5209748ed8475918c3db055db72d83f2838a9ce6636cbfe674b0f196b",
+      "pData_upstream_sha256": "33aafccabc6ea95fa95aa8049ace5261c7e5089ecde28811e877f0f5c010f0de",
+      "extraction_script": "1_scripts/2_pipeline/1_download_data.R (archived as geo_data/imvigor210_labeled/upstream_1_download_data.R): exmat written in counts(cds) row order with gene symbols in column 1; censored file replaces gene_id with gene_1..gene_31085 placeholders"
+    },
+    "mirror": {
+      "repo": "https://github.com/SiYangming/IMvigor210CoreBiologies",
+      "file": "data/cds.RData",
+      "url": "https://raw.githubusercontent.com/SiYangming/IMvigor210CoreBiologies/master/data/cds.RData",
+      "expected_size": 51233046,
+      "sha256": "b7f1cfb648cc6125e48ba9ff5094e4ed547ad4758cf68fca5117767ebf65df2e",
+      "note": "mirror of the official research-pub.gene.com IMvigor210CoreBiologies R package (Mariathasan et al., Nature 2018, doi:10.1038/nature25501); used only for the independent numeric identity check, never for the analysis values"
+    }
+  }
+}

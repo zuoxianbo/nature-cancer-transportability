@@ -1,0 +1,44 @@
+{
+  "figure": "fig1_transport_system",
+  "generated_by": "figures/make_stable_figures.R",
+  "panels": {
+    "b": {
+      "p0_10.within_reference.IMvigor210.n_event": 68,
+      "p0_10.within_reference.GSE78220.n_event": 13,
+      "p0_10.within_reference.GSE165252.n": 71,
+      "p0_10.within_reference.GSE78220.n": 25,
+      "p0_10.within_reference.IMvigor210.n": 298,
+      "p0_10.within_reference.GSE165252.n_event": 23
+    },
+    "c": {
+      "cohorts.GSE287541.ici_regimen": "ICI",
+      "cohorts.IMvigor210.cancer": "urothelial",
+      "cohorts.GSE189125.n": 13,
+      "cohorts.GSE253720.cancer": "CPI-colitis (mixed primaries)",
+      "cohorts.GSE287541.cancer": "mixed (ChILI)",
+      "audit_marker": "dagger = fields re-verified against GEO SOFT + linked publications (see ED2)",
+      "cohorts.GSE165252.cancer": "esophageal adenocarcinoma",
+      "cohorts.GSE189125.cancer": "melanoma",
+      "cohorts.GSE253720.n": 14,
+      "cohorts.GSE253720.ici_regimen": "anti-PD-1 6/9 · combo 3/9",
+      "cohorts.IMvigor210.n": 298,
+      "cohorts.GSE186143.n": 47,
+      "cohorts.GSE216329.cancer": "predominantly NSCLC (18/24)",
+      "cohorts.GSE186143.ici_regimen": "anti-PD-1 (29/53) · combo (24/53)",
+      "cohorts.GSE216329.ici_regimen": "anti-PD-1 (22/24 mono)",
+      "cohorts.GSE186143.cancer": "metastatic melanoma",
+      "cohorts.GSE78220.n": 25,
+      "cohorts.GSE166181.ici_regimen": "nivolumab / pembrolizumab",
+      "cohorts.GSE216329.n": 24,
+      "cohorts.GSE165252.n": 71,
+      "cohorts.GSE165252.ici_regimen": "atezolizumab",
+      "cohorts.GSE78220.ici_regimen": "pembrolizumab",
+      "cohorts.IMvigor210.ici_regimen": "atezolizumab",
+      "cohorts.GSE78220.cancer": "melanoma",
+      "cohorts.GSE287541.n": 28,
+      "cohorts.GSE189125.ici_regimen": "anti-PD-1 ± anti-CTLA-4",
+      "cohorts.GSE166181.n": 20,
+      "cohorts.GSE166181.cancer": "metastatic melanoma"
+    }
+  }
+}

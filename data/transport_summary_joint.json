@@ -1,0 +1,1558 @@
+{
+  "analysis": "_transport_summary_joint",
+  "seed": 20260911,
+  "purpose": "P0-10 continuous transport panel + P0-11 GSE186143 joint-model sanity re-verification for the Nature Cancer revision",
+  "environment": "/Users/zuoxianbo/.workbuddy/binaries/python/envs/default/bin/python",
+  "p0_10": {
+    "within_reference": {
+      "IMvigor210": {
+        "n": 298,
+        "n_event": 68,
+        "archived_efron_0632": 0.5668322771605525,
+        "archived_apparent": 0.5836317135549872,
+        "archived_oob_mean": 0.5570503268549324,
+        "recomputed_apparent": 0.5836317135549872,
+        "recomputed_oob_mean": 0.5570503268549324,
+        "recomputed_efron_0632": 0.5668322771605525,
+        "match_0632": true,
+        "match_apparent": true,
+        "match_oob": true
+      },
+      "GSE165252": {
+        "n": 71,
+        "n_event": 23,
+        "archived_efron_0632": 0.44406208549962106,
+        "archived_apparent": 0.4963768115942029,
+        "archived_oob_mean": 0.4136003462546747,
+        "recomputed_apparent": 0.4963768115942029,
+        "recomputed_oob_mean": 0.4136003462546747,
+        "recomputed_efron_0632": 0.44406208549962106,
+        "match_0632": true,
+        "match_apparent": true,
+        "match_oob": true
+      },
+      "GSE78220": {
+        "n": 25,
+        "n_event": 13,
+        "archived_efron_0632": 0.46399773762718766,
+        "archived_apparent": 0.6025641025641026,
+        "archived_oob_mean": 0.3833135251322751,
+        "recomputed_apparent": 0.6025641025641026,
+        "recomputed_oob_mean": 0.3833135251322751,
+        "recomputed_efron_0632": 0.46399773762718766,
+        "match_0632": true,
+        "match_apparent": true,
+        "match_oob": true
+      }
+    },
+    "within_bootstrap": {
+      "IMvigor210": {
+        "n_boot_valid": 2000,
+        "n_outer_skipped": 0,
+        "n_inner_skipped_total": 0,
+        "boot_mean": 0.578773330428467,
+        "boot_median": 0.5799623440807964,
+        "ci95_percentile": [
+          0.488158625545468,
+          0.6658433906820067
+        ],
+        "seconds": 1003.6
+      },
+      "GSE165252": {
+        "n_boot_valid": 2000,
+        "n_outer_skipped": 0,
+        "n_inner_skipped_total": 78,
+        "boot_mean": 0.5301958191598393,
+        "boot_median": 0.5174609224150544,
+        "ci95_percentile": [
+          0.44050623203346706,
+          0.6722958546053125
+        ],
+        "seconds": 890.0
+      },
+      "GSE78220": {
+        "n_boot_valid": 2000,
+        "n_outer_skipped": 0,
+        "n_inner_skipped_total": 8025,
+        "boot_mean": 0.5795476861488398,
+        "boot_median": 0.5671838743690286,
+        "ci95_percentile": [
+          0.4044688509433409,
+          0.8194666304185881
+        ],
+        "seconds": 934.5
+      }
+    },
+    "panel": {
+      "IMvigor210": {
+        "primary_frozen_F1": {
+          "role": "source_cohort",
+          "note": "IMvigor210 is the training cohort of the primary frozen transport: no external self-test exists; source / n-a"
+        },
+        "M0": {
+          "n_test": 298,
+          "n_event": 68,
+          "auc": 0.5,
+          "calib_intercept": -0.7077459799810979,
+          "calib_slope": null,
+          "brier": 0.1976719798657718,
+          "log_loss": 0.5865678655413308,
+          "p_constant": 0.375,
+          "match_log_loss": true,
+          "match_brier": true,
+          "match_calib_intercept": true,
+          "match_auc": true,
+          "match_calib_slope": true,
+          "auc_ci95_archived_": [
+            0.5,
+            0.5
+          ],
+          "note": "M0 degenerates to prevalence-only (disclosed in ); external AUC constant 0.5 -> external bootstrap degenerate, delta-AUC CI driven by the within side"
+        },
+        "M2": {
+          "n_test": 298,
+          "n_event": 68,
+          "auc": 0.524616368286445,
+          "calib_intercept": 4.254258572995293,
+          "calib_slope": 10.703942107954543,
+          "brier": 0.19746699303727544,
+          "log_loss": 0.5861269370622444,
+          "match_log_loss": true,
+          "match_brier": true,
+          "match_calib_intercept": true,
+          "match_calib_slope": true,
+          "match_auc": true,
+          "auc_ci95_archived_": [
+            0.4429567498732552,
+            0.5981067554615989
+          ],
+          "note": "M2 LOCO (train pooled other two, lambda=1/n_train); bit-level -F4/-M2 algebra"
+        },
+        "M3": {
+          "n_test": 298,
+          "n_event": 68,
+          "n_repeats_used": 100,
+          "n_repeats_skipped": 0,
+          "auc": 0.4981815856777494,
+          "auc_ci95_archived_": [
+            0.3927237851662404,
+            0.5629283887468031
+          ],
+          "calib_intercept": 2.3906615788671974,
+          "calib_slope": 2.9652227340649504,
+          "brier": 0.17716531042494904,
+          "log_loss": 0.5398002002833145,
+          "eval_design": "target-internal stratified 50/50 split x 100 repeats; metrics = eval-half means, CI = percentiles across repeats",
+          "match_auc": true,
+          "match_calib_intercept": true,
+          "match_calib_slope": true,
+          "match_brier": true,
+          "match_log_loss": true,
+          "match_frozen_function_rerun": true,
+          "note": "M3 uses TARGET labels (supervised recalibration); repeat means, / convention; uses the recomputed M2 linear predictor (matches the  pipeline)"
+        }
+      },
+      "GSE165252": {
+        "primary_frozen_F1": {
+          "n_test": 71,
+          "n_event": 23,
+          "auc": 0.5009057971014492,
+          "calib_intercept": -0.5320027268145958,
+          "calib_slope": 0.1621784975216249,
+          "brier": 0.23195327230909357,
+          "log_loss": 0.6717046561229455,
+          "auc_archived_": 0.5009057971014492,
+          "auc_ci95_archived_": [
+            0.3456323797744153,
+            0.6481126943396351
+          ],
+          "cross_check_auc_": true,
+          "note": "primary frozen transport ( F1: IMvigor210-trained, lambda=1/298); log-loss/Brier/calibration newly computed here with the  metric convention; calib_slope here is logit-scale and is NOT comparable to the  probability-scale calib_slope"
+        },
+        "M0": {
+          "n_test": 71,
+          "n_event": 23,
+          "auc": 0.5,
+          "calib_intercept": 0.35878177650550636,
+          "calib_slope": null,
+          "brier": 0.22435796617930895,
+          "log_loss": 0.6432672328988954,
+          "p_constant": 0.25077399380804954,
+          "match_log_loss": true,
+          "match_brier": true,
+          "match_calib_intercept": true,
+          "match_auc": true,
+          "match_calib_slope": true,
+          "auc_ci95_archived_": [
+            0.5,
+            0.5
+          ],
+          "note": "M0 degenerates to prevalence-only (disclosed in ); external AUC constant 0.5 -> external bootstrap degenerate, delta-AUC CI driven by the within side"
+        },
+        "M2": {
+          "n_test": 71,
+          "n_event": 23,
+          "auc": 0.5163043478260869,
+          "calib_intercept": -0.4128890292090466,
+          "calib_slope": 0.2909366113363124,
+          "brier": 0.22519869760484518,
+          "log_loss": 0.6468409866789044,
+          "match_log_loss": true,
+          "match_brier": true,
+          "match_calib_intercept": true,
+          "match_calib_slope": true,
+          "match_auc": true,
+          "auc_ci95_archived_": [
+            0.36700787148829367,
+            0.6591234609275951
+          ],
+          "note": "M2 LOCO (train pooled other two, lambda=1/n_train); bit-level -F4/-M2 algebra"
+        },
+        "M3": {
+          "n_test": 71,
+          "n_event": 23,
+          "n_repeats_used": 100,
+          "n_repeats_skipped": 0,
+          "auc": 0.4494097222222222,
+          "auc_ci95_archived_": [
+            0.34919507575757575,
+            0.5363794191919191
+          ],
+          "calib_intercept": -3.5753691295127648,
+          "calib_slope": -3.7389864029812347,
+          "brier": 0.22748094697994478,
+          "log_loss": 0.6497320578360606,
+          "eval_design": "target-internal stratified 50/50 split x 100 repeats; metrics = eval-half means, CI = percentiles across repeats",
+          "match_auc": true,
+          "match_calib_intercept": true,
+          "match_calib_slope": true,
+          "match_brier": true,
+          "match_log_loss": true,
+          "match_frozen_function_rerun": true,
+          "note": "M3 uses TARGET labels (supervised recalibration); repeat means, / convention; uses the recomputed M2 linear predictor (matches the  pipeline)"
+        }
+      },
+      "GSE78220": {
+        "primary_frozen_F1": {
+          "n_test": 25,
+          "n_event": 13,
+          "auc": 0.41025641025641024,
+          "calib_intercept": -0.5601658621059626,
+          "calib_slope": -0.5173365056125111,
+          "brier": 0.3470987844226785,
+          "log_loss": 0.9563934118489067,
+          "auc_archived_": 0.41025641025641024,
+          "auc_ci95_archived_": [
+            0.19480519480519476,
+            0.6602564102564104
+          ],
+          "cross_check_auc_": true,
+          "note": "primary frozen transport ( F1: IMvigor210-trained, lambda=1/298); log-loss/Brier/calibration newly computed here with the  metric convention; calib_slope here is logit-scale and is NOT comparable to the  probability-scale calib_slope"
+        },
+        "M0": {
+          "n_test": 25,
+          "n_event": 13,
+          "auc": 0.5,
+          "calib_intercept": 1.1968043148473235,
+          "calib_slope": null,
+          "brier": 0.32434074367843946,
+          "log_loss": 0.8638915660802593,
+          "p_constant": 0.24661246612466126,
+          "match_log_loss": true,
+          "match_brier": true,
+          "match_calib_intercept": true,
+          "match_auc": true,
+          "match_calib_slope": true,
+          "auc_ci95_archived_": [
+            0.5,
+            0.5
+          ],
+          "note": "M0 degenerates to prevalence-only (disclosed in ); external AUC constant 0.5 -> external bootstrap degenerate, delta-AUC CI driven by the within side"
+        },
+        "M2": {
+          "n_test": 25,
+          "n_event": 13,
+          "auc": 0.4487179487179487,
+          "calib_intercept": -0.8837384322803744,
+          "calib_slope": -0.8590379821800427,
+          "brier": 0.33151779401339243,
+          "log_loss": 0.8923737455458182,
+          "match_log_loss": true,
+          "match_brier": true,
+          "match_calib_intercept": true,
+          "match_calib_slope": true,
+          "match_auc": true,
+          "auc_ci95_archived_": [
+            0.22000000000000003,
+            0.6945043935151063
+          ],
+          "note": "M2 LOCO (train pooled other two, lambda=1/n_train); bit-level -F4/-M2 algebra"
+        },
+        "M3": {
+          "n_test": 25,
+          "n_event": 13,
+          "n_repeats_used": 100,
+          "n_repeats_skipped": 0,
+          "auc": 0.4509920634920634,
+          "auc_ci95_archived_": [
+            0.2151785714285714,
+            0.6388888888888888
+          ],
+          "calib_intercept": 0.10239496387834794,
+          "calib_slope": -1.6479090486571133,
+          "brier": 0.28132784422470497,
+          "log_loss": 0.7761220139927103,
+          "eval_design": "target-internal stratified 50/50 split x 100 repeats; metrics = eval-half means, CI = percentiles across repeats",
+          "match_auc": true,
+          "match_calib_intercept": true,
+          "match_calib_slope": true,
+          "match_brier": true,
+          "match_log_loss": true,
+          "match_frozen_function_rerun": true,
+          "note": "M3 uses TARGET labels (supervised recalibration); repeat means, / convention; uses the recomputed M2 linear predictor (matches the  pipeline)"
+        }
+      }
+    },
+    "delta_auc": {
+      "IMvigor210": {
+        "primary_frozen_F1": {
+          "point": null,
+          "ci95": null,
+          "method": "source / n-a"
+        },
+        "M0": {
+          "point": -0.06683227716055251,
+          "within_reference": 0.5668322771605525,
+          "n_within_valid": 2000,
+          "method": "external side: 2000-rep patient bootstrap of the frozen model's predictions on the target cohort; degenerate: constant predictions give AUC exactly 0.5 in every resample; within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.16584339068200674,
+            0.011841374454531962
+          ],
+          "ci95_within_held_fixed": [
+            -0.06683227716055251,
+            -0.06683227716055251
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        },
+        "M2": {
+          "point": -0.04221590887410753,
+          "within_reference": 0.5668322771605525,
+          "n_within_valid": 2000,
+          "method": "external side: 2000-rep patient bootstrap of the frozen model's predictions on the target cohort; within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.1715673489570623,
+            0.06449231835849625
+          ],
+          "ci95_within_held_fixed": [
+            -0.11829866748538498,
+            0.03648803533944733
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        },
+        "M3": {
+          "point": -0.06865069148280312,
+          "within_reference": 0.5668322771605525,
+          "n_within_valid": 2000,
+          "method": "external side: repeat-level resampling of the 100 recomputed eval-half AUCs (patient-level test bootstrap is ill-defined under per-repeat recalibration refits; CI reflects repeat-level variability); within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.21935078442011677,
+            0.041627322263771964
+          ],
+          "ci95_within_held_fixed": [
+            -0.18115452779993868,
+            -0.0036609216618312956
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        }
+      },
+      "GSE165252": {
+        "primary_frozen_F1": {
+          "point": 0.05684371160182816,
+          "within_reference": 0.44406208549962106,
+          "n_within_valid": 2000,
+          "method": "external side: 2000-rep patient bootstrap of the frozen model's predictions on the target cohort; within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.23115269034216876,
+            0.15672482011660593
+          ],
+          "ci95_within_held_fixed": [
+            -0.09833357068944165,
+            0.20412167518413943
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        },
+        "M0": {
+          "point": 0.05593791450037894,
+          "within_reference": 0.44406208549962106,
+          "n_within_valid": 2000,
+          "method": "external side: 2000-rep patient bootstrap of the frozen model's predictions on the target cohort; degenerate: constant predictions give AUC exactly 0.5 in every resample; within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.1722958546053128,
+            0.0594937679665329
+          ],
+          "ci95_within_held_fixed": [
+            0.05593791450037894,
+            0.05593791450037894
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        },
+        "M2": {
+          "point": 0.07224226232646586,
+          "within_reference": 0.44406208549962106,
+          "n_within_valid": 2000,
+          "method": "external side: 2000-rep patient bootstrap of the frozen model's predictions on the target cohort; within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.21467898884573944,
+            0.16482217675650757
+          ],
+          "ci95_within_held_fixed": [
+            -0.07840865611167153,
+            0.2139001180576911
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        },
+        "M3": {
+          "point": 0.0053476367226011345,
+          "within_reference": 0.44406208549962106,
+          "n_within_valid": 2000,
+          "method": "external side: repeat-level resampling of the 100 recomputed eval-half AUCs (patient-level test bootstrap is ill-defined under per-repeat recalibration refits; CI reflects repeat-level variability); within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.25470959905070717,
+            0.055709933326094224
+          ],
+          "ci95_within_held_fixed": [
+            -0.11420097438850996,
+            0.09381670237916678
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        }
+      },
+      "GSE78220": {
+        "primary_frozen_F1": {
+          "point": -0.053741327370777414,
+          "within_reference": 0.46399773762718766,
+          "n_within_valid": 2000,
+          "method": "external side: 2000-rep patient bootstrap of the frozen model's predictions on the target cohort; within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.4938450061564062,
+            0.14179865613534182
+          ],
+          "ci95_within_held_fixed": [
+            -0.2717899454193955,
+            0.1898484162189661
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        },
+        "M0": {
+          "point": 0.036002262372812344,
+          "within_reference": 0.46399773762718766,
+          "n_within_valid": 2000,
+          "method": "external side: 2000-rep patient bootstrap of the frozen model's predictions on the target cohort; degenerate: constant predictions give AUC exactly 0.5 in every resample; within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.3194666304185882,
+            0.09553114905665912
+          ],
+          "ci95_within_held_fixed": [
+            0.036002262372812344,
+            0.036002262372812344
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        },
+        "M2": {
+          "point": -0.015279788909238978,
+          "within_reference": 0.46399773762718766,
+          "n_within_valid": 2000,
+          "method": "external side: 2000-rep patient bootstrap of the frozen model's predictions on the target cohort; within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.4542293906443949,
+            0.17933034926301178
+          ],
+          "ci95_within_held_fixed": [
+            -0.24971202334147335,
+            0.22268976237281235
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        },
+        "M3": {
+          "point": -0.013005674135124268,
+          "within_reference": 0.46399773762718766,
+          "n_within_valid": 2000,
+          "method": "external side: repeat-level resampling of the 100 recomputed eval-half AUCs (patient-level test bootstrap is ill-defined under per-repeat recalibration refits; CI reflects repeat-level variability); within side: nested bootstrap of the Efron-0.632 estimator (2000 outer x 600 internal OOB refits, lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information",
+          "ci95_paired_bootstrap": [
+            -0.46079366044006037,
+            0.15041891682680528
+          ],
+          "ci95_within_held_fixed": [
+            -0.26955329318274324,
+            0.17489115126170118
+          ],
+          "n_paired_bootstrap": 2000,
+          "n_external_valid": 2000
+        }
+      }
+    },
+    "pooled_descriptive": {
+      "source": "data/meta_sensitivity.json / efficacy_dlmeta (DL primary)",
+      "k_cohorts": 3,
+      "pooled_auc": 0.498,
+      "ci95": [
+        0.365,
+        0.631
+      ],
+      "i2_qbased": 0.7516,
+      "Q_p": 0.0179,
+      "role": "descriptive only; heterogeneity (I2) precludes a single transportable AUC interpretation"
+    },
+    "cross_checks": [
+      {
+        "item": "M0 log_loss IMvigor210",
+        "recomputed": 0.5865678655413308,
+        "archived": 0.5865678655413308,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 brier IMvigor210",
+        "recomputed": 0.1976719798657718,
+        "archived": 0.1976719798657718,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 calib_intercept IMvigor210",
+        "recomputed": -0.7077459799810979,
+        "archived": -0.7077459799810979,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 auc IMvigor210",
+        "recomputed": 0.5,
+        "archived": 0.5,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 calib_slope IMvigor210",
+        "recomputed": null,
+        "archived": null,
+        "abs_diff": null,
+        "tol": 1e-09,
+        "match": true,
+        "note": "constant predictions -> slope not estimable (null)"
+      },
+      {
+        "item": "M2 log_loss IMvigor210",
+        "recomputed": 0.5861269370622444,
+        "archived": 0.5861269370622444,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 brier IMvigor210",
+        "recomputed": 0.19746699303727544,
+        "archived": 0.19746699303727544,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 calib_intercept IMvigor210",
+        "recomputed": 4.254258572995293,
+        "archived": 4.254258572995281,
+        "abs_diff": 1.2434497875801753e-14,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 calib_slope IMvigor210",
+        "recomputed": 10.703942107954543,
+        "archived": 10.703942107954518,
+        "abs_diff": 2.4868995751603507e-14,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 auc IMvigor210",
+        "recomputed": 0.524616368286445,
+        "archived": 0.524616368286445,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 auc IMvigor210",
+        "recomputed": 0.4981815856777494,
+        "archived": 0.4981815856777494,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 calib_intercept IMvigor210",
+        "recomputed": 2.3906615788671974,
+        "archived": 2.390661578865855,
+        "abs_diff": 1.3424816813767393e-12,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 calib_slope IMvigor210",
+        "recomputed": 2.9652227340649504,
+        "archived": 2.9652227340653847,
+        "abs_diff": 4.3431924723336124e-13,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 brier IMvigor210",
+        "recomputed": 0.17716531042494904,
+        "archived": 0.17716531042494896,
+        "abs_diff": 8.326672684688674e-17,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 log_loss IMvigor210",
+        "recomputed": 0.5398002002833145,
+        "archived": 0.5398002002833145,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 frozen-function re-run IMvigor210",
+        "recomputed": null,
+        "archived": null,
+        "abs_diff": null,
+        "tol": 1e-09,
+        "match": true,
+        "note": "cb.recal_repeats(eta, y) reproduces the verbose twin on every reported mean"
+      },
+      {
+        "item": "F1 AUC GSE165252",
+        "recomputed": 0.5009057971014492,
+        "archived": 0.5009057971014492,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 log_loss GSE165252",
+        "recomputed": 0.6432672328988954,
+        "archived": 0.6432672328988954,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 brier GSE165252",
+        "recomputed": 0.22435796617930895,
+        "archived": 0.22435796617930895,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 calib_intercept GSE165252",
+        "recomputed": 0.35878177650550636,
+        "archived": 0.35878177650550636,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 auc GSE165252",
+        "recomputed": 0.5,
+        "archived": 0.5,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 calib_slope GSE165252",
+        "recomputed": null,
+        "archived": null,
+        "abs_diff": null,
+        "tol": 1e-09,
+        "match": true,
+        "note": "constant predictions -> slope not estimable (null)"
+      },
+      {
+        "item": "M2 log_loss GSE165252",
+        "recomputed": 0.6468409866789044,
+        "archived": 0.6468409866789044,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 brier GSE165252",
+        "recomputed": 0.22519869760484518,
+        "archived": 0.22519869760484515,
+        "abs_diff": 2.7755575615628914e-17,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 calib_intercept GSE165252",
+        "recomputed": -0.4128890292090466,
+        "archived": -0.4128890292090457,
+        "abs_diff": 8.881784197001252e-16,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 calib_slope GSE165252",
+        "recomputed": 0.2909366113363124,
+        "archived": 0.29093661133631304,
+        "abs_diff": 6.661338147750939e-16,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 auc GSE165252",
+        "recomputed": 0.5163043478260869,
+        "archived": 0.5163043478260869,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 auc GSE165252",
+        "recomputed": 0.4494097222222222,
+        "archived": 0.4494097222222222,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 calib_intercept GSE165252",
+        "recomputed": -3.5753691295127648,
+        "archived": -3.5753691295123513,
+        "abs_diff": 4.134470543704083e-13,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 calib_slope GSE165252",
+        "recomputed": -3.7389864029812347,
+        "archived": -3.73898640298071,
+        "abs_diff": 5.24913446042774e-13,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 brier GSE165252",
+        "recomputed": 0.22748094697994478,
+        "archived": 0.22748094697994475,
+        "abs_diff": 2.7755575615628914e-17,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 log_loss GSE165252",
+        "recomputed": 0.6497320578360606,
+        "archived": 0.6497320578360605,
+        "abs_diff": 1.1102230246251565e-16,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 frozen-function re-run GSE165252",
+        "recomputed": null,
+        "archived": null,
+        "abs_diff": null,
+        "tol": 1e-09,
+        "match": true,
+        "note": "cb.recal_repeats(eta, y) reproduces the verbose twin on every reported mean"
+      },
+      {
+        "item": "F1 AUC GSE78220",
+        "recomputed": 0.41025641025641024,
+        "archived": 0.41025641025641024,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 log_loss GSE78220",
+        "recomputed": 0.8638915660802593,
+        "archived": 0.8638915660802593,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 brier GSE78220",
+        "recomputed": 0.32434074367843946,
+        "archived": 0.32434074367843946,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 calib_intercept GSE78220",
+        "recomputed": 1.1968043148473235,
+        "archived": 1.1968043148473235,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 auc GSE78220",
+        "recomputed": 0.5,
+        "archived": 0.5,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M0 calib_slope GSE78220",
+        "recomputed": null,
+        "archived": null,
+        "abs_diff": null,
+        "tol": 1e-09,
+        "match": true,
+        "note": "constant predictions -> slope not estimable (null)"
+      },
+      {
+        "item": "M2 log_loss GSE78220",
+        "recomputed": 0.8923737455458182,
+        "archived": 0.8923737455458182,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 brier GSE78220",
+        "recomputed": 0.33151779401339243,
+        "archived": 0.33151779401339243,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 calib_intercept GSE78220",
+        "recomputed": -0.8837384322803744,
+        "archived": -0.883738432280375,
+        "abs_diff": 5.551115123125783e-16,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 calib_slope GSE78220",
+        "recomputed": -0.8590379821800427,
+        "archived": -0.8590379821800429,
+        "abs_diff": 2.220446049250313e-16,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M2 auc GSE78220",
+        "recomputed": 0.4487179487179487,
+        "archived": 0.4487179487179487,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 auc GSE78220",
+        "recomputed": 0.4509920634920634,
+        "archived": 0.4509920634920634,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 calib_intercept GSE78220",
+        "recomputed": 0.10239496387834794,
+        "archived": 0.10239496387834833,
+        "abs_diff": 3.885780586188048e-16,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 calib_slope GSE78220",
+        "recomputed": -1.6479090486571133,
+        "archived": -1.64790904865707,
+        "abs_diff": 4.3298697960381105e-14,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 brier GSE78220",
+        "recomputed": 0.28132784422470497,
+        "archived": 0.28132784422470497,
+        "abs_diff": 0.0,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 log_loss GSE78220",
+        "recomputed": 0.7761220139927103,
+        "archived": 0.7761220139927102,
+        "abs_diff": 1.1102230246251565e-16,
+        "tol": 1e-09,
+        "match": true,
+        "note": ""
+      },
+      {
+        "item": "M3 frozen-function re-run GSE78220",
+        "recomputed": null,
+        "archived": null,
+        "abs_diff": null,
+        "tol": 1e-09,
+        "match": true,
+        "note": "cb.recal_repeats(eta, y) reproduces the verbose twin on every reported mean"
+      }
+    ],
+    "all_checks_pass": true
+  },
+  "p0_11": {
+    "items": [
+      {
+        "item": "2x2 cells (raw file ==  ==  == 10/17/15/5)",
+        "expected": {
+          "DCB/severe": 10,
+          "DCB/no_severe": 17,
+          "NDB/no_severe": 15,
+          "NDB/severe": 5
+        },
+        "recomputed": {
+          "DCB/severe": 10,
+          "DCB/no_severe": 17,
+          "NDB/no_severe": 15,
+          "NDB/severe": 5
+        },
+        "match": true,
+        "note": "raw n_joint_evaluable=47 (NE excluded, never imputed); rebuilt independently from geo_data/GSE186143_bulk_clinical.json",
+        "kind": "reproduction"
+      },
+      {
+        "item": "marginals 27/20/15/32",
+        "expected": {
+          "response_DCB": 27,
+          "response_NDB": 20,
+          "severe_irAE_yes": 15,
+          "severe_irAE_no": 32
+        },
+        "recomputed": {
+          "response_DCB": 27,
+          "response_NDB": 20,
+          "severe_irAE_yes": 15,
+          "severe_irAE_no": 32
+        },
+        "match": true,
+        "note": "",
+        "kind": "reproduction"
+      },
+      {
+        "item": "Fisher OR = 1.7647",
+        "expected": 1.7647058823529411,
+        "recomputed": 1.7647058823529411,
+        "match": true,
+        "note": "",
+        "kind": "reproduction"
+      },
+      {
+        "item": "Fisher exact two-sided P = 0.5293 (hand hypergeometric)",
+        "expected": 0.5293322552226017,
+        "recomputed": 0.5293322552226017,
+        "match": true,
+        "note": "",
+        "kind": "reproduction"
+      },
+      {
+        "item": "Fisher exact two-sided P (scipy cross-check)",
+        "expected": 0.5293322552226017,
+        "recomputed": 0.5293322552226016,
+        "match": true,
+        "note": "scipy two-sided convention (sum of tables with prob <= observed) agrees with the  hand implementation",
+        "kind": "reproduction"
+      },
+      {
+        "item": "25-fold per-fold delta log-loss reproduces (fold rule verified)",
+        "expected": "identical per-fold values (max |diff| = 0)",
+        "recomputed": "max |diff| = 0.00e+00",
+        "match": true,
+        "note": "exact per-fold reproduction proves the frozen fold construction (rng.permutation round-robin stratified on the 4 joint cells, seed 20260911, identical folds for both model families)",
+        "kind": "reproduction"
+      },
+      {
+        "item": "pooled joint log-loss 1.3452",
+        "expected": 1.345178386006393,
+        "recomputed": 1.345178386006393,
+        "match": true,
+        "note": "",
+        "kind": "reproduction"
+      },
+      {
+        "item": "pooled independent log-loss 1.3560",
+        "expected": 1.3559742344117067,
+        "recomputed": 1.3559742344117067,
+        "match": true,
+        "note": "",
+        "kind": "reproduction"
+      },
+      {
+        "item": "joint better in 12/25 folds",
+        "expected": 12,
+        "recomputed": 12,
+        "match": true,
+        "note": "",
+        "kind": "reproduction"
+      },
+      {
+        "item": "sklearn replication (1.3549/1.3450, 12/25)",
+        "expected": [
+          1.3548948008620516,
+          1.3449780247480114,
+          12
+        ],
+        "recomputed": [
+          1.3548948008620516,
+          1.3449780247480114,
+          12
+        ],
+        "match": true,
+        "note": "second implementation (sklearn L2, C=1/(lambda*n)) confirms the hand-written Newton numbers",
+        "kind": "reproduction"
+      },
+      {
+        "item": "mean fold-level delta log-loss +0.000479",
+        "expected": 0.0004788876124055186,
+        "recomputed": 0.0004788876124055186,
+        "match": true,
+        "note": "",
+        "kind": "reproduction"
+      },
+      {
+        "item": "sign-permutation P = 0.986 (verbatim  code path, frozen deltas)",
+        "expected": 0.9862601373986261,
+        "recomputed": 0.9862601373986261,
+        "match": true,
+        "note": "rng = default_rng(SeedSequence([20260911, 5001])), 100,000 two-sided sign flips, (+1)/(N+1) convention",
+        "kind": "reproduction"
+      },
+      {
+        "item": "exact two-sided sign test P = 1.0",
+        "expected": 1.0,
+        "recomputed": 1.0,
+        "match": true,
+        "note": "",
+        "kind": "reproduction"
+      },
+      {
+        "item": "sign-permutation P on the RE-RUN deltas",
+        "expected": 0.9862601373986261,
+        "recomputed": 0.9862601373986261,
+        "match": true,
+        "note": "re-run per-fold deltas give the identical permutation P",
+        "kind": "reproduction"
+      },
+      {
+        "item": "fold sizes pattern 10/10/9/9/9 per repeat (round-robin on cells 10/17/15/5)",
+        "expected": "10,10,9,9,9 x5",
+        "recomputed": [
+          10,
+          10,
+          9,
+          9,
+          9
+        ],
+        "match": true,
+        "note": "",
+        "kind": "reproduction"
+      },
+      {
+        "item": "identical folds for both model families",
+        "expected": "shared fold splits in the frozen script",
+        "recomputed": "per-fold delta reproduction implies shared splits",
+        "match": true,
+        "note": "the joint and independent models are scored on the identical held-out patients in every fold (frozen design)",
+        "kind": "reproduction"
+      },
+      {
+        "item": "smallest cell NDB/severe n=5 (n=47 joint-evaluable)",
+        "expected": "5 of 47",
+        "recomputed": "5 of 47",
+        "match": true,
+        "note": "",
+        "kind": "reproduction"
+      },
+      {
+        "item": "4-class multinomial ~9 effective free params vs 6 for the independent pair",
+        "expected": "9 vs 6",
+        "recomputed": "9 vs 6 (derivation verified)",
+        "match": true,
+        "note": "(D+1)*K = 3*4 = 12 weights minus K-1 = 3 softmax shift-invariance dof = 9; two logistics x 3 = 6",
+        "kind": "reproduction"
+      },
+      {
+        "item": "smallest TRAINING cell n=4 (5 minus 1 held out)",
+        "expected": 4,
+        "recomputed": 4,
+        "match": true,
+        "note": "verified on every one of the 25 recomputed folds (min training-cell occupancy = 4)",
+        "kind": "reproduction"
+      },
+      {
+        "item": "events-per-parameter far below 10 for every joint cell",
+        "expected": "< 10",
+        "recomputed": 5.222222222222222,
+        "match": true,
+        "note": "47/9 = 5.22",
+        "kind": "reproduction"
+      },
+      {
+        "item": "claim 'cell proportions carry 95% CIs wider than +/-0.2'",
+        "expected": "claimed in the frozen identifiability_note",
+        "recomputed": "max CI half-width = 0.153 (full widths 0.196-0.288)",
+        "match": false,
+        "note": "NUMERICALLY NOT SUPPORTED as stated: the largest half-width is 0.153 < 0.20; three of four full widths exceed 0.2 but the smallest cell (5/47) has full width 0.196. The sparsity/identifiability conclusion itself stands on the other verified arguments (min cell n=5, min training cell n=4, events-per-parameter 5.2, 9 vs 6 parameters); recommend rewording the sentence to the full-width formulation or to the exact per-cell CIs.",
+        "kind": "claim_audit"
+      },
+      {
+        "item": "frozen wording stays within stress-test / descriptive bounds (no joint advantage claim, no mechanism conclusion)",
+        "expected": "verdict + identifiability_note +  interpretation hedged",
+        "recomputed": "all three frozen texts re-read verbatim",
+        "match": true,
+        "note": " verdict: '...does NOT support a joint-modeling advantage claim at n=47.';  identifiability note: '...must remain stress-test / hypothesis-generating only...';  joint_formal_test: '...no identifiable joint-multinomial advantage at n=47.' -- no mechanism or coupling language anywhere in the frozen chain",
+        "kind": "reproduction"
+      }
+    ],
+    "issues": [
+      "identifiability_note sentence 'cell proportions carry 95% CIs wider than +/-0.2' is not numerically supported (max half-width 0.153; full widths 0.196-0.288). Word-level fix recommended; conclusion unchanged."
+    ],
+    "recompute_seconds": 1.1,
+    "sanity_verdict": "PASS_WITH_NOTES",
+    "ed9": {
+      "n_joint_evaluable": 47,
+      "cells": {
+        "DCB/severe": 10,
+        "DCB/no_severe": 17,
+        "NDB/no_severe": 15,
+        "NDB/severe": 5
+      },
+      "marginals": {
+        "response_DCB": 27,
+        "response_NDB": 20,
+        "severe_irAE_yes": 15,
+        "severe_irAE_no": 32
+      },
+      "s0_means_by_cell": {
+        "DCB/severe": {
+          "n": 10,
+          "S0_PC1_mean": 149.98958969999998,
+          "S0_PC2_mean": -12.601201,
+          "S0_PC1_sd": 3.131100988563821,
+          "S0_PC2_sd": 0.656049902973513
+        },
+        "DCB/no_severe": {
+          "n": 17,
+          "S0_PC1_mean": 153.66775170588235,
+          "S0_PC2_mean": -12.357728470588235,
+          "S0_PC1_sd": 6.322142549075854,
+          "S0_PC2_sd": 1.0085273783382827
+        },
+        "NDB/no_severe": {
+          "n": 15,
+          "S0_PC1_mean": 150.1815570666667,
+          "S0_PC2_mean": -12.365277933333335,
+          "S0_PC1_sd": 4.326504393030269,
+          "S0_PC2_sd": 0.986503477661488
+        },
+        "NDB/severe": {
+          "n": 5,
+          "S0_PC1_mean": 154.35609060000002,
+          "S0_PC2_mean": -12.846904799999999,
+          "S0_PC1_sd": 3.5565117532596213,
+          "S0_PC2_sd": 0.43274198017606336
+        }
+      },
+      "OR_E_T": 1.7647058823529411,
+      "fisher_exact_p_hand": 0.5293322552226017,
+      "fisher_exact_p_scipy": 0.5293322552226016,
+      "fold_occupancy_by_repeat": [
+        [
+          {
+            "fold": 1,
+            "n_test": 10,
+            "DCB_severe": 2,
+            "DCB_no_severe": 4,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 2,
+            "n_test": 10,
+            "DCB_severe": 2,
+            "DCB_no_severe": 4,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 3,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 4,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 5,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          }
+        ],
+        [
+          {
+            "fold": 1,
+            "n_test": 10,
+            "DCB_severe": 2,
+            "DCB_no_severe": 4,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 2,
+            "n_test": 10,
+            "DCB_severe": 2,
+            "DCB_no_severe": 4,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 3,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 4,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 5,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          }
+        ],
+        [
+          {
+            "fold": 1,
+            "n_test": 10,
+            "DCB_severe": 2,
+            "DCB_no_severe": 4,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 2,
+            "n_test": 10,
+            "DCB_severe": 2,
+            "DCB_no_severe": 4,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 3,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 4,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 5,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          }
+        ],
+        [
+          {
+            "fold": 1,
+            "n_test": 10,
+            "DCB_severe": 2,
+            "DCB_no_severe": 4,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 2,
+            "n_test": 10,
+            "DCB_severe": 2,
+            "DCB_no_severe": 4,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 3,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 4,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 5,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          }
+        ],
+        [
+          {
+            "fold": 1,
+            "n_test": 10,
+            "DCB_severe": 2,
+            "DCB_no_severe": 4,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 2,
+            "n_test": 10,
+            "DCB_severe": 2,
+            "DCB_no_severe": 4,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 3,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 4,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          },
+          {
+            "fold": 5,
+            "n_test": 9,
+            "DCB_severe": 2,
+            "DCB_no_severe": 3,
+            "NDB_no_severe": 3,
+            "NDB_severe": 1
+          }
+        ]
+      ],
+      "fold_sizes_all": [
+        10,
+        10,
+        9,
+        9,
+        9,
+        10,
+        10,
+        9,
+        9,
+        9,
+        10,
+        10,
+        9,
+        9,
+        9,
+        10,
+        10,
+        9,
+        9,
+        9,
+        10,
+        10,
+        9,
+        9,
+        9
+      ],
+      "fold_sizes_pattern": [
+        10,
+        10,
+        9,
+        9,
+        9
+      ],
+      "min_class_occupancy_per_fold": 1,
+      "min_training_cell_across_folds": 4,
+      "class_counts": {
+        "DCB/severe": 10,
+        "DCB/no_severe": 17,
+        "NDB/no_severe": 15,
+        "NDB/severe": 5
+      },
+      "per_cell_clopper_pearson_95": {
+        "DCB/severe": {
+          "n": 10,
+          "proportion": 0.2127659574468085,
+          "cp95": [
+            0.10703247715478559,
+            0.35663698776299246
+          ],
+          "half_width_below": 0.10573348029202292,
+          "half_width_above": 0.14387103031618395,
+          "full_width": 0.24960451060820688
+        },
+        "DCB/no_severe": {
+          "n": 17,
+          "proportion": 0.3617021276595745,
+          "cp95": [
+            0.2267142682987862,
+            0.5148021538982486
+          ],
+          "half_width_below": 0.1349878593607883,
+          "half_width_above": 0.15310002623867408,
+          "full_width": 0.2880878855994624
+        },
+        "NDB/no_severe": {
+          "n": 15,
+          "proportion": 0.3191489361702128,
+          "cp95": [
+            0.19086050766750792,
+            0.47118125720406034
+          ],
+          "half_width_below": 0.12828842850270486,
+          "half_width_above": 0.15203232103384756,
+          "full_width": 0.2803207495365524
+        },
+        "NDB/severe": {
+          "n": 5,
+          "proportion": 0.10638297872340426,
+          "cp95": [
+            0.03545630080721555,
+            0.23104762675098328
+          ],
+          "half_width_below": 0.0709266779161887,
+          "half_width_above": 0.12466464802757903,
+          "full_width": 0.19559132594376774
+        }
+      },
+      "pooled_log_loss": {
+        "joint": 1.345178386006393,
+        "independent": 1.3559742344117067
+      },
+      "n_folds_joint_better": 12,
+      "n_folds_total": 25,
+      "sign_permutation_p_on_frozen_deltas": 0.9862601373986261,
+      "sign_permutation_p_on_rerun_deltas": 0.9862601373986261,
+      "events_per_parameter": 5.222222222222222,
+      "effective_params": {
+        "joint_multinomial": 9,
+        "independent_pair": 6
+      }
+    }
+  },
+  "files": {
+    "script": "scripts/analysis/transport_summary_joint.py",
+    "json": "data/transport_summary_joint.json",
+    "md": "data/transport_summary_joint.md"
+  },
+  "status": "real",
+  "total_seconds": 2854.0
+}

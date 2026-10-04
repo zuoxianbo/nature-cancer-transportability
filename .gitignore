@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env/
+.ipynb_checkpoints/
+
+# R
+.Rproj.user
+.Rhistory
+.RData
+.RData.rdb
+.RData.rds
+.Rdata
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+._*
+
+# Large intermediates (patient-level S0 matrices are NOT in this repo by policy)
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.mtx
+*.mtx.gz
+*.rds
+*.rds.gz
+*.csv.gz
+*.parquet
+*.feather
+*.tqdm
+
+# Build artifacts and OS temp
+dist/
+build/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bak
+*.tmp
+*.log

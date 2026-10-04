@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='510.24pt' height='425.20pt' viewBox='0 0 510.24 425.20'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1MTAuMjR8MC4wMHw0MjUuMjA='>
+    <rect x='0.00' y='0.00' width='510.24' height='425.20' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHw0MjUuMjA=)'>
+<rect x='0.00' y='0.00' width='510.24' height='425.20' style='stroke-width: 0.00; stroke: none;' />
+<rect x='30.15' y='38.65' width='148.43' height='235.79' style='stroke-width: 0.96; stroke: #1F4E79; stroke-linecap: butt; stroke-linejoin: miter; fill: #EEF3F9;' />
+<text x='37.11' y='50.86' style='font-size: 7.11px; font-weight: bold;fill: #1F4E79; font-family: "Arial";'>FROZEN INPUTS (data/)</text>
+<text x='37.11' y='65.32' style='font-size: 5.41px; font-weight: bold;fill: #404040; font-family: "Arial";'>data/v82/ — anchor authority + rerun series</text>
+<text x='37.11' y='81.84' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>v82_imvigor_gene_recovery.json  (recovered key + gates)</text>
+<text x='37.11' y='88.47' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>v82_rerun_benchmark.json  (LOCO M0–M6, within, calib,</text>
+<text x='37.11' y='95.10' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>  pairwise, near-miss)</text>
+<text x='37.11' y='101.74' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>v82_rerun_ablation.json  (21-config grid + retraction)</text>
+<text x='37.11' y='108.37' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>v82_rerun_positive_control.json  (Ayers, tiers)</text>
+<text x='37.11' y='141.30' style='font-size: 5.26px;fill: #4D4D4D; font-family: "Arial";'>+ 6 earlier v82 JSONs (clinical-only, provenance</text>
+<text x='37.11' y='147.93' style='font-size: 5.26px;fill: #4D4D4D; font-family: "Arial";'>ledger, threshold/zero sensitivity, transport</text>
+<text x='37.11' y='154.56' style='font-size: 5.26px;fill: #4D4D4D; font-family: "Arial";'>summary, positive-control superseded original)</text>
+<text x='37.11' y='161.20' style='font-size: 5.26px;fill: #4D4D4D; font-family: "Arial";'>+ data/v71/ v74/ v75/ prior freezes (wrong-identity</text>
+<text x='37.11' y='167.83' style='font-size: 5.26px;fill: #4D4D4D; font-family: "Arial";'>values kept as provenance, never as results)</text>
+<text x='37.11' y='222.26' style='font-size: 5.41px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>RETRACTION RECORD</text>
+<text x='37.11' y='238.68' style='font-size: 5.12px;fill: #333333; font-family: "Arial";'>retracted: '70 unmeasured genes / 88.7% PC1 mass'</text>
+<text x='37.11' y='245.13' style='font-size: 5.12px;fill: #333333; font-family: "Arial";'>structural artefact + 228-gene intersection + 5</text>
+<text x='37.11' y='251.58' style='font-size: 5.12px;fill: #333333; font-family: "Arial";'>measured-only ablation configs (premise gone under</text>
+<text x='37.11' y='258.03' style='font-size: 5.12px;fill: #333333; font-family: "Arial";'>the recovered key) — see data/v82/</text>
+<text x='37.11' y='264.49' style='font-size: 5.12px;fill: #333333; font-family: "Arial";'>v82_artefact_retraction.md and v82_number_audit.md</text>
+<rect x='192.50' y='38.65' width='125.24' height='235.79' style='stroke-width: 0.96; stroke: #7F5FA2; stroke-linecap: butt; stroke-linejoin: miter; fill: #F4EEF8;' />
+<text x='201.78' y='50.86' style='font-size: 7.11px; font-weight: bold;fill: #7F5FA2; font-family: "Arial";'>SCRIPTS</text>
+<text x='201.78' y='65.32' style='font-size: 5.41px; font-weight: bold;fill: #404040; font-family: "Arial";'>anchor recovery + v82 rerun series</text>
+<text x='201.78' y='83.00' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>v82_imvigor_gene_recovery.py</text>
+<text x='201.78' y='89.63' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>v82_rerun_benchmark.py</text>
+<text x='201.78' y='96.26' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>v82_rerun_ablation.py</text>
+<text x='201.78' y='102.90' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>v82_rerun_positive_control.py</text>
+<text x='201.78' y='147.38' style='font-size: 5.26px;fill: #4D4D4D; font-family: "Arial";'>+ 11 earlier v82 scripts (phase-1a diagnostics,</text>
+<text x='201.78' y='154.01' style='font-size: 5.26px;fill: #4D4D4D; font-family: "Arial";'>clinical-only, sensitivity, summaries)</text>
+<text x='201.78' y='183.60' style='font-size: 5.41px; font-weight: bold;fill: #404040; font-family: "Arial";'>figure generation</text>
+<text x='201.78' y='200.12' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>figures_v82/make_v82_stable_figures.R (stable set)</text>
+<text x='201.78' y='206.75' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>figures_v82/make_v82_anchor_figures.R (this script;</text>
+<text x='201.78' y='213.39' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>anchor set, reads the rerun series verbatim)</text>
+<rect x='331.65' y='38.65' width='148.43' height='235.79' style='stroke-width: 0.96; stroke: #4F6228; stroke-linecap: butt; stroke-linejoin: miter; fill: #EBF1DD;' />
+<text x='340.93' y='50.86' style='font-size: 7.11px; font-weight: bold;fill: #4F6228; font-family: "Arial";'>OUTPUTS (figures_v82/)</text>
+<text x='340.93' y='64.55' style='font-size: 5.41px;fill: #404040; font-family: "Arial";'>one figure = PNG (300 dpi) + PDF + SVG</text>
+<text x='340.93' y='81.74' style='font-size: 5.12px;fill: #262626; font-family: "Arial";'>stable set: fig1_transport_system, fig6_joint_boundary,</text>
+<text x='340.93' y='88.19' style='font-size: 5.12px;fill: #262626; font-family: "Arial";'>ed2_cohort_ledger, ed8_toxicity_stress,</text>
+<text x='340.93' y='94.65' style='font-size: 5.12px;fill: #262626; font-family: "Arial";'>ed9_joint_identifiability</text>
+<text x='340.93' y='135.19' style='font-size: 5.12px; font-weight: bold;fill: #404040; font-family: "Arial";'>anchor set (this script, post-recovery numbers):</text>
+<text x='340.93' y='151.32' style='font-size: 5.12px;fill: #262626; font-family: "Arial";'>fig2_external_transport, fig3_calibration_pathways,</text>
+<text x='340.93' y='157.77' style='font-size: 5.12px;fill: #262626; font-family: "Arial";'>fig4_ablation_constraint, fig5_benchmark_strategies,</text>
+<text x='340.93' y='164.22' style='font-size: 5.12px;fill: #262626; font-family: "Arial";'>ed1_positive_control, ed3_loco_sensitivity,</text>
+<text x='340.93' y='170.68' style='font-size: 5.12px;fill: #262626; font-family: "Arial";'>ed4_ablation_matrix, ed5_identity_recovery,</text>
+<text x='340.93' y='177.13' style='font-size: 5.12px;fill: #262626; font-family: "Arial";'>ed6_calibration_stability, ed7_clinical_casemix,</text>
+<text x='340.93' y='183.58' style='font-size: 5.12px;fill: #262626; font-family: "Arial";'>ed10_analysis_freeze (this figure, updated)</text>
+<text x='340.93' y='228.06' style='font-size: 5.41px; font-weight: bold;fill: #404040; font-family: "Arial";'>source_data/</text>
+<text x='340.93' y='242.54' style='font-size: 5.12px;fill: #4D4D4D; font-family: "Arial";'>one JSON per figure; every panel value keyed to</text>
+<text x='340.93' y='248.99' style='font-size: 5.12px;fill: #4D4D4D; font-family: "Arial";'>its frozen source file + key</text>
+<line x1='180.90' y1='158.48' x2='191.11' y2='158.48' style='stroke-width: 1.71; stroke: #595959; stroke-linecap: butt;' />
+<polyline points='186.20,161.32 191.11,158.48 186.20,155.65 ' style='stroke-width: 1.71; stroke: #595959; stroke-linecap: butt;' />
+<line x1='320.06' y1='158.48' x2='330.26' y2='158.48' style='stroke-width: 1.71; stroke: #595959; stroke-linecap: butt;' />
+<polyline points='325.35,161.32 330.26,158.48 325.35,155.65 ' style='stroke-width: 1.71; stroke: #595959; stroke-linecap: butt;' />
+<rect x='30.15' y='284.11' width='449.94' height='34.79' style='stroke-width: 0.96; stroke: #C0504D; stroke-linecap: butt; stroke-linejoin: miter; fill: #FDECEA;' />
+<text x='37.11' y='293.69' style='font-size: 6.26px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>EVENT (2026-09-24): anchor gene-row identity recovered mid-freeze — all anchor-arm numbers re-run before submission</text>
+<text x='37.11' y='305.48' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>exmat row j == j-th fData row under upper-cased symbol alphabetical sort; verification gates PASS (sex anchor, mirror 31085/31085 numeric identity, cross-cohort ρ 0.81/0.62);</text>
+<text x='37.11' y='312.11' style='font-size: 5.26px;fill: #262626; font-family: "Arial";'>wrong-identity archives (v60/v71/v74/v75 anchor values) stay frozen as provenance of the error and are superseded by the v82_rerun series</text>
+<rect x='30.15' y='330.49' width='449.94' height='61.85' style='stroke-width: 0.85; stroke: #595959; stroke-linecap: butt; stroke-linejoin: miter; fill: #F7F7F7;' />
+<text x='39.43' y='341.72' style='font-size: 6.54px; font-weight: bold; font-family: "Arial";'>Locked analysis parameters (v82 freeze, unchanged by the recovery)</text>
+<text x='39.43' y='355.13' style='font-size: 5.69px;fill: #262626; font-family: "Arial";'>global seed = 20260911 (all v82 resampling)</text>
+<text x='39.43' y='362.30' style='font-size: 5.69px;fill: #262626; font-family: "Arial";'>AUC CI: 2000-rep bootstrap BCa</text>
+<text x='39.43' y='369.47' style='font-size: 5.69px;fill: #262626; font-family: "Arial";'>Efron 0.632: 600 bootstrap refits</text>
+<text x='208.73' y='355.13' style='font-size: 5.69px;fill: #262626; font-family: "Arial";'>M3/M6 recalibration: 100 stratified 50/50 repeats</text>
+<text x='208.73' y='362.30' style='font-size: 5.69px;fill: #262626; font-family: "Arial";'>external CI (ablation): percentile + BCa engines</text>
+<text x='208.73' y='369.47' style='font-size: 5.69px;fill: #262626; font-family: "Arial";'>ridge λ: 1/n_train external, 1/N_total within (re-ruled)</text>
+<text x='385.00' y='355.13' style='font-size: 5.69px;fill: #262626; font-family: "Arial";'>no number in any figure is typed:</text>
+<text x='385.00' y='362.30' style='font-size: 5.69px;fill: #262626; font-family: "Arial";'>all read from frozen JSON keys</text>
+<text x='385.00' y='369.47' style='font-size: 5.69px;fill: #262626; font-family: "Arial";'>(recovered-identity values only)</text>
+<text x='255.12' y='386.21' text-anchor='middle' style='font-size: 5.55px;fill: #4D4D4D; font-family: "Arial";'>any change to a frozen input requires a new version directory, not an edit</text>
+<text x='1.88' y='15.24' style='font-size: 9.67px; font-weight: bold; font-family: "Arial";'>a</text>
+</g>
+</g>
+</svg>

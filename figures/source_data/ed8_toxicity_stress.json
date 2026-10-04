@@ -1,0 +1,66 @@
+{
+  "figure": "ed8_toxicity_stress",
+  "generated_by": "figures/make_stable_figures.R",
+  "panels": {
+    "forest": {
+      "toxicity_cohort_recheck.GSE216329.original_keys__traceability": {
+        "auc_T_apparent": 0.666666666666667,
+        "auc_T_632_corrected": 0.804275645375603,
+        "auc_T_ci95": [
+          0.613343618697479,
+          0.948220668220668
+        ],
+        "n_total": 24,
+        "n_irAE": 15,
+        "n_no": 9
+      },
+      "per_cohort[1] GSE189125 CD4-T S0": {
+        "auc": 0.69047619047619,
+        "ci": [
+          0.285714285714286,
+          1
+        ],
+        "n": 13,
+        "n_event": 6,
+        "n_nonevent": 7
+      },
+      "corroborating_not_pooled.GSE189125_CD4Tem_univariate.P": 0.014,
+      "output.pooled": {
+        "pooled_auc": 0.777372411915574,
+        "ci_low": 0.631058458840934,
+        "ci_high": 0.923686364990213,
+        "k": 2
+      },
+      "toxicity_cohort_recheck.GSE189125.original_keys.verdict.n_significant_p_mannwhitney": 2,
+      "toxicity_cohort_recheck.GSE253720.original_keys": {
+        "primary_comparison": "CPI_colitis vs HC",
+        "auc_toxicity_CPI_colitis_vs_HC.point": 0.918913,
+        "auc_toxicity_CPI_colitis_vs_HC.apparent": 0.962963,
+        "auc_toxicity_CPI_colitis_vs_HC.ci95": [
+          0.715434,
+          1.122391
+        ],
+        "auc_toxicity_CPI_colitis_vs_HC.n_patients": 12,
+        "auc_toxicity_CPI_colitis_vs_HC.n_CPI_colitis": 9,
+        "auc_toxicity_CPI_colitis_vs_HC.n_HC": 3,
+        "auc_toxicity_CPI_colitis_vs_HC.n_UC_excluded": 2,
+        "status": "real_confounded",
+        "confound_warning": "PRIMARY CONFOUND (disclosed, not corrected): the comparator group (HC) consists of healthy controls not receiving checkpoint inhibition (obs/cpi = 'none'), whereas the cases are ICI-treated patients with colitis. The contrast therefore mixes 'has colitis' with 'ICI exposure'. The deposited annotation contains no ICI-treated, colitis-free group, so the clinically relevant contrast (ICI-toxicity vs ICI-tolerance) is NOT estimable here. The AUC is reported as a transportability probe of S0 onto an inflamed-vs-healthy tissue axis, with this caveat attached.",
+        "auc.ci_upper_exceeds_1_note": "Efron 0.632 CI is unclipped; upper limit 1.122 reflects a near-perfect apparent separation at n=12, not a valid probability."
+      },
+      "toxicity_cohort_recheck.GSE189125.original_keys.verdict.n_closures": 5,
+      "per_cohort[0] GSE216329": {
+        "auc": 0.804275645375603,
+        "ci": [
+          0.613343618697479,
+          0.948220668220668
+        ],
+        "n": 24,
+        "n_event": 15,
+        "n_nonevent": 9
+      },
+      "corroborating_not_pooled.GSE189125_CD4Tem_univariate.auc": 0.905,
+      "toxicity_cohort_recheck.GSE189125.per_closure_aucs[0].auc (closure a, PBMC)": 0.9048
+    }
+  }
+}

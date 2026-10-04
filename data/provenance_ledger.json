@@ -1,0 +1,328 @@
+{
+  "audit": {
+    "task": "P0-7 provenance audit for Nature Cancer submission",
+    "version": "",
+    "date": "2026-09-24",
+    "auditor": "provenance auditor (automated)",
+    "scope": [
+      "GSE186143",
+      "GSE166181",
+      "GSE216329",
+      "GSE253720"
+    ],
+    "method": [
+      "Local claims extracted from outputs/analysis_base/supplementary.md (Table S15), README.md, geo_data/GSE186143_bulk_clinical.json and per-series local data files.",
+      "Official GEO records obtained as family.soft.gz from ftp.ncbi.nlm.nih.gov (www.ncbi.nlm.nih.gov acc.cgi and eutils were blocked by NCBI abuse detection at audit time; the FTP SOFT files are the authoritative GEO records and served as web verification).",
+      "Linked publications verified via Europe PMC REST API (metadata + full text XML where available) and web search: PMIDs 35027754, 33723257, 36513074, 38642938.",
+      "Local data re-derived: GSE186143 TPM matrix header (66 samples), clinical JSON cross-check vs GEO SOFT grades (0 mismatches), GSE166181 metadata (20 subjects, 11R/9NR), GSE216329 sample inventory (24 patients x 2), GSE253720 h5ad obs (14 donors)."
+    ],
+    "web_verification_status": "GEO acc.cgi pages: BLOCKED by NCBI (reCAPTCHA / abuse block). FTP SOFT records: RETRIEVED OK (all 4 series + 2 related series). Publications: RETRIEVED OK via Europe PMC + publisher/journal records.",
+    "verdict_scale": "CONFIRMED = package claim matches official record; CORRECTED = package claim wrong/imprecise, replacement value given; UNVERIFIED = could not be established from audited sources.",
+    "evidence_dir": "data/evidence/ (frozen family.soft.gz copies)"
+  },
+  "summary": {
+    "corrected_items": 10,
+    "confirmed_items": 27,
+    "unverified_items": 3,
+    "headline": [
+      "GSE186143 cancer type = metastatic melanoma (CONFIRMED; the  'cancer type not locally verifiable' flag is resolved).",
+      "GSE186143 n: series contains 61 melanoma patients + 5 healthy controls (26 bulk-cohort-1 + 27 bulk-cohort-2 + 8 technical samples); local labelled clinical set = 53;  joint analysis n=47 (53 minus 6 NE). Package cites 47/53 inconsistently - must state all three numbers with definitions.",
+      "GSE216329 is predominantly NSCLC (18/24 per publication), not 'mixed solid tumours'; and its data are single-cell (10x), not 'bulk'.",
+      "GSE253720 n=12 is wrong: biopsy dataset = 9 CPI-colitis + 3 healthy controls + 2 UC = 14 donors (publication: 15 donors, 1 UC biopsy failed).",
+      "GSE253720 is NOT a pretreatment-baseline cohort: biopsies taken at active, mostly steroid-refractory CPI colitis."
+    ]
+  },
+  "cohorts": {
+    "GSE186143": {
+      "series_title": "T cell characteristics associated with toxicity to immune checkpoint blockade in patients with melanoma [bulk RNA-seq]",
+      "super_series": "GSE186144 (= GSE186143 bulk RNA + GSE189125 scRNA + GSE189126 TCR/BCR); BioProject PRJNA772729",
+      "publication": "Lozano AX, Chaudhuri AA, Nene A, et al. T cell characteristics associated with toxicity to immune checkpoint blockade in patients with melanoma. Nat Med. 2022;28(2). doi:10.1038/s41591-021-01623-z. PMID 35027754; PMC8866214.",
+      "fields": {
+        "cancer_type": {
+          "package_claim": "melanoma (Table S15);  recorded 'cancer type not locally verifiable'",
+          "verified_value": "Metastatic melanoma. GEO series title/summary and per-sample 'diagnosis: Melanoma' (61/61 patients); Nat Med 2022 abstract.",
+          "source": "evidence/GSE186143_family.soft.gz (!Series_title, !Series_summary, !Sample_characteristics_ch1 diagnosis); PMID 35027754 abstract",
+          "verdict": "CONFIRMED"
+        },
+        "tissue": {
+          "package_claim": "PBMC / blood (implied)",
+          "verified_value": "Peripheral blood (PBMC), tissue: Blood on all 66 samples.",
+          "source": "evidence/GSE186143_family.soft.gz (!Sample_characteristics_ch1 tissue)",
+          "verdict": "CONFIRMED"
+        },
+        "n_patients": {
+          "package_claim": "Table S15: n=47; README honesty note: n=53;  joint analysis: n=47 (2x2 10/17/5/15)",
+          "verified_value": "GEO series: 61 melanoma patients + 5 healthy controls (H-1..H-5). 61 = bulk cohort 1 (n=26) + bulk cohort 2 (n=27) + 8 technical/single-cell-discovery samples (WUMENLO, YUALOE, YUFURL, YUHERN, YUNANCY, YUROD, YUTORY, YUTRIL). Local clinical JSON covers exactly the 53 = 26+27. n=47 = 53 minus 6 NE (response not evaluable). All three numbers are real but denote different sets; the manuscript must state them explicitly.",
+          "source": "evidence/GSE186143_family.soft.gz (!Series_overall_design: '61 patients with metastatic melanoma and five healthy controls... bulk cohort 1, n = 26; bulk cohort 2, n = 27; and eight patient samples used for technical experiments'); geo_data/GSE186143_bulk_TPM_samples.txt.gz header (66 columns); geo_data/GSE186143_bulk_clinical.json (53 keys)",
+          "verdict": "CORRECTED"
+        },
+        "n_samples_expression_matrix": {
+          "package_claim": "(not stated)",
+          "verified_value": "Public TPM supplementary matrix contains 66 samples: 61 patients + 5 healthy controls. Analyses restricted to the 53 labelled patients must explicitly exclude the 5 HC and 8 technical columns.",
+          "source": "geo_data/GSE186143/GSE186143_bulk_TPM_samples.txt.gz (56,809 genes x 66 samples); evidence/GSE186143_family.soft.gz (!Series_supplementary_file)",
+          "verdict": "CORRECTED"
+        },
+        "efficacy_endpoint": {
+          "package_claim": "response: DCB / NDB / NE (27 / 20 / 6 in local clinical JSON); used in  joint 2x2",
+          "verified_value": "DCB/NDB labels are NOT present in any GEO metadata field (GSE186143, GSE186144 super-series and GSE189125 SOFT carry only irae grade, therapy type, cohort, batch, sex, age). The labels trace to Lozano et al. Nat Med 2022 Supplementary Table 3, as declared in the sibling annotation file geo_data/GSE189125_clinical_annotation.json ('source': 'Lozano et al. Nat Med 2022, Supplementary Table 3'). Endpoint definition = durable clinical benefit (DCB) vs no durable benefit (NDB); NE = not evaluable. Manuscript must cite the paper's Supplementary Table 3 as the E-label source, not GEO.",
+          "source": "evidence/GSE186143_family.soft.gz + evidence/GSE186144_family.soft.gz (no response field); geo_data/GSE189125_clinical_annotation.json (declared source); geo_data/GSE186143_bulk_clinical.json",
+          "verdict": "CORRECTED"
+        },
+        "toxicity_endpoint": {
+          "package_claim": "severe_irAE (binary), highest_grade 0-4",
+          "verified_value": "GEO per-sample field 'highest irae grade' (0-4). severe_irAE = grade >= 3. Local clinical JSON matches GEO exactly for all 53 patients (0 grade mismatches, 0 severe mismatches; severe = 17/53). Cross-check passed.",
+          "source": "evidence/GSE186143_family.soft.gz (!Sample_characteristics_ch1 'highest irae grade'); programmatic cross-check 2026-09-24 (this audit)",
+          "verdict": "CONFIRMED"
+        },
+        "ici_regimen": {
+          "package_claim": "ICI (Table S15 'Agent: ICI')",
+          "verified_value": "anti-PD-1 monotherapy (29/53 labelled patients) or anti-PD-1 + anti-CTLA-4 combination (24/53). GEO 'therapy type': Anti-PD1 29 / Combination 31 (61 patients, 6 NA incl. HC). Nat Med abstract: 'anti-PD-1 monotherapy or anti-PD-1 and anti-CTLA-4 combination ICIs'.",
+          "source": "evidence/GSE186143_family.soft.gz (!Sample_characteristics_ch1 'therapy type'); PMID 35027754 abstract",
+          "verdict": "CORRECTED"
+        },
+        "baseline_sampling": {
+          "package_claim": "baseline (pretreatment)",
+          "verified_value": "Pretreatment baseline PBMC: GEO overall design 'PBMC samples obtained at baseline'; Nat Med: 'pretreatment blood', 'a common baseline immunological state precedes irAE development'. (The wider study also analysed early on-ICI samples; the GSE186143 bulk series deposited here is the baseline set.)",
+          "source": "evidence/GSE186143_family.soft.gz (!Series_overall_design); PMID 35027754 abstract",
+          "verdict": "CONFIRMED"
+        },
+        "treatment_line": {
+          "package_claim": "(not claimed)",
+          "verified_value": "Not recorded in GEO metadata. Nat Med context: metastatic melanoma, standard-of-care ICI; line-of-therapy per patient is only in the paper's clinical supplementary tables, which were not retrievable during this audit (publisher site blocked).",
+          "source": "evidence/GSE186143_family.soft.gz (no line field)",
+          "verdict": "UNVERIFIED"
+        },
+        "modality": {
+          "package_claim": "bulk(TPM)",
+          "verified_value": "Bulk RNA-seq of PBMC (TruSeq RNA Exome capture). Public processed matrix = gene-level TPM (GSE186143_bulk_TPM_samples.txt.gz, 56,809 genes x 66 samples). Raw counts are controlled-access at dbGaP per submitter statement. The TPM (not counts) provenance must be stated wherever this cohort enters CLR/CPM-style pipelines.",
+          "source": "evidence/GSE186143_family.soft.gz (!Series_supplementary_file, !Sample_extract_protocol_ch1, '>>>Submitter states that raw data will be submitted to dbGaP due to patient privacy concerns<<<'); geo_data/GSE186143/GSE186143_bulk_TPM_samples.txt.gz",
+          "verdict": "CONFIRMED"
+        },
+        "platform": {
+          "package_claim": "(not stated)",
+          "verified_value": "GPL16791 (Illumina HiSeq 2500), 2 x 150 bp paired-end; TruSeq RNA Exome kit.",
+          "source": "evidence/GSE186143_family.soft.gz (!Series_platform_id, !Sample_instrument_model, !Sample_extract_protocol_ch1)",
+          "verdict": "CONFIRMED"
+        },
+        "paper_vs_geo_cohort_mapping": {
+          "package_claim": "(not addressed)",
+          "verified_value": "Nat Med abstract reports '3 patient cohorts (n = 27, 26 and 18)'; GEO bulk series contains bulk cohort 1 n=26, bulk cohort 2 n=27, 8 technical samples; the scRNA subseries GSE189125 contains 16 samples. The exact mapping between the paper's cohort sizes (esp. n=18) and the GEO bulk cohort 2 (n=27) could not be reconciled from public metadata alone (full text behind blocked publisher site). Should be reconciled against Nat Med Supplementary before camera-ready.",
+          "source": "PMID 35027754 abstract (Europe PMC); evidence/GSE186143_family.soft.gz; evidence/GSE189125_family.soft.gz",
+          "verdict": "UNVERIFIED"
+        },
+        "local_clinical_json_consistency": {
+          "package_claim": "geo_data/GSE186143_bulk_clinical.json = ground truth for 53 patients",
+          "verified_value": "53/53 patients matched to GEO samples; highest_grade and severe_irAE agree with GEO 'highest irae grade' on every patient (0 mismatches). Distribution: DCB 27 / NDB 20 / NE 6; severe 17 (grade 3 x14, grade 4 x3);  2x2 on n=47 = DCB&sev 10, DCB&non-sev 17, NDB&sev 5, NDB&non-sev 15; NE contains 2 severe, 4 non-severe. Internally consistent with all frozen  numbers.",
+          "source": "programmatic cross-check 2026-09-24 (this audit); geo_data/GSE186143_bulk_clinical.json",
+          "verdict": "CONFIRMED"
+        }
+      }
+    },
+    "GSE166181": {
+      "series_title": "scRNA-Seq of peripheral CD8 T cells from patients with metastatic melanoma taking ICI therapy.",
+      "publication": "De Biasi S, Gibellini L, Lo Tartaro D, et al. Circulating mucosal-associated invariant T cells identify patients responding to anti-PD-1 therapy. Nat Commun. 2021;12:1669. doi:10.1038/s41467-021-21928-4. PMID 33723257; PMC7961017.",
+      "fields": {
+        "cancer_type": {
+          "package_claim": "melanoma (Table S15)",
+          "verified_value": "Metastatic melanoma (GEO title/summary; paper Methods '28 patients with metastatic melanoma').",
+          "source": "evidence/GSE166181_family.soft.gz; PMID 33723257 full text (Europe PMC)",
+          "verdict": "CONFIRMED"
+        },
+        "tissue_celltype": {
+          "package_claim": "(scRNA, peripheral)",
+          "verified_value": "Peripheral blood; FACS-sorted viable CD3+CD8+ T cells (96-99% purity), Bio-Rad ddSEQ / SureCell WTA 3' chemistry, ~4 sequencing replicates per sample.",
+          "source": "evidence/GSE166181_family.soft.gz (!Sample_extract_protocol_ch1, !Sample_characteristics_ch1 'cell type: CD8 T lymphocytes'); PMID 33723257 Methods",
+          "verdict": "CONFIRMED"
+        },
+        "n_patients": {
+          "package_claim": "n=20 (Table S15)",
+          "verified_value": "20 patients in the GEO scRNA series (11 Responders, 9 Non-Responders), confirmed in local metadata (20 Mela* subjects; patient-level 11 R / 9 NR). NOTE: the parent publication analyses 28 patients (17 R / 11 NR) by combined scRNA + flow cytometry; the GEO series is the scRNA subset (20). Local cell count 51,701 cells (GEO-deposited matrix) vs 56,142 QC-passing cells in the paper - different QC filters; state the GEO-deposited number when citing this dataset.",
+          "source": "evidence/GSE166181_family.soft.gz (!Series_summary, !Series_overall_design); geo_data/GSE166181/GSE166181_Metadata.tsv.gz (this audit's recount); PMID 33723257",
+          "verdict": "CONFIRMED"
+        },
+        "n_samples": {
+          "package_claim": "(not stated)",
+          "verified_value": "183 GSM libraries = 20 patients x 3 timepoints x ~3-4 replicates; 51,701 cells in the deposited cell x gene metadata matrix.",
+          "source": "evidence/GSE166181_family.soft.gz (sample count); geo_data/GSE166181/GSE166181_Metadata.tsv.gz",
+          "verdict": "CONFIRMED"
+        },
+        "efficacy_endpoint": {
+          "package_claim": "efficacy (Table S15 arm)",
+          "verified_value": "RECIST-based response at 6-month follow-up: Responders = CR, PR, SD, or mixed response > 6 months with no progression (n=17 in paper cohort); Non-responders = progressive disease (n=11 in paper cohort). Verbatim from Methods.",
+          "source": "PMID 33723257 full text Methods (Europe PMC)",
+          "verdict": "CONFIRMED"
+        },
+        "toxicity_endpoint": {
+          "package_claim": "(none claimed)",
+          "verified_value": "No irAE/toxicity annotation exists in this series.",
+          "source": "evidence/GSE166181_family.soft.gz (characteristics: treatment, disease state, time-point only)",
+          "verdict": "CONFIRMED"
+        },
+        "ici_regimen": {
+          "package_claim": "ICI (Table S15 'Agent: ICI')",
+          "verified_value": "anti-PD-1 monotherapy: nivolumab (102/183 libraries) or pembrolizumab (81/183 libraries); paper: 'standard-of-care nivolumab or pembrolizumab'.",
+          "source": "evidence/GSE166181_family.soft.gz (!Sample_characteristics_ch1 'treatment'); PMID 33723257 Methods",
+          "verdict": "CORRECTED"
+        },
+        "baseline_sampling": {
+          "package_claim": "(baseline usage implied by efficacy arm)",
+          "verified_value": "T0 = before therapy (baseline), T1 = after first cycle, T2 = after second cycle. All three timepoints present per patient; baseline-only analyses must subset T0.",
+          "source": "evidence/GSE166181_family.soft.gz (!Series_overall_design); PMID 33723257 (T0/T1/T2 definitions verbatim)",
+          "verdict": "CONFIRMED"
+        },
+        "modality": {
+          "package_claim": "scRNA (Table S15)",
+          "verified_value": "scRNA-seq of sorted CD8 T cells; deposited matrices: raw + normalised UMI count matrices and cell metadata (tsv).",
+          "source": "evidence/GSE166181_family.soft.gz (!Series_supplementary_file x3)",
+          "verdict": "CONFIRMED"
+        },
+        "platform": {
+          "package_claim": "(not stated)",
+          "verified_value": "GPL21697; instrument Illumina NextSeq 550; Bio-Rad ddSEQ SureCell WTA 3' library prep.",
+          "source": "evidence/GSE166181_family.soft.gz (!Series_platform_id, !Sample_instrument_model, !Sample_extract_protocol_ch1)",
+          "verdict": "CONFIRMED"
+        },
+        "metadata_column_shift": {
+          "package_claim": "(not addressed)",
+          "verified_value": "The deposited GSE166181_Metadata.tsv header is misaligned with its own data by one column (header 'subject' column actually contains timepoints T0/T1/T2; the true subject ID lives in the 'sample' column / replicate prefix). Any pipeline reading this file with the header at face value will silently mis-assign subjects. Verified: unique subjects parsed from orig.ident = 20; patient-level R/NR = 11/9.",
+          "source": "geo_data/GSE166181/GSE166181_Metadata.tsv.gz (this audit's parse)",
+          "verdict": "CORRECTED"
+        }
+      }
+    },
+    "GSE216329": {
+      "series_title": "Single cell RNA sequencing reveals distinct T cell populations in immune-related adverse events of checkpoint inhibitors",
+      "publication": "Bukhari S, Henick BS, Winchester RJ, et al. Single-cell RNA sequencing reveals distinct T cell populations in immune-related adverse events of checkpoint inhibitors. Cell Rep Med. 2023;4(1):100868. doi:10.1016/j.xcrm.2022.100868. PMID 36513074; PMC9873824.",
+      "fields": {
+        "cancer_type": {
+          "package_claim": "mixed solid tumours (Table S15)",
+          "verified_value": "Predominantly NSCLC: 18/24 patients had NSCLC (per publication, PMC9873824 and independent review PMC11232920). GEO record says only 'cancer patients'. Table S15's 'mixed solid tumours' should be replaced by 'predominantly NSCLC (18/24)' with the remainder mixed other solid tumours.",
+          "source": "PMC11232920 ('Approximately 2 thirds of the patients had a diagnosis of NSCLC (18/24)'); PMID 36513074; evidence/GSE216329_family.soft.gz (no cancer-type field)",
+          "verdict": "CORRECTED"
+        },
+        "tissue_celltype": {
+          "package_claim": "(PBMC scRNA implied)",
+          "verified_value": "Peripheral blood; untouched CD3 T cells enriched by RosetteSep (not sorted); 10x Genomics Chromium V(D)J  5' chemistry.",
+          "source": "evidence/GSE216329_family.soft.gz (!Sample_extract_protocol_ch1, !Sample_characteristics_ch1 'cell type: Human T cells')",
+          "verdict": "CONFIRMED"
+        },
+        "n_patients_samples": {
+          "package_claim": "n=24 (Table S15); 24 patients / 48 samples (+ usage)",
+          "verified_value": "24 patients x 2 conditions = 48 samples: per patient one Baseline (_TN suffix) and one On-treatment (_T suffix) sample. Local file inventory matches exactly (48 matrix.mtx triplets, P1-P24). CONFIRMED, with the suffix semantics now explicit: _TN = baseline, _T = on treatment.",
+          "source": "evidence/GSE216329_family.soft.gz (!Sample_title x48, !Sample_characteristics_ch1 condition: Baseline 24 / On treatment 24); geo_data/GSE216329/ (file inventory)",
+          "verdict": "CONFIRMED"
+        },
+        "toxicity_endpoint": {
+          "package_claim": "toxicity (Table S15 arm); used as binary irAE label for the 12-dim S0 AUC 0.804 analysis",
+          "verified_value": "irAE vs no-irAE (15 vs 9 patients) over 12-month follow-up; organ-specific manifestations (pneumonitis 6, arthritis 4, thyroiditis 2, thyroiditis/nephritis 1, colitis/neurotoxicity 1, thyroiditis/neurotoxicity/nephritis 2 - sample-level counts halve to patients). Per publication the irAEs were grade 2-3 (moderate-to-severe), NOT grade >= 3 'severe irAE'. The manuscript must describe this endpoint as 'any irAE, grade 2-3, organ-specific' and must not pool it with grade >= 3 severe-irAE cohorts without comment.",
+          "source": "evidence/GSE216329_family.soft.gz (!Sample_characteristics_ch1 disease: No irAE 18 samples / organ-specific irAE 30 samples); PMC11232920 (grade 2-3, 15/24, 12-month follow-up)",
+          "verdict": "CORRECTED"
+        },
+        "efficacy_endpoint": {
+          "package_claim": "(none claimed)",
+          "verified_value": "No response/efficacy annotation exists in this series.",
+          "source": "evidence/GSE216329_family.soft.gz",
+          "verdict": "CONFIRMED"
+        },
+        "ici_regimen": {
+          "package_claim": "anti-PD-1 (Table S15)",
+          "verified_value": "anti-PD-1 blockade; 22/24 patients on anti-PD-1 monotherapy (per publication).",
+          "source": "evidence/GSE216329_family.soft.gz (!Series_summary); PMC11232920",
+          "verdict": "CONFIRMED"
+        },
+        "baseline_sampling": {
+          "package_claim": "(baseline used for toxicity AUC)",
+          "verified_value": "Per patient: one pretreatment baseline sample (_TN) + one on-treatment sample (_T). Baseline-only analyses must subset the 24 _TN samples; confirmed by GEO condition field.",
+          "source": "evidence/GSE216329_family.soft.gz (!Sample_characteristics_ch1 condition)",
+          "verdict": "CONFIRMED"
+        },
+        "modality": {
+          "package_claim": "bulk (Table S15 'Type: bulk')",
+          "verified_value": "Single-cell RNA-seq (10x Genomics Chromium V(D)J , Cell Ranger .1.1); GEO type 'Expression profiling by high throughput sequencing'; local deposits are per-sample matrix.mtx/barcodes/genes triplets. Any 'bulk' label is wrong unless explicitly described as pseudo-bulk aggregation of these scRNA profiles.",
+          "source": "evidence/GSE216329_family.soft.gz (!Sample_description '10x Genomics', !Sample_data_processing); geo_data/GSE216329/ (48 scRNA sample triplets)",
+          "verdict": "CORRECTED"
+        },
+        "platform": {
+          "package_claim": "(not stated)",
+          "verified_value": "GPL24676 (Illumina NovaSeq 6000), 10x Chromium V(D)J  chemistry, Cell Ranger .1.1 processing.",
+          "source": "evidence/GSE216329_family.soft.gz (!Series_platform_id, !Sample_instrument_model, !Sample_data_processing)",
+          "verdict": "CONFIRMED"
+        }
+      }
+    },
+    "GSE253720": {
+      "series_title": "Reverse translational discovery reveals dysregulation of CD4+ and CD8+ resident memory T, myeloid, and stromal cells in steroid-refractory, checkpoint inhibitor colitis [biopsy scRNA_TCR-seq]",
+      "super_series": "GSE253723 (per publication data-availability statement; GSE253720 is the biopsy scRNA subseries)",
+      "publication": "He JY, Kim YJ, Mennillo E, et al. Dysregulation of CD4+ and CD8+ resident memory T, myeloid, and stromal cells in steroid-experienced, checkpoint inhibitor colitis. J Immunother Cancer. 2024;12(4):e008628. doi:10.1136/jitc-2023-008628. PMID 38642938; PMC11033653.",
+      "fields": {
+        "cancer_type": {
+          "package_claim": "ICI-colitis (mixed primary tumours) (Table S15)",
+          "verified_value": "CPI-colitis patients with heterogeneous primary tumours (from h5ad cancer annotation): melanoma 3, RCC 2, SCC-lung 1, prostate 1, HNSCC 1, Merkel cell carcinoma 1 (9 CPI patients). Publication: 'distinct primary tumor types'.",
+          "source": "geo_data/GSE253720/GSE253720_Biopsy_RNA_Final.h5ad obs['cancer'] (this audit's extraction); PMID 38642938",
+          "verdict": "CONFIRMED"
+        },
+        "tissue": {
+          "package_claim": "biopsy (Table S15)",
+          "verified_value": "Colon biopsies (cold endoscopic biopsy, 6 per patient); matched blood CITE-seq exists in the super-series but is NOT in this h5ad.",
+          "source": "evidence/GSE253720_family.soft.gz (!Sample_source_name_ch1 'colon biopsy', !Sample_extract_protocol_ch1); PMID 38642938 Methods",
+          "verdict": "CONFIRMED"
+        },
+        "n_patients": {
+          "package_claim": "n=12 (Table S15)",
+          "verified_value": "Biopsy dataset contains 14 donors: 9 CPI-colitis (HS7-HS15) + 3 healthy controls (HS1-HS3) + 2 ulcerative colitis (HS4-HS5). Publication: 15 donors total (9 CPI-colitis + 3 HC + 3 UC; UC patient HS6 yielded no viable biopsy cells and is blood-only). The number 12 matches no public count; the closest candidate (9 CPI + 3 HC) suggests the package may have miscoded a case-control comparison as n. Table S15 must be corrected to: 9 CPI-colitis / 3 HC / 2 UC (14 donors in biopsy h5ad).",
+          "source": "geo_data/GSE253720/GSE253720_Biopsy_RNA_Final.h5ad obs['CoLabs_patient'] x obs['disease'] (14 donors: CPI_colitis 9, HC 3, UC 2); PMID 38642938 (JITC full text: 15 donors, HS6 failed biopsy); evidence/GSE253720_family.soft.gz (6 pooled libraries each listing HS1-HS15 minus HS6)",
+          "verdict": "CORRECTED"
+        },
+        "toxicity_endpoint": {
+          "package_claim": "toxicity (Table S15 arm); healthy-control confound flagged in ",
+          "verified_value": "Steroid-refractory/experienced CPI colitis, histoendoscopically confirmed (case definition); comparison groups are healthy controls and UC. This is a case-control study of active colitis biology, NOT a predictive pretreatment-biomarker design. The healthy-control confound flagged in  is confirmed and quantified: 3 HC + 2 UC share the h5ad; any CPI-vs-rest contrast mixes colitis inflammation with CPI exposure. Suppression therapy at biopsy: steroid (3 patients), TNF blockade (3), none (3).",
+          "source": "geo_data/GSE253720/GSE253720_Biopsy_RNA_Final.h5ad obs disease/cpi/suppression; PMID 38642938 (JITC full text)",
+          "verdict": "CORRECTED"
+        },
+        "ici_regimen": {
+          "package_claim": "anti-PD-1 / combo (Table S15)",
+          "verified_value": "6/9 CPI-colitis patients on anti-PD-1 monotherapy; 3/9 on anti-PD-1 + anti-CTLA-4 combination (h5ad cpi: PD-1 vs combo). Publication verbatim: 'six received anti-PD-1 therapy alone and three received combination anti-PD-1 + anti-CTLA-4'.",
+          "source": "geo_data/GSE253720/GSE253720_Biopsy_RNA_Final.h5ad obs['cpi']; PMID 38642938 (JITC full text)",
+          "verdict": "CONFIRMED"
+        },
+        "baseline_sampling": {
+          "package_claim": "(implied baseline in toxicity-arm context; not explicitly stated in Table S15)",
+          "verified_value": "NOT pretreatment baseline. Biopsies were taken at active, endoscopically confirmed CPI colitis, predominantly steroid-experienced (8/9) or steroid-refractory; several patients had additional immunosuppression (TNF blockade; HS10 also vedolizumab) before biopsy. Any use of this cohort as a 'baseline predictor' of irAE is a design error and must be avoided or explicitly re-labelled as on-toxicity/outcome-tissue evidence.",
+          "source": "PMID 38642938 (JITC full text: 'histoendoscopically confirmed colitis', 'predominantly steroid-experienced'); geo_data/GSE253720 h5ad (suppression annotation)",
+          "verdict": "CORRECTED"
+        },
+        "modality": {
+          "package_claim": "scRNA(h5ad, biopsy) (Table S15)",
+          "verified_value": "Multiplexed biopsy scRNA + TCR-seq (10x Chromium 5' ), pooled libraries demultiplexed by demuxlet/freemuxlet; 50,845 cells x donors as above; CITE-seq (ADT) and CyTOF arms exist in the super-series. h5ad also carries TCR clonotype and ADT count fields.",
+          "source": "geo_data/GSE253720/GSE253720_Biopsy_RNA_Final.h5ad (50,845 obs; obs columns incl. TCR.cdr3s_aa, nCount_ADT); evidence/GSE253720_family.soft.gz (!Series_overall_design, !Sample_extract_protocol_ch1)",
+          "verdict": "CONFIRMED"
+        },
+        "platform": {
+          "package_claim": "(not stated)",
+          "verified_value": "GPL24676 (Illumina NovaSeq 6000); 10x Chromium Single Cell 5' ; 6 pooled scRNA libraries (XAUT2-POOL-SCG1-6).",
+          "source": "evidence/GSE253720_family.soft.gz (!Series_platform_id, !Sample_title x6)",
+          "verdict": "CONFIRMED"
+        },
+        "geo_structure": {
+          "package_claim": "(single accession usage)",
+          "verified_value": "GSE253720 is the biopsy-scRNA subseries; the publication's data-availability statement deposits everything under super-series GSE253723 (blood CITE-seq etc. elsewhere). Manuscript citations should reference GSE253720 for the biopsy h5ad specifically.",
+          "source": "PMID 38642938 data availability (JITC full text); evidence/GSE253720_family.soft.gz",
+          "verdict": "CONFIRMED"
+        }
+      }
+    }
+  },
+  "corrections_list": [
+    "GSE186143 n: replace the inconsistent 47/53 with the explicit chain '61 melanoma patients in series (26 bulk-cohort-1 + 27 bulk-cohort-2 + 8 technical) + 5 healthy controls; 53 patients carry the clinical annotation used here; 47 after excluding 6 NE'.",
+    "GSE186143 ICI regimen: replace 'ICI' with 'anti-PD-1 monotherapy (29/53) or anti-PD-1 + anti-CTLA-4 combination (24/53)'.",
+    "GSE186143 E-label provenance: DCB/NDB labels are from Nat Med 2022 Supplementary Table 3, not from GEO metadata; cite accordingly.",
+    "GSE166181 ICI regimen: replace 'ICI' with 'nivolumab or pembrolizumab (anti-PD-1 monotherapy)'.",
+    "GSE166181 metadata warning: deposited Metadata.tsv header is column-shifted (subject column holds T0/T1/T2); parse subject from orig.ident/sample columns.",
+    "GSE216329 cancer type: replace 'mixed solid tumours' with 'predominantly NSCLC (18/24 patients; remainder other solid tumours)'.",
+    "GSE216329 Type: replace 'bulk' with 'scRNA (10x Chromium, V(D)J ); pseudo-bulk aggregation if applicable must be stated'.",
+    "GSE216329 toxicity endpoint: define as 'any irAE grade 2-3 (organ-specific: pneumonitis/arthritis/thyroiditis/nephritis/colitis/neurotoxicity) vs no irAE over 12-month follow-up, 15/24 patients' - not severe (grade >= 3) irAE.",
+    "GSE253720 n: replace 12 with '9 CPI-colitis + 3 healthy controls + 2 UC donors in the biopsy dataset (14; publication enrolled 15, one UC biopsy failed)'.",
+    "GSE253720 sampling time: state explicitly that biopsies are taken at active steroid-experienced/refractory CPI colitis (NOT pretreatment baseline); the cohort is case-control (vs HC/UC) outcome-tissue evidence, not a baseline-predictor cohort."
+  ],
+  "supplementary_table_1_draft_note": "See provenance_ledger.md section 4 for a ready-to-paste cohort/source-lineage ledger table for Supplementary Table 1."
+}

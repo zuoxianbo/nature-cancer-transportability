@@ -1,0 +1,417 @@
+{
+  "manifest": "_analysis_manifest",
+  "date": "2026-09-24",
+  "seed": 20260911,
+  "python": "/Users/zuoxianbo/.workbuddy/binaries/python/envs/default/bin/python",
+  "purpose": "P0-12 submission-freeze manifest: every  analysis x {script, inputs, outputs, seed, bootstrap counts, key params, status}; statuses follow the IMvigor210 gene-row recovery (imvigor_gene_recovery.json) which retracted the positional-alignment-era anchored numbers",
+  "imvigor210_files_sha256": {
+    "exmat": {
+      "computed": "fc51849b9e923b6a0ac8341c443d83d35d9fb2643d19b15554b3e444f74b5445",
+      "reported": "fc51849b9e923b6a0ac8341c443d83d35d9fb2643d19b15554b3e444f74b5445",
+      "match": true
+    },
+    "fData": {
+      "computed": "d0f781b5209748ed8475918c3db055db72d83f2838a9ce6636cbfe674b0f196b",
+      "reported": "d0f781b5209748ed8475918c3db055db72d83f2838a9ce6636cbfe674b0f196b",
+      "match": true
+    },
+    "pData": {
+      "computed": "33aafccabc6ea95fa95aa8049ace5261c7e5089ecde28811e877f0f5c010f0de",
+      "reported": "33aafccabc6ea95fa95aa8049ace5261c7e5089ecde28811e877f0f5c010f0de",
+      "match": true
+    }
+  },
+  "upstream_provenance": {
+    "censored_source": {
+      "repo": "https://github.com/mimifp/tfm_mUC",
+      "file": "2_data/1_IMvigor210/exmat_censored_IMvigor210.csv",
+      "note": "exmat anonymised to gene_1..gene_31085 row labels; row order = counts(cds) = fData symbol alphabetical (upper-cased); fData/pData byte-identical upstream",
+      "extraction_script": "1_scripts/2_pipeline/1_download_data.R (archived as geo_data/imvigor210_labeled/upstream_1_download_data.R): exmat written in counts(cds) row order with gene symbols in column 1; censored file replaces gene_id with gene_1..gene_31085 placeholders"
+    },
+    "labeled_mirror": {
+      "repo": "https://github.com/SiYangming/IMvigor210CoreBiologies",
+      "file": "data/cds.RData",
+      "url": "https://raw.githubusercontent.com/SiYangming/IMvigor210CoreBiologies/master/data/cds.RData",
+      "sha256": "b7f1cfb648cc6125e48ba9ff5094e4ed547ad4758cf68fca5117767ebf65df2e",
+      "note": "used only for the stage-1c numeric identity check (31085/31085 rows matched), never for analysis values"
+    },
+    "recovered_key": "exmat row j == fData row with the j-th symbol in alphabetical order of the upper-cased fData symbol column; exported to geo_data/imvigor210_labeled/exmat_row_key.csv"
+  },
+  "analyses": [
+    {
+      "id": "-01",
+      "name": "number_audit",
+      "script": null,
+      "script_note": "session-level audit (no standalone script); audit of reviews_clean_manuscript_extract.md against the pre-recovery frozen archive",
+      "inputs": [
+        "reviews_clean_manuscript_extract.md",
+        "data/, data/, data/, data/_meta_sensitivity, data/_eff_meta, data/_tox_meta, data/ JSONs"
+      ],
+      "outputs": [
+        "data/number_audit.md"
+      ],
+      "seed": null,
+      "n_boot": null,
+      "key_params": {
+        "audited_lines": 57,
+        "mismatches": 4,
+        "not_in_frozen": 1
+      },
+      "status": "done",
+      "status_note": "audit verdicts refer to the pre-recovery frozen numbers; every anchored-arm number it validated (0.444/0.464/0.498 pooled/88.7% etc.) is now superseded by the recovery-era rerun"
+    },
+    {
+      "id": "-02",
+      "name": "positive_control (P0-2)",
+      "script": "scripts/analysis/positive_control.py",
+      "inputs": [
+        "data/imvigor210/{exmat,fData,pData}.csv",
+        "geo_data/GSE165252/*",
+        "geo_data/GSE78220/*",
+        "data/_workspace/_eff_*_s0.npy"
+      ],
+      "outputs": [
+        "data/positive_control.json",
+        "data/positive_control.md"
+      ],
+      "seed": 20260911,
+      "n_boot": {
+        "auc_ci": 2000,
+        "efron632": 600
+      },
+      "key_params": {
+        "signature": "IFN-gamma 6-gene (Ayers JCI 2017)",
+        "rule": "C1 AUC CI>0.5; C2 |slope-1|<=0.10; tiers 0.05/0.10/0.20"
+      },
+      "status": "superseded",
+      "status_note": "as-specified IMvigor-anchored arm INVALID: the P0-2 sex-anchor gates falsified the exmat/fData positional alignment (7/7 impossible flags); this audit triggered the gene recovery. Salvage two-cohort transports (GSE165252<->GSE78220, gene-valid matrices) remain descriptive; superseded by the recovery + rerun"
+    },
+    {
+      "id": "-03",
+      "name": "clinical_only (P0-4)",
+      "script": "scripts/analysis/clinical_only.py",
+      "inputs": [
+        "data/imvigor210/pData.csv",
+        "geo_data/GSE78220/series_matrix_annotation.txt",
+        "geo_data/GSE165252/series_matrix_annotation.txt",
+        "data/_workspace/_eff_*_y.npy"
+      ],
+      "outputs": [
+        "data/clinical_only.json",
+        "data/clinical_only.md"
+      ],
+      "seed": 20260911,
+      "n_boot": {
+        "auc_ci": 2000,
+        "efron632": 600
+      },
+      "key_params": {
+        "models": [
+          "C_main(sex,stage)",
+          "C_sex",
+          "C_rich(n=298 IMvigor210-only)"
+        ],
+        "lambda_rule": "1/n_train"
+      },
+      "status": "done",
+      "status_note": "UNAFFECTED by the gene recovery: clinical covariates only, no expression rows involved"
+    },
+    {
+      "id": "-04",
+      "name": "threshold_zero_sensitivity (P0-3 old + P0-6)",
+      "script": "scripts/analysis/threshold_zero_sensitivity.py",
+      "inputs": [
+        "data/_workspace/_eff_*_s0.npy (broken-alignment frozen S0)",
+        "data/competitor_benchmark.json"
+      ],
+      "outputs": [
+        "data/threshold_zero_sensitivity.json",
+        "data/threshold_zero_sensitivity.md"
+      ],
+      "seed": 20260911,
+      "n_boot": {
+        "slope_ci": 2000,
+        "repeats": 100
+      },
+      "key_params": {
+        "tolerances": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "models_m0_m6": true,
+        "zero_schemes": [
+          "original_log1p",
+          "multiplicative_replacement_0p65",
+          "measured_only_158"
+        ]
+      },
+      "status": "superseded",
+      "status_note": "ALL cells rest on the frozen  S0 built from the falsified positional alignment (and the 229-gene pseudo-intersection); the P0-6 zero-handling 'artifact' (70 unmeasured genes, 88.7% PC1 loading mass) is RETRACTED as an alignment artefact; superseded by -09 (new numbers)"
+    },
+    {
+      "id": "-05",
+      "name": "provenance_ledger (P0-7)",
+      "script": null,
+      "script_note": "automated provenance audit executed in-session; evidence frozen under data/evidence/",
+      "inputs": [
+        "supplementary.md Table S15",
+        "README.md",
+        "geo_data/GSE186143_bulk_clinical.json",
+        "NCBI FTP SOFT family files (frozen copies)"
+      ],
+      "outputs": [
+        "data/provenance_ledger.json",
+        "data/provenance_ledger.md",
+        "data/evidence/*.soft.gz"
+      ],
+      "seed": null,
+      "n_boot": null,
+      "key_params": {
+        "cohorts": [
+          "GSE186143",
+          "GSE166181",
+          "GSE216329",
+          "GSE253720"
+        ],
+        "confirmed": 27,
+        "corrected": 10,
+        "unverified": 3
+      },
+      "status": "done",
+      "status_note": "UNAFFECTED: GEO metadata only, no expression matrices involved"
+    },
+    {
+      "id": "-06",
+      "name": "transport_summary_joint (P0-10 old + P0-11)",
+      "script": "scripts/analysis/transport_summary_joint.py",
+      "inputs": [
+        "data/_workspace/_eff_*_s0.npy (broken-alignment frozen S0)",
+        "data/_workspace/_eff_*_y.npy",
+        "data/external_validation.json",
+        "geo_data/GSE186143_bulk_clinical.json",
+        "data/joint_stress_test.json",
+        "data/__within_boot_cache.npz"
+      ],
+      "outputs": [
+        "data/transport_summary_joint.json",
+        "data/transport_summary_joint.md"
+      ],
+      "seed": 20260911,
+      "n_boot": {
+        "paired_delta": 2000,
+        "nested_within": "2000 outer x 600 inner",
+        "recal_repeats": 100
+      },
+      "key_params": {
+        "pooled_historical": 0.498
+      },
+      "status": "split",
+      "status_note": "P0-11 GSE186143 joint-model re-verification: VALID (unaffected by the IMvigor210 gene-row issue). P0-10 anchored within/external/delta-AUC numbers: superseded by -09 (all rest on the broken-alignment S0 and the 229-gene era gene set)"
+    },
+    {
+      "id": "-07a",
+      "name": "phase1a forensic battery (availability / sort hypotheses / deep verify / sort-key / panel)",
+      "script": [
+        "scripts/analysis/phase1a_availability.py",
+        "scripts/analysis/phase1a_sort_hypotheses.py",
+        "scripts/analysis/phase1a_deep_verify.py",
+        "scripts/analysis/phase1a_sortkey_check.py",
+        "scripts/analysis/phase1a_panel_check.py"
+      ],
+      "inputs": [
+        "data/imvigor210/{exmat,fData,pData}.csv",
+        "outputs/analysis_base/supplementary/Supplementary_Table_1_322_genes.csv",
+        "geo_data/322_shared_genes.json"
+      ],
+      "outputs": [
+        "data/phase1a_results.json (console-stage artefact)"
+      ],
+      "seed": null,
+      "n_boot": null,
+      "key_params": {
+        "winner": "symbol_alphabetical_upper",
+        "raw_vs_upper_ambiguous_rows": 145,
+        "panel_genes_unaffected_by_sort_ambiguity": true
+      },
+      "status": "done",
+      "status_note": "subsumed by the stage-1a re-run inside imvigor_gene_recovery.py"
+    },
+    {
+      "id": "-07b",
+      "name": "cds mirror extraction",
+      "script": "scripts/analysis/cds_extract.py",
+      "inputs": [
+        "geo_data/imvigor210_labeled/cds.RData"
+      ],
+      "outputs": [
+        "geo_data/imvigor210_labeled/cds_counts.csv"
+      ],
+      "seed": null,
+      "n_boot": null,
+      "key_params": {},
+      "status": "done",
+      "status_note": "stage-1c numeric identity input only"
+    },
+    {
+      "id": "-07",
+      "name": "imvigor_gene_recovery (Go/No-Go recovery)",
+      "script": "scripts/analysis/imvigor_gene_recovery.py",
+      "inputs": [
+        "data/imvigor210/{exmat,fData,pData}.csv",
+        "geo_data/322_shared_genes.json",
+        "gene_name_id_dict_gc104M.pkl",
+        "geo_data/GSE165252/*",
+        "geo_data/GSE78220/*",
+        "geo_data/imvigor210_labeled/cds_counts.csv"
+      ],
+      "outputs": [
+        "data/imvigor_gene_recovery.json",
+        "data/imvigor_gene_recovery.md",
+        "geo_data/imvigor210_labeled/exmat_row_key.csv"
+      ],
+      "seed": 20260911,
+      "n_boot": {
+        "efron632_within": 600,
+        "auc_bca": 2000
+      },
+      "key_params": {
+        "key": "exmat row j == j-th fData symbol (upper-cased) alphabetical",
+        "panel": "320/322 measurable, cross-cohort common 320 (IGHG1, PRKN absent from fData)",
+        "anchor": "Scheme A CLR->PCA k=2 on 298 labelled, lambda_transport=1/298, lambda_within=1/N_total  rule",
+        "gates": "overall PASS"
+      },
+      "status": "done",
+      "status_note": "the authoritative new baseline: IMvigor210 within 0.632 = 0.6571 [0.5857, 0.7284]; external GSE165252 0.5036 [0.3540, 0.6585] slope -0.527; GSE78220 0.6603 [0.4038, 0.8617] slope 5.678"
+    },
+    {
+      "id": "-08",
+      "name": "rerun_benchmark (M0-M6 on the recovered key)",
+      "script": "pending (benchmark worker)",
+      "inputs": [
+        "recovered key + 320-gene loaders (as -07)",
+        "data/competitor_benchmark.json (target values)"
+      ],
+      "outputs": [
+        "data/rerun_benchmark.json"
+      ],
+      "seed": 20260911,
+      "n_boot": {
+        "auc_ci": 2000,
+        "efron632": 600,
+        "recal": 100
+      },
+      "key_params": {
+        "models": [
+          "M0",
+          "M1",
+          "M2",
+          "M3",
+          "M4",
+          "M5a",
+          "M5b",
+          "M6"
+        ]
+      },
+      "status": "pending",
+      "status_note": "rerun_benchmark.json NOT on disk; blocks the M0/M2/M3 rows of the P0-10 panel and the M0-M6 rows of the P0-3 matrix"
+    },
+    {
+      "id": "-09",
+      "name": "rerun_sensitivity_manifest (P0-3 new + P0-10 new + P0-12 manifest)",
+      "script": "scripts/analysis/rerun_sensitivity_manifest.py",
+      "inputs": [
+        "data/imvigor210/{exmat,fData,pData}.csv (SHA256 asserted == recovery report)",
+        "geo_data/322_shared_genes.json",
+        "geo_data/GSE165252/*",
+        "geo_data/GSE78220/*",
+        "data/imvigor_gene_recovery.json (frozen baseline + provenance)"
+      ],
+      "outputs": [
+        "data/rerun_sensitivity.json",
+        "data/rerun_sensitivity.md",
+        "data/analysis_manifest.json",
+        "data/__within_boot_newkey_cache.npz"
+      ],
+      "seed": 20260911,
+      "n_boot": {
+        "slope_ci": 2000,
+        "auc_bca": 2000,
+        "paired_delta": 2000,
+        "within_0632": 600,
+        "nested_within": "2000 outer x 600 inner"
+      },
+      "key_params": {
+        "panel": 320,
+        "pca_k": 2,
+        "lambda_transport": "1/298",
+        "lambda_within_external": "1/n per task spec",
+        "tolerances": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "pooled_dl_k3": true
+      },
+      "status": "done",
+      "status_note": "primary frozen arm fully recomputed and parity-checked against -07 (tol 1e-9); M0-M3 pending on -08"
+    }
+  ],
+  "input_file_sha256": {
+    "imvigor210/exmat.csv": "fc51849b9e923b6a0ac8341c443d83d35d9fb2643d19b15554b3e444f74b5445",
+    "imvigor210/fData.csv": "d0f781b5209748ed8475918c3db055db72d83f2838a9ce6636cbfe674b0f196b",
+    "imvigor210/pData.csv": "33aafccabc6ea95fa95aa8049ace5261c7e5089ecde28811e877f0f5c010f0de",
+    "geo_data/GSE165252/GSE165252_norm.cnt_PERFECT.txt.gz": "fea83024431252f6b0b9b17cdef1214dfc7b2e6cb6309fed9b3a012a83d32307",
+    "geo_data/GSE165252/series_matrix_annotation.txt": "bd7b7d20b192f68be542c0d6b34a7c4c7f55402d5498f44e6a8a9a6556af2d00",
+    "geo_data/GSE78220/GSE78220_PatientFPKM.xlsx": "ae3b044f23a0a4cd2859da36726a220856c35216a169c17f93dfc3bd20b04de6",
+    "geo_data/GSE78220/series_matrix_annotation.txt": "392b48f79222427f1a16a919b59d3d26cfc69370d30850562a2fe55ef92ddfe6",
+    "geo_data/322_shared_genes.json": "838caa66eaa5fc4efa885371783d0de0ca8c670bfcac65597a27ae93102b460c"
+  },
+  "retraction_reference": "data/artefact_retraction.md",
+  "sha256": {
+    "data/phase1a_results.json": {
+      "sha256": "799b83ae8d4d86c4dd790fa5c654c808b2a33fb5a3ed98d2a76b5fca79473ba7",
+      "size": 34229
+    },
+    "data/clinical_only.json": {
+      "sha256": "0dac3c65981d6253a28ac568a2af0d265a5e0abcf6a1e6e5af4b361542e7b791",
+      "size": 20695
+    },
+    "data/imvigor_gene_recovery.json": {
+      "sha256": "af0daed57f1a3f2c3f8684cce5731522dd2d21c545e97be221b53f48555f3830",
+      "size": 26831
+    },
+    "data/positive_control.json": {
+      "sha256": "e5c5af194a0b176893fb4ce6d5bdb08af5bdcbd1de3415e80cb91deaebf8b11f",
+      "size": 511305
+    },
+    "data/provenance_ledger.json": {
+      "sha256": "4e23b6ca10170085eab52f1eeb00d84957eb966676e146e4f91dd3f33302619f",
+      "size": 29921
+    },
+    "data/rerun_ablation.json": {
+      "sha256": "1bae912e5c2b724176dbf4ff4a788294fd5578f550a0e3fdfd7852bdfd03e119",
+      "size": 64419
+    },
+    "data/rerun_benchmark.json": {
+      "sha256": "f7847ba61d7fafba7e2beee812df82b8b3e1c513939a84bf533c05b093082855",
+      "size": 138676
+    },
+    "data/rerun_positive_control.json": {
+      "sha256": "cc5f70bd31a37752942894a0501d4f1acba2cd21df936d0130cf1a8bbb6c709e",
+      "size": 388352
+    },
+    "data/rerun_sensitivity.json": {
+      "sha256": "4e6e5db532db808c312ffb1d03b5c9475b19905a7973754589b950ca714a4810",
+      "size": 16732
+    },
+    "data/threshold_zero_sensitivity.json": {
+      "sha256": "51e86b1be8811c4a1b2ea59bcce22165e4bd0adf2590d1732745a5f976c4d3e8",
+      "size": 56704
+    },
+    "data/transport_summary_joint.json": {
+      "sha256": "0f1d56b5ad228089cf0d4cdc9b75d338683db5f926469aebae69f78130b8b344",
+      "size": 51860
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "figure": "fig2_external_transport",
+  "generated_by": "figures/make_anchor_figures.R",
+  "panels": {
+    "a": {
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.auc": 0.66025641025641,
+      "within_reference.per_cohort.GSE165252.ci95": [
+        0.325796546579916,
+        0.53005210708188
+      ],
+      "within_reference.per_cohort.IMvigor210.auc_632": 0.657074671027007,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.n_event": 13,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.n_test": 25,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M2.n_event": 23,
+      "within_reference.per_cohort.GSE165252.auc_632": 0.427924326830898,
+      "within_reference.per_cohort.GSE78220.ci95": [
+        0.419437676660258,
+        0.824502651458475
+      ],
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M2.auc_ci95": [
+        0.354020660429199,
+        0.658472153596187
+      ],
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M2.auc": 0.503623188405797,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M2.n_test": 71,
+      "within_reference.per_cohort.GSE78220.auc_632": 0.621970164059367,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.auc_ci95": [
+        0.403845496435115,
+        0.86165832283837
+      ],
+      "within_reference.per_cohort.IMvigor210.ci95": [
+        0.585700496160273,
+        0.728448845893742
+      ]
+    },
+    "b": {
+      "old_vs_new.pairwise.train_IMvigor210__test_GSE78220.delta_auc": 0.25,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.auc_ci95": [
+        0.403845496435115,
+        0.86165832283837
+      ],
+      "pairwise_transports.transports.train_GSE78220__test_IMvigor210.M2.calib_slope": 0.425972587641462,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M2.n_test": 71,
+      "old_vs_new.pairwise.train_GSE78220__test_IMvigor210.delta_auc": 0.223017902813299,
+      "pairwise_transports.transports.train_GSE165252__test_IMvigor210.M2.n_test": 298,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M2.auc": 0.503623188405797,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M2.auc_ci95": [
+        0.354020660429199,
+        0.658472153596187
+      ],
+      "pairwise_transports.transports.train_GSE78220__test_GSE165252.M2.auc": 0.515398550724638,
+      "pairwise_transports.transports.train_GSE78220__test_IMvigor210.M2.auc_ci95": [
+        0.559740547371493,
+        0.709771782688827
+      ],
+      "old_vs_new.pairwise.train_IMvigor210__test_GSE165252.delta_auc": 0.00271739130434789,
+      "pairwise_transports.transports.train_GSE78220__test_IMvigor210.M2.n_test": 298,
+      "old_vs_new.pairwise.train_GSE78220__test_GSE165252.delta_auc": 0.0226449275362319,
+      "pairwise_transports.transports.train_GSE78220__test_IMvigor210.M2.auc": 0.640153452685422,
+      "pairwise_transports.transports.train_GSE78220__test_GSE165252.M2.auc_ci95": [
+        0.366847826086957,
+        0.67159004942171
+      ],
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.auc": 0.66025641025641,
+      "pairwise_transports.transports.train_GSE165252__test_GSE78220.M2.auc": 0.442307692307692,
+      "pairwise_transports.transports.train_GSE165252__test_IMvigor210.M2.auc_ci95": [
+        0.320957083134346,
+        0.467648415792166
+      ],
+      "pairwise_transports.transports.train_GSE165252__test_GSE78220.M2.auc_ci95": [
+        0.224358974358974,
+        0.698694496997674
+      ],
+      "old_vs_new.pairwise.train_GSE165252__test_IMvigor210.delta_auc": -0.188299232736573,
+      "pairwise_transports.transports.train_GSE165252__test_IMvigor210.M2.auc": 0.391304347826087,
+      "old_vs_new.pairwise.train_GSE165252__test_GSE78220.delta_auc": 0.0256410256410257,
+      "pairwise_transports.transports.train_GSE78220__test_GSE165252.M2.n_test": 71,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.n_test": 25,
+      "pairwise_transports.transports.train_GSE165252__test_GSE78220.M2.n_test": 25
+    },
+    "c": {
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.auc": 0.66025641025641,
+      "within_imvigor210_efron632.efron_0632_auc": 0.604978775461109,
+      "transports.primary_logcpm_z_frozen_all6.GSE165252.target_metrics.auc": 0.560688405797101,
+      "transports.primary_logcpm_z_frozen_all6.GSE165252.target_metrics.calib_slope": 0.489039826733184,
+      "transports.primary_logcpm_z_frozen_all6.GSE78220.target_metrics.calib_slope": 0.250256955810738,
+      "transports.primary_logcpm_z_frozen_all6.GSE165252.target_metrics.auc_ci95": [
+        0.422039988016021,
+        0.711896993606962
+      ],
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M2.auc": 0.503623188405797,
+      "transports.primary_logcpm_z_frozen_all6.GSE78220.target_metrics.auc_ci95": [
+        0.246666666666667,
+        0.721437106198167
+      ],
+      "transports.primary_logcpm_z_frozen_all6.GSE78220.target_metrics.auc": 0.493589743589744
+    }
+  }
+}

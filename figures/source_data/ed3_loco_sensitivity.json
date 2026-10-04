@@ -1,0 +1,53 @@
+{
+  "figure": "ed3_loco_sensitivity",
+  "generated_by": "figures/make_anchor_figures.R",
+  "panels": {
+    "b": {
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.auc": 0.66025641025641,
+      "loco_benchmark.per_target.GSE165252.M2.auc_ci95": [
+        0.361300424882787,
+        0.665652720568167
+      ],
+      "loco_benchmark.per_target.IMvigor210.M2.auc": 0.66272378516624,
+      "pairwise_transports.transports.train_GSE165252__test_GSE78220.M2.auc_ci95": [
+        0.224358974358974,
+        0.698694496997674
+      ],
+      "loco_benchmark.per_target.GSE78220.M2.auc": 0.615384615384615,
+      "pairwise_transports.transports.train_GSE78220__test_GSE165252.M2.auc_ci95": [
+        0.366847826086957,
+        0.67159004942171
+      ],
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M2.auc_ci95": [
+        0.354020660429199,
+        0.658472153596187
+      ],
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M2.auc": 0.503623188405797,
+      "loco_benchmark.per_target.GSE165252.M2.auc": 0.510869565217391,
+      "loco_benchmark.per_target.GSE78220.M2.auc_ci95": [
+        0.365384615384615,
+        0.833333333333333
+      ],
+      "pairwise_transports.transports.train_GSE78220__test_IMvigor210.M2.auc_ci95": [
+        0.559740547371493,
+        0.709771782688827
+      ],
+      "pairwise_transports.transports.train_GSE78220__test_IMvigor210.M2.auc": 0.640153452685422,
+      "pairwise_transports.transports.train_GSE165252__test_IMvigor210.M2.auc": 0.391304347826087,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.auc_ci95": [
+        0.403845496435115,
+        0.86165832283837
+      ],
+      "pairwise_transports.transports.train_GSE78220__test_GSE165252.M2.auc": 0.515398550724638,
+      "pairwise_transports.transports.train_GSE165252__test_IMvigor210.M2.auc_ci95": [
+        0.320957083134346,
+        0.467648415792166
+      ],
+      "loco_benchmark.per_target.IMvigor210.M2.auc_ci95": [
+        0.585361562350934,
+        0.730879766460173
+      ],
+      "pairwise_transports.transports.train_GSE165252__test_GSE78220.M2.auc": 0.442307692307692
+    }
+  }
+}

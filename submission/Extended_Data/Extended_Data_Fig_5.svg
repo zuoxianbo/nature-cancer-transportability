@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='510.24pt' height='581.10pt' viewBox='0 0 510.24 581.10'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1MTAuMjR8MC4wMHw1ODEuMTA='>
+    <rect x='0.00' y='0.00' width='510.24' height='581.10' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHw1ODEuMTA=)'>
+<rect x='0.00' y='0.00' width='510.24' height='581.10' style='stroke-width: 0.82; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNC4yM3w1MDYuMDB8NC4yM3w1NzYuODc='>
+    <rect x='4.23' y='4.23' width='501.77' height='572.63' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNC4yM3w1MDYuMDB8NC4yM3w1NzYuODc=)'>
+</g>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHw1ODEuMTA=)'>
+</g>
+<defs>
+  <clipPath id='cpNC4yM3w1MDYuMDB8NC4yM3wzMDMuNjM='>
+    <rect x='4.23' y='4.23' width='501.77' height='299.40' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNC4yM3w1MDYuMDB8NC4yM3wzMDMuNjM=)'>
+<rect x='4.23' y='4.23' width='501.77' height='299.40' style='stroke-width: 0.00; stroke: none;' />
+</g>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHw1ODEuMTA=)'>
+</g>
+<defs>
+  <clipPath id='cpNC4yM3w1MDYuMDB8MzAzLjYzfDU3Ni44Nw=='>
+    <rect x='4.23' y='303.63' width='501.77' height='273.24' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNC4yM3w1MDYuMDB8MzAzLjYzfDU3Ni44Nw==)'>
+<rect x='4.23' y='303.63' width='501.77' height='273.24' style='stroke-width: 0.00; stroke: none;' />
+</g>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHw1ODEuMTA=)'>
+<line x1='118.27' y1='164.82' x2='122.83' y2='164.82' style='stroke-width: 1.07; stroke: #595959; stroke-linecap: butt;' />
+<polyline points='118.91,167.09 122.83,164.82 118.91,162.55 ' style='stroke-width: 1.07; stroke: #595959; stroke-linecap: butt;' />
+<line x1='207.22' y1='164.82' x2='211.78' y2='164.82' style='stroke-width: 1.07; stroke: #595959; stroke-linecap: butt;' />
+<polyline points='207.86,167.09 211.78,164.82 207.86,162.55 ' style='stroke-width: 1.07; stroke: #595959; stroke-linecap: butt;' />
+<line x1='296.17' y1='164.82' x2='300.73' y2='164.82' style='stroke-width: 1.07; stroke: #595959; stroke-linecap: butt;' />
+<polyline points='296.81,167.09 300.73,164.82 296.81,162.55 ' style='stroke-width: 1.07; stroke: #595959; stroke-linecap: butt;' />
+<line x1='385.12' y1='164.82' x2='389.68' y2='164.82' style='stroke-width: 1.07; stroke: #595959; stroke-linecap: butt;' />
+<polyline points='385.76,167.09 389.68,164.82 385.76,162.55 ' style='stroke-width: 1.07; stroke: #595959; stroke-linecap: butt;' />
+<text x='255.12' y='31.58' text-anchor='middle' style='font-size: 7.97px; font-weight: bold; font-family: "Arial";'>How the gene-row identity of the anchor cohort was lost, detected, and recovered (all values frozen)</text>
+<text x='255.12' y='45.94' text-anchor='middle' style='font-size: 6.26px;fill: #595959; font-family: "Arial";'>the anonymised deposit kept row ORDER but not row LABELS — every 'select gene by name' operation on the wrong assumption retrieved unrelated genes</text>
+<rect x='33.88' y='61.39' width='84.39' height='195.97' style='stroke-width: 0.96; stroke: #1F4E79; stroke-linecap: butt; stroke-linejoin: miter; fill: #DBE5F1;' />
+<text x='76.08' y='77.92' text-anchor='middle' style='font-size: 6.40px; font-weight: bold;fill: #1F4E79; font-family: "Arial";'>1 · Upstream</text>
+<text x='76.08' y='84.83' text-anchor='middle' style='font-size: 6.40px; font-weight: bold;fill: #1F4E79; font-family: "Arial";'>anonymisation</text>
+<text x='76.08' y='152.08' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>exmat row labels replaced by</text>
+<text x='76.08' y='157.77' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>gene_1..gene_31085 placeholders;</text>
+<text x='76.08' y='163.46' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>row ORDER preserved =</text>
+<text x='76.08' y='169.15' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>counts(cds) write order</text>
+<text x='76.08' y='174.84' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>(= symbol alphabetical).</text>
+<text x='76.08' y='180.53' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>fData SHA-256 verified</text>
+<text x='76.08' y='186.21' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>upstream (see frozen</text>
+<text x='76.08' y='191.90' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>provenance block)</text>
+<rect x='122.83' y='61.39' width='84.39' height='195.97' style='stroke-width: 0.96; stroke: #C0504D; stroke-linecap: butt; stroke-linejoin: miter; fill: #F2DCDB;' />
+<text x='165.03' y='77.92' text-anchor='middle' style='font-size: 6.40px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>2 · Double</text>
+<text x='165.03' y='84.83' text-anchor='middle' style='font-size: 6.40px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>misalignment (v59–v81)</text>
+<text x='165.03' y='149.24' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>pipeline assumed exmat row i</text>
+<text x='165.03' y='154.93' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>== fData row i</text>
+<text x='165.03' y='160.62' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>(entrez string sort)</text>
+<text x='165.03' y='166.31' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>+ Supplementary_Table_1</text>
+<text x='165.03' y='171.99' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>column 1 misparsed as Entrez</text>
+<text x='165.03' y='177.68' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>→ pseudo-random 229-gene</text>
+<text x='165.03' y='183.37' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>'intersection' (228 common)</text>
+<text x='165.03' y='189.06' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>70 all-zero genes ·</text>
+<text x='165.03' y='194.75' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>88.7% PC1 mass</text>
+<rect x='211.78' y='61.39' width='84.39' height='195.97' style='stroke-width: 0.96; stroke: #C0504D; stroke-linecap: butt; stroke-linejoin: miter; fill: #F2DCDB;' />
+<text x='253.98' y='77.92' text-anchor='middle' style='font-size: 6.40px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>3 · Sex-anchor</text>
+<text x='253.98' y='84.83' text-anchor='middle' style='font-size: 6.40px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>falsification</text>
+<text x='253.98' y='146.40' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>P0-2 positive-control gates:</text>
+<text x='253.98' y='152.08' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>Y-linked / XIST /</text>
+<text x='253.98' y='157.77' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>housekeeping markers</text>
+<text x='253.98' y='163.46' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>biologically impossible under</text>
+<text x='253.98' y='169.15' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>positional alignment</text>
+<text x='253.98' y='174.84' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>→ 9 sort hypotheses tested,</text>
+<text x='253.98' y='180.53' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>2 pass: symbol alphabetical</text>
+<text x='253.98' y='186.21' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>(upper); both rawcase &amp; upper</text>
+<text x='253.98' y='191.90' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>panel genes agree;</text>
+<text x='253.98' y='197.59' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>upper adjudicated</text>
+<rect x='300.73' y='61.39' width='84.39' height='195.97' style='stroke-width: 0.96; stroke: #4F6228; stroke-linecap: butt; stroke-linejoin: miter; fill: #EBF1DD;' />
+<text x='342.93' y='77.92' text-anchor='middle' style='font-size: 6.40px; font-weight: bold;fill: #4F6228; font-family: "Arial";'>4 · Verification</text>
+<text x='342.93' y='84.83' text-anchor='middle' style='font-size: 6.40px; font-weight: bold;fill: #4F6228; font-family: "Arial";'>gates</text>
+<text x='342.93' y='146.40' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>sex-anchor gate: PASS</text>
+<text x='342.93' y='152.08' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>binaryResponse 68/230/50</text>
+<text x='342.93' y='157.77' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>(CR-PR / SD-PD / NA)</text>
+<text x='342.93' y='163.46' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>mirror numeric identity:</text>
+<text x='342.93' y='169.15' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>31085/31085 rows matched (1c)</text>
+<text x='342.93' y='174.84' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>cross-cohort mean expression</text>
+<text x='342.93' y='180.53' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>Spearman ρ = 0.81 (GSE165252)</text>
+<text x='342.93' y='186.21' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>and 0.62 (GSE78220);</text>
+<text x='342.93' y='191.90' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>old alignment: -0.17 / -0.07</text>
+<text x='342.93' y='197.59' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>OVERALL: PASS</text>
+<rect x='389.68' y='61.39' width='84.39' height='195.97' style='stroke-width: 0.96; stroke: #4D4D4D; stroke-linecap: butt; stroke-linejoin: miter; fill: #F7F7F7;' />
+<text x='431.88' y='77.92' text-anchor='middle' style='font-size: 6.40px; font-weight: bold;fill: #4D4D4D; font-family: "Arial";'>5 · Number</text>
+<text x='431.88' y='84.83' text-anchor='middle' style='font-size: 6.40px; font-weight: bold;fill: #4D4D4D; font-family: "Arial";'>changes</text>
+<text x='431.88' y='137.86' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>panel: 229 → 320 of 322 genes</text>
+<text x='431.88' y='143.55' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>zero genes: 70 → 0</text>
+<text x='431.88' y='149.24' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>PC1 mass on zero genes:</text>
+<text x='431.88' y='154.93' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>88.7% → 0.0%</text>
+<text x='431.88' y='160.62' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>within 0.632:</text>
+<text x='431.88' y='166.31' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>0.567 → 0.657</text>
+<text x='431.88' y='171.99' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>GSE78220 external:</text>
+<text x='431.88' y='177.68' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>0.410 → 0.660</text>
+<text x='431.88' y='183.37' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>GSE165252 external:</text>
+<text x='431.88' y='189.06' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>0.501 → 0.504</text>
+<text x='431.88' y='194.75' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>retraction: 70-gene artefact +</text>
+<text x='431.88' y='200.44' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>228-gene intersection</text>
+<text x='431.88' y='206.12' text-anchor='middle' style='font-size: 4.84px;fill: #262626; font-family: "Arial";'>withdrawn</text>
+<text x='255.12' y='273.67' text-anchor='middle' style='font-size: 5.69px;fill: #4D4D4D; font-family: "Arial";'>recovered key: exmat row j == j-th fData row under upper-cased symbol alphabetical sort · exported as exmat_row_key.csv (31085 rows)</text>
+<text x='255.12' y='280.50' text-anchor='middle' style='font-size: 5.69px;fill: #4D4D4D; font-family: "Arial";'>anchor numeric consequences fully re-run in data/v82/v82_rerun_*.json; the WRONG-identity archives remain frozen as provenance of the error</text>
+<text x='6.12' y='19.47' style='font-size: 9.67px; font-weight: bold; font-family: "Arial";'>a</text>
+<rect x='27.04' y='334.06' width='456.15' height='17.11' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #EDEDED;' />
+<line x1='27.04' y1='351.17' x2='483.19' y2='351.17' style='stroke-width: 0.75; stroke: #666666; stroke-linecap: butt;' />
+<text x='27.04' y='344.86' style='font-size: 6.26px; font-weight: bold;fill: #262626; font-family: "Arial";'>old (wrong identity, frozen v60/v71/v74 archives) vs new (recovered key, v82 re-run)</text>
+<text x='31.60' y='370.47' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>panel genes measurable in IMvigor210</text>
+<text x='31.60' y='383.95' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>cross-cohort intersection</text>
+<text x='31.60' y='397.43' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>all-zero genes in anchor panel</text>
+<text x='31.60' y='410.91' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>PC1 loading mass on zero genes</text>
+<text x='31.60' y='424.39' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>anchor within apparent AUC</text>
+<text x='31.60' y='437.87' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>anchor within 0.632 AUC</text>
+<text x='31.60' y='451.35' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>external AUC → GSE165252</text>
+<text x='31.60' y='464.83' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>external AUC → GSE78220</text>
+<text x='31.60' y='478.31' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>calib. slope → GSE165252</text>
+<text x='31.60' y='491.79' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>calib. slope → GSE78220</text>
+<text x='31.60' y='505.27' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>Brier → GSE78220</text>
+<text x='31.60' y='518.75' style='font-size: 6.12px;fill: #262626; font-family: "Arial";'>log-loss → GSE78220</text>
+<text x='264.24' y='370.47' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>229 (fake Entrez)</text>
+<text x='264.24' y='383.95' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>228</text>
+<text x='264.24' y='397.43' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>70</text>
+<text x='264.24' y='410.91' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>88.7%</text>
+<text x='264.24' y='424.39' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>0.584</text>
+<text x='264.24' y='437.87' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>0.567</text>
+<text x='264.24' y='451.35' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>0.501</text>
+<text x='264.24' y='464.83' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>0.410</text>
+<text x='264.24' y='478.31' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>0.98</text>
+<text x='264.24' y='491.79' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>-2.48</text>
+<text x='264.24' y='505.27' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>0.347</text>
+<text x='264.24' y='518.75' text-anchor='end' style='font-size: 6.12px;fill: #737373; font-family: "Arial";'>0.956</text>
+<text x='287.05' y='370.47' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>320 / 322 (missing: IGHG1, PRKN)</text>
+<text x='287.05' y='383.95' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>320</text>
+<text x='287.05' y='397.43' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>0</text>
+<text x='287.05' y='410.91' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>0.0%</text>
+<text x='287.05' y='424.39' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>0.666</text>
+<text x='287.05' y='437.87' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>0.657</text>
+<text x='287.05' y='451.35' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>0.504</text>
+<text x='287.05' y='464.83' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>0.660</text>
+<text x='287.05' y='478.31' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>-0.53</text>
+<text x='287.05' y='491.79' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>5.68</text>
+<text x='287.05' y='505.27' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>0.228</text>
+<text x='287.05' y='518.75' style='font-size: 6.12px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>0.648</text>
+<text x='264.24' y='358.80' text-anchor='end' style='font-size: 5.41px; font-weight: bold;fill: #737373; font-family: "Arial";'>OLD</text>
+<text x='287.05' y='358.80' style='font-size: 5.41px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";'>NEW</text>
+<text x='31.60' y='539.64' style='font-size: 5.41px;fill: #595959; font-family: "Arial";'>old external AUCs reproduce the frozen v71 values digit-for-digit (parity check in the frozen JSON) —</text>
+<text x='31.60' y='546.45' style='font-size: 5.41px;fill: #595959; font-family: "Arial";'>the 'old' column is the published-wrong baseline, kept for provenance</text>
+<text x='31.60' y='553.26' style='font-size: 5.41px;fill: #595959; font-family: "Arial";'>GSE165252 barely moves (CI still spans 0.5); GSE78220 improves +0.250 but its CI still spans 0.5 at n = 25;</text>
+<text x='31.60' y='560.07' style='font-size: 5.41px;fill: #595959; font-family: "Arial";'>BOTH calibration slopes move away from 1</text>
+<text x='6.30' y='331.76' style='font-size: 9.67px; font-weight: bold; font-family: "Arial";'>b</text>
+<text x='4.23' y='314.84' style='font-size: 8.00px; font-family: "Arial";'>Every affected anchor-arm number, old vs new (no cherry-picking)</text>
+</g>
+</g>
+</svg>

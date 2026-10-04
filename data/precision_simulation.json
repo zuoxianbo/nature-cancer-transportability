@@ -1,0 +1,163 @@
+{
+  "analysis": "_precision_simulation",
+  "purpose": "P0-5 external-validation precision simulation: probability of excluding AUC=0.5 (C1 licensing) and CI width at the OBSERVED target sample sizes/event rates across a true-AUC grid",
+  "seed": 20260911,
+  "n_sim": 5000,
+  "n_boot": 2000,
+  "auc_grid": [
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85
+  ],
+  "model": "binormal equal-variance latent score (d' = sqrt(2) Phi^-1(AUC)); y ~ Bernoulli(observed prevalence)",
+  "settings": {
+    "GSE165252": {
+      "n": 71,
+      "p": 0.323943661971831,
+      "events": 23
+    },
+    "GSE78220": {
+      "n": 25,
+      "p": 0.52,
+      "events": 13
+    }
+  },
+  "observed_main_transports": {
+    "GSE165252": {
+      "auc": 0.5036,
+      "ci95": [
+        0.354,
+        0.6585
+      ]
+    },
+    "GSE78220": {
+      "auc": 0.6603,
+      "ci95": [
+        0.4038,
+        0.8617
+      ]
+    }
+  },
+  "results": {
+    "GSE165252": {
+      "0.55": {
+        "mean_auc_hat": 0.5483203691384652,
+        "sd_auc_hat": 0.0743091647996189,
+        "q2p5_auc_hat": 0.40079853165522505,
+        "mean_ci_width": 0.29042138074174106,
+        "prob_c1_exclude_0p5": 0.0986,
+        "prob_auc_hat_gt_0p5": 0.742
+      },
+      "0.60": {
+        "mean_auc_hat": 0.6014802960823509,
+        "sd_auc_hat": 0.07289827477584165,
+        "q2p5_auc_hat": 0.4568117343649259,
+        "mean_ci_width": 0.28431034195366245,
+        "prob_c1_exclude_0p5": 0.2828,
+        "prob_auc_hat_gt_0p5": 0.9162
+      },
+      "0.65": {
+        "mean_auc_hat": 0.6505323754487398,
+        "sd_auc_hat": 0.06953702989823693,
+        "q2p5_auc_hat": 0.5108695652173912,
+        "mean_ci_width": 0.2752555500280983,
+        "prob_c1_exclude_0p5": 0.5414,
+        "prob_auc_hat_gt_0p5": 0.984
+      },
+      "0.70": {
+        "mean_auc_hat": 0.6997432580873941,
+        "sd_auc_hat": 0.06717576498646888,
+        "q2p5_auc_hat": 0.5656552224371373,
+        "mean_ci_width": 0.26172140514699943,
+        "prob_c1_exclude_0p5": 0.7918,
+        "prob_auc_hat_gt_0p5": 0.9968
+      },
+      "0.75": {
+        "mean_auc_hat": 0.749992758268418,
+        "sd_auc_hat": 0.061959356758023616,
+        "q2p5_auc_hat": 0.6212612000402699,
+        "mean_ci_width": 0.2429166557270003,
+        "prob_c1_exclude_0p5": 0.9436,
+        "prob_auc_hat_gt_0p5": 0.9996
+      },
+      "0.80": {
+        "mean_auc_hat": 0.7989880842969217,
+        "sd_auc_hat": 0.056823299540374766,
+        "q2p5_auc_hat": 0.6802925041017227,
+        "mean_ci_width": 0.2191336567286514,
+        "prob_c1_exclude_0p5": 0.9934,
+        "prob_auc_hat_gt_0p5": 1.0
+      },
+      "0.85": {
+        "mean_auc_hat": 0.8501728212354627,
+        "sd_auc_hat": 0.04835238923586772,
+        "q2p5_auc_hat": 0.7446717843326885,
+        "mean_ci_width": 0.18794278956678714,
+        "prob_c1_exclude_0p5": 1.0,
+        "prob_auc_hat_gt_0p5": 1.0
+      }
+    },
+    "GSE78220": {
+      "0.55": {
+        "mean_auc_hat": 0.5484049941554833,
+        "sd_auc_hat": 0.11788991965499868,
+        "q2p5_auc_hat": 0.3088235294117647,
+        "mean_ci_width": 0.4736504322693445,
+        "prob_c1_exclude_0p5": 0.0552,
+        "prob_auc_hat_gt_0p5": 0.6494
+      },
+      "0.60": {
+        "mean_auc_hat": 0.600655177651382,
+        "sd_auc_hat": 0.11573061353240892,
+        "q2p5_auc_hat": 0.3653846153846154,
+        "mean_ci_width": 0.4640103027666763,
+        "prob_c1_exclude_0p5": 0.1232,
+        "prob_auc_hat_gt_0p5": 0.804
+      },
+      "0.65": {
+        "mean_auc_hat": 0.6500310922067344,
+        "sd_auc_hat": 0.11404849667113234,
+        "q2p5_auc_hat": 0.4155844155844156,
+        "mean_ci_width": 0.44618445250387323,
+        "prob_c1_exclude_0p5": 0.2406,
+        "prob_auc_hat_gt_0p5": 0.8924
+      },
+      "0.70": {
+        "mean_auc_hat": 0.6972286560257768,
+        "sd_auc_hat": 0.1098848201422364,
+        "q2p5_auc_hat": 0.4733333333333333,
+        "mean_ci_width": 0.42552408460854474,
+        "prob_c1_exclude_0p5": 0.386,
+        "prob_auc_hat_gt_0p5": 0.9534
+      },
+      "0.75": {
+        "mean_auc_hat": 0.7486345844891262,
+        "sd_auc_hat": 0.10296867177659555,
+        "q2p5_auc_hat": 0.532051282051282,
+        "mean_ci_width": 0.3930569935234649,
+        "prob_c1_exclude_0p5": 0.5914,
+        "prob_auc_hat_gt_0p5": 0.9852
+      },
+      "0.80": {
+        "mean_auc_hat": 0.8000147300546628,
+        "sd_auc_hat": 0.09147375765832934,
+        "q2p5_auc_hat": 0.6038961038961039,
+        "mean_ci_width": 0.35250855990236407,
+        "prob_c1_exclude_0p5": 0.7686,
+        "prob_auc_hat_gt_0p5": 0.9966
+      },
+      "0.85": {
+        "mean_auc_hat": 0.850412922583093,
+        "sd_auc_hat": 0.07888885874310267,
+        "q2p5_auc_hat": 0.6752818362193362,
+        "mean_ci_width": 0.29984996457313334,
+        "prob_c1_exclude_0p5": 0.9152,
+        "prob_auc_hat_gt_0p5": 1.0
+      }
+    }
+  }
+}

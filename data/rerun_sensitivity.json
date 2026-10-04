@@ -1,0 +1,469 @@
+{
+  "analysis": "_rerun_sensitivity",
+  "date": "2026-09-24",
+  "seed": 20260911,
+  "python": "/Users/zuoxianbo/.workbuddy/binaries/python/envs/default/bin/python",
+  "baseline": {
+    "gene_identity": "recovered key (symbol alphabetical, upper); imvigor_gene_recovery.json gates overall PASS",
+    "panel": 320,
+    "common_genes": 320,
+    "primary_frozen_source": "data/imvigor_gene_recovery.json phase2.new"
+  },
+  "p0_3": {
+    "point_values_source": "data/imvigor_gene_recovery.json phase2.new (primary frozen, recovered key, 320-gene panel)",
+    "model_rows_covered": {
+      "primary_frozen": "done",
+      "M0_M2_M3_and_other_benchmark_models": "pending__rerun_benchmark_json_not_on_disk"
+    },
+    "tolerances": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "criteria": {
+      "c1": "external AUC bootstrap 95% CI (BCa, 2000, seed 20260911) excludes 0.5 in the beneficial direction (tolerance-independent)",
+      "c2_slope_convention_primary": "|calib slope - 1| <= tol, slope on the predicted-probability feature (/recovery convention; matches the quoted frozen baseline -0.527 / 5.678)",
+      "c2_slope_convention_secondary": "same on the logit-scale Cox/Steyerberg slope ( convention), reported for comparison",
+      "overall": "c1 AND c2"
+    },
+    "cells": {
+      "GSE165252": {
+        "n_test": 71,
+        "n_event": 23,
+        "auc": 0.5036231884057971,
+        "auc_ci95_bca": [
+          0.3540206604291994,
+          0.6584721535961872
+        ],
+        "c1_auc_ci_beneficial_exclusion": false,
+        "slope_point_prob": -0.526789606103434,
+        "slope_boot_ci95_prob": [
+          -9.204116715695433,
+          7.987248383275967
+        ],
+        "slope_boot_n_valid_prob": 2000,
+        "slope_boot_skipped_prob": 0,
+        "slope_point_logit": -0.0633234223219028,
+        "calib_intercept_logit": -0.866337786062937,
+        "slope_boot_ci95_logit": [
+          -0.8952049630542663,
+          0.8531993858964281
+        ],
+        "slope_boot_n_valid_logit": 2000,
+        "slope_boot_skipped_logit": 0,
+        "brier": 0.262702511059918,
+        "log_loss": 0.8141936892958811,
+        "parity_vs_frozen": {
+          "auc": {
+            "recomputed": 0.5036231884057971,
+            "frozen": 0.5036231884057971,
+            "match": true
+          },
+          "auc_ci95": {
+            "recomputed": [
+              0.3540206604291994,
+              0.6584721535961872
+            ],
+            "frozen": [
+              0.3540206604291994,
+              0.6584721535961872
+            ],
+            "max_abs_diff": 0.0
+          },
+          "slope_prob": {
+            "recomputed": -0.526789606103434,
+            "frozen": -0.526789606103434,
+            "match": true
+          },
+          "brier": {
+            "recomputed": 0.262702511059918,
+            "frozen": 0.262702511059918,
+            "match": true
+          },
+          "log_loss": {
+            "recomputed": 0.8141936892958811,
+            "frozen": 0.8141936892958811,
+            "match": true
+          },
+          "n_test": 71,
+          "n_event": 23
+        },
+        "parity_all_match": true,
+        "c2_slope_within_tolerance_prob_0.05": false,
+        "c2_slope_within_tolerance_logit_0.05": false,
+        "overall_transport_permitted_prob_0.05": false,
+        "overall_transport_permitted_logit_0.05": false,
+        "boot_ci_robustness_prob_0.05": "inconclusive",
+        "c2_slope_within_tolerance_prob_0.10": false,
+        "c2_slope_within_tolerance_logit_0.10": false,
+        "overall_transport_permitted_prob_0.10": false,
+        "overall_transport_permitted_logit_0.10": false,
+        "boot_ci_robustness_prob_0.10": "inconclusive",
+        "c2_slope_within_tolerance_prob_0.20": false,
+        "c2_slope_within_tolerance_logit_0.20": false,
+        "overall_transport_permitted_prob_0.20": false,
+        "overall_transport_permitted_logit_0.20": false,
+        "boot_ci_robustness_prob_0.20": "inconclusive"
+      },
+      "GSE78220": {
+        "n_test": 25,
+        "n_event": 13,
+        "auc": 0.6602564102564102,
+        "auc_ci95_bca": [
+          0.4038454964351145,
+          0.8616583228383701
+        ],
+        "c1_auc_ci_beneficial_exclusion": false,
+        "slope_point_prob": 5.678169924426832,
+        "slope_boot_ci95_prob": [
+          -1.876059035824076,
+          18.43227627292119
+        ],
+        "slope_boot_n_valid_prob": 2000,
+        "slope_boot_skipped_prob": 0,
+        "slope_point_logit": 1.3497921786689784,
+        "calib_intercept_logit": -0.04381677773842831,
+        "slope_boot_ci95_logit": [
+          -0.4332001301271661,
+          4.517293231870729
+        ],
+        "slope_boot_n_valid_logit": 2000,
+        "slope_boot_skipped_logit": 0,
+        "brier": 0.22802786705931374,
+        "log_loss": 0.6480391960560606,
+        "parity_vs_frozen": {
+          "auc": {
+            "recomputed": 0.6602564102564102,
+            "frozen": 0.6602564102564102,
+            "match": true
+          },
+          "auc_ci95": {
+            "recomputed": [
+              0.4038454964351145,
+              0.8616583228383701
+            ],
+            "frozen": [
+              0.4038454964351145,
+              0.8616583228383701
+            ],
+            "max_abs_diff": 0.0
+          },
+          "slope_prob": {
+            "recomputed": 5.678169924426832,
+            "frozen": 5.678169924426832,
+            "match": true
+          },
+          "brier": {
+            "recomputed": 0.22802786705931374,
+            "frozen": 0.22802786705931374,
+            "match": true
+          },
+          "log_loss": {
+            "recomputed": 0.6480391960560606,
+            "frozen": 0.6480391960560606,
+            "match": true
+          },
+          "n_test": 25,
+          "n_event": 13
+        },
+        "parity_all_match": true,
+        "c2_slope_within_tolerance_prob_0.05": false,
+        "c2_slope_within_tolerance_logit_0.05": false,
+        "overall_transport_permitted_prob_0.05": false,
+        "overall_transport_permitted_logit_0.05": false,
+        "boot_ci_robustness_prob_0.05": "inconclusive",
+        "c2_slope_within_tolerance_prob_0.10": false,
+        "c2_slope_within_tolerance_logit_0.10": false,
+        "overall_transport_permitted_prob_0.10": false,
+        "overall_transport_permitted_logit_0.10": false,
+        "boot_ci_robustness_prob_0.10": "inconclusive",
+        "c2_slope_within_tolerance_prob_0.20": false,
+        "c2_slope_within_tolerance_logit_0.20": false,
+        "overall_transport_permitted_prob_0.20": false,
+        "overall_transport_permitted_logit_0.20": false,
+        "boot_ci_robustness_prob_0.20": "inconclusive"
+      }
+    },
+    "overall_flip_count_prob": 0,
+    "overall_flip_cells_prob": [],
+    "overall_flip_count_logit": 0,
+    "overall_flip_cells_logit": [],
+    "c2_flip_count_prob": 0,
+    "c2_flip_cells_prob": [],
+    "any_transport_permitted_at_any_tolerance": false,
+    "main_conclusion_depends_on_0p10_tolerance": false,
+    "verdicts_by_tolerance": {
+      "prob": {
+        "GSE165252": [
+          false,
+          false,
+          false
+        ],
+        "GSE78220": [
+          false,
+          false,
+          false
+        ]
+      },
+      "logit": {
+        "GSE165252": [
+          false,
+          false,
+          false
+        ],
+        "GSE78220": [
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  },
+  "p0_10": {
+    "rows": {
+      "panel": {
+        "GSE165252": {
+          "primary_frozen": {
+            "n_test": 71,
+            "n_event": 23,
+            "auc": 0.5036231884057971,
+            "auc_ci95_bca": [
+              0.3540206604291994,
+              0.6584721535961872
+            ],
+            "delta_auc": {
+              "point": 0.09397319334398174,
+              "within_reference": 0.4096499950618154,
+              "within_estimator": "same-pipeline Efron 0.632 within the target cohort (recovered key, CLR+PCA k=2, lambda=1/n)",
+              "ci95_paired_bootstrap": [
+                -0.2233726256381172,
+                0.1699639868151589
+              ],
+              "n_paired": 2000,
+              "method": "external side: 2000-rep patient bootstrap of the frozen model's fixed predictions; within side: 2000x600 nested bootstrap of the Efron-0.632 estimator (lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information"
+            },
+            "calib_intercept_logit": -0.866337786062937,
+            "calib_slope_logit": -0.0633234223219028,
+            "calib_slope_prob": -0.526789606103434,
+            "brier": 0.262702511059918,
+            "log_loss": 0.8141936892958811,
+            "external_boot_skipped": 0
+          },
+          "M0": "pending__rerun_benchmark_json",
+          "M2": "pending__rerun_benchmark_json",
+          "M3": "pending__rerun_benchmark_json"
+        },
+        "GSE78220": {
+          "primary_frozen": {
+            "n_test": 25,
+            "n_event": 13,
+            "auc": 0.6602564102564102,
+            "auc_ci95_bca": [
+              0.4038454964351145,
+              0.8616583228383701
+            ],
+            "delta_auc": {
+              "point": 0.19759986381724004,
+              "within_reference": 0.4626565464391702,
+              "within_estimator": "same-pipeline Efron 0.632 within the target cohort (recovered key, CLR+PCA k=2, lambda=1/n)",
+              "ci95_paired_bootstrap": [
+                -0.2509168157591207,
+                0.3951432917348431
+              ],
+              "n_paired": 2000,
+              "method": "external side: 2000-rep patient bootstrap of the frozen model's fixed predictions; within side: 2000x600 nested bootstrap of the Efron-0.632 estimator (lambda=1/n, seed 20260911); CI = 2.5/97.5 percentiles of the paired difference distribution; external and within patient sets are independent, so replicate pairing order carries no information"
+            },
+            "calib_intercept_logit": -0.04381677773842831,
+            "calib_slope_logit": 1.3497921786689784,
+            "calib_slope_prob": 5.678169924426832,
+            "brier": 0.22802786705931374,
+            "log_loss": 0.6480391960560606,
+            "external_boot_skipped": 0
+          },
+          "M0": "pending__rerun_benchmark_json",
+          "M2": "pending__rerun_benchmark_json",
+          "M3": "pending__rerun_benchmark_json"
+        }
+      }
+    },
+    "within_reference": {
+      "IMvigor210": {
+        "point": {
+          "apparent": 0.6658567774936061,
+          "efron_0632": 0.6570746710270073,
+          "se": 0.036415395340170784,
+          "ci95": [
+            0.5857004961602726,
+            0.728448845893742
+          ],
+          "lambda_ridge": 0.0025380710659898475,
+          "n": 298,
+          "n_event": 68,
+          "estimator": "frozen: _imvigor_gene_recovery stage 2 (600 bootstrap, lambda=1/N_total per the  rule)"
+        },
+        "note": "source cohort of the primary frozen transport: no external self-test; nested within-side bootstrap not rerun here (frozen 600-bootstrap CI quoted); rerun when the benchmark worker lands (needed for M0-M3 delta-AUC rows)"
+      },
+      "GSE165252": {
+        "point": {
+          "apparent": 0.4963768115942029,
+          "efron_0632": 0.4096499950618154,
+          "se": 0.05583345290527302,
+          "ci95": [
+            0.3002164273674802,
+            0.5190835627561505
+          ],
+          "lambda_ridge": 0.014084507042253521,
+          "n": 71,
+          "n_event": 23,
+          "estimator": "Efron 0.632 optimism form, verbatim _imvigor_gene_recovery.auc_632, 600 bootstrap, seed 20260911"
+        },
+        "nested_bootstrap": {
+          "draws_n": 2000,
+          "outer_skipped": 0,
+          "inner_skipped_total": 0,
+          "seconds": 1513.8,
+          "ci95_percentile": [
+            0.40459891849531743,
+            0.6706318763151109
+          ],
+          "boot_mean": 0.522858706511736
+        }
+      },
+      "GSE78220": {
+        "point": {
+          "apparent": 0.5961538461538461,
+          "efron_0632": 0.4626565464391702,
+          "se": 0.09636669959962782,
+          "ci95": [
+            0.27377781522389966,
+            0.6515352776544407
+          ],
+          "lambda_ridge": 0.04,
+          "n": 25,
+          "n_event": 13,
+          "estimator": "Efron 0.632 optimism form, verbatim _imvigor_gene_recovery.auc_632, 600 bootstrap, seed 20260911"
+        },
+        "nested_bootstrap": {
+          "draws_n": 2000,
+          "outer_skipped": 0,
+          "inner_skipped_total": 46,
+          "seconds": 1654.7,
+          "ci95_percentile": [
+            0.355318105457315,
+            0.8280152047465797
+          ],
+          "boot_mean": 0.5734496678428617
+        }
+      }
+    },
+    "pending": {
+      "M0_M2_M3": "rerun_benchmark.json not on disk; rows to be added when the benchmark worker lands (marked pending in every cohort block)"
+    },
+    "pooled": {
+      "historical_": {
+        "pooled_auc": 0.498,
+        "ci95": [
+          0.365,
+          0.631
+        ],
+        "i2_qbased": 0.7516,
+        "Q_p": 0.0179,
+        "role": "descriptive only; HISTORICAL 229-gene-era (broken positional alignment) value from data/meta_sensitivity.json efficacy_dlmeta; retained for the record, superseded by the new-320-gene synthesis below",
+        "inputs": "_eff_meta per-cohort 0.632 AUCs on the broken-alignment S0"
+      },
+      "new_320gene_primary_spec": {
+        "inputs": {
+          "IMvigor210": {
+            "auc": 0.6570746710270073,
+            "se": 0.036415395340170784,
+            "role": "anchor-cohort within Efron-0.632 (recovered key, lambda=1/N_total  rule, 600 bootstrap)"
+          },
+          "GSE165252": {
+            "auc": 0.5036231884057971,
+            "se": 0.07766619723647647,
+            "role": "primary frozen external AUC; SE = BCa CI width / (2*1.96)"
+          },
+          "GSE78220": {
+            "auc": 0.6602564102564102,
+            "se": 0.11678898632736111,
+            "role": "primary frozen external AUC; SE = BCa CI width / (2*1.96)"
+          }
+        },
+        "dl": {
+          "k": 3,
+          "cohorts": [
+            "IMvigor210",
+            "GSE165252",
+            "GSE78220"
+          ],
+          "auc_inputs": [
+            0.6570746710270073,
+            0.5036231884057971,
+            0.6602564102564102
+          ],
+          "se_inputs": [
+            0.036415395340170784,
+            0.07766619723647647,
+            0.11678898632736111
+          ],
+          "pooled_auc": 0.6146441047233676,
+          "se": 0.0509894509205133,
+          "ci95": [
+            0.5147047809191615,
+            0.7145834285275737
+          ],
+          "tau2": 0.0032634553085208666,
+          "Q": 3.264757015807696,
+          "Q_df": 2,
+          "Q_p": 0.1954641078632846,
+          "i2_qbased": 0.3873969822819408,
+          "weights_re": [
+            0.566489492691395,
+            0.27969726456169663,
+            0.1538132427469084
+          ]
+        },
+        "note": "per task spec: the three cohorts' primary-frozen-design AUCs (IMvigor210 within-0.632 as the anchor cohort's own estimate + the two external transports) with DL random effects"
+      },
+      "new_320gene_all_within_secondary": {
+        "dl": {
+          "k": 3,
+          "cohorts": [
+            "IMvigor210",
+            "GSE165252",
+            "GSE78220"
+          ],
+          "auc_inputs": [
+            0.6570746710270073,
+            0.4096499950618154,
+            0.4626565464391702
+          ],
+          "se_inputs": [
+            0.036415395340170784,
+            0.05583345290527302,
+            0.09636669959962782
+          ],
+          "pooled_auc": 0.5169987608428681,
+          "se": 0.09307420147997583,
+          "ci95": [
+            0.3345733259421155,
+            0.6994241957436207
+          ],
+          "tau2": 0.02182351987628336,
+          "Q": 15.200378140627546,
+          "Q_df": 2,
+          "Q_p": 0.0005003568218754362,
+          "i2_qbased": 0.8684243259281554,
+          "weights_re": [
+            0.37420977669452327,
+            0.3473334541728004,
+            0.2784567691326764
+          ]
+        },
+        "note": "sensitivity: all three within-0.632 AUCs (mirrors the old  all-within design); GSE165252/GSE78220 within use lambda=1/n per the rerun spec, IMvigor210 lambda=1/N_total frozen"
+      },
+      "heterogeneity_note": "I2/Q reported as descriptive; heterogeneity precludes a single transportable-AUC interpretation (same caveat as the historical value)"
+    }
+  },
+  "total_seconds": 22.8
+}

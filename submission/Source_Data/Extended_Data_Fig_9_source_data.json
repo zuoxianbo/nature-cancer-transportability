@@ -1,0 +1,805 @@
+{
+  "figure": "ed9_precision_simulation",
+  "generated_by": "make_figures.R ( P0-complete set)",
+  "panels": {
+    "fig4.a": [
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.ridge_lam0.1.external.GSE78220.auc",
+        "value": 0.66025641026
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand100_s1.external.GSE165252.auc",
+        "value": 0.57336956522
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand100_s2.external.GSE78220.auc",
+        "value": 0.61538461538
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand50_s1.external.GSE165252.auc",
+        "value": 0.49547101449
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand50_s3.external.GSE78220.auc",
+        "value": 0.51282051282
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand100_s2.external.GSE165252.auc",
+        "value": 0.48641304348
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand100_s4.external.GSE78220.auc",
+        "value": 0.61538461538
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand50_s0.external.GSE78220.auc",
+        "value": 0.64743589744
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand100_s4.external.GSE165252.auc",
+        "value": 0.48097826087
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand50_s3.external.GSE165252.auc",
+        "value": 0.60235507246
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_top100.external.GSE165252.auc",
+        "value": 0.53532608696
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.ridge_lam1.external.GSE78220.auc",
+        "value": 0.66025641026
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.norm_within_z.external.GSE165252.auc",
+        "value": 0.50905797101
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.ridge_lam1.external.GSE165252.auc",
+        "value": 0.50362318841
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_top50.external.GSE78220.auc",
+        "value": 0.59615384615
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.pc_k1.external.GSE165252.auc",
+        "value": 0.5
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.norm_within_z.external.GSE78220.auc",
+        "value": 0.65384615385
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.ridge_lam0.1.external.GSE165252.auc",
+        "value": 0.50362318841
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.norm_log2raw.external.GSE78220.auc",
+        "value": 0.65384615385
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_top50.external.GSE165252.auc",
+        "value": 0.46557971014
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand50_s2.external.GSE78220.auc",
+        "value": 0.65384615385
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand100_s0.external.GSE165252.auc",
+        "value": 0.53804347826
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_top100.external.GSE78220.auc",
+        "value": 0.51282051282
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand100_s0.external.GSE78220.auc",
+        "value": 0.52564102564
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.norm_log2raw.external.GSE165252.auc",
+        "value": 0.47554347826
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand50_s4.external.GSE78220.auc",
+        "value": 0.53846153846
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand100_s3.external.GSE165252.auc",
+        "value": 0.54891304348
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.pc_k5.external.GSE78220.auc",
+        "value": 0.58333333333
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.ridge_lam0.01.external.GSE165252.auc",
+        "value": 0.50362318841
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand50_s0.external.GSE165252.auc",
+        "value": 0.46739130435
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.baseline.external.GSE78220.auc",
+        "value": 0.66025641026
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.baseline.external.GSE165252.auc",
+        "value": 0.50362318841
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.pc_k5.external.GSE165252.auc",
+        "value": 0.46376811594
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.ridge_lam0.01.external.GSE78220.auc",
+        "value": 0.66025641026
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.pc_k3.external.GSE78220.auc",
+        "value": 0.67948717949
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand50_s2.external.GSE165252.auc",
+        "value": 0.41757246377
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.pc_k3.external.GSE165252.auc",
+        "value": 0.48460144928
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand50_s1.external.GSE78220.auc",
+        "value": 0.62179487179
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand100_s3.external.GSE78220.auc",
+        "value": 0.58974358974
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.pc_k1.external.GSE78220.auc",
+        "value": 0.62179487179
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand100_s1.external.GSE78220.auc",
+        "value": 0.57051282051
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "per_config.gene_rand50_s4.external.GSE165252.auc",
+        "value": 0.5652173913
+      }
+    ],
+    "fig4.b": [
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "layer_mean_variance. (retracted mapping).gene set",
+        "value": 0.0083829830393
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "layer_mean_variance. (retracted mapping).normalization",
+        "value": 0.007543608882
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "layer_mean_variance. (retracted mapping).dimension",
+        "value": 0.0031251649028
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "layer_mean_variance. (retracted mapping).regularization",
+        "value": 0
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "layer_mean_variance. (recovered identity).gene set",
+        "value": 0.0027523613264
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "layer_mean_variance. (recovered identity).normalization",
+        "value": 0.0001686175819
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "layer_mean_variance. (recovered identity).dimension",
+        "value": 0.0010736166686
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "layer_mean_variance. (recovered identity).regularization",
+        "value": 0
+      }
+    ],
+    "ed9.a": [
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.55.prob_c1_exclude_0p5",
+        "value": 0.0986
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.6.prob_c1_exclude_0p5",
+        "value": 0.2828
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.65.prob_c1_exclude_0p5",
+        "value": 0.5414
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.7.prob_c1_exclude_0p5",
+        "value": 0.7918
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.75.prob_c1_exclude_0p5",
+        "value": 0.9436
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.8.prob_c1_exclude_0p5",
+        "value": 0.9934
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.85.prob_c1_exclude_0p5",
+        "value": 1
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.55.prob_c1_exclude_0p5",
+        "value": 0.0552
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.6.prob_c1_exclude_0p5",
+        "value": 0.1232
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.65.prob_c1_exclude_0p5",
+        "value": 0.2406
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.7.prob_c1_exclude_0p5",
+        "value": 0.386
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.75.prob_c1_exclude_0p5",
+        "value": 0.5914
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.8.prob_c1_exclude_0p5",
+        "value": 0.7686
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.85.prob_c1_exclude_0p5",
+        "value": 0.9152
+      }
+    ],
+    "fig4.c": [
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "recovery. (retracted).within IMvigor210 (0.632)",
+        "value": 0.5009057971
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "recovery. (retracted).external GSE165252",
+        "value": 0.41025641026
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "recovery. (retracted).external GSE78220",
+        "value": 0.56687867491
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "recovery. (recovered).within IMvigor210 (0.632)",
+        "value": 0.50362318841
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "recovery. (recovered).external GSE165252",
+        "value": 0.66025641026
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "recovery. (recovered).external GSE78220",
+        "value": 0.65707467103
+      },
+      {
+        "source": "figures/source_data/fig4_ablation_constraint.json",
+        "key": "old_pc1_mass_unmeasured",
+        "value": 0.88661087662
+      }
+    ],
+    "ed9.b": [
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.55.mean_ci_width",
+        "value": 0.29042138074
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.6.mean_ci_width",
+        "value": 0.28431034195
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.65.mean_ci_width",
+        "value": 0.27525555003
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.7.mean_ci_width",
+        "value": 0.26172140515
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.75.mean_ci_width",
+        "value": 0.24291665573
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.8.mean_ci_width",
+        "value": 0.21913365673
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE165252.0.85.mean_ci_width",
+        "value": 0.18794278957
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.55.mean_ci_width",
+        "value": 0.47365043227
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.6.mean_ci_width",
+        "value": 0.46401030277
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.65.mean_ci_width",
+        "value": 0.4461844525
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.7.mean_ci_width",
+        "value": 0.42552408461
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.75.mean_ci_width",
+        "value": 0.39305699352
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.8.mean_ci_width",
+        "value": 0.3525085599
+      },
+      {
+        "source": "data/precision_simulation.json",
+        "key": "results.GSE78220.0.85.mean_ci_width",
+        "value": 0.29984996457
+      }
+    ],
+    "fig4.d": [
+      {
+        "source": "data/permutation_null.json",
+        "key": "GSE165252.observed_max_auc",
+        "value": 0.60235507246
+      },
+      {
+        "source": "data/permutation_null.json",
+        "key": "GSE165252.perm_max_mean",
+        "value": 0.58236186594
+      },
+      {
+        "source": "data/permutation_null.json",
+        "key": "GSE165252.perm_max_q95",
+        "value": 0.64402173913
+      },
+      {
+        "source": "data/permutation_null.json",
+        "key": "GSE165252.perm_p_max_one_sided",
+        "value": 0.39380309845
+      },
+      {
+        "source": "data/permutation_null.json",
+        "key": "GSE78220.observed_max_auc",
+        "value": 0.67948717949
+      },
+      {
+        "source": "data/permutation_null.json",
+        "key": "GSE78220.perm_max_mean",
+        "value": 0.63694230769
+      },
+      {
+        "source": "data/permutation_null.json",
+        "key": "GSE78220.perm_max_q95",
+        "value": 0.74358974359
+      },
+      {
+        "source": "data/permutation_null.json",
+        "key": "GSE78220.perm_p_max_one_sided",
+        "value": 0.39780109945
+      }
+    ],
+    "ed1.a": [
+      {
+        "source": "data/positive_control_gep18.json",
+        "key": "transports.primary_logcpm_z_frozen_all6.GSE165252.target_metrics.auc",
+        "value": 0.54619565217
+      },
+      {
+        "source": "data/positive_control_gep18.json",
+        "key": "transports.primary_logcpm_z_frozen_all6.GSE165252.target_metrics.calib_slope",
+        "value": 0.51669609814
+      },
+      {
+        "source": "data/positive_control_gep18.json",
+        "key": "transports.primary_logcpm_z_frozen_all6.GSE78220.target_metrics.auc",
+        "value": 0.57051282051
+      },
+      {
+        "source": "data/positive_control_gep18.json",
+        "key": "transports.primary_logcpm_z_frozen_all6.GSE78220.target_metrics.calib_slope",
+        "value": 0.69552284452
+      },
+      {
+        "source": "data/positive_control_gep18.json",
+        "key": "within_imvigor210_efron632.efron_0632_auc",
+        "value": 0.57283092541
+      }
+    ],
+    "ed1.b": [
+      {
+        "source": "data/rerun_positive_control.json",
+        "key": "transports.primary_logcpm_z_frozen_all6.GSE165252.target_metrics.auc",
+        "value": 0.5606884058
+      },
+      {
+        "source": "data/rerun_positive_control.json",
+        "key": "transports.primary_logcpm_z_frozen_all6.GSE165252.target_metrics.calib_slope",
+        "value": 0.48903982673
+      },
+      {
+        "source": "data/rerun_positive_control.json",
+        "key": "transports.primary_logcpm_z_frozen_all6.GSE78220.target_metrics.auc",
+        "value": 0.49358974359
+      },
+      {
+        "source": "data/rerun_positive_control.json",
+        "key": "transports.primary_logcpm_z_frozen_all6.GSE78220.target_metrics.calib_slope",
+        "value": 0.25025695581
+      },
+      {
+        "source": "data/rerun_positive_control.json",
+        "key": "within_imvigor210_efron632.efron_0632_auc",
+        "value": 0.60497877546
+      }
+    ],
+    "ed6.a": [
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M0.IMvigor210.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M0.IMvigor210.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M1.IMvigor210.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M1.IMvigor210.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M2.IMvigor210.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M2.IMvigor210.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M3.IMvigor210.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M3.IMvigor210.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M4.IMvigor210.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M4.IMvigor210.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5a.IMvigor210.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5a.IMvigor210.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5b.IMvigor210.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5b.IMvigor210.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M6.IMvigor210.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M6.IMvigor210.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M0.GSE165252.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M0.GSE165252.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M1.GSE165252.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M1.GSE165252.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M2.GSE165252.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M2.GSE165252.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M3.GSE165252.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M3.GSE165252.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M4.GSE165252.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M4.GSE165252.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5a.GSE165252.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5a.GSE165252.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5b.GSE165252.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5b.GSE165252.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M6.GSE165252.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M6.GSE165252.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M0.GSE78220.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M0.GSE78220.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M1.GSE78220.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M1.GSE78220.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M2.GSE78220.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M2.GSE78220.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M3.GSE78220.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M3.GSE78220.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M4.GSE78220.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M4.GSE78220.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5a.GSE78220.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5a.GSE78220.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5b.GSE78220.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M5b.GSE78220.c2_tolerances_passed",
+        "value": 0
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M6.GSE78220.c1",
+        "value": false
+      },
+      {
+        "source": "data/threshold_zero_sensitivity.json",
+        "key": "decision_matrix.cells.M6.GSE78220.c2_tolerances_passed",
+        "value": 0
+      }
+    ],
+    "ed6.b": [
+      {
+        "source": "data/rerun_sensitivity.json",
+        "key": "p0_10.rows.panel.GSE165252.primary_frozen.delta_auc",
+        "value": {
+          "point": 0.093973193344,
+          "within_reference": 0.40964999506,
+          "ci95_paired_bootstrap": [
+            -0.22337262564,
+            0.16996398682
+          ]
+        }
+      },
+      {
+        "source": "data/rerun_sensitivity.json",
+        "key": "p0_10.rows.panel.GSE78220.primary_frozen.delta_auc",
+        "value": {
+          "point": 0.19759986382,
+          "within_reference": 0.46265654644,
+          "ci95_paired_bootstrap": [
+            -0.25091681576,
+            0.39514329173
+          ]
+        }
+      }
+    ]
+  }
+}

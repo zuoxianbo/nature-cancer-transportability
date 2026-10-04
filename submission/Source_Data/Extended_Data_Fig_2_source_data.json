@@ -1,0 +1,31 @@
+{
+  "figure": "ed2_cohort_ledger",
+  "generated_by": "figures/make_stable_figures.R",
+  "panels": {
+    "table": {
+      "summary.unverified_items": 3,
+      "summary.confirmed_items": 27,
+      "cohorts.GSE216329.verdict_counts": {
+        "CONFIRMED": 6,
+        "CORRECTED": 3,
+        "UNVERIFIED": 0
+      },
+      "cohorts.GSE253720.verdict_counts": {
+        "CONFIRMED": 6,
+        "CORRECTED": 3,
+        "UNVERIFIED": 0
+      },
+      "cohorts.GSE186143.verdict_counts": {
+        "CONFIRMED": 7,
+        "CORRECTED": 4,
+        "UNVERIFIED": 2
+      },
+      "cohorts.GSE166181.verdict_counts": {
+        "CONFIRMED": 9,
+        "CORRECTED": 2,
+        "UNVERIFIED": 0
+      },
+      "summary.corrected_items": 10
+    }
+  }
+}

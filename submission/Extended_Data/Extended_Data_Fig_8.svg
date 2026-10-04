@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='510.24pt' height='325.98pt' viewBox='0 0 510.24 325.98'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1MTAuMjR8MC4wMHwzMjUuOTg='>
+    <rect x='0.00' y='0.00' width='510.24' height='325.98' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHwzMjUuOTg=)'>
+<rect x='-0.000000000000064' y='0.00' width='510.24' height='325.98' style='stroke-width: 0.82; stroke: #FFFFFF; fill: #FFFFFF;' />
+<rect x='139.49' y='23.46' width='240.35' height='242.51' style='stroke-width: 0.82; stroke: none; fill: #FFFFFF;' />
+<line x1='208.94' y1='265.96' x2='208.94' y2='23.46' style='stroke-width: 0.75; stroke: #8C8C8C; stroke-dasharray: 4.00,4.00; stroke-linecap: butt;' />
+<line x1='167.14' y1='89.59' x2='306.49' y2='89.59' style='stroke-width: 0.82; stroke: #404040; stroke-linecap: butt;' />
+<line x1='231.06' y1='144.71' x2='296.39' y2='144.71' style='stroke-width: 0.82; stroke: #404040; stroke-linecap: butt;' />
+<line x1='250.97' y1='199.83' x2='330.37' y2='199.83' style='stroke-width: 0.82; stroke: #404040; stroke-linecap: butt;' />
+<line x1='234.51' y1='254.94' x2='291.60' y2='254.94' style='stroke-width: 0.82; stroke: #7F5FA2; stroke-linecap: butt;' />
+<circle cx='246.10' cy='89.59' r='1.45' style='stroke-width: 0.85; stroke: #404040; fill: #404040;' />
+<circle cx='268.31' cy='144.71' r='1.45' style='stroke-width: 0.85; stroke: #404040; fill: #404040;' />
+<circle cx='290.67' cy='199.83' r='1.45' style='stroke-width: 0.85; stroke: #404040; fill: #404040;' />
+<circle cx='263.06' cy='254.94' r='2.35' style='stroke-width: 0.85; stroke: #7F5FA2; fill: #7F5FA2;' />
+<polygon points='287.92,38.67 292.11,34.48 287.92,30.29 283.73,34.48 ' style='stroke-width: 0.71; fill: #C0504D;' />
+<text x='287.92' y='29.99' text-anchor='middle' style='font-size: 5.98px;fill: #333333; font-family: "Arial";'>0.905</text>
+<text x='246.10' y='85.10' text-anchor='middle' style='font-size: 5.98px;fill: #333333; font-family: "Arial";'>0.690</text>
+<text x='268.31' y='140.22' text-anchor='middle' style='font-size: 5.98px;fill: #333333; font-family: "Arial";'>0.804</text>
+<text x='290.67' y='195.33' text-anchor='middle' style='font-size: 5.98px;fill: #333333; font-family: "Arial";'>0.919</text>
+<text x='263.06' y='250.45' text-anchor='middle' style='font-size: 5.98px;fill: #333333; font-family: "Arial";'>0.777</text>
+<text x='150.42' y='36.41' style='font-size: 5.41px;fill: #4D4D4D; font-family: "Arial";'>n = 13 (6 severe / 7 no)</text>
+<text x='150.42' y='81.60' style='font-size: 5.41px;fill: #4D4D4D; font-family: "Arial";'>n = 13 (6 / 7)</text>
+<text x='150.42' y='146.64' style='font-size: 5.41px;fill: #4D4D4D; font-family: "Arial";'>n = 24 (15 irAE / 9)</text>
+<text x='150.42' y='201.76' style='font-size: 5.41px;fill: #4D4D4D; font-family: "Arial";'>n = 12 (9 CPI / 3 HC)</text>
+<text x='150.42' y='256.87' style='font-size: 5.41px;fill: #4D4D4D; font-family: "Arial";'>k = 2 cohorts</text>
+<text x='372.82' y='30.65' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>no CI in frozen artifacts;</text>
+<text x='372.82' y='36.31' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>authors' Suppl. Table 3 value;</text>
+<text x='372.82' y='41.96' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>significant in only 2/5 denominator closures</text>
+<text x='372.82' y='88.60' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>wide CI spans nearly the</text>
+<text x='372.82' y='94.25' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>full AUC range at n = 13</text>
+<text x='372.82' y='140.88' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>ANTICONSERVATIVE: 0.632-corrected 0.804</text>
+<text x='372.82' y='146.54' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>EXCEEDS apparent 0.667; endpoint = any irAE</text>
+<text x='372.82' y='152.19' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>grade 2-3 (organ-specific), NOT grade ≥3 severe</text>
+<text x='372.82' y='193.17' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>case-control confound (HC comparator</text>
+<text x='372.82' y='198.83' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>without ICI exposure); biopsies at ACTIVE</text>
+<text x='372.82' y='204.48' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>steroid-experienced/refractory colitis —</text>
+<text x='372.82' y='210.14' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>not baseline; upper CI unclipped (&gt;1)</text>
+<text x='372.82' y='253.94' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>inherits the anticonservative</text>
+<text x='372.82' y='259.60' style='font-size: 5.12px;fill: #404040; font-family: "Arial";'>0.804 input; descriptive only</text>
+<text x='141.37' y='27.27' style='font-size: 9.67px; font-weight: bold; font-family: "Arial";'>a</text>
+<polyline points='139.49,265.96 139.49,23.46 ' style='stroke-width: 0.82; stroke-linecap: square;' />
+<text x='135.68' y='36.84' text-anchor='end' style='font-size: 6.60px; font-family: "Arial";'>GSE189125 · CD4-Tem fraction (PBMC)</text>
+<text x='135.68' y='91.96' text-anchor='end' style='font-size: 6.60px; font-family: "Arial";'>GSE189125 · CD4-T proportion S0</text>
+<text x='135.68' y='147.07' text-anchor='end' style='font-size: 6.60px; font-family: "Arial";'>GSE216329 · S0 12-dim (0.632-corrected)</text>
+<text x='135.68' y='202.19' text-anchor='end' style='font-size: 6.60px; font-family: "Arial";'>GSE253720 · CPI-colitis vs HC (probe)</text>
+<text x='135.68' y='257.30' text-anchor='end' style='font-size: 6.60px; font-family: "Arial";'>Pooled DL (k = 2, descriptive)</text>
+<polyline points='137.38,34.48 139.49,34.48 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<polyline points='137.38,89.59 139.49,89.59 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<polyline points='137.38,144.71 139.49,144.71 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<polyline points='137.38,199.83 139.49,199.83 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<polyline points='137.38,254.94 139.49,254.94 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<polyline points='139.49,265.96 379.84,265.96 ' style='stroke-width: 0.82; stroke-linecap: square;' />
+<polyline points='150.42,268.08 150.42,265.96 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<polyline points='189.44,268.08 189.44,265.96 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<polyline points='228.45,268.08 228.45,265.96 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<polyline points='267.47,268.08 267.47,265.96 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<polyline points='306.49,268.08 306.49,265.96 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<polyline points='345.51,268.08 345.51,265.96 ' style='stroke-width: 0.82; stroke-linecap: butt;' />
+<text x='150.42' y='274.79' text-anchor='middle' style='font-size: 7.00px; font-family: "Arial";'>0.2</text>
+<text x='189.44' y='274.79' text-anchor='middle' style='font-size: 7.00px; font-family: "Arial";'>0.4</text>
+<text x='228.45' y='274.79' text-anchor='middle' style='font-size: 7.00px; font-family: "Arial";'>0.6</text>
+<text x='267.47' y='274.79' text-anchor='middle' style='font-size: 7.00px; font-family: "Arial";'>0.8</text>
+<text x='306.49' y='274.79' text-anchor='middle' style='font-size: 7.00px; font-family: "Arial";'>1.0</text>
+<text x='345.51' y='274.79' text-anchor='middle' style='font-size: 7.00px; font-family: "Arial";'>1.2</text>
+<text x='259.67' y='284.46' text-anchor='middle' style='font-size: 8.50px; font-family: "Arial";'>AUC (toxicity)</text>
+<text x='139.49' y='17.43' style='font-size: 8.50px; font-weight: bold; font-family: "Arial";'>Toxicity stress-test cohorts: every headline AUC carries a design caveat</text>
+<text x='379.84' y='294.64' text-anchor='end' style='font-size: 5.80px;fill: #4D4D4D; font-family: "Arial";'>diamond = point estimate without a frozen CI; pooled row = DerSimonian-Laird</text>
+<text x='379.84' y='300.90' text-anchor='end' style='font-size: 5.80px;fill: #4D4D4D; font-family: "Arial";'>over the two pooled-eligible cohorts (descriptive only, k = 2).</text>
+<text x='379.84' y='307.16' text-anchor='end' style='font-size: 5.80px;fill: #4D4D4D; font-family: "Arial";'>Sources: data/v60_tox_meta.json; data/v74/v74_joint_stress_test.json</text>
+<text x='379.84' y='313.43' text-anchor='end' style='font-size: 5.80px;fill: #4D4D4D; font-family: "Arial";'>(toxicity_cohort_recheck); data/v82/v82_provenance_ledger.json (endpoint definitions).</text>
+</g>
+</g>
+</svg>

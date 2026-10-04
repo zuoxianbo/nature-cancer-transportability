@@ -1,0 +1,82 @@
+{
+  "figure": "fig6_joint_boundary",
+  "generated_by": "figures/make_stable_figures.R",
+  "panels": {
+    "a": {
+      "p0_11.ed9.fisher_exact_p_hand": 0.529332255222602,
+      "p0_11.ed9.per_cell_clopper_pearson_95.DCB/no_severe.cp95": [
+        0.226714268298786,
+        0.514802153898249
+      ],
+      "p0_11.ed9.n_joint_evaluable": 47,
+      "p0_11.ed9.marginals": {
+        "response_DCB": 27,
+        "response_NDB": 20,
+        "severe_irAE_yes": 15,
+        "severe_irAE_no": 32
+      },
+      "p0_11.ed9.per_cell_clopper_pearson_95.DCB/no_severe.proportion": 0.361702127659574,
+      "p0_11.ed9.per_cell_clopper_pearson_95.NDB/severe.n": 5,
+      "p0_11.ed9.per_cell_clopper_pearson_95.DCB/severe.proportion": 0.212765957446809,
+      "p0_11.ed9.per_cell_clopper_pearson_95.NDB/no_severe.proportion": 0.319148936170213,
+      "p0_11.ed9.per_cell_clopper_pearson_95.DCB/severe.n": 10,
+      "p0_11.ed9.OR_E_T": 1.76470588235294,
+      "p0_11.ed9.per_cell_clopper_pearson_95.NDB/no_severe.cp95": [
+        0.190860507667508,
+        0.47118125720406
+      ],
+      "p0_11.ed9.per_cell_clopper_pearson_95.DCB/severe.cp95": [
+        0.107032477154786,
+        0.356636987762992
+      ],
+      "p0_11.ed9.per_cell_clopper_pearson_95.NDB/severe.proportion": 0.106382978723404,
+      "p0_11.ed9.per_cell_clopper_pearson_95.NDB/no_severe.n": 15,
+      "p0_11.ed9.per_cell_clopper_pearson_95.NDB/severe.cp95": [
+        0.0354563008072155,
+        0.231047626750983
+      ],
+      "p0_11.ed9.per_cell_clopper_pearson_95.DCB/no_severe.n": 17
+    },
+    "b": {
+      "p0_11.ed9.pooled_log_loss.independent": 1.35597423441171,
+      "joint_vs_independent.per_fold[5].delta_joint_minus_independent": -0.138495188321174,
+      "joint_vs_independent.per_fold[2].delta_joint_minus_independent": -0.154026998733221,
+      "joint_vs_independent.per_fold[3].delta_joint_minus_independent": 0.0047939937544681,
+      "joint_vs_independent.per_fold[10].delta_joint_minus_independent": 0.178213570500441,
+      "joint_vs_independent.per_fold[0].delta_joint_minus_independent": 0.0328083620202377,
+      "joint_vs_independent.per_fold[15].delta_joint_minus_independent": 0.133221832915654,
+      "joint_vs_independent.per_fold[14].delta_joint_minus_independent": -0.17602109621549,
+      "joint_vs_independent.per_fold[13].delta_joint_minus_independent": -0.0776323866217983,
+      "joint_vs_independent.per_fold[20].delta_joint_minus_independent": -0.0426179604971424,
+      "p0_11.ed9.n_folds_total": 25,
+      "joint_vs_independent.per_fold[12].delta_joint_minus_independent": 0.0238000887990024,
+      "joint_vs_independent.per_fold[19].delta_joint_minus_independent": 0.209766264608415,
+      "p0_11.ed9.sign_permutation_p_on_frozen_deltas": 0.986260137398626,
+      "joint_vs_independent.per_fold[8].delta_joint_minus_independent": 0.0107670757283955,
+      "joint_vs_independent.per_fold[1].delta_joint_minus_independent": -0.086910601969616,
+      "joint_vs_independent.per_fold[17].delta_joint_minus_independent": -0.135083901357812,
+      "joint_vs_independent.per_fold[24].delta_joint_minus_independent": -0.166740126674791,
+      "joint_vs_independent.per_fold[23].delta_joint_minus_independent": -0.0241379096016059,
+      "joint_vs_independent.per_fold[6].delta_joint_minus_independent": -0.101753402280198,
+      "joint_vs_independent.per_fold[22].delta_joint_minus_independent": 0.0456171535333734,
+      "joint_vs_independent.per_fold[4].delta_joint_minus_independent": 0.0145582124052197,
+      "joint_vs_independent.per_fold[11].delta_joint_minus_independent": 0.00611083374494825,
+      "joint_vs_independent.per_fold[18].delta_joint_minus_independent": 0.143832537573832,
+      "p0_11.ed9.pooled_log_loss.joint": 1.34517838600639,
+      "joint_vs_independent.per_fold[9].delta_joint_minus_independent": -0.0570468772984121,
+      "joint_vs_independent.per_fold[16].delta_joint_minus_independent": -0.0502556729982098,
+      "p0_11.ed9.n_folds_joint_better": 12,
+      "joint_vs_independent.per_fold[7].delta_joint_minus_independent": 0.376175307733847,
+      "joint_vs_independent.per_fold[21].delta_joint_minus_independent": 0.0430290795617736
+    },
+    "c": {
+      "p0_11.ed9.min_training_cell_across_folds": 4,
+      "p0_11.ed9.min_class_occupancy_per_fold": 1,
+      "p0_11.ed9.effective_params": {
+        "joint_multinomial": 9,
+        "independent_pair": 6
+      },
+      "p0_11.ed9.events_per_parameter": 5.22222222222222
+    }
+  }
+}

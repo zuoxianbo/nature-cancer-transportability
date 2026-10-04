@@ -1,0 +1,227 @@
+{
+  "figure": "fig3_calibration_pathways",
+  "generated_by": "figures/make_anchor_figures.R",
+  "panels": {
+    "a": {
+      "calibration_curves.per_target.IMvigor210.M2.bins[4]": {
+        "n": 59,
+        "mean_predicted": 0.464088702452892,
+        "observed_rate": 0.372881355932203,
+        "observed_rate_ci95": [
+          0.250439569261304,
+          0.508545245125078
+        ]
+      },
+      "calibration_curves.per_target.GSE78220.M2.overall_mean_predicted": 0.42452757959626,
+      "calibration_curves.per_target.GSE165252.M2.bins[4]": {
+        "n": 14,
+        "mean_predicted": 0.233405370067483,
+        "observed_rate": 0.357142857142857,
+        "observed_rate_ci95": [
+          0.12759842985916,
+          0.648619889384008
+        ]
+      },
+      "calibration_curves.per_target.GSE78220.M2.bins[0]": {
+        "n": 5,
+        "mean_predicted": 0.337357639325952,
+        "observed_rate": 0.2,
+        "observed_rate_ci95": [
+          0.00505076337946806,
+          0.716417936118089
+        ]
+      },
+      "calibration_curves.per_target.GSE78220.M2.bins[3]": {
+        "n": 5,
+        "mean_predicted": 0.448430130766962,
+        "observed_rate": 0.6,
+        "observed_rate_ci95": [
+          0.146632799634673,
+          0.947255049473683
+        ]
+      },
+      "calibration_curves.per_target.GSE165252.M2.bins[1]": {
+        "n": 14,
+        "mean_predicted": 0.0923625823847323,
+        "observed_rate": 0.214285714285714,
+        "observed_rate_ci95": [
+          0.0465792878898673,
+          0.507975677048472
+        ]
+      },
+      "calibration_curves.per_target.IMvigor210.M2.overall_observed_rate": 0.228187919463087,
+      "calibration_curves.per_target.GSE78220.M2.bins[2]": {
+        "n": 5,
+        "mean_predicted": 0.425354489801401,
+        "observed_rate": 0.6,
+        "observed_rate_ci95": [
+          0.146632799634673,
+          0.947255049473683
+        ]
+      },
+      "calibration_curves.per_target.GSE78220.M2.calib_slope": 1.87456803450401,
+      "calibration_curves.per_target.GSE165252.M2.overall_observed_rate": 0.323943661971831,
+      "calibration_curves.per_target.IMvigor210.M2.calib_slope": 2.92852095025054,
+      "calibration_curves.per_target.IMvigor210.M2.bins[2]": {
+        "n": 60,
+        "mean_predicted": 0.394642224316937,
+        "observed_rate": 0.266666666666667,
+        "observed_rate_ci95": [
+          0.160746451590415,
+          0.396610340025496
+        ]
+      },
+      "calibration_curves.per_target.IMvigor210.M2.bins[3]": {
+        "n": 59,
+        "mean_predicted": 0.421149032437988,
+        "observed_rate": 0.23728813559322,
+        "observed_rate_ci95": [
+          0.136225743584757,
+          0.365949890056237
+        ]
+      },
+      "calibration_curves.per_target.IMvigor210.M2.bins[0]": {
+        "n": 60,
+        "mean_predicted": 0.326211638791627,
+        "observed_rate": 0.116666666666667,
+        "observed_rate_ci95": [
+          0.0482148418713419,
+          0.225716153145648
+        ]
+      },
+      "calibration_curves.per_target.GSE165252.M2.bins[3]": {
+        "n": 14,
+        "mean_predicted": 0.146598864194193,
+        "observed_rate": 0.285714285714286,
+        "observed_rate_ci95": [
+          0.0838893183071275,
+          0.581035257183661
+        ]
+      },
+      "calibration_curves.per_target.GSE165252.M2.calib_slope": -0.0598677508814293,
+      "calibration_curves.per_target.GSE78220.M2.bins[4]": {
+        "n": 5,
+        "mean_predicted": 0.520590862820409,
+        "observed_rate": 0.6,
+        "observed_rate_ci95": [
+          0.146632799634673,
+          0.947255049473683
+        ]
+      },
+      "calibration_curves.per_target.GSE165252.M2.bins[0]": {
+        "n": 15,
+        "mean_predicted": 0.0426350728173395,
+        "observed_rate": 0.4,
+        "observed_rate_ci95": [
+          0.163364323859513,
+          0.677130233793718
+        ]
+      },
+      "calibration_curves.per_target.*.M2.per_patient_predicted": [
+        298,
+        71,
+        25
+      ],
+      "calibration_curves.per_target.GSE165252.M2.bins[2]": {
+        "n": 14,
+        "mean_predicted": 0.118433334695191,
+        "observed_rate": 0.357142857142857,
+        "observed_rate_ci95": [
+          0.12759842985916,
+          0.648619889384008
+        ]
+      },
+      "calibration_curves.per_target.GSE78220.M2.bins[1]": {
+        "n": 5,
+        "mean_predicted": 0.390904775266579,
+        "observed_rate": 0.6,
+        "observed_rate_ci95": [
+          0.146632799634673,
+          0.947255049473683
+        ]
+      },
+      "calibration_curves.per_target.GSE165252.M2.overall_mean_predicted": 0.125503214240035,
+      "calibration_curves.per_target.IMvigor210.M2.overall_mean_predicted": 0.394231882049345,
+      "calibration_curves.per_target.IMvigor210.M2.bins[1]": {
+        "n": 60,
+        "mean_predicted": 0.366680711760485,
+        "observed_rate": 0.15,
+        "observed_rate_ci95": [
+          0.0709561952570912,
+          0.265740447757295
+        ]
+      },
+      "calibration_curves.per_target.GSE78220.M2.overall_observed_rate": 0.52
+    },
+    "b": {
+      "calibration_curves.per_target.IMvigor210.recal_before_after.m2_calib_slope_logit": 2.92852095025054,
+      "calibration_curves.per_target.GSE78220.recal_before_after.m3_repeat_mean_calib_slope_logit": -1.60657447275192,
+      "calibration_curves.per_target.GSE165252.recal_before_after.m3_calib_slope_ci95": [
+        -6.77806992204592,
+        3.12613668187057
+      ],
+      "calibration_curves.per_target.GSE78220.recal_before_after.m3_calib_slope_ci95": [
+        -26.0635452820306,
+        11.9536832860066
+      ],
+      "calibration_curves.per_target.IMvigor210.M3.repeat_means.n_repeats_used": 100,
+      "calibration_curves.per_target.GSE78220.recal_before_after.m2_calib_slope_logit": 1.87456803450401,
+      "calibration_curves.per_target.GSE78220.M3.repeat_means.n_repeats_used": 100,
+      "calibration_curves.per_target.GSE78220.recal_before_after.slope_improved": false,
+      "calibration_curves.per_target.IMvigor210.recal_before_after.slope_improved": true,
+      "calibration_curves.per_target.GSE165252.recal_before_after.slope_improved": false,
+      "calibration_curves.per_target.IMvigor210.recal_before_after.m3_calib_slope_ci95": [
+        0.456995586427278,
+        2.69926181376692
+      ],
+      "calibration_curves.per_target.GSE165252.recal_before_after.m3_repeat_mean_calib_slope_logit": -1.60855101047633,
+      "calibration_curves.per_target.GSE165252.recal_before_after.m2_calib_slope_logit": -0.0598677508814293,
+      "calibration_curves.per_target.IMvigor210.recal_before_after.m3_repeat_mean_calib_slope_logit": 1.14572512796837,
+      "calibration_curves.per_target.GSE165252.M3.repeat_means.n_repeats_used": 100
+    },
+    "c": {
+      "loco_benchmark.per_target.GSE78220.M3.log_loss": 0.832155083649019,
+      "loco_benchmark.per_target.GSE165252.M3.brier_ci95": [
+        0.21579793945318,
+        0.267946185444255
+      ],
+      "loco_benchmark.per_target.GSE165252.M2.brier": 0.264121653693108,
+      "loco_benchmark.per_target.GSE78220.M3.brier_ci95": [
+        0.232047069474069,
+        0.476066783158299
+      ],
+      "loco_benchmark.per_target.IMvigor210.M0.log_loss": 0.586567865541331,
+      "loco_benchmark.per_target.GSE78220.M3.brier": 0.280742193130373,
+      "loco_benchmark.per_target.IMvigor210.M0.brier": 0.197671979865772,
+      "loco_benchmark.per_target.GSE165252.M2.log_loss": 0.824106895983272,
+      "loco_benchmark.per_target.IMvigor210.M3.brier_ci95": [
+        0.162276743440431,
+        0.179604265914792
+      ],
+      "loco_benchmark.per_target.GSE78220.M2.log_loss": 0.688418771985216,
+      "loco_benchmark.per_target.GSE165252.M0.brier": 0.224357966179309,
+      "loco_benchmark.per_target.IMvigor210.M3.log_loss": 0.511490167556311,
+      "loco_benchmark.per_target.GSE165252.M3.brier": 0.229198172916009,
+      "loco_benchmark.per_target.GSE165252.M0.log_loss": 0.643267232898895,
+      "loco_benchmark.per_target.GSE78220.M0.brier": 0.324340743678439,
+      "loco_benchmark.per_target.IMvigor210.M2.brier": 0.196256091871954,
+      "loco_benchmark.per_target.IMvigor210.M2.log_loss": 0.582832320409546,
+      "loco_benchmark.per_target.GSE78220.M3.log_loss_ci95": [
+        0.656055958824054,
+        1.87249906101712
+      ],
+      "loco_benchmark.per_target.GSE78220.M0.log_loss": 0.863891566080259,
+      "loco_benchmark.per_target.GSE165252.M3.log_loss_ci95": [
+        0.623133135360616,
+        0.751067459215712
+      ],
+      "loco_benchmark.per_target.IMvigor210.M3.log_loss_ci95": [
+        0.497443895003521,
+        0.541287286277978
+      ],
+      "loco_benchmark.per_target.GSE78220.M2.brier": 0.248134768326815,
+      "loco_benchmark.per_target.IMvigor210.M3.brier": 0.167702051953007,
+      "loco_benchmark.per_target.GSE165252.M3.log_loss": 0.654261284806904
+    }
+  }
+}

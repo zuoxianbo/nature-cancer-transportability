@@ -1,0 +1,617 @@
+{
+  "analysis": "_clinical_only",
+  "purpose": "P0-4 submission gate: true clinical-only competitive baseline on the identical held-out patients as the frozen S0 /  benchmark",
+  "seed": 20260911,
+  "metadata": {
+    "n_boot_auc_ci": 2000,
+    "n_boot_efron632": 600,
+    "ridge_lambda_rule": "lambda = 1/n_train (n_train=298), intercept unpenalised",
+    "algebra": "_competitor_benchmark.fit_logistic imported verbatim",
+    "label_reconstruction_check": "rebuilt label vectors asserted equal to _eff_{IMvigor210,GSE165252,GSE78220}_y.npy (frozen S0 pipeline subsets: 298/71/25)"
+  },
+  "variable_availability_matrix": {
+    "sex": {
+      "IMvigor210": {
+        "status": "available",
+        "detail": "pData Sex (M/F), 0/298 missing"
+      },
+      "GSE165252": {
+        "status": "unavailable",
+        "detail": "GEO metadata carries only tissue/treatment/response"
+      },
+      "GSE78220": {
+        "status": "available",
+        "detail": "characteristics 'gender' (M/F), 25/25"
+      },
+      "harmonizable": "IMvigor210 + GSE78220 (same construct, same coding)"
+    },
+    "patient_age": {
+      "IMvigor210": {
+        "status": "unavailable",
+        "detail": "pData has NO patient age; the column 'Sample.age' is a sample-timing category ('(less than) 1 year' / '1-2 years' / 'more than 2 years'), NOT age"
+      },
+      "GSE165252": {
+        "status": "unavailable",
+        "detail": "not deposited"
+      },
+      "GSE78220": {
+        "status": "available",
+        "detail": "characteristics 'age (yrs)', numeric"
+      },
+      "harmonizable": "NO -- age exists in only one cohort and NOT in the training cohort, so it cannot enter any trained clinical model"
+    },
+    "stage": {
+      "IMvigor210": {
+        "status": "available",
+        "detail": "TCGA.Subtype stage group I/II/III/IV (0/298 missing)"
+      },
+      "GSE165252": {
+        "status": "unavailable",
+        "detail": "not deposited"
+      },
+      "GSE78220": {
+        "status": "available",
+        "detail": "characteristics 'disease status' = AJCC M category M0/M1a/M1b/M1c"
+      },
+      "harmonizable": "crude binary only: IMvigor210 stage group IV vs I-III; GSE78220 M1(any) vs M0. Constructs differ (TNM stage group vs M category) -- flagged as a pre-declared crude harmonization"
+    },
+    "ecog_performance_status": {
+      "IMvigor210": {
+        "status": "available",
+        "detail": "Baseline.ECOG.Score 0/1/2, 0/298 missing"
+      },
+      "GSE165252": {
+        "status": "unavailable",
+        "detail": "not deposited"
+      },
+      "GSE78220": {
+        "status": "unavailable",
+        "detail": "not deposited"
+      },
+      "harmonizable": "NO (single cohort)"
+    },
+    "tumor_mutation_burden": {
+      "IMvigor210": {
+        "status": "available",
+        "detail": "FMOne.mutation.burden.per.MB, 64/298 missing"
+      },
+      "GSE165252": {
+        "status": "unavailable",
+        "detail": "not deposited"
+      },
+      "GSE78220": {
+        "status": "unavailable",
+        "detail": "only per-gene mutation calls (BRAF/NRAS/NF1), no TMB"
+      },
+      "harmonizable": "NO -- IMvigor210-only; used in the IMvigor210-only sensitivity model"
+    },
+    "metastatic_disease_status": {
+      "IMvigor210": {
+        "status": "available",
+        "detail": "Met.Disease.Status (Visceral/Liver/LN Only), 27/298 missing"
+      },
+      "GSE165252": {
+        "status": "unavailable",
+        "detail": "not deposited"
+      },
+      "GSE78220": {
+        "status": "partially_available",
+        "detail": "folded into the AJCC M category, not the same construct"
+      },
+      "harmonizable": "NO -- IMvigor210-only sensitivity"
+    },
+    "prior_therapy": {
+      "IMvigor210": {
+        "status": "available",
+        "detail": "Received.platinum (Y/N), Intravesical.BCG.administered (Y/N)"
+      },
+      "GSE165252": {
+        "status": "unavailable",
+        "detail": "not deposited"
+      },
+      "GSE78220": {
+        "status": "available",
+        "detail": "previous MAPKi (Y/N)"
+      },
+      "harmonizable": "NO -- different drugs/classes (platinum+BCG in bladder cancer vs MAPK inhibitors in melanoma); not a common construct"
+    },
+    "smoking": {
+      "IMvigor210": {
+        "status": "available",
+        "detail": "Tobacco.Use.History NEVER/PREVIOUS/CURRENT"
+      },
+      "GSE165252": {
+        "status": "unavailable",
+        "detail": "not deposited"
+      },
+      "GSE78220": {
+        "status": "unavailable",
+        "detail": "not deposited"
+      },
+      "harmonizable": "NO (single cohort)"
+    },
+    "response_outcome": {
+      "IMvigor210": {
+        "status": "available",
+        "detail": "binaryResponse CR/PR=1, SD/PD=0 (n=298)"
+      },
+      "GSE165252": {
+        "status": "available",
+        "detail": "responder/non-responder (n=71)"
+      },
+      "GSE78220": {
+        "status": "available",
+        "detail": "anti-PD-1 response CR/PR vs SD/PD (n=25)"
+      },
+      "harmonizable": "label, not a predictor"
+    }
+  },
+  "harmonization_rules": {
+    "sex": "male=1, female=0 (identical construct and coding in IMvigor210 pData 'Sex' and GSE78220 'gender')",
+    "advanced_stage_binary": "IMvigor210: TCGA.Subtype=='IV' -> 1 else 0; GSE78220: AJCC M category startswith 'M1' -> 1, 'M0' -> 0. PRE-DECLARED CRUDE harmonization across different staging constructs; flagged",
+    "patient_age": "EXCLUDED from all trained models: not present in IMvigor210 (training cohort)",
+    "missingness": "C_main/C_sex: no missing values in their 1-2 features (verified). C_rich (IMvigor210-only sensitivity): TMB missing in 64/298 -> median imputation of log10(TMB+1) + missingness indicator; Met.Disease.Status missing in 27/298 -> 'missing' indicator with all three category dummies set to 0"
+  },
+  "common_set_all_three": [],
+  "common_set_all_three_statement": "EMPTY: no patient-level covariate is available in all three cohorts; recorded honestly per task P0-4 step 4",
+  "maximal_harmonizable_set": [
+    "sex",
+    "advanced_stage_binary"
+  ],
+  "cohorts": {
+    "IMvigor210": {
+      "n": 298,
+      "n_event": 68,
+      "excluded_columns": []
+    },
+    "GSE165252": {
+      "n": 71,
+      "n_event": 23,
+      "sample_ids": [
+        "AZ1911-049TE",
+        "AZ2008-39TE",
+        "TE2004-01-atr",
+        "TE2004-02-atr",
+        "TE2004-03-atr",
+        "TE2004-04-atr",
+        "TE2004-05-atr",
+        "TE2004-06-atr",
+        "TE2004-08-atr",
+        "TE2004-09-atr",
+        "TE2004-10-atr",
+        "TE2004-11-atr",
+        "TE2004-12-atr",
+        "TE2004-13-atr",
+        "TE2004-14-atr",
+        "TE2004-15-atr",
+        "TE2004-16-atr",
+        "TE2004-17-atr",
+        "TE2004-18-atr",
+        "TE2004-19-atr",
+        "TE2004-20-atr",
+        "TE2004-21-atr",
+        "TE2004-22-atr",
+        "TE2004-23-atr",
+        "TE2004-24-atr",
+        "TE2004-25-atr",
+        "TE2004-26-atr",
+        "TE2004-27-atr",
+        "TE2004-28-atr",
+        "TE2004-29-atr",
+        "TE2004-30-atr",
+        "TE2004-31-atr",
+        "TE2004-32-atr",
+        "TE2004-33-atr",
+        "TE2004-34-atr",
+        "TE2004-35-atr",
+        "TE2004-36-atr",
+        "TE2004-38-atr",
+        "TE2004-39-atr",
+        "TE2004-40-atr",
+        "TE2004-41-atr",
+        "TE2004-42-atr",
+        "TE2004-43-atr",
+        "TE2004-46-atr",
+        "TE2004-47-atr",
+        "TE2004-48-atr",
+        "TE2004-49-atr",
+        "TE2004-50-atr",
+        "TE2004-51-atr",
+        "TE2004-52-atr",
+        "TE2004-53-atr",
+        "TE2004-54-atr",
+        "TE2004-55-atr",
+        "TE2004-56-atr",
+        "TE2004-57-atr",
+        "TE2004-58-atr",
+        "TE2004-59-atr",
+        "TE2004-60-atr",
+        "TE2004-61-atr",
+        "TE2004-62-atr",
+        "TE2004-63-atr",
+        "TE2004-64-atr",
+        "TE2004-65-atr",
+        "TE2004-66-atr",
+        "TE2004-67-atr",
+        "TE2004-68-atr",
+        "TE2004-69-atr",
+        "TE2004-70-atr",
+        "TE2004-71-atr",
+        "TE2004-74-atr",
+        "TE2004-75-atr"
+      ]
+    },
+    "GSE78220": {
+      "n": 25,
+      "n_event": 13,
+      "patient_ids": [
+        "Pt1",
+        "Pt2",
+        "Pt4",
+        "Pt5",
+        "Pt6",
+        "Pt7",
+        "Pt8",
+        "Pt9",
+        "Pt10",
+        "Pt12",
+        "Pt13",
+        "Pt14",
+        "Pt15",
+        "Pt19",
+        "Pt20",
+        "Pt22",
+        "Pt23",
+        "Pt25",
+        "Pt28",
+        "Pt29",
+        "Pt31",
+        "Pt32",
+        "Pt35",
+        "Pt37",
+        "Pt38"
+      ],
+      "excluded_columns": [
+        "Pt16.OnTx",
+        "Pt27A.baseline",
+        "Pt27B.baseline"
+      ],
+      "exclusion_note": "Pt16.OnTx / Pt27A / Pt27B columns fall outside the patient-id crosswalk exactly as in the frozen / pipeline; Pt27 therefore contributes no labeled sample"
+    }
+  },
+  "models": {
+    "C_main": {
+      "definition": "ridge logistic on {sex_male, stage_adv} trained on IMvigor210 n=298",
+      "features": [
+        "sex_male",
+        "stage_adv"
+      ],
+      "intercept": -1.6192585625997031,
+      "coefficients": {
+        "sex_male": 0.4630721992191705,
+        "stage_adv": 0.1475929893232388
+      },
+      "frozen": true
+    },
+    "C_sex": {
+      "definition": "ridge logistic on {sex_male} only (minimal feasible fallback)",
+      "features": [
+        "sex_male"
+      ],
+      "intercept": -1.5909186014701582,
+      "coefficients": {
+        "sex_male": 0.46344975334726185
+      },
+      "frozen": true
+    },
+    "C_rich": {
+      "definition": "IMvigor210-ONLY sensitivity model (NOT transportable): full local covariate set with honest missingness handling",
+      "features": [
+        "sex_male",
+        "stage4",
+        "ecog1",
+        "ecog2",
+        "log10_tmb_plus1",
+        "tmb_missing",
+        "met_visceral",
+        "met_liver",
+        "met_ln_only",
+        "met_missing",
+        "platinum",
+        "bcg",
+        "tob_previous",
+        "tob_current"
+      ],
+      "intercept": -4.244450427460822,
+      "coefficients": {
+        "sex_male": 0.4019939049296698,
+        "stage4": 0.5614738000467602,
+        "ecog1": -1.1710106643495801,
+        "ecog2": -0.22273384656401807,
+        "log10_tmb_plus1": 3.6014466439131216,
+        "tmb_missing": -0.7654057245911237,
+        "met_visceral": -0.5491487227348474,
+        "met_liver": -1.1207904390414554,
+        "met_ln_only": 0.4643583067606371,
+        "met_missing": 1.2055808550162694,
+        "platinum": -0.12500248161949018,
+        "bcg": -0.07101181370791201,
+        "tob_previous": 0.13674861930755738,
+        "tob_current": -0.656583599892079
+      },
+      "transportable": false
+    }
+  },
+  "external_results": {
+    "GSE78220": {
+      "note": "identical 25 held-out patients as the frozen S0 /  benchmark (label vector asserted equal to _eff_GSE78220_y.npy)",
+      "C_main": {
+        "log_loss": 0.8805462634325995,
+        "brier": 0.3292240492477301,
+        "calib_intercept": 0.0932666638326707,
+        "calib_slope": 0.011373582088297403,
+        "auc": 0.4871794871794872,
+        "auc_ci95": [
+          0.30519480519480513,
+          0.6981546854922114
+        ],
+        "n_test": 25,
+        "n_event": 13,
+        "auc_ci_method": "2000-rep bootstrap BCa (seed 20260911)",
+        "features_used": [
+          "sex_male",
+          "stage_adv"
+        ]
+      },
+      "C_sex": {
+        "log_loss": 0.9105450322572862,
+        "brier": 0.3395663689878561,
+        "calib_intercept": 0.40432151681189743,
+        "calib_slope": 0.25414326179343244,
+        "auc": 0.5128205128205129,
+        "auc_ci95": [
+          0.3246753246753247,
+          0.7000000000000001
+        ],
+        "n_test": 25,
+        "n_event": 13,
+        "auc_ci_method": "2000-rep bootstrap BCa (seed 20260911)",
+        "features_used": [
+          "sex_male"
+        ]
+      }
+    },
+    "GSE165252": {
+      "note": "identical 71 held-out patients as the frozen S0 /  benchmark (label vector asserted equal to _eff_GSE165252_y.npy)",
+      "degeneracy": "NO patient-level covariate is deposited for GSE165252 in GEO (verified: the only characteristics keys are ['response', 'tissue', 'treatment']); the frozen clinical model therefore CANNOT produce patient-varying predictions here and degenerates to a constant covariate-marginal prediction (mean training-set predicted probability). AUC is exactly 0.5 by construction and the calibration slope is not estimable -- this is a data constraint, recorded honestly, not a modelling shortcut.",
+      "C_main": {
+        "log_loss": 0.6537627252749277,
+        "brier": 0.22817332806351193,
+        "calib_intercept": 0.48286480876834736,
+        "calib_slope": NaN,
+        "auc": 0.5,
+        "auc_ci95": [
+          0.5,
+          0.5
+        ],
+        "n_test": 71,
+        "n_event": 23,
+        "auc_ci_method": "2000-rep bootstrap BCa (seed 20260911)",
+        "constant_prediction": 0.22818791946308725
+      },
+      "C_sex": {
+        "log_loss": 0.6537627252749278,
+        "brier": 0.22817332806351195,
+        "calib_intercept": 0.4828648087683469,
+        "calib_slope": NaN,
+        "auc": 0.5,
+        "auc_ci95": [
+          0.5,
+          0.5
+        ],
+        "n_test": 71,
+        "n_event": 23,
+        "auc_ci_method": "2000-rep bootstrap BCa (seed 20260911)",
+        "constant_prediction": 0.22818791946308734
+      },
+      "train_prevalence_reference": 0.22818791946308725
+    }
+  },
+  "adjudication_two_criterion": {
+    "GSE78220": {
+      "C_main": {
+        "auc_ci_excludes_0p5_beneficial_direction": false,
+        "slope_within_tolerance": false,
+        "transport_permitted": false
+      },
+      "C_sex": {
+        "auc_ci_excludes_0p5_beneficial_direction": false,
+        "slope_within_tolerance": false,
+        "transport_permitted": false
+      }
+    },
+    "GSE165252": {
+      "C_main": {
+        "auc_ci_excludes_0p5_beneficial_direction": false,
+        "slope_within_tolerance": false,
+        "transport_permitted": false
+      },
+      "C_sex": {
+        "auc_ci_excludes_0p5_beneficial_direction": false,
+        "slope_within_tolerance": false,
+        "transport_permitted": false
+      }
+    }
+  },
+  "within_imvigor210_efron632": {
+    "C_main": {
+      "n": 298,
+      "n_event": 68,
+      "lambda_rule": "1/n (n=298, intercept unpenalised;  fit_logistic verbatim)",
+      "apparent_auc": 0.5456521739130434,
+      "oob_auc_mean": 0.5073164347974264,
+      "n_boot": 600,
+      "n_boot_valid": 600,
+      "n_boot_skipped": 0,
+      "efron_0632_auc": 0.5214239867919734,
+      "formula": "AUC_0.632 = 0.368 * AUC_apparent + 0.632 * mean(AUC_out-of-bag over 600 bootstrap refits)",
+      "seed": 20260911
+    },
+    "C_sex": {
+      "n": 298,
+      "n_event": 68,
+      "lambda_rule": "1/n (n=298, intercept unpenalised;  fit_logistic verbatim)",
+      "apparent_auc": 0.5365089514066496,
+      "oob_auc_mean": 0.5222453362441933,
+      "n_boot": 600,
+      "n_boot_valid": 600,
+      "n_boot_skipped": 0,
+      "efron_0632_auc": 0.5274943466239772,
+      "formula": "AUC_0.632 = 0.368 * AUC_apparent + 0.632 * mean(AUC_out-of-bag over 600 bootstrap refits)",
+      "seed": 20260911
+    },
+    "C_rich": {
+      "n": 298,
+      "n_event": 68,
+      "lambda_rule": "1/n (n=298, intercept unpenalised;  fit_logistic verbatim)",
+      "apparent_auc": 0.8386828644501279,
+      "oob_auc_mean": 0.7659872838012319,
+      "n_boot": 600,
+      "n_boot_valid": 600,
+      "n_boot_skipped": 0,
+      "efron_0632_auc": 0.7927392574800256,
+      "formula": "AUC_0.632 = 0.368 * AUC_apparent + 0.632 * mean(AUC_out-of-bag over 600 bootstrap refits)",
+      "seed": 20260911
+    }
+  },
+  "comparison_vs_": {
+    "GSE165252": {
+      "comparison": "C_main clinical-only vs M2 frozen-S0 vs M0 prevalence-only, all trained on IMvigor210 (n=298) and applied to the SAME held-out patients of GSE165252",
+      "C_main": {
+        "auc": 0.5,
+        "auc_ci95": [
+          0.5,
+          0.5
+        ],
+        "calib_slope": NaN,
+        "log_loss": 0.6537627252749277,
+        "brier": 0.22817332806351193
+      },
+      "M2_frozen_s0": {
+        "auc": 0.5009057971014492,
+        "auc_ci95": [
+          0.3456323797744153,
+          0.6481126943396351
+        ],
+        "calib_slope": 0.16217849752162458,
+        "log_loss": 0.6717046561229455,
+        "brier": 0.23195327230909363
+      },
+      "M0_prevalence": {
+        "auc": 0.5,
+        "log_loss": 0.6537627252749277,
+        "brier": 0.22817332806351193
+      },
+      "delta_auc_C_minus_M2": -0.0009057971014492239,
+      "delta_logloss_C_minus_M2": -0.017941930848017762,
+      "delta_brier_C_minus_M2": -0.003779944245581701
+    },
+    "GSE78220": {
+      "comparison": "C_main clinical-only vs M2 frozen-S0 vs M0 prevalence-only, all trained on IMvigor210 (n=298) and applied to the SAME held-out patients of GSE78220",
+      "C_main": {
+        "auc": 0.4871794871794872,
+        "auc_ci95": [
+          0.30519480519480513,
+          0.6981546854922114
+        ],
+        "calib_slope": 0.011373582088297403,
+        "log_loss": 0.8805462634325995,
+        "brier": 0.3292240492477301
+      },
+      "M2_frozen_s0": {
+        "auc": 0.41025641025641024,
+        "auc_ci95": [
+          0.19480519480519476,
+          0.6602564102564104
+        ],
+        "calib_slope": -0.5173365056125113,
+        "log_loss": 0.9563934118489067,
+        "brier": 0.3470987844226785
+      },
+      "M0_prevalence": {
+        "auc": 0.5,
+        "log_loss": 0.8926714115306951,
+        "brier": 0.33475429034728166
+      },
+      "delta_auc_C_minus_M2": 0.07692307692307698,
+      "delta_logloss_C_minus_M2": -0.07584714841630724,
+      "delta_brier_C_minus_M2": -0.01787473517494842
+    }
+  },
+  "casemix": {
+    "IMvigor210": {
+      "n": 298,
+      "n_event": 68,
+      "response_rate": 0.22818791946308725,
+      "pct_male": 0.7818791946308725,
+      "patient_age": "not available (Sample.age is a sample-timing category)",
+      "stage_group_distribution": {
+        "I": 107,
+        "II": 75,
+        "III": 60,
+        "IV": 56
+      },
+      "pct_stageIV": 0.18791946308724833,
+      "ecog_distribution": {
+        "0": 121,
+        "1": 165,
+        "2": 12
+      },
+      "tmb_missing": 64
+    },
+    "GSE165252": {
+      "n": 71,
+      "n_event": 23,
+      "response_rate": 0.323943661971831,
+      "pct_male": "not available",
+      "patient_age": "not available",
+      "stage": "not available",
+      "deposited_characteristics_keys": [
+        "response",
+        "tissue",
+        "treatment"
+      ]
+    },
+    "GSE78220": {
+      "n": 25,
+      "n_event": 13,
+      "response_rate": 0.52,
+      "pct_male": 0.68,
+      "patient_age": {
+        "mean": 60.32,
+        "sd": 12.161140297411807,
+        "min": 27.0,
+        "max": 84.0
+      },
+      "m_stage_distribution": {
+        "M1b": 2,
+        "M1c": 20,
+        "M1a": 2,
+        "M0": 1
+      },
+      "pct_M1": 0.96
+    },
+    "standardized_differences_IMvigor210_vs_GSE78220": {
+      "pct_male_smd": 0.23126184998758992,
+      "pct_advanced_stage_smd": -2.4983564153282942,
+      "note": "positive SMD = IMvigor210 higher; |SMD|>0.2 conventionally indicates material case-mix shift. Sex: 78.2% vs 68.0% male; advanced stage (IMvigor210 stage-group IV vs GSE78220 AJCC M1): 18.8% vs 96.0%."
+    },
+    "prevalence_shift": {
+      "IMvigor210": 0.22818791946308725,
+      "GSE165252": 0.323943661971831,
+      "GSE78220": 0.52,
+      "note": "response-rate case-mix shift across the three cohorts"
+    }
+  },
+  "limitation_statement_draft": "Clinical-only baseline limitation (P0-4 audit, computed not assumed): the patient-level covariates deposited with the three efficacy cohorts are not mutually harmonizable. GSE165252 (PERFECT) deposits no patient-level covariate of any kind (only tissue, treatment arm and response), the IMvigor210 pData contains no patient age (its 'Sample.age' column is a sample-timing category), and the staging constructs differ (IMvigor210 TCGA stage group vs GSE78220 AJCC M category). The covariate set common to all three cohorts is therefore empty, and the maximal set harmonizable between the training cohort (IMvigor210) and any external cohort is {sex, a crude advanced/metastatic-stage binary}, transportable only to GSE78220. On GSE165252 every clinical-only model necessarily degenerates to a constant (covariate-marginal) prediction with AUC exactly 0.5, so for that cohort prevalence-only is the strongest clinical baseline the deposited data permit. These constraints are properties of the deposited data, not modelling choices; a richer clinical baseline would require patient-level covariate tables from the trial sponsors/publications that are not part of the GEO deposits."
+}

@@ -1,0 +1,114 @@
+{
+  "figure": "ed5_identity_recovery",
+  "generated_by": "figures/make_anchor_figures.R",
+  "panels": {
+    "a": {
+      "phase2.new.cross_cohort_mean_expr_spearman": {
+        "recovered_key": {
+          "GSE165252": {
+            "spearman": 0.812755617730642,
+            "p": 1.3448426244175e-76,
+            "n_genes": 320
+          },
+          "GSE78220": {
+            "spearman": 0.619000673834705,
+            "p": 3.11718388269366e-35,
+            "n_genes": 320
+          }
+        },
+        "old_positional_alignment": {
+          "GSE165252": {
+            "spearman": -0.169988520534612,
+            "p": 0.0101286991354722,
+            "n_genes": 228
+          },
+          "GSE78220": {
+            "spearman": -0.0661646977997025,
+            "p": 0.319899602328343,
+            "n_genes": 228
+          }
+        }
+      },
+      "phase1a.n_hypotheses_tested": 9,
+      "phase1a.n_passing_hypotheses": 2,
+      "provenance.exmat_sha256": "fc51849b9e923b6a0ac8341c443d83d35d9fb2643d19b15554b3e444f74b5445",
+      "phase1a.winner": "symbol_alphabetical_upper",
+      "phase2.old.zero_genes_frozen_": {
+        "n_common_genes": 228,
+        "n_unmeasured": 70,
+        "pc1_loading_squared_mass": 0.886610876619275,
+        "pc1_evr": 0.345764569908682,
+        "source": "data/alignment_ablation.json:unmeasured_gene_artifact"
+      },
+      "verification_gates": {
+        "sex_anchor": "PASS",
+        "n_samples_348": true,
+        "sample_ids_match_pdata": true,
+        "sample_id_order_match_pdata": true,
+        "binaryResponse_counts": {
+          "CR/PR": 68,
+          "SD/PD": 230,
+          "NA": 50
+        },
+        "identity_match": true,
+        "panel_measurable": {
+          "old_fake_entrez_selection": 229,
+          "new_by_symbol": 320,
+          "of_322": 322,
+          "new_common_cross_cohort": 320
+        },
+        "overall": "PASS"
+      }
+    },
+    "b": {
+      "phase2.oldnew.PC1_loading_mass_on_zero_genes": {
+        "old": "88.7%",
+        "new": "0.0%"
+      },
+      "phase2.oldnew.external_AUC_GSE78220": {
+        "old": "0.410",
+        "new": "0.660"
+      },
+      "phase2.oldnew.log_loss_GSE78220": {
+        "old": "0.956",
+        "new": "0.648"
+      },
+      "phase2.oldnew.calib_slope_GSE165252": {
+        "old": "0.98",
+        "new": "-0.53"
+      },
+      "phase2.oldnew.all_zero_genes_in_anchor_panel": {
+        "old": "70",
+        "new": "0"
+      },
+      "phase2.oldnew.anchor_within_apparent_AUC": {
+        "old": "0.584",
+        "new": "0.666"
+      },
+      "phase2.oldnew.anchor_within_0_632_AUC": {
+        "old": "0.567",
+        "new": "0.657"
+      },
+      "phase2.oldnew.panel_genes_measurable_in_IMvigor210": {
+        "old": "229 (fake Entrez)",
+        "new": "320 / 322 (missing: IGHG1, PRKN)"
+      },
+      "phase2.oldnew.external_AUC_GSE165252": {
+        "old": "0.501",
+        "new": "0.504"
+      },
+      "phase2.oldnew.calib_slope_GSE78220": {
+        "old": "-2.48",
+        "new": "5.68"
+      },
+      "phase2.oldnew.Brier_GSE78220": {
+        "old": "0.347",
+        "new": "0.228"
+      },
+      "phase2.oldnew.cross_cohort_intersection": {
+        "old": "228",
+        "new": "320"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+Dear Editors,
+
+We submit this manuscript for consideration as an Analysis in Nature Cancer.
+
+Title: Decomposing the transportability of immune-state biomarkers across checkpoint immunotherapy
+
+Authors: [Authors to be inserted on submission]
+
+Abstract summary (142 words):
+Immune-state biomarkers are proposed to predict benefit from checkpoint blockade, yet their performance can change across cohorts. We tested whether transport failure could be decomposed across predictor construction, measurement and clinical outcome. A 322-gene immune-state representation was frozen in IMvigor210 and transported without re-estimation to independent cohorts. External AUCs were 0.504 (95% CI 0.354-0.659) and 0.660 (0.404-0.862), with both intervals spanning 0.5. Calibration showed distinct transport behaviour from ranking: recalibration improved log-loss and Brier score in some cohorts but did not restore discrimination. Across 21 prespecified representation and preprocessing configurations, no configuration established reproducible external transport; correction of a data-mapping error altered the representation but did not restore transport. Joint efficacy-toxicity modelling was not identifiable in the only cohort containing both endpoints. These findings support evaluating biomarker transportability as a property of the predictor-measurement-outcome system rather than of a feature list alone.
+
+The manuscript freezes one narrow claim: under a prespecified frozen transport estimand, the immune-state representation did not establish reproducible external transport in the tested independent checkpoint-immunotherapy cohorts. All pre-submission validity locks (P0-1 to P0-10 of the editorial revision package) are complete, and every number below propagates from the same frozen manifest:
+
+1. Corrected-source full rerun (P0-1). All primary and secondary results were re-run from the recovered 320-gene source of truth after a gene-row identity mapping error was detected, corrected and documented; the primary conclusion is directionally unchanged (external AUCs 0.504 and 0.660, both CIs spanning 0.5; 24/24 sensitivity cells refused).
+2. Positive-control benchmark (P0-2). The published 18-gene T-cell-inflamed GEP (Cristescu et al. 2018), pushed through the identical frozen pipeline and evaluation, attains 0.546 [0.403, 0.697] and 0.571 [0.318, 0.789] in the two external cohorts and fails the two-criterion rule, while reaching 0.654 within the anchor. The six-gene IFN-gamma panel is reported as sensitivity only. The evaluation environment is therefore not a trivial rejector, and the refusal of the 322-gene representation is not explained by an over-strict rule alone.
+3. Threshold sensitivity (P0-3). No verdict changes under AUC-only, calibration-only or joint criteria, at slope tolerances of plus/minus 0.05, 0.10 and 0.20, under either slope convention.
+4. Selection-adjusted permutation null (P0-4). With 2,000 anchor-label permutations paired across all 21 configurations, the observed maximum external AUC lies inside the permutation max-AUC distribution in both target cohorts (one-sided P = 0.394 and 0.398): the configuration search carries no signal beyond selection.
+5. External-validation precision simulation (P0-5). At the observed target sizes (n = 71 with 23 events; n = 25 with 13 events), the probability of excluding AUC = 0.5 exceeds 90% only for true AUC of at least 0.75 (n = 71); the data cannot establish transport, nor rule out moderate true effects. This precision boundary is stated explicitly in the manuscript.
+6. Case-mix and outcome-shift audit (P0-6), calibration lock on identical frozen predictions (P0-7), and an explicit primary-versus-sensitivity estimand separation (P0-8) are reported in Extended Data Figs. 3, 6, 7 and Tables S3, S4, S7.
+7. Joint efficacy-toxicity identifiability (P0-9). GSE186143, the only cohort with both endpoints, cannot identify a joint representation (25-fold cross-validated log-loss difference indistinguishable from zero, sign-permutation P = 0.986; 5.2 events per parameter); this is framed as an identifiability boundary and a design requirement, not as evidence about a shared mechanism.
+8. Reproducibility (P0-10). The mapping key, predictions, seeds, environment and hashes are frozen; every figure is generated programmatically from the same manifest.
+
+We confirm that all figures were produced programmatically with R 4.6.1 / ggplot2 4.0.3 (300 dpi, theme_classic, Arial); no AI-generated figures are used. Source data are provided as one JSON file per figure with immutable key-to-value definitions, and all analysis code (Python and R) is archived. LLM-assisted drafting tools were not used to generate scientific content or figures.
+
+No author names or affiliations are included in this cover letter or the manuscript, in line with our editorial policy. All authors have read and approved the manuscript. The work was funded by [funding to be confirmed].
+
+We look forward to your consideration.
+
+Sincerely,
+[Corresponding author - to be inserted on submission]

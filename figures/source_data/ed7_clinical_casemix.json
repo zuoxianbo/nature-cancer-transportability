@@ -1,0 +1,141 @@
+{
+  "figure": "ed7_clinical_casemix",
+  "generated_by": "figures/make_anchor_figures.R",
+  "panels": {
+    "a": {
+      "casemix.standardized_differences_IMvigor210_vs_GSE78220": {
+        "pct_male_smd": 0.23126184998759,
+        "pct_advanced_stage_smd": -2.49835641532829,
+        "note": "positive SMD = IMvigor210 higher; |SMD|>0.2 conventionally indicates material case-mix shift. Sex: 78.2% vs 68.0% male; advanced stage (IMvigor210 stage-group IV vs GSE78220 AJCC M1): 18.8% vs 96.0%."
+      }
+    },
+    "b": {
+      "casemix.prevalence_shift": {
+        "IMvigor210": 0.228187919463087,
+        "GSE165252": 0.323943661971831,
+        "GSE78220": 0.52,
+        "note": "response-rate case-mix shift across the three cohorts"
+      }
+    },
+    "c": {
+      "within_reference.per_cohort.IMvigor210.auc_632": 0.657074671027007,
+      "within_imvigor210_efron632": {
+        "C_main": {
+          "n": 298,
+          "n_event": 68,
+          "lambda_rule": "1/n (n=298, intercept unpenalised;  fit_logistic verbatim)",
+          "apparent_auc": 0.545652173913043,
+          "oob_auc_mean": 0.507316434797426,
+          "n_boot": 600,
+          "n_boot_valid": 600,
+          "n_boot_skipped": 0,
+          "efron_0632_auc": 0.521423986791973,
+          "formula": "AUC_0.632 = 0.368 * AUC_apparent + 0.632 * mean(AUC_out-of-bag over 600 bootstrap refits)",
+          "seed": 20260911
+        },
+        "C_sex": {
+          "n": 298,
+          "n_event": 68,
+          "lambda_rule": "1/n (n=298, intercept unpenalised;  fit_logistic verbatim)",
+          "apparent_auc": 0.53650895140665,
+          "oob_auc_mean": 0.522245336244193,
+          "n_boot": 600,
+          "n_boot_valid": 600,
+          "n_boot_skipped": 0,
+          "efron_0632_auc": 0.527494346623977,
+          "formula": "AUC_0.632 = 0.368 * AUC_apparent + 0.632 * mean(AUC_out-of-bag over 600 bootstrap refits)",
+          "seed": 20260911
+        },
+        "C_rich": {
+          "n": 298,
+          "n_event": 68,
+          "lambda_rule": "1/n (n=298, intercept unpenalised;  fit_logistic verbatim)",
+          "apparent_auc": 0.838682864450128,
+          "oob_auc_mean": 0.765987283801232,
+          "n_boot": 600,
+          "n_boot_valid": 600,
+          "n_boot_skipped": 0,
+          "efron_0632_auc": 0.792739257480026,
+          "formula": "AUC_0.632 = 0.368 * AUC_apparent + 0.632 * mean(AUC_out-of-bag over 600 bootstrap refits)",
+          "seed": 20260911
+        }
+      }
+    },
+    "d": {
+      "external_results.GSE165252": {
+        "note": "identical 71 held-out patients as the frozen S0 /  benchmark (label vector asserted equal to _eff_GSE165252_y.npy)",
+        "degeneracy": "NO patient-level covariate is deposited for GSE165252 in GEO (verified: the only characteristics keys are ['response', 'tissue', 'treatment']); the frozen clinical model therefore CANNOT produce patient-varying predictions here and degenerates to a constant covariate-marginal prediction (mean training-set predicted probability). AUC is exactly 0.5 by construction and the calibration slope is not estimable -- this is a data constraint, recorded honestly, not a modelling shortcut.",
+        "C_main": {
+          "log_loss": 0.653762725274928,
+          "brier": 0.228173328063512,
+          "calib_intercept": 0.482864808768347,
+          "calib_slope": null,
+          "auc": 0.5,
+          "auc_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_test": 71,
+          "n_event": 23,
+          "auc_ci_method": "2000-rep bootstrap BCa (seed 20260911)",
+          "constant_prediction": 0.228187919463087
+        },
+        "C_sex": {
+          "log_loss": 0.653762725274928,
+          "brier": 0.228173328063512,
+          "calib_intercept": 0.482864808768347,
+          "calib_slope": null,
+          "auc": 0.5,
+          "auc_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_test": 71,
+          "n_event": 23,
+          "auc_ci_method": "2000-rep bootstrap BCa (seed 20260911)",
+          "constant_prediction": 0.228187919463087
+        },
+        "train_prevalence_reference": 0.228187919463087
+      },
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M2.auc": 0.66025641025641,
+      "external_results.GSE78220": {
+        "note": "identical 25 held-out patients as the frozen S0 /  benchmark (label vector asserted equal to _eff_GSE78220_y.npy)",
+        "C_main": {
+          "log_loss": 0.880546263432599,
+          "brier": 0.32922404924773,
+          "calib_intercept": 0.0932666638326707,
+          "calib_slope": 0.0113735820882974,
+          "auc": 0.487179487179487,
+          "auc_ci95": [
+            0.305194805194805,
+            0.698154685492211
+          ],
+          "n_test": 25,
+          "n_event": 13,
+          "auc_ci_method": "2000-rep bootstrap BCa (seed 20260911)",
+          "features_used": [
+            "sex_male",
+            "stage_adv"
+          ]
+        },
+        "C_sex": {
+          "log_loss": 0.910545032257286,
+          "brier": 0.339566368987856,
+          "calib_intercept": 0.404321516811897,
+          "calib_slope": 0.254143261793432,
+          "auc": 0.512820512820513,
+          "auc_ci95": [
+            0.324675324675325,
+            0.7
+          ],
+          "n_test": 25,
+          "n_event": 13,
+          "auc_ci_method": "2000-rep bootstrap BCa (seed 20260911)",
+          "features_used": [
+            "sex_male"
+          ]
+        }
+      }
+    }
+  }
+}

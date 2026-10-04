@@ -1,0 +1,75 @@
+{
+  "_comment": "Zenodo deposit metadata for  final-submission package. POST to https://zenodo.org/api/deposit/depositions once a Zenodo API token exists. Fields marked [AUTHOR TO CONFIRM] must be filled before minting the DOI.",
+  "metadata": {
+    "title": "Decomposing the transportability of immune-state biomarkers across checkpoint immunotherapy",
+    "upload_type": "publication",
+    "publication_type": "preprint",
+    "description": "<p>Decomposition of immune-state biomarker transport failure into predictor construction, measurement and clinical outcome components. A 322-gene immune-state representation frozen in IMvigor210 was transported without re-estimation to GSE165252 and GSE78220; external AUCs of 0.504 (95% CI 0.354-0.658) and 0.660 (0.404-0.862) spanned 0.5. Calibration behaved independently of ranking: supervised recalibration improved log-loss in IMvigor210 (0.583 to 0.511) but worsened it in GSE78220 (0.688 to 0.832). A 21-configuration ablation and a 2,000-anchor-label permutation null both failed to establish reproducible transport. Positive controls (18-gene T-cell-inflamed GEP and 6-gene IFN-gamma) also failed external transport. Joint efficacy-toxicity modelling was not identifiable in the only cohort containing both endpoints. The manuscript, 6 main + 10 extended data figures, per-figure Source Data, frozen analysis JSON and analysis scripts are released for audit.</p>",
+    "creators": [
+      {
+        "name": "[AUTHOR TO CONFIRM: Family, Given]",
+        "affiliation": "[AUTHOR TO CONFIRM: affiliation]",
+        "orcid": "[AUTHOR TO CONFIRM: ORCID iD]"
+      }
+    ],
+    "keywords": [
+      "immune checkpoint inhibitor",
+      "biomarker transportability",
+      "calibration",
+      "external validation",
+      "cross-cohort validation",
+      "PCA stability",
+      "ablation grid",
+      "permutation null",
+      "precision simulation",
+      "leave-one-cohort-out",
+      "T cell inflamed GEP",
+      "IFN gamma signature",
+      "immune-related adverse events",
+      "efficacy-toxicity joint modelling"
+    ],
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "language": "eng",
+    "notes": "All figures were generated programmatically in R (.6.1, ggplot2/patchwork); no generative-AI image tools were used. Analysis used seed 20260911 throughout. Funded by [AUTHOR TO CONFIRM: funding].",
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/zuoxianbo/nature-cancer-immune-state",
+        "relation": "isSupplementedBy",
+        "resource_type": "software"
+      }
+    ],
+    "communities": [],
+    "version": "",
+    "related_publications": [
+      {
+        "title": "Decomposing the transportability of immune-state biomarkers across checkpoint immunotherapy (Nature Cancer manuscript, in submission)",
+        "relation": "isSupplementFor",
+        "resource_type": "publication"
+      }
+    ]
+  },
+  "package_files_to_upload": [
+    "_20261004_Nature_Cancer/NatureCancer_Final_Submission_Manuscript.docx",
+    "_20261004_Nature_Cancer/NatureCancer_Supplementary_Information.docx",
+    "_20261004_Nature_Cancer/NatureCancer_Cover_Letter_Final_Template.docx",
+    "_20261004_Nature_Cancer/NatureCancer_Reporting_Summary_Final_Template.docx",
+    "_20261004_Nature_Cancer/NatureCancer_Final_Submission_Checklist.docx",
+    "_20261004_Nature_Cancer/NatureCancer_Figure_ExtendedData_Production_Specification.docx",
+    "_20261004_Nature_Cancer/NatureCancer_PreSubmission_Editorial_Reviewer_Revision_Notes.docx",
+    "_20261004_Nature_Cancer/Figures/ (Fig_1..Fig_6 .png/.pdf/.svg)",
+    "_20261004_Nature_Cancer/Extended_Data/ (Extended_Data_Fig_1..10 .png/.pdf/.svg)",
+    "_20261004_Nature_Cancer/Source_Data/ (16 JSON + 16 xlsx pairs, one per figure)",
+    "_20261004_Nature_Cancer/frozen_manifest.json",
+    "_20261004_Nature_Cancer/RECONCILIATION_TABLE.md",
+    "_20261004_Nature_Cancer/EXPORT_NOTES.md",
+    "_20261004_Nature_Cancer/README.txt"
+  ],
+  "mint_flow": {
+    "1_create_deposit": "POST https://zenodo.org/api/deposit/depositions with X- Zenodo-ApiKey header; response has .links.self (deposit URL) and .links.location (bucket upload URL).",
+    "2_put_metadata": "PUT <deposit URL> with JSON = this file's 'metadata' object.",
+    "3_upload_zip": "POST the package ZIP to <bucket URL> (multipart form, field 'files[]').",
+    "4_publish": "POST https://zenodo.org/api/deposit/depositions/{id}/actions/publish.",
+    "5_capture_doi": "Read 'doi' field of the published record. Insert into NatureCancer_Final_Submission_Manuscript.docx P52, Reporting Summary P18, Revision Notes P31/P56, Cover Letter P9, README bullet 2."
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "figure": "fig5_benchmark_strategies",
+  "generated_by": "figures/make_anchor_figures.R",
+  "panels": {
+    "a": {
+      "loco_benchmark.per_target.GSE78220.M5a.calib_slope": 2.04327196884286,
+      "loco_benchmark.per_target.GSE78220.M6.auc_ci95": [
+        0.154166666666667,
+        0.730555555555555
+      ],
+      "loco_benchmark.per_target.IMvigor210.M2.calib_slope": 2.92852095025054,
+      "loco_benchmark.per_target.GSE78220.M5a.auc_ci95": [
+        0.403845496435115,
+        0.86165832283837
+      ],
+      "loco_benchmark.per_target.GSE78220.M3.auc": 0.51234126984127,
+      "loco_benchmark.per_target.GSE78220.M5a.auc": 0.66025641025641,
+      "loco_benchmark.per_target.IMvigor210.M3.auc": 0.66527621483376,
+      "adjudication.per_model.M3.GSE165252.transport_permitted": false,
+      "loco_benchmark.per_target.GSE165252.M3.auc_ci95": [
+        0.355642361111111,
+        0.521756628787879
+      ],
+      "IMvigor210_c1_passing_models": {
+        "models": [
+          "M2",
+          "M3",
+          "M4",
+          "M5a",
+          "M5b",
+          "M6"
+        ],
+        "auc_range": [
+          0.660421994884911,
+          0.668424552429668
+        ],
+        "slope_range": [
+          1.12579104125275,
+          3.09549370643096
+        ]
+      },
+      "loco_benchmark.per_target.IMvigor210.M6.calib_slope": 1.12579104125275,
+      "loco_benchmark.per_target.GSE78220.M2.calib_slope": 1.87456803450401,
+      "loco_benchmark.per_target.GSE165252.M1.calib_slope": 0.126771484783307,
+      "loco_benchmark.per_target.GSE78220.M5b.auc_ci95": [
+        0.365384615384615,
+        0.833333333333333
+      ],
+      "adjudication.per_model.M5b.IMvigor210.transport_permitted": false,
+      "adjudication.per_model.M3.GSE78220.transport_permitted": false,
+      "loco_benchmark.per_target.IMvigor210.M5a.auc_ci95": [
+        0.58615053240238,
+        0.733381367219217
+      ],
+      "loco_benchmark.per_target.GSE78220.M5b.calib_slope": 1.46628490526534,
+      "loco_benchmark.per_target.GSE165252.M3.calib_slope": -1.60855101047633,
+      "loco_benchmark.per_target.IMvigor210.M0.auc_ci95": [
+        0.5,
+        0.5
+      ],
+      "loco_benchmark.per_target.GSE165252.M5a.auc": 0.490942028985507,
+      "adjudication.per_model.M4.GSE78220.transport_permitted": false,
+      "loco_benchmark.per_target.IMvigor210.M6.auc_ci95": [
+        0.601739130434783,
+        0.730709718670077
+      ],
+      "loco_benchmark.per_target.GSE165252.M6.calib_slope": -0.728539747830695,
+      "adjudication.per_model.M4.GSE165252.transport_permitted": false,
+      "loco_benchmark.per_target.GSE165252.M5b.auc_ci95": [
+        0.362739042212051,
+        0.665224686214592
+      ],
+      "loco_benchmark.per_target.IMvigor210.M3.auc_ci95": [
+        0.60368925831202,
+        0.730402813299233
+      ],
+      "adjudication.per_model.M6.GSE165252.transport_permitted": false,
+      "adjudication.per_model.M2.GSE78220.transport_permitted": false,
+      "loco_benchmark.per_target.GSE165252.M2.calib_slope": -0.0598677508814293,
+      "adjudication.verdict_counts": {
+        "n_total": 24,
+        "n_permitted": 0,
+        "n_refused": 24,
+        "per_model_n_permitted": {
+          "M0": 0,
+          "M1": 0,
+          "M2": 0,
+          "M3": 0,
+          "M4": 0,
+          "M5a": 0,
+          "M5b": 0,
+          "M6": 0
+        }
+      },
+      "loco_benchmark.per_target.GSE78220.M5b.auc": 0.615384615384615,
+      "loco_benchmark.per_target.IMvigor210.M2.auc": 0.66272378516624,
+      "loco_benchmark.per_target.GSE78220.M2.auc": 0.615384615384615,
+      "adjudication.per_model.M1.GSE78220.transport_permitted": false,
+      "adjudication.per_model.M0.IMvigor210.transport_permitted": false,
+      "loco_benchmark.per_target.GSE165252.M5a.auc_ci95": [
+        0.339666624524804,
+        0.639377961768287
+      ],
+      "loco_benchmark.per_target.IMvigor210.M1.auc": 0.53695652173913,
+      "loco_benchmark.per_target.GSE78220.M1.auc": 0.621794871794872,
+      "adjudication.per_model.M0.GSE78220.transport_permitted": false,
+      "adjudication.per_model.M5a.GSE165252.transport_permitted": false,
+      "loco_benchmark.per_target.IMvigor210.M5b.calib_slope": 1.78242585518625,
+      "loco_benchmark.per_target.IMvigor210.M4.auc_ci95": [
+        0.581486581104154,
+        0.728508584497844
+      ],
+      "loco_benchmark.per_target.GSE78220.M2.auc_ci95": [
+        0.365384615384615,
+        0.833333333333333
+      ],
+      "loco_benchmark.per_target.GSE165252.M5b.calib_slope": -0.0490266049314045,
+      "loco_benchmark.per_target.GSE165252.M1.auc_ci95": [
+        0.355764109210452,
+        0.64433848282597
+      ],
+      "loco_benchmark.per_target.GSE165252.M1.auc": 0.5,
+      "adjudication.per_model.M6.IMvigor210.transport_permitted": false,
+      "loco_benchmark.per_target.GSE165252.M6.auc_ci95": [
+        0.357465277777778,
+        0.515151515151515
+      ],
+      "loco_benchmark.per_target.IMvigor210.M1.auc_ci95": [
+        0.462846435500321,
+        0.615174294846752
+      ],
+      "loco_benchmark.per_target.GSE165252.M4.auc": 0.510869565217391,
+      "adjudication.per_model.M4.IMvigor210.transport_permitted": false,
+      "adjudication.per_model.M5a.GSE78220.transport_permitted": false,
+      "loco_benchmark.per_target.IMvigor210.M4.calib_slope": 3.09549370643096,
+      "loco_benchmark.per_target.GSE165252.M4.auc_ci95": [
+        0.361300424882787,
+        0.665652720568167
+      ],
+      "loco_benchmark.per_target.IMvigor210.M1.calib_slope": 0.531181305404121,
+      "loco_benchmark.per_target.GSE165252.M0.auc_ci95": [
+        0.5,
+        0.5
+      ],
+      "loco_benchmark.per_target.GSE165252.M3.auc": 0.445375631313131,
+      "loco_benchmark.per_target.GSE78220.M6.auc": 0.51234126984127,
+      "adjudication.per_model.M3.IMvigor210.transport_permitted": false,
+      "adjudication.per_model.M5b.GSE78220.transport_permitted": false,
+      "adjudication.per_model.M5b.GSE165252.transport_permitted": false,
+      "loco_benchmark.per_target.GSE165252.M5a.calib_slope": -0.0667063078809945,
+      "loco_benchmark.per_target.IMvigor210.M6.auc": 0.668424552429668,
+      "loco_benchmark.per_target.IMvigor210.M5a.auc": 0.66457800511509,
+      "loco_benchmark.per_target.GSE165252.M6.auc": 0.444725378787879,
+      "loco_benchmark.per_target.GSE78220.M0.auc_ci95": [
+        0.5,
+        0.5
+      ],
+      "loco_benchmark.per_target.GSE78220.M1.calib_slope": 20.7320352397231,
+      "loco_benchmark.per_target.GSE165252.M4.calib_slope": -0.0598454866639587,
+      "adjudication.per_model.M1.IMvigor210.transport_permitted": false,
+      "loco_benchmark.per_target.IMvigor210.M0.calib_slope": null,
+      "loco_benchmark.per_target.GSE78220.M4.auc_ci95": [
+        0.377743080308112,
+        0.840277777777778
+      ],
+      "loco_benchmark.per_target.GSE78220.M4.calib_slope": 1.87938102650867,
+      "loco_benchmark.per_target.GSE78220.M0.auc": 0.5,
+      "loco_benchmark.per_target.IMvigor210.M0.auc": 0.5,
+      "adjudication.per_model.M1.GSE165252.transport_permitted": false,
+      "loco_benchmark.per_target.GSE78220.M3.auc_ci95": [
+        0.154166666666667,
+        0.730555555555555
+      ],
+      "loco_benchmark.per_target.GSE165252.M2.auc_ci95": [
+        0.361300424882787,
+        0.665652720568167
+      ],
+      "loco_benchmark.per_target.GSE78220.M6.calib_slope": -0.749771597901065,
+      "loco_benchmark.per_target.GSE165252.M0.auc": 0.5,
+      "loco_benchmark.per_target.GSE78220.M0.calib_slope": null,
+      "loco_benchmark.per_target.IMvigor210.M5b.auc": 0.666687979539642,
+      "loco_benchmark.per_target.IMvigor210.M3.calib_slope": 1.14572512796837,
+      "loco_benchmark.per_target.GSE165252.M5b.auc": 0.514492753623188,
+      "loco_benchmark.per_target.GSE165252.M2.auc": 0.510869565217391,
+      "adjudication.per_model.M0.GSE165252.transport_permitted": false,
+      "loco_benchmark.per_target.IMvigor210.M5b.auc_ci95": [
+        0.588623901099751,
+        0.735424624707783
+      ],
+      "loco_benchmark.per_target.GSE165252.M0.calib_slope": null,
+      "adjudication.per_model.M5a.IMvigor210.transport_permitted": false,
+      "adjudication.per_model.M6.GSE78220.transport_permitted": false,
+      "adjudication.per_model.M2.GSE165252.transport_permitted": false,
+      "adjudication.per_model.M2.IMvigor210.transport_permitted": false,
+      "loco_benchmark.per_target.IMvigor210.M5a.calib_slope": 1.68791832507373,
+      "loco_benchmark.per_target.GSE78220.M3.calib_slope": -1.60657447275192,
+      "loco_benchmark.per_target.GSE78220.M1.auc_ci95": [
+        0.359545099058257,
+        0.845768056710137
+      ],
+      "loco_benchmark.per_target.IMvigor210.M2.auc_ci95": [
+        0.585361562350934,
+        0.730879766460173
+      ],
+      "loco_benchmark.per_target.IMvigor210.M4.auc": 0.660421994884911,
+      "loco_benchmark.per_target.GSE78220.M4.auc": 0.628205128205128
+    },
+    "b": {
+      "external_results.GSE78220.C_main.auc": 0.487179487179487,
+      "external_results.GSE165252.C_main.auc_ci95": [
+        0.5,
+        0.5
+      ],
+      "external_results.GSE165252.C_main.auc": 0.5,
+      "external_results.GSE165252.C_main.constant_prediction": 0.228187919463087,
+      "external_results.GSE78220.C_sex.auc": 0.512820512820513,
+      "external_results.GSE165252.degeneracy": "NO patient-level covariate is deposited for GSE165252 in GEO (verified: the only characteristics keys are ['response', 'tissue', 'treatment']); the frozen clinical model therefore CANNOT produce patient-varying predictions here and degenerates to a constant covariate-marginal prediction (mean training-set predicted probability). AUC is exactly 0.5 by construction and the calibration slope is not estimable -- this is a data constraint, recorded honestly, not a modelling shortcut.",
+      "pairwise_transports.transports.train_IMvigor210__test_GSE165252.M0.auc": 0.5,
+      "pairwise_transports.transports.train_IMvigor210__test_GSE78220.M0.auc": 0.5,
+      "external_results.GSE78220.C_main.auc_ci95": [
+        0.305194805194805,
+        0.698154685492211
+      ],
+      "external_results.GSE165252.C_sex.auc": 0.5
+    }
+  }
+}

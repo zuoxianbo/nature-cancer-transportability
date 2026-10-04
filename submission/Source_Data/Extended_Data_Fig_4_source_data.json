@@ -1,0 +1,111 @@
+{
+  "figure": "ed4_ablation_matrix",
+  "generated_by": "figures/make_anchor_figures.R",
+  "panels": {
+    "matrix": {
+      "per_config.gene_rand50_s4.external.GSE165252.auc": 0.565217391304348,
+      "per_config.gene_rand50_s2.external.GSE165252.auc": 0.417572463768116,
+      "per_config.gene_rand100_s3.external.GSE78220.auc": 0.58974358974359,
+      "n_degenerate_configs": 0,
+      "per_config.gene_rand50_s1.external.GSE78220.auc": 0.621794871794872,
+      "per_config.gene_top50.external.GSE78220.auc": 0.596153846153846,
+      "per_config.pc_k1.external.GSE78220.auc": 0.621794871794872,
+      "per_config.gene_rand50_s0.external.GSE165252.auc": 0.467391304347826,
+      "per_config.norm_within_z.external.GSE165252.auc": 0.509057971014493,
+      "per_config.baseline.external.GSE78220.auc": 0.66025641025641,
+      "per_config.gene_rand50_s0.external.GSE78220.auc": 0.647435897435897,
+      "removed_configs": {
+        "gene_measured_only": {
+          "layer": "artifact_removal",
+          "old__description": "all measured genes only (drop the 70 'unmeasured' genes)",
+          "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity",
+          "retracted_because": "Under the recovered gene identity the 320-gene anchor panel has 0 all-zero genes in IMvigor210 (old : 70/228), so every 'measured-only' subset coincides with the full panel and the configuration is void."
+        },
+        "gene_top100_measured": {
+          "layer": "artifact_removal",
+          "old__description": "top-100 |PC1 loading| genes among measured genes",
+          "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity",
+          "retracted_because": "Under the recovered gene identity the 320-gene anchor panel has 0 all-zero genes in IMvigor210 (old : 70/228), so every 'measured-only' subset coincides with the full panel and the configuration is void."
+        },
+        "gene_top50_measured": {
+          "layer": "artifact_removal",
+          "old__description": "top-50 |PC1 loading| genes among measured genes",
+          "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity",
+          "retracted_because": "Under the recovered gene identity the 320-gene anchor panel has 0 all-zero genes in IMvigor210 (old : 70/228), so every 'measured-only' subset coincides with the full panel and the configuration is void."
+        },
+        "norm_log2raw_measured": {
+          "layer": "artifact_removal",
+          "old__description": "log2raw normalization on measured genes only",
+          "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity",
+          "retracted_because": "Under the recovered gene identity the 320-gene anchor panel has 0 all-zero genes in IMvigor210 (old : 70/228), so every 'measured-only' subset coincides with the full panel and the configuration is void."
+        },
+        "norm_within_z_measured": {
+          "layer": "artifact_removal",
+          "old__description": "within-cohort z-score on measured genes only",
+          "removal_reason": "70-gene artefact retracted: zero-gene count = 0 under recovered identity",
+          "retracted_because": "Under the recovered gene identity the 320-gene anchor panel has 0 all-zero genes in IMvigor210 (old : 70/228), so every 'measured-only' subset coincides with the full panel and the configuration is void."
+        }
+      },
+      "per_config.gene_rand100_s2.external.GSE165252.auc": 0.486413043478261,
+      "per_config.ridge_lam1.external.GSE78220.auc": 0.66025641025641,
+      "per_config.ridge_lam1.external.GSE165252.auc": 0.503623188405797,
+      "per_config.gene_rand100_s0.external.GSE165252.auc": 0.53804347826087,
+      "per_config.norm_log2raw.external.GSE165252.auc": 0.47554347826087,
+      "per_config.gene_top50.external.GSE165252.auc": 0.465579710144927,
+      "per_config.gene_rand100_s0.external.GSE78220.auc": 0.525641025641026,
+      "per_config.gene_rand100_s4.external.GSE165252.auc": 0.480978260869565,
+      "per_config.ridge_lam0.01.external.GSE165252.auc": 0.503623188405797,
+      "per_config.gene_rand100_s2.external.GSE78220.auc": 0.615384615384615,
+      "per_config.gene_rand100_s1.external.GSE78220.auc": 0.570512820512821,
+      "per_config.pc_k3.external.GSE78220.auc": 0.67948717948718,
+      "per_config.gene_rand50_s4.external.GSE78220.auc": 0.538461538461539,
+      "per_config.gene_rand50_s3.external.GSE165252.auc": 0.602355072463768,
+      "per_config.gene_rand50_s1.external.GSE165252.auc": 0.495471014492754,
+      "per_config.ridge_lam0.1.external.GSE78220.auc": 0.66025641025641,
+      "per_config.norm_log2raw.external.GSE78220.auc": 0.653846153846154,
+      "verdict.any_config_recovers_transport": {
+        "any": false,
+        "per_cohort": {
+          "GSE165252": {
+            "any": false,
+            "configs": [],
+            "any_bca": false,
+            "configs_bca": [],
+            "any_below": false,
+            "configs_below": [],
+            "any_below_bca": false,
+            "configs_below_bca": []
+          },
+          "GSE78220": {
+            "any": false,
+            "configs": [],
+            "any_bca": false,
+            "configs_bca": [],
+            "any_below": false,
+            "configs_below": [],
+            "any_below_bca": false,
+            "configs_below_bca": []
+          }
+        },
+        "definition": "external AUC bootstrap 95% CI lower bound > 0.5 in at least one non-degenerate configuration (percentile engine CI primary; BCa reported alongside)",
+        "degenerate_configs_excluded": []
+      },
+      "per_config_note": "all 21 configurations x 2 external cohorts; AUC values dumped below per key",
+      "per_config.norm_within_z.external.GSE78220.auc": 0.653846153846154,
+      "per_config.gene_rand100_s1.external.GSE165252.auc": 0.573369565217391,
+      "per_config.gene_top100.external.GSE78220.auc": 0.512820512820513,
+      "per_config.ridge_lam0.01.external.GSE78220.auc": 0.66025641025641,
+      "per_config.gene_rand100_s3.external.GSE165252.auc": 0.548913043478261,
+      "per_config.gene_rand50_s3.external.GSE78220.auc": 0.512820512820513,
+      "per_config.gene_top100.external.GSE165252.auc": 0.535326086956522,
+      "per_config.ridge_lam0.1.external.GSE165252.auc": 0.503623188405797,
+      "per_config.pc_k3.external.GSE165252.auc": 0.484601449275362,
+      "per_config.pc_k5.external.GSE165252.auc": 0.463768115942029,
+      "per_config.baseline.external.GSE165252.auc": 0.503623188405797,
+      "per_config.pc_k5.external.GSE78220.auc": 0.583333333333333,
+      "per_config.pc_k1.external.GSE165252.auc": 0.5,
+      "per_config.gene_rand50_s2.external.GSE78220.auc": 0.653846153846154,
+      "per_config.gene_rand100_s4.external.GSE78220.auc": 0.615384615384615
+    }
+  }
+}

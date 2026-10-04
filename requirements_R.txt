@@ -1,0 +1,4 @@
+# R 4.x
+ggplot2 4.0.3
+ggbiomed (local: scripts/ggbiomed.R)
+quartz(type="pdf") for cairo fallback

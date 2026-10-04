@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='510.24pt' height='368.50pt' viewBox='0 0 510.24 368.50'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1MTAuMjR8MC4wMHwzNjguNTA='>
+    <rect x='0.00' y='0.00' width='510.24' height='368.50' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHwzNjguNTA=)'>
+<rect x='0.00' y='0.00' width='510.24' height='368.50' style='stroke-width: 0.00; stroke: none;' />
+<text x='30.50' y='83.50' style='font-size: 6.26px;fill: #6B6B6B; font-family: "Arial";'>IMvigor210</text>
+<text x='70.67' y='83.03' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>urothelial</text>
+<text x='121.81' y='83.03' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>bulk (tumour)</text>
+<text x='171.11' y='83.03' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>298 (68 ev)</text>
+<text x='213.12' y='83.03' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>response</text>
+<text x='269.73' y='83.03' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>—</text>
+<text x='328.17' y='83.03' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>atezolizumab</text>
+<text x='384.78' y='83.03' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>baseline</text>
+<text x='435.91' y='83.03' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>source anchor</text>
+<text x='30.50' y='105.81' style='font-size: 6.26px;fill: #6B6B6B; font-family: "Arial";'>GSE165252</text>
+<text x='70.67' y='105.35' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>esoph. adeno.</text>
+<text x='121.81' y='105.35' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>bulk (tumour)</text>
+<text x='171.11' y='105.35' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>71 (23 ev)</text>
+<text x='213.12' y='105.35' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>response</text>
+<text x='269.73' y='105.35' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>—</text>
+<text x='328.17' y='105.35' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>atezolizumab</text>
+<text x='384.78' y='105.35' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>baseline</text>
+<text x='435.91' y='105.35' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>target</text>
+<text x='30.50' y='128.13' style='font-size: 6.26px;fill: #6B6B6B; font-family: "Arial";'>GSE78220</text>
+<text x='70.67' y='127.66' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>melanoma</text>
+<text x='121.81' y='127.66' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>bulk (tumour)</text>
+<text x='171.11' y='127.66' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>25 (13 ev)</text>
+<text x='213.12' y='127.66' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>response</text>
+<text x='269.73' y='127.66' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>—</text>
+<text x='328.17' y='127.66' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>pembrolizumab</text>
+<text x='384.78' y='127.66' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>baseline</text>
+<text x='435.91' y='127.66' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>target</text>
+<text x='30.50' y='150.44' style='font-size: 6.26px;fill: #6B6B6B; font-family: "Arial";'>GSE166181</text>
+<text x='70.67' y='149.98' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>m. melanoma</text>
+<text x='121.81' y='149.98' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>scRNA sort. CD8 T</text>
+<text x='171.11' y='149.98' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>20 (11 R / 9 NR)</text>
+<text x='213.12' y='149.98' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>R vs NR (RECIST)</text>
+<text x='269.73' y='149.98' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>none annotated</text>
+<text x='328.17' y='149.98' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>nivo / pembro</text>
+<text x='384.78' y='149.98' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>T0 (+T1/T2)</text>
+<text x='435.91' y='149.98' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>efficacy scRNA</text>
+<text x='30.50' y='172.75' style='font-size: 6.26px;fill: #6B6B6B; font-family: "Arial";'>GSE186143</text>
+<text x='70.67' y='172.29' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>m. melanoma</text>
+<text x='121.81' y='172.29' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>bulk TPM (PBMC)</text>
+<text x='171.11' y='172.29' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>61 / 53 / 47</text>
+<text x='213.12' y='169.61' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>DCB vs NDB (NE 6)</text>
+<text x='213.12' y='174.98' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>[paper Suppl. Tab. 3]</text>
+<text x='269.73' y='172.29' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>severe irAE (grade ≥3)</text>
+<text x='328.17' y='169.61' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>anti-PD-1 29/53</text>
+<text x='328.17' y='174.98' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>+ combo 24/53</text>
+<text x='384.78' y='172.29' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>baseline PBMC</text>
+<text x='435.91' y='172.29' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>joint (E+T)</text>
+<text x='30.50' y='195.07' style='font-size: 6.26px;fill: #6B6B6B; font-family: "Arial";'>GSE189125</text>
+<text x='70.67' y='194.61' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>melanoma</text>
+<text x='121.81' y='194.61' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>scRNA 5' (PBMC)</text>
+<text x='171.11' y='194.61' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>13 (6/7)</text>
+<text x='213.12' y='194.61' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>—</text>
+<text x='269.73' y='194.61' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>severe irAE</text>
+<text x='328.17' y='194.61' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>anti-PD-1 ± CTLA-4</text>
+<text x='384.78' y='194.61' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>baseline</text>
+<text x='435.91' y='194.61' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>toxicity</text>
+<text x='30.50' y='217.38' style='font-size: 6.26px;fill: #6B6B6B; font-family: "Arial";'>GSE216329</text>
+<text x='70.67' y='216.92' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>NSCLC-pred. (18/24)</text>
+<text x='121.81' y='216.92' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>scRNA 10x (T cells)</text>
+<text x='171.11' y='216.92' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>24 (15/9)</text>
+<text x='213.12' y='216.92' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>none annotated</text>
+<text x='269.73' y='214.23' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>any irAE, grade 2-3,</text>
+<text x='269.73' y='219.61' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>organ-specific</text>
+<text x='328.17' y='216.92' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>anti-PD-1 (22/24 mono)</text>
+<text x='384.78' y='214.23' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>baseline _TN +</text>
+<text x='384.78' y='219.61' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>on-tx _T</text>
+<text x='435.91' y='216.92' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>toxicity</text>
+<text x='30.50' y='239.70' style='font-size: 6.26px;fill: #6B6B6B; font-family: "Arial";'>GSE253720</text>
+<text x='70.67' y='239.24' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>CPI-colitis (mixed)</text>
+<text x='121.81' y='239.24' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>scRNA (colon biopsy)</text>
+<text x='171.11' y='239.24' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>14 (9/3/2)</text>
+<text x='213.12' y='239.24' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>none annotated</text>
+<text x='269.73' y='236.55' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>CPI-colitis case def.</text>
+<text x='269.73' y='241.93' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>(case-control)</text>
+<text x='328.17' y='236.55' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>anti-PD-1 6/9;</text>
+<text x='328.17' y='241.93' style='font-size: 4.98px;fill: #1A1A1A; font-family: "Arial";'>combo 3/9</text>
+<text x='384.78' y='236.55' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>active, steroid-exp.</text>
+<text x='384.78' y='241.93' style='font-size: 4.98px; font-weight: bold;fill: #C0504D; font-family: "Arial";'>— NOT baseline</text>
+<text x='435.91' y='239.24' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>toxicity (probe)</text>
+<text x='30.50' y='262.01' style='font-size: 6.26px;fill: #6B6B6B; font-family: "Arial";'>GSE287541</text>
+<text x='70.67' y='261.55' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>mixed (ChILI)</text>
+<text x='121.81' y='261.55' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>scRNA</text>
+<text x='171.11' y='261.55' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>28</text>
+<text x='213.12' y='261.55' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>—</text>
+<text x='269.73' y='261.55' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>irAE (longitudinal)</text>
+<text x='328.17' y='261.55' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>ICI</text>
+<text x='384.78' y='261.55' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>longitudinal</text>
+<text x='435.91' y='261.55' style='font-size: 4.98px;fill: #6B6B6B; font-family: "Arial";'>not yet analysed</text>
+<text x='30.50' y='158.91' style='font-size: 4.41px;fill: #666666; font-family: "Arial";'>● 9 / ▲ 2</text>
+<text x='30.50' y='181.23' style='font-size: 4.41px;fill: #666666; font-family: "Arial";'>● 7 / ▲ 4</text>
+<text x='30.50' y='225.86' style='font-size: 4.41px;fill: #666666; font-family: "Arial";'>● 6 / ▲ 3</text>
+<text x='30.50' y='248.17' style='font-size: 4.41px;fill: #666666; font-family: "Arial";'>● 6 / ▲ 3</text>
+<text x='30.50' y='50.83' style='font-size: 5.41px; font-weight: bold;fill: #262626; font-family: "Arial";'>Cohort</text>
+<text x='70.67' y='50.83' style='font-size: 5.41px; font-weight: bold;fill: #262626; font-family: "Arial";'>Cancer</text>
+<text x='121.81' y='50.83' style='font-size: 5.41px; font-weight: bold;fill: #262626; font-family: "Arial";'>Modality</text>
+<text x='171.11' y='50.83' style='font-size: 5.41px; font-weight: bold;fill: #262626; font-family: "Arial";'>n (events)</text>
+<text x='213.12' y='50.83' style='font-size: 5.41px; font-weight: bold;fill: #262626; font-family: "Arial";'>Efficacy endpoint</text>
+<text x='269.73' y='50.83' style='font-size: 5.41px; font-weight: bold;fill: #262626; font-family: "Arial";'>Toxicity endpoint</text>
+<text x='328.17' y='50.83' style='font-size: 5.41px; font-weight: bold;fill: #262626; font-family: "Arial";'>ICI regimen</text>
+<text x='384.78' y='50.83' style='font-size: 5.41px; font-weight: bold;fill: #262626; font-family: "Arial";'>Sampling time</text>
+<text x='435.91' y='50.83' style='font-size: 5.41px; font-weight: bold;fill: #262626; font-family: "Arial";'>Role</text>
+<line x1='0.00' y1='72.78' x2='510.24' y2='72.78' style='stroke-width: 0.75; stroke: #666666; stroke-linecap: butt;' />
+<line x1='26.84' y1='283.65' x2='479.74' y2='283.65' style='stroke-width: 0.64; stroke: #8C8C8C; stroke-linecap: butt;' />
+<text x='26.84' y='314.87' style='font-size: 5.55px;fill: #4D4D4D; font-family: "Arial";'>black = CONFIRMED against GEO SOFT + linked publication · red bold = CORRECTED in the v82 provenance audit · grey = field outside audit scope</text>
+<text x='26.84' y='321.86' style='font-size: 5.55px;fill: #4D4D4D; font-family: "Arial";'>small line under cohort name: ● confirmed / ▲ corrected fields per audited cohort (ledger totals: 27 confirmed, 10 corrected, 3 unverified)</text>
+<text x='26.84' y='328.85' style='font-size: 5.55px;fill: #4D4D4D; font-family: "Arial";'>n convention — GSE186143: 61 in series / 53 locally labelled / 47 joint-evaluable · GSE253720: 14 donors (9 CPI-colitis / 3 HC / 2 UC)</text>
+<text x='26.84' y='335.84' style='font-size: 5.55px;fill: #4D4D4D; font-family: "Arial";'>GSE166181: 20 (11 R / 9 NR) · GSE216329: 24 (15 irAE / 9) · GSE189125: 13 (6 severe / 7 no) · m. = metastatic</text>
+<text x='1.88' y='29.05' style='font-size: 9.67px; font-weight: bold; font-family: "Arial";'>a</text>
+<text x='0.00' y='11.92' style='font-size: 9.00px; font-weight: bold; font-family: "Arial";'>Cohort provenance / endpoint ledger (nine endpoint-bearing cohorts, v82)</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,492 @@
+{
+  "package": "_20261004_Nature_Cancer",
+  "generated_at_utc": "2026-10-04T08:36:20Z",
+  "description": "Frozen submission manifest. All figures, source_data JSON/xlsx, and docx documents ship byte-traceable from _20260926 upstream; Fig_2 orphan from  replaced with  frozen PNG.",
+  "seed": 20260911,
+  "upstream_root": "_20260926_Nature_Cancer/figures/",
+  "file_tree": {
+    "DOI_BLOCKER.md": {
+      "sha256": "d766bb59b2d60a21d33a570b8240addd35ffe1ec64a1389b1d9125a6c106c611",
+      "bytes": 3521
+    },
+    "EXPORT_NOTES.md": {
+      "sha256": "61881f8844e9fb283a3f472b7a26b7598a3600c81493060452a9379929039bad",
+      "bytes": 2168
+    },
+    "Extended_Data/Extended_Data_Fig_1.pdf": {
+      "sha256": "563e4d481ae9626fef6b6c56cf97742ed2db39fdd79db62786a4f71049d5f7f8",
+      "bytes": 45078
+    },
+    "Extended_Data/Extended_Data_Fig_1.png": {
+      "sha256": "8f8b49732cba016104d52e0e2c013bbbbb992e15b03455b04ed591ec2a033d3f",
+      "bytes": 87741
+    },
+    "Extended_Data/Extended_Data_Fig_1.svg": {
+      "sha256": "ef9af775e8e88645bcb58f0cd9f934fc2bc2e8020d5cc0d0a25f0ca097974349",
+      "bytes": 11443
+    },
+    "Extended_Data/Extended_Data_Fig_10.pdf": {
+      "sha256": "b33221efb98df174d7ac70ae2df545ab8ae0bc3fe9caa00542978c8832f1b9da",
+      "bytes": 59152
+    },
+    "Extended_Data/Extended_Data_Fig_10.png": {
+      "sha256": "5b66a6bf5b61a895d9e4fc3ded599caa0327165dc1be24f09bbf92d0fa6f5ea8",
+      "bytes": 305649
+    },
+    "Extended_Data/Extended_Data_Fig_10.svg": {
+      "sha256": "18a6c2154c2e5c759e1043e0dee15267e2a5059e8c4afb0cfe88a12006339455",
+      "bytes": 11184
+    },
+    "Extended_Data/Extended_Data_Fig_2.pdf": {
+      "sha256": "c7592f4236c19ee57dd95807304bb2744436be03394713644aae540d6766cee0",
+      "bytes": 56208
+    },
+    "Extended_Data/Extended_Data_Fig_2.png": {
+      "sha256": "b737bd552f8de0f9640684a4f5d085be3989fd0419ab924b2024571f10152aed",
+      "bytes": 217979
+    },
+    "Extended_Data/Extended_Data_Fig_2.svg": {
+      "sha256": "cfb306105345d7018ceb4c0a4e5fae938c1083caab311181e1962e0591be5476",
+      "bytes": 14073
+    },
+    "Extended_Data/Extended_Data_Fig_3.pdf": {
+      "sha256": "45866ddcf0e70ee4b47bc8137ac281d4f74eb320b48f268adbbfd21739a6870c",
+      "bytes": 56789
+    },
+    "Extended_Data/Extended_Data_Fig_3.png": {
+      "sha256": "29fb18907276a7c15078aa1cf00b6a6e3b7198d076fda1b804f22ed725ae9532",
+      "bytes": 219087
+    },
+    "Extended_Data/Extended_Data_Fig_3.svg": {
+      "sha256": "ce6a01acf9c9978592db15c6c0fbe40f7993b63ad32d5be155a43b5d97a61e9f",
+      "bytes": 17547
+    },
+    "Extended_Data/Extended_Data_Fig_4.pdf": {
+      "sha256": "f76fc0aa248f5e97d25354a59419fa6c7286b550e586716538a2ccc466107d97",
+      "bytes": 46841
+    },
+    "Extended_Data/Extended_Data_Fig_4.png": {
+      "sha256": "359bfa8f4ff94965cf263e5f7e50075d17eba9ba4ce5b048ed94e76b1fbc5f7c",
+      "bytes": 233326
+    },
+    "Extended_Data/Extended_Data_Fig_4.svg": {
+      "sha256": "00f662f9a8ae8dc3de68e4609b9b344dcf7e60db568757fe25aa51966f9fef2d",
+      "bytes": 23621
+    },
+    "Extended_Data/Extended_Data_Fig_5.pdf": {
+      "sha256": "91d592f4a55adc5dda60f7aa90d695689f5d3209e8f2991aae0ffc9389839887",
+      "bytes": 70044
+    },
+    "Extended_Data/Extended_Data_Fig_5.png": {
+      "sha256": "0229b1d62e45c27838ee7666e35fa7bae31e87172f7241930d3c3926937fc543",
+      "bytes": 390980
+    },
+    "Extended_Data/Extended_Data_Fig_5.svg": {
+      "sha256": "83bab9ff5cc97393a47d1c99ef2533efc4846d142f20077e03582c93dedbcb1e",
+      "bytes": 19789
+    },
+    "Extended_Data/Extended_Data_Fig_6.pdf": {
+      "sha256": "ca037f9a38be8d4397dfe2bb4e884b87395e1e5b11fef234ff749ff04e8bee7d",
+      "bytes": 49491
+    },
+    "Extended_Data/Extended_Data_Fig_6.png": {
+      "sha256": "761d8bf57453089f62fd7134a7f7b463417ceffe33ad21c1dc9e0dad1aa02be7",
+      "bytes": 80849
+    },
+    "Extended_Data/Extended_Data_Fig_6.svg": {
+      "sha256": "aff9e0e943e430ba9c222fa563a691e49897c344a7b68fb1f11d7c8477e3ebbb",
+      "bytes": 14339
+    },
+    "Extended_Data/Extended_Data_Fig_7.pdf": {
+      "sha256": "5bbbbec19023c54523578b265871f2c634b8718be32be54e156b1e0039a7153c",
+      "bytes": 49593
+    },
+    "Extended_Data/Extended_Data_Fig_7.png": {
+      "sha256": "9e68a911cbe87b939d4db4f4c8c2ff51d3e4c3b9dd945265c021178d59394bbe",
+      "bytes": 256180
+    },
+    "Extended_Data/Extended_Data_Fig_7.svg": {
+      "sha256": "fcae277baf0e0fa6b59aa7e77ff4a892ba5d138f66622abaefc3535ee7f50369",
+      "bytes": 21725
+    },
+    "Extended_Data/Extended_Data_Fig_8.pdf": {
+      "sha256": "4c635f332a69c3d6889461bc390eddf35764acced1f18f4b8e039c8839175313",
+      "bytes": 49995
+    },
+    "Extended_Data/Extended_Data_Fig_8.png": {
+      "sha256": "46a530fef475d36f52b8737225c419239e27990d4ef3f7c3864e9b5ffd70c715",
+      "bytes": 177141
+    },
+    "Extended_Data/Extended_Data_Fig_8.svg": {
+      "sha256": "2df81d96e5b61c19a3b3b6e16c91661f153869e9b1d54efa807e33697a8b9f3f",
+      "bytes": 9261
+    },
+    "Extended_Data/Extended_Data_Fig_9.pdf": {
+      "sha256": "9b57e737e49ab55e10134c11d07f4374064fb5e52c5d152051246dbff8bbf78e",
+      "bytes": 43090
+    },
+    "Extended_Data/Extended_Data_Fig_9.png": {
+      "sha256": "71d33b9b2b22770e42647e3e926d0bacefe495ce46cc0b69ff00cd73b7ba43aa",
+      "bytes": 150955
+    },
+    "Extended_Data/Extended_Data_Fig_9.svg": {
+      "sha256": "b0d2c8e3a93b65d61f1074d01a5f8030e939342215d42a1e3660cd5b367d2805",
+      "bytes": 14468
+    },
+    "Figures/Fig_1.pdf": {
+      "sha256": "78208686d59ac3f83435755fd09d2538a10ed7924a3f9b5ff47f97d9b4e1a06d",
+      "bytes": 63700
+    },
+    "Figures/Fig_1.png": {
+      "sha256": "136af80ad7b8aa6cf4049a4ae57b1b48fcda952fe5a7805e7e761862c49b6419",
+      "bytes": 393757
+    },
+    "Figures/Fig_1.svg": {
+      "sha256": "0906bc1967da3241daadfba0e87e1e71fd8b142db59d2cab43da7cf2c2cbd92a",
+      "bytes": 25483
+    },
+    "Figures/Fig_2.pdf": {
+      "sha256": "4a711536e9bda9d30ebd726db97ee99c63f35eeca829f75d7350267c2bf37859",
+      "bytes": 55665
+    },
+    "Figures/Fig_2.png": {
+      "sha256": "97c92cf142237cb0f431d72317b18034df028a22a7bef7454890efa79cff1954",
+      "bytes": 348112
+    },
+    "Figures/Fig_2.svg": {
+      "sha256": "36720c248c9734b0545590d6b110d61cf7dbb076b9040c17b7d51b1c72c69a25",
+      "bytes": 30205
+    },
+    "Figures/Fig_3.pdf": {
+      "sha256": "921ecfcc644a718ca587b29047e175296814cdfb0941387fcbe3c4dcd6dd7f59",
+      "bytes": 69772
+    },
+    "Figures/Fig_3.png": {
+      "sha256": "57aa76d450d1394e326eaedf708c751e7e1d72c11315d62f502489a53771689a",
+      "bytes": 325553
+    },
+    "Figures/Fig_3.svg": {
+      "sha256": "838cfdbfe3a82f256c014b6ba9cf74e70d2c7887034b5d4a90e5910338725b2a",
+      "bytes": 103858
+    },
+    "Figures/Fig_4.pdf": {
+      "sha256": "0e0820c4757919b53a5aaa3d418a01f408a54b8f3c2c7c8d2f631209aacbecc2",
+      "bytes": 59426
+    },
+    "Figures/Fig_4.png": {
+      "sha256": "b2cfd6a8796bddd7d15c02b0b207c0055c94a2d44c0264cdc3eea4d68d92bbb2",
+      "bytes": 246390
+    },
+    "Figures/Fig_4.svg": {
+      "sha256": "62d52ea69371da7875d9e707cb1cab109476cf367bcff8a250b9d2b938a658d2",
+      "bytes": 50201
+    },
+    "Figures/Fig_5.pdf": {
+      "sha256": "100f67d946518e75015f8be7ffe281059627bbcbce70edf02f178ecf4c33196f",
+      "bytes": 75154
+    },
+    "Figures/Fig_5.png": {
+      "sha256": "cdd9e55514c6f12f21c537615bcc2e3fdd95d3af936ea19a1aa68f374fb59f8a",
+      "bytes": 321324
+    },
+    "Figures/Fig_5.svg": {
+      "sha256": "0144b09ab972ff53f6a9c756dedfd7bbf83dfb0455ac8901f3953fd284a3b732",
+      "bytes": 69611
+    },
+    "Figures/Fig_6.pdf": {
+      "sha256": "518f0d0f24683bc3061560dacd7b9da8431cb6732515116f7612c3f9878c06a4",
+      "bytes": 59643
+    },
+    "Figures/Fig_6.png": {
+      "sha256": "f2aeab43adf7c45a76c4382cfaeea31a0de2c5ba2cf558a99c9fd9ba78dcdb5c",
+      "bytes": 282321
+    },
+    "Figures/Fig_6.svg": {
+      "sha256": "ab1ceb8bca0795a85f9f5ed5ba21fab2cd47b249a2c655168279a8c4ab0405c4",
+      "bytes": 26405
+    },
+    "NatureCancer_Cover_Letter_Final_Template.docx": {
+      "sha256": "477c30416f7a029ead682fa67809c8a73715874eab5dc3bdd1e6d54008e89b8e",
+      "bytes": 39061
+    },
+    "NatureCancer_Figure_ExtendedData_Production_Specification.docx": {
+      "sha256": "c10d3aa829bfc4366dd885f9eef75c4281f2a7585657d990bfb2ba2e92d16d2e",
+      "bytes": 40077
+    },
+    "NatureCancer_Final_Submission_Checklist.docx": {
+      "sha256": "1ac045fca4fcb6cdbc46742fa617d93d5e8f2033d1a80e541842124a37955646",
+      "bytes": 38552
+    },
+    "NatureCancer_Final_Submission_Manuscript.docx": {
+      "sha256": "1169e74347034ae563b5a907b3dca81c3e041d38ee60f707295f1fbad8d6eae5",
+      "bytes": 3669913
+    },
+    "NatureCancer_PreSubmission_Editorial_Reviewer_Revision_Notes.docx": {
+      "sha256": "853bc325b9fb87f7afd4fb4ce0ab5d4812a2351bb6c5f408a5f8f6ec2746bbde",
+      "bytes": 40587
+    },
+    "NatureCancer_Reporting_Summary_Final_Template.docx": {
+      "sha256": "7c63b747575c128886e9575994bb0b0f575632e281456a3390b940814111585c",
+      "bytes": 38339
+    },
+    "NatureCancer_Supplementary_Information.docx": {
+      "sha256": "1f98ef6983b30bd86c01271e4b00f38cb11a5ef34c419abe86db45f7398e4d1f",
+      "bytes": 47339
+    },
+    "README.txt": {
+      "sha256": "22cc5e2e8c512e9b9b56f6e30a48d8eae3ff1bf271536a0990659b72a8ddecdf",
+      "bytes": 1089
+    },
+    "RECONCILIATION_TABLE.md": {
+      "sha256": "1c291d6054959f90d1eca5fddb693ccc7a6dd13fc929a2827cf9e55872a2f068",
+      "bytes": 8400
+    },
+    "Source_Data/Extended_Data_Fig_10_source_data.json": {
+      "sha256": "add93382e2ac0a56c21e0cbe6fbe8bb81fcec3e09449618685ca167d4cabf7d7",
+      "bytes": 1257
+    },
+    "Source_Data/Extended_Data_Fig_10_source_data.xlsx": {
+      "sha256": "6c990e21056a7d67b8b8d6be1ce775ee223e1b92c979e4f396761fc4f0e691c8",
+      "bytes": 6473
+    },
+    "Source_Data/Extended_Data_Fig_1_source_data.json": {
+      "sha256": "27d1cdd7a96b4785374af083f7b6118b8f9d722699ca34bab5c0aa6ebc93ed3d",
+      "bytes": 14085
+    },
+    "Source_Data/Extended_Data_Fig_1_source_data.xlsx": {
+      "sha256": "203a6d44559160da8014e2e5ef86130de7c0fd56fc0e1f546ae0da34888956f9",
+      "bytes": 12587
+    },
+    "Source_Data/Extended_Data_Fig_2_source_data.json": {
+      "sha256": "998e12840591fad5a3f17f9731b35ea9995b4577218d5799d554efebc3dfcdaa",
+      "bytes": 745
+    },
+    "Source_Data/Extended_Data_Fig_2_source_data.xlsx": {
+      "sha256": "a61993f3d2a0c74e0af6f8c2ed1ddc8226edc28a02ad7354fff02947550103af",
+      "bytes": 5965
+    },
+    "Source_Data/Extended_Data_Fig_3_source_data.json": {
+      "sha256": "6b59804fca72892393795ced16d878f1612ec099028821ac7e804313ec2aa90c",
+      "bytes": 2181
+    },
+    "Source_Data/Extended_Data_Fig_3_source_data.xlsx": {
+      "sha256": "3baac45723863b7a93a193bf4c8c5eaaa72d9f8d178f2f73fe75c85b0117690b",
+      "bytes": 6387
+    },
+    "Source_Data/Extended_Data_Fig_4_source_data.json": {
+      "sha256": "e7cd154b11f676695192d65c2c7fde3963e84be7aad9eccaf1e1127b872b0311",
+      "bytes": 6880
+    },
+    "Source_Data/Extended_Data_Fig_4_source_data.xlsx": {
+      "sha256": "113e618310a19913d5f810ab132189f80f81763fd13e11790e22618f4e6c4f3a",
+      "bytes": 7575
+    },
+    "Source_Data/Extended_Data_Fig_5_source_data.json": {
+      "sha256": "4073b09e600ad13e72561b57af4419e8991227ac2a3d58e615c36623ffb64a67",
+      "bytes": 3235
+    },
+    "Source_Data/Extended_Data_Fig_5_source_data.xlsx": {
+      "sha256": "9519bdd33829c1a73c06b5322fc4fc7f7ea39b1a43f7ef58154848234c45fc1a",
+      "bytes": 7775
+    },
+    "Source_Data/Extended_Data_Fig_6_source_data.json": {
+      "sha256": "aa75cc520b44fd7f6795c5a358cbd708c67aad4ed1bc98937d5e879ef37be69b",
+      "bytes": 22966
+    },
+    "Source_Data/Extended_Data_Fig_6_source_data.xlsx": {
+      "sha256": "cb403b801d8c921e551ceeedf342160fcff2303be90925538fdb9b9b837c88f5",
+      "bytes": 15906
+    },
+    "Source_Data/Extended_Data_Fig_7_source_data.json": {
+      "sha256": "728b5ca229b9ccacc6856e8ad04c1a18433997214f4e785177cc4987b185c3fb",
+      "bytes": 5488
+    },
+    "Source_Data/Extended_Data_Fig_7_source_data.xlsx": {
+      "sha256": "96b58c231405b7279e62f00a56956fe89a944290dc9ec93ef38d4064ec66b4d3",
+      "bytes": 9937
+    },
+    "Source_Data/Extended_Data_Fig_8_source_data.json": {
+      "sha256": "b9c24a5e0a06e4771b02097df965457a6e56774e5c5fd0cfbd330a9ea0c83506",
+      "bytes": 2848
+    },
+    "Source_Data/Extended_Data_Fig_8_source_data.xlsx": {
+      "sha256": "580758c635850d2d8e5048266395049708dc4075591c25c3dd075def63cb991a",
+      "bytes": 7117
+    },
+    "Source_Data/Extended_Data_Fig_9_source_data.json": {
+      "sha256": "9503ca564afde2ec9c4a0c142ef0d946c5d39a82e13351fb751564ae198ca69d",
+      "bytes": 27523
+    },
+    "Source_Data/Extended_Data_Fig_9_source_data.xlsx": {
+      "sha256": "72679d31f0fbdb49a0b27e7e9b335648fcead653eb9bd90a30c642a17c4195aa",
+      "bytes": 18419
+    },
+    "Source_Data/Fig_1_source_data.json": {
+      "sha256": "836a2575ed5c4b880aa3d549e9bc5f0fd99e306705d63fcf00a144e46bd7eaf3",
+      "bytes": 1916
+    },
+    "Source_Data/Fig_1_source_data.xlsx": {
+      "sha256": "d7d2879e6b5cc8f80c157527a4242dcd6f4a1c1fca2873d8d6c71f66b714f846",
+      "bytes": 7012
+    },
+    "Source_Data/Fig_2_source_data.json": {
+      "sha256": "cb61148614963cbc8b50f10045f6ad2c85d8748a95e8e57c12cc2796c76abe1a",
+      "bytes": 5169
+    },
+    "Source_Data/Fig_2_source_data.xlsx": {
+      "sha256": "5f6dcd100b419598d956638175a33eb3999095b8eb93ee6571396680da12b72b",
+      "bytes": 8447
+    },
+    "Source_Data/Fig_3_source_data.json": {
+      "sha256": "ffca07cf162338963d8735ccaa77aa91a2e28140620ab33e691f9e195120b5d1",
+      "bytes": 8870
+    },
+    "Source_Data/Fig_3_source_data.xlsx": {
+      "sha256": "496a35d4da9d9d0f490a86e5ac495813de27d86d4b39a05083a9a98b544e9d86",
+      "bytes": 9859
+    },
+    "Source_Data/Fig_4_source_data.json": {
+      "sha256": "df5f60709ad8a0c550fd196d6baa6d793689af60cdd90be0d75288eb4341c1d9",
+      "bytes": 12104
+    },
+    "Source_Data/Fig_4_source_data.xlsx": {
+      "sha256": "420cb6533bd9877616a0bd938617acf77e8c8ebd39240870300aa8b3f6768a45",
+      "bytes": 10748
+    },
+    "Source_Data/Fig_5_source_data.json": {
+      "sha256": "cbd86dd7538d6850441a6d8e927aeb62f9d070ff5b00407943556018241cc3c0",
+      "bytes": 10058
+    },
+    "Source_Data/Fig_5_source_data.xlsx": {
+      "sha256": "e2e4090b5344226c7a91eff1dba7c854e39e86cc809b0bd8b2d6d7fdd19c68e2",
+      "bytes": 9692
+    },
+    "Source_Data/Fig_6_source_data.json": {
+      "sha256": "a09f1967dce3d294b98cd84b0e9195a8953864d2b8bc1030f517d2952320c251",
+      "bytes": 4463
+    },
+    "Source_Data/Fig_6_source_data.xlsx": {
+      "sha256": "e2421b566589a36f63908affbadfa0dab0d64ef6b084db849b703ffb738014cb",
+      "bytes": 8278
+    },
+    "zenodo_metadata_.json": {
+      "sha256": "35532cba258e7beda6dfad26fc94a7e027034bbf5c4ca98ab1030e7a85e5165c",
+      "bytes": 4695
+    }
+  },
+  "figure_pairing": [
+    {
+      "figure": "Fig_1",
+      "main_pdf": "Figures/Fig_1.pdf",
+      "source_data": "Source_Data/Fig_1_source_data.xlsx"
+    },
+    {
+      "figure": "Fig_2",
+      "main_pdf": "Figures/Fig_2.pdf",
+      "source_data": "Source_Data/Fig_2_source_data.xlsx"
+    },
+    {
+      "figure": "Fig_3",
+      "main_pdf": "Figures/Fig_3.pdf",
+      "source_data": "Source_Data/Fig_3_source_data.xlsx"
+    },
+    {
+      "figure": "Fig_4",
+      "main_pdf": "Figures/Fig_4.pdf",
+      "source_data": "Source_Data/Fig_4_source_data.xlsx"
+    },
+    {
+      "figure": "Fig_5",
+      "main_pdf": "Figures/Fig_5.pdf",
+      "source_data": "Source_Data/Fig_5_source_data.xlsx"
+    },
+    {
+      "figure": "Fig_6",
+      "main_pdf": "Figures/Fig_6.pdf",
+      "source_data": "Source_Data/Fig_6_source_data.xlsx"
+    },
+    {
+      "figure": "Extended Data Fig. 1",
+      "main_pdf": "Extended_Data/Extended_Data_Fig_1.pdf",
+      "source_data": "Source_Data/Extended_Data_Fig_1_source_data.xlsx"
+    },
+    {
+      "figure": "Extended Data Fig. 2",
+      "main_pdf": "Extended_Data/Extended_Data_Fig_2.pdf",
+      "source_data": "Source_Data/Extended_Data_Fig_2_source_data.xlsx"
+    },
+    {
+      "figure": "Extended Data Fig. 3",
+      "main_pdf": "Extended_Data/Extended_Data_Fig_3.pdf",
+      "source_data": "Source_Data/Extended_Data_Fig_3_source_data.xlsx"
+    },
+    {
+      "figure": "Extended Data Fig. 4",
+      "main_pdf": "Extended_Data/Extended_Data_Fig_4.pdf",
+      "source_data": "Source_Data/Extended_Data_Fig_4_source_data.xlsx"
+    },
+    {
+      "figure": "Extended Data Fig. 5",
+      "main_pdf": "Extended_Data/Extended_Data_Fig_5.pdf",
+      "source_data": "Source_Data/Extended_Data_Fig_5_source_data.xlsx"
+    },
+    {
+      "figure": "Extended Data Fig. 6",
+      "main_pdf": "Extended_Data/Extended_Data_Fig_6.pdf",
+      "source_data": "Source_Data/Extended_Data_Fig_6_source_data.xlsx"
+    },
+    {
+      "figure": "Extended Data Fig. 7",
+      "main_pdf": "Extended_Data/Extended_Data_Fig_7.pdf",
+      "source_data": "Source_Data/Extended_Data_Fig_7_source_data.xlsx"
+    },
+    {
+      "figure": "Extended Data Fig. 8",
+      "main_pdf": "Extended_Data/Extended_Data_Fig_8.pdf",
+      "source_data": "Source_Data/Extended_Data_Fig_8_source_data.xlsx"
+    },
+    {
+      "figure": "Extended Data Fig. 9",
+      "main_pdf": "Extended_Data/Extended_Data_Fig_9.pdf",
+      "source_data": "Source_Data/Extended_Data_Fig_9_source_data.xlsx"
+    },
+    {
+      "figure": "Extended Data Fig. 10",
+      "main_pdf": "Extended_Data/Extended_Data_Fig_10.pdf",
+      "source_data": "Source_Data/Extended_Data_Fig_10_source_data.xlsx"
+    }
+  ],
+  "upstream__source_data_index": {
+    "Fig_1": "_20260926_Nature_Cancer/figures/source_data/fig1_transport_system.json",
+    "Fig_2": "_20260926_Nature_Cancer/figures/source_data/fig2_external_transport.json",
+    "Fig_3": "_20260926_Nature_Cancer/figures/source_data/fig3_calibration_pathways.json",
+    "Fig_4": "_20260926_Nature_Cancer/figures/source_data/fig4_ablation_constraint.json",
+    "Fig_5": "_20260926_Nature_Cancer/figures/source_data/fig5_benchmark_strategies.json",
+    "Fig_6": "_20260926_Nature_Cancer/figures/source_data/fig6_joint_boundary.json",
+    "Extended_Data_Fig_1": "_20260926_Nature_Cancer/figures/source_data/ed1_positive_control.json",
+    "Extended_Data_Fig_2": "_20260926_Nature_Cancer/figures/source_data/ed2_cohort_ledger.json",
+    "Extended_Data_Fig_3": "_20260926_Nature_Cancer/figures/source_data/ed3_loco_sensitivity.json",
+    "Extended_Data_Fig_4": "_20260926_Nature_Cancer/figures/source_data/ed4_ablation_matrix.json",
+    "Extended_Data_Fig_5": "_20260926_Nature_Cancer/figures/source_data/ed5_identity_recovery.json",
+    "Extended_Data_Fig_6": "_20260926_Nature_Cancer/figures/source_data/ed6_threshold_sensitivity.json",
+    "Extended_Data_Fig_7": "_20260926_Nature_Cancer/figures/source_data/ed7_clinical_casemix.json",
+    "Extended_Data_Fig_8": "_20260926_Nature_Cancer/figures/source_data/ed8_toxicity_stress.json",
+    "Extended_Data_Fig_9": "_20260926_Nature_Cancer/figures/source_data/ed9_precision_simulation.json",
+    "Extended_Data_Fig_10": "_20260926_Nature_Cancer/figures/source_data/ed10_analysis_freeze.json"
+  },
+  "changes_from_": [
+    "Fig_2.png orphan ( md5 ada64ae0…, 357,106 B, 2026-10-04) REPLACED with  frozen upstream (md5 0b97969e…, 348,112 B).",
+    "Source_Data/ directory ADDED (was absent in ): 16 JSON + 16 xlsx dual-format per figure.",
+    "frozen_manifest.json ADDED with SHA256 of every shipped file.",
+    "README.txt updated to reference this manifest.",
+    "DOI_BLOCKER.md added: documents credential gap and two minting paths.",
+    "RECONCILIATION_TABLE.md added: 64-item Figure 2–6 reconciliation with PASS/FAIL.",
+    "zenodo_metadata_.json added: refreshed from  template to  title/abstract/keywords."
+  ],
+  "outstanding_gaps": [
+    "Code availability DOI: GitHub repository and Zenodo deposit not yet minted — DOI must be inserted before Submit (see DOI_BLOCKER.md).",
+    "ed1 source_data JSON does not export the GEP18 transport CI bounds [0.403,0.697]/[0.318,0.788] nor the 6-gene CI bounds [0.422,0.712]/[0.247,0.721] that appear in the figure text.",
+    "ed5 source_data JSON is sparse (25 scalars) versus the many AUC-like labels displayed on ED5; these labels are gene-identity diagnostic values, not primary analysis outputs.",
+    "Fig3 pooled AUC 0.615 and Fig5 reference labels 0.494/0.504/0.561 are cross-figure labels from fig2/transport summary; they are not stored in each figure's own source_data JSON."
+  ]
+}
